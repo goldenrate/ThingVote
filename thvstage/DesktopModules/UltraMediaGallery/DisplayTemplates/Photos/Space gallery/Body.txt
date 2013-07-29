@@ -1,0 +1,1 @@
+<img src="[CUSTOMTHUMB:200x200]" alt="[TITLE]" />

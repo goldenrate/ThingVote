@@ -1,0 +1,1 @@
+<%@ WebHandler Language="C#" CodeBehind="PhotoMapStyle.ashx.cs" Class="BizModules.UltraPhotoGallery.PhotoMapStyle" %>

@@ -1,0 +1,29 @@
+﻿--New presentation
+if not exists(select * from {databaseOwner}{objectQualifier}BizModules_upg_presentation where name='TimelineSlider')
+INSERT {databaseOwner}{objectQualifier}BizModules_upg_presentation(Name,Description,DisplayCtl,GallerySettingCtl,Type,DefaultWidth,DefaultHeight,AllowFullScreen,Category, Featured, IsHtml) VALUES('TimelineSlider','Timeline Slider allows you to display images/videos/audios with a draggable timeline.','TimelineSlider','TimelineSliderAppearance','BizModules.UltraPhotoGallery.Presentation.TimelineSlider, BizModules.UltraPhotoGallery','752','320','0','SlidersAndRotators', 1, 1)
+GO
+
+
+UPDATE {databaseOwner}{objectQualifier}BizModules_upg_presentation Set IsHtml = 1 Where Name='KenBurnSlider'
+GO
+
+
+
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}{objectQualifier}BizModules_UPG_PhotoUpdateDates') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure {databaseOwner}{objectQualifier}BizModules_UPG_PhotoUpdateDates
+GO
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_PhotoUpdateDates
+	@ItemId int, 
+	@CreatedDate datetime,
+	@TakenDate datetime
+AS
+
+UPDATE {databaseOwner}{objectQualifier}BizModules_UPG_Photo SET
+	CreatedDate = @CreatedDate,
+	TakenDate = @TakenDate
+WHERE
+	ItemId = @ItemId
+
+GO
+

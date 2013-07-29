@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<resource loading="Loading..." previousScreen="Previous Screen" nextScreen="Next Screen" close="Close" quicktxt="Fast" slowtxt="Slow" titlevisiblea="Show caption" backtolisttxt="Album list" poor="Poor - " excellent=" - Excellent" comment="Comment" post="Post" overallRatingTemplate="[averagerating] star(s) based on [totalratings] rating(s)" Connecting="Connecting server..." says="says..." rating="Rating" 
+
+
+emailAFriend="Send this photo to a friend" toEmailAddress="To email address" yourEmailAddress="Your email address" yourPersonalNote="Your personal note" send="Send" invalidEmailAddress="Invalid email address" pleaseWait="Please wait..." playBtnTooltip="Play" stopBtnTooltip="Stop" previousBtnTooltip="Previous photo" nextBtnTooltip="Next photo" zoomInBtnTooltip="Zoom in" zoomOutBtnTooltip="Zoom out" fitToWindowBtnTooltip="Fit to window" resetBtnTooltip="Reset photo" rotateBtnTooltip="Rotate" downloadBtnTooltip="Download" purchaseBtnTooltip="Purchase" emailAFriendBtnTooltip="Email a friend" lightboxBtnTooltip="Launch lightbox view" seconds=" seconds" noteRequired="You must enter your personal note"
+
+overallRating="Overall" leaveComment="Leave your rating or comment" history="History" commentRequired="Please leave your rating or comment" helpAndTips="1.The link to this photo will be attached automatically.&lt;br&gt;2.Use comma to separate multiple email addresses.&lt;br&gt;3.Drop a line to your friend, or it may be identified as junk email." ratingHelp="Click here to rate or comment this photo"
+/>

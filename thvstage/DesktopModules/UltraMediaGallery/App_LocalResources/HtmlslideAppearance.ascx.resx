@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>1.3</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+
+	<data name="TemplateAndMode.Text">
+		<value>Template &amp; Slideshow Mode</value>
+	</data>
+	<data name="Template.Text">
+		<value>Template</value>
+	</data>
+	<data name="Template.Help">
+		<value>Templates are stored in /DesktopModules/UltraMediaGallery/HtmlSlide/templates folder, fell free to clone a template and make any changes by your self if necessary.&lt;p&gt; You also can contact service@bizmodules.net if you want to have a custom template.</value>
+	</data>
+	<data name="Options.Text">
+		<value>Options</value>
+	</data>
+	<data name="Slideshow_Mode.Text">
+		<value>Slideshow Mode</value>
+	</data>
+	<data name="Image.Text">
+		<value>Image slideshow</value>
+	</data>
+	<data name="Freetext.Text">
+		<value>Free text slideshow, you can enter any well-formatted html text in photo description</value>
+	</data>
+	<data name="Transition_Image.Text">
+		<value>Image transition effect</value>
+	</data>
+	<data name="Transition_Caption.Text">
+		<value>Caption transition effect</value>
+	</data>
+	<data name="Transition_Freetext.Text">
+		<value>Freetext transition effect</value>
+	</data>
+	<data name="Easing.Text">
+		<value>Easing Effect</value>
+	</data>
+	<data name="Max_Slides.Text">
+		<value>Max Slides</value>
+	</data>
+	<data name="Max_Slides.Help">
+		<value>The max slides to be displayed in this gallery is </value>
+	</data>
+	<data name="0.Text">
+		<value>Unlimited</value>
+	</data>
+	<data name="Choose_Slides1.Text">
+		<value>choose slides in </value>
+	</data>
+	<data name="Choose_Slides2.Text">
+		<value>order</value>
+	</data>
+	<data name="AutoPlay.Text">
+		<value>Auto Play </value>
+	</data>
+	<data name="DoAutoPlay.Text">
+		<value>Enable auto play</value>
+	</data>
+	<data name="AutoPlay1.Help">
+		<value>,switch to next slide every </value>
+	</data>
+	<data name="AutoPlay2.Help">
+		<value>seconds,</value>
+	</data>
+	<data name="LoopPlay.Help">
+		<value>when reach the last slide</value>
+	</data>
+	<data name="Visibility.Text">
+		<value>Control Visibility</value>
+	</data>
+	<data name="Visibility.Help">
+		<value>Choose the controls you would like to &lt;b&gt;disable&lt;/b&gt;, remember some controls are disabled by specific templates so it won't be visible even you don't select it.</value>
+	</data>
+	<data name="Countdown.Text">
+		<value>Countdown</value>
+	</data>
+	<data name="Caption.Text">
+		<value>Entire Caption</value>
+	</data>
+	<data name="CaptionTitle.Text">
+		<value>Caption Title</value>
+	</data>
+	<data name="CaptionDescription.Text">
+		<value>Caption Description</value>
+	</data>
+	<data name="Buttons.Text">
+		<value>Buttons</value>
+	</data>
+	<data name="Navi.Text">
+		<value>Navigation</value>
+	</data>
+	<data name="More.Text">
+		<value>More Link</value>
+	</data>
+	<data name="Loading.Text">
+		<value>Loading</value>
+	</data>
+	<data name="ThumbsList.Text">
+		<value>Thumb List</value>
+	</data>
+	<data name="XOfY.Text">
+		<value>X Of Y</value>
+	</data>
+	<data name="ArrowKey.Text">
+		<value>Navigation</value>
+	</data>
+	<data name="ArrowKey.Help">
+		<value> cursor keys &amp; mouse wheel for navigation purpose</value>
+	</data>
+	<data name="Use.Text">
+		<value>Use</value>
+	</data>
+	<data name="DonotUse.Text">
+		<value>Donot use</value>
+	</data>
+	<data name="MouseOver.Text">
+		<value>Mouse Over</value>
+	</data>
+	<data name="MouseOver.Help">
+		<value>When mouse over the thumbnail or title of a slide, </value>
+	</data>
+	<data name="DoNothing.Text">
+		<value>do nothing</value>
+	</data>
+	<data name="MoveTo.Text">
+		<value>move to this slide</value>
+	</data>
+	<data name="Scroll.Text">
+		<value>scroll the thumbnail list if necessary</value>
+	</data>
+	<data name="Colors.Text">
+		<value>Colors</value>
+	</data>
+	<data name="BackgroungColor.Text">
+		<value>Background color:</value>
+	</data>
+	<data name="TextColor.Text">
+		<value>Text color:</value>
+	</data>
+	<data name="CaptionTitleColor.Text">
+		<value>Caption title color:</value>
+	</data>
+	<data name="TextSize.Text">
+		<value>, text size:</value>
+	</data>
+</root>

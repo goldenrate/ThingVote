@@ -1,0 +1,27 @@
+/* slide container */
+.carousel .slides
+{
+	float :left ;
+}
+
+/* ____________________________________________________________ */
+
+/* DESCRIPTION */
+/* ____________________________________________________________ */
+
+.carousel .separateddesc
+{
+	position :relative ;
+	float :left ;
+	width:38%;
+	height :90%;
+	margin :0;
+	padding :0px;
+	text-align:left;
+	border:none;
+}
+
+.carousel .separateddesc div
+{
+	margin-left :10px;
+}

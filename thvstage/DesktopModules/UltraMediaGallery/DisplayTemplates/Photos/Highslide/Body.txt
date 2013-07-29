@@ -1,0 +1,9 @@
+<td align="center">
+
+<a href='[PHOTO]' class='highslide' onclick='return hs.expand(this, { slideshowGroup: 2})'><img border='0' src='[THUMBNAIL]' title='IMG_8994'></a><div class='highslide-caption'><font size='+1'>IMG_8994</font></div>
+
+</td>
+
+<script language="javascript">
+	if (++columnCount % columnsDesired == 0) document.write("</tr><tr>");
+</script>

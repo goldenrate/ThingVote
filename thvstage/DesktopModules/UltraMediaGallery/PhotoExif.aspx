@@ -1,0 +1,2 @@
+<%@ Page Language="vb" AutoEventWireup="false" Codebehind="PhotoExif.aspx.vb" Inherits="BizModules.UltraPhotoGallery.PhotoExif" %>
+<%  LoadExif(New String() {"Model", "Exposure Time", "F-Number", "Shutter Speed Value", "Aperture Value", "Flash", "Focal Length"})%>

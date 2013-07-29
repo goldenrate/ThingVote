@@ -1,0 +1,115 @@
+﻿if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}{objectQualifier}BizModules_UPG_TagSearch') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure {databaseOwner}{objectQualifier}BizModules_UPG_TagSearch
+GO
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_TagSearch
+	@ModuleId int,
+	@Key varchar(20)
+AS
+
+SELECT * FROM {databaseOwner}{objectQualifier}BizModules_UPG_Tag where ModuleId = @ModuleId and Tag like '%' + @Key + '%'
+
+GO
+
+
+
+--Ensure Clustered Constriants, to be compatible with Sql Server Azure
+
+IF NOT EXISTS (SELECT * FROM sys.key_constraints WHERE object_id = OBJECT_ID(N'dbo.PK_BizModules_UPG_Album') AND parent_object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}BizModules_UPG_Album'))
+	ALTER TABLE {databaseOwner}{objectQualifier}BizModules_UPG_Album
+	ADD CONSTRAINT PK_BizModules_UPG_Album PRIMARY KEY CLUSTERED 
+	(
+		ItemId ASC
+	)
+GO
+
+IF NOT EXISTS (SELECT * FROM sys.key_constraints WHERE object_id = OBJECT_ID(N'dbo.PK_BizModules_UPG_AlbumModule') AND parent_object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}BizModules_UPG_AlbumModule'))
+	ALTER TABLE {databaseOwner}{objectQualifier}BizModules_UPG_AlbumModule
+	ADD CONSTRAINT PK_BizModules_UPG_AlbumModule PRIMARY KEY CLUSTERED 
+	(
+		ItemId ASC
+	)
+GO
+
+
+IF NOT EXISTS (SELECT * FROM sys.key_constraints WHERE object_id = OBJECT_ID(N'dbo.PK_BizModules_UPG_CartItem') AND parent_object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}BizModules_UPG_CartItem'))
+	ALTER TABLE {databaseOwner}{objectQualifier}BizModules_UPG_CartItem
+	ADD CONSTRAINT PK_BizModules_UPG_CartItem PRIMARY KEY CLUSTERED 
+	(
+		ItemId ASC
+	)
+GO
+
+
+IF NOT EXISTS (SELECT * FROM sys.key_constraints WHERE object_id = OBJECT_ID(N'dbo.PK_UPG_Comment') AND parent_object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}BizModules_UPG_Comment'))
+	ALTER TABLE {databaseOwner}{objectQualifier}BizModules_UPG_Comment
+	ADD CONSTRAINT PK_UPG_Comment PRIMARY KEY CLUSTERED 
+	(
+		ItemId ASC
+	)
+GO
+
+
+IF NOT EXISTS (SELECT * FROM sys.key_constraints WHERE object_id = OBJECT_ID(N'dbo.PK_BizModules_UPG_Invoice') AND parent_object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}BizModules_UPG_Invoice'))
+	ALTER TABLE {databaseOwner}{objectQualifier}BizModules_UPG_Invoice
+	ADD CONSTRAINT PK_BizModules_UPG_Invoice PRIMARY KEY CLUSTERED 
+	(
+		ItemId ASC
+	)
+GO
+
+
+IF NOT EXISTS (SELECT * FROM sys.key_constraints WHERE object_id = OBJECT_ID(N'dbo.PK_BizModules_UPG_InvoiceItem') AND parent_object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}BizModules_UPG_InvoiceItem'))
+	ALTER TABLE {databaseOwner}{objectQualifier}BizModules_UPG_InvoiceItem
+	ADD CONSTRAINT PK_BizModules_UPG_InvoiceItem PRIMARY KEY CLUSTERED 
+	(
+		ItemId ASC
+	)
+GO
+
+
+IF NOT EXISTS (SELECT * FROM sys.key_constraints WHERE object_id = OBJECT_ID(N'dbo.PK_BizModules_UPG_Photo') AND parent_object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}BizModules_UPG_Photo'))
+	ALTER TABLE {databaseOwner}{objectQualifier}BizModules_UPG_Photo
+	ADD CONSTRAINT PK_BizModules_UPG_Photo PRIMARY KEY CLUSTERED 
+	(
+		ItemId ASC
+	)
+GO
+
+
+IF NOT EXISTS (SELECT * FROM sys.key_constraints WHERE object_id = OBJECT_ID(N'dbo.PK_BizModules_UPG_PhotoTag') AND parent_object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}BizModules_UPG_PhotoTag'))
+	ALTER TABLE {databaseOwner}{objectQualifier}BizModules_UPG_PhotoTag
+	ADD CONSTRAINT PK_BizModules_UPG_PhotoTag PRIMARY KEY CLUSTERED 
+	(
+		ItemId ASC
+	)
+GO
+
+
+IF NOT EXISTS (SELECT * FROM sys.key_constraints WHERE object_id = OBJECT_ID(N'dbo.PK_BizModules_UPG_Presentation') AND parent_object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}BizModules_UPG_Presentation'))
+	ALTER TABLE {databaseOwner}{objectQualifier}BizModules_UPG_Presentation
+	ADD CONSTRAINT PK_BizModules_UPG_Presentation PRIMARY KEY CLUSTERED 
+	(
+		ItemId ASC
+	)
+GO
+
+
+IF NOT EXISTS (SELECT * FROM sys.key_constraints WHERE object_id = OBJECT_ID(N'dbo.PK_BizModules_UPG_Rating') AND parent_object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}BizModules_UPG_Rating'))
+	ALTER TABLE {databaseOwner}{objectQualifier}BizModules_UPG_Rating
+	ADD CONSTRAINT PK_BizModules_UPG_Rating PRIMARY KEY CLUSTERED 
+	(
+		ItemId ASC
+	)
+GO
+
+
+IF NOT EXISTS (SELECT * FROM sys.key_constraints WHERE object_id = OBJECT_ID(N'dbo.PK_UPG_Tag') AND parent_object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}BizModules_UPG_Tag'))
+	ALTER TABLE {databaseOwner}{objectQualifier}BizModules_UPG_Tag
+	ADD CONSTRAINT PK_UPG_Tag PRIMARY KEY CLUSTERED 
+	(
+		ItemId ASC
+	)
+GO
+
+

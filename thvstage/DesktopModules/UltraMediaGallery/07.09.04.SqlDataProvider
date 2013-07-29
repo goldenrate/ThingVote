@@ -1,0 +1,64 @@
+﻿ALTER PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_PhotoUpdate
+	@ItemId int, 
+	@Title nvarchar(150), 
+	@Src nvarchar(150),
+	@TnSrc nvarchar(150),
+	@Description ntext, 
+	@Link nvarchar(150), 
+	@Approved bit,
+	@SortOrder int,
+	@TnWidth int,
+	@TnHeight int,
+	@AWS_Bucket nvarchar(50),
+	@AWS_PhotoKey nvarchar(100),
+	@AWS_ThumbKey nvarchar(100),
+	@HtmlContent ntext,
+	@ResName nvarchar(200), 
+	@ResSize int, 
+	@ResOriginalName nvarchar(100), 
+	@ResContentType varchar(50),
+	@ResPrice money, 
+	@ResCreatedDate datetime, 
+	@ResDownloads int,
+	@AWS_ResKey nvarchar(100)
+AS
+
+if ISNULL(@SortOrder, 0) = 0
+	SELECT @SortOrder=SortOrder from {databaseOwner}{objectQualifier}BizModules_UPG_Photo where ItemId =  @ItemId
+
+if ISNULL(@SortOrder, 0) = 0
+begin
+	declare @AlbumId int
+	select @AlbumId = AlbumId from {databaseOwner}{objectQualifier}BizModules_UPG_Photo where ItemId=@ItemId
+	SELECT @SortOrder=Max(SortOrder)+1 from {databaseOwner}{objectQualifier}BizModules_UPG_Photo where AlbumId=@AlbumId
+	if @SortOrder is null
+		select @SortOrder=1
+end
+
+UPDATE {databaseOwner}{objectQualifier}BizModules_UPG_Photo SET
+	Title = @Title,
+	Src = @Src,
+	TnSrc = @TnSrc,
+	Description = @Description,
+	Link = @Link,
+	Approved = @Approved,
+	LastModifiedDate = getdate(),
+	SortOrder = @SortOrder,
+	TnWidth = @TnWidth,
+	TnHeight = @TnHeight,
+	AWS_Bucket = @AWS_Bucket,
+	AWS_PhotoKey = @AWS_PhotoKey,
+	AWS_ThumbKey = @AWS_ThumbKey,
+	HtmlContent = @HtmlContent,
+	ResName = @ResName, 
+	ResSize = @ResSize, 
+	ResOriginalName = @ResOriginalName, 
+	ResContentType = @ResContentType,
+	ResPrice = @ResPrice, 
+	ResCreatedDate = @ResCreatedDate, 
+	ResDownloads = @ResDownloads,
+	AWS_ResKey = @AWS_ResKey
+WHERE
+	ItemId = @ItemId
+GO
+

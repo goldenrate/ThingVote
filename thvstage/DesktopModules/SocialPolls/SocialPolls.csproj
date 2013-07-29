@@ -1,0 +1,465 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7D61A32C-0F21-453F-A981-BD8E5A3A5304}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DotNetNuke.Modules.SocialPolls</RootNamespace>
+    <AssemblyName>SocialPolls</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Breeze.WebApi">
+      <HintPath>..\..\..\..\packages\Breeze.WebApi.1.2.8\lib\Breeze.WebApi.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetNuke, Version=7.0.2.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\DotNetNuke.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetNuke.Web, Version=7.0.4.180, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\DotNetNuke.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetNuke.Web.Client, Version=6.1.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Workspaces\Tipped\Web\DesktopModules\Polls\bin\DotNetNuke.Web.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\..\..\..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Irony">
+      <HintPath>..\..\..\..\packages\Breeze.WebApi.1.2.8\lib\Irony.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationBlocks.Data, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\Microsoft.ApplicationBlocks.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Data.Edm, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\packages\Microsoft.Data.Edm.5.2.0\lib\net40\Microsoft.Data.Edm.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.OData, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\packages\Microsoft.Data.OData.5.2.0\lib\net40\Microsoft.Data.OData.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\..\..\..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Microsoft.AspNet.WebApi.Client.4.0.20710.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Spatial, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\packages\System.Spatial.5.2.0\lib\net40\System.Spatial.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Microsoft.AspNet.WebApi.Core.4.0.20710.0\lib\net40\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.OData">
+      <HintPath>..\..\..\..\packages\Microsoft.AspNet.WebApi.OData.4.0.1\lib\net40\System.Web.Http.OData.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Microsoft.AspNet.WebApi.WebHost.4.0.20710.0\lib\net40\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WebActivator">
+      <HintPath>..\..\..\..\packages\WebActivator.1.5.3\lib\net40\WebActivator.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Providers\Components\FileHandlerBase.cs" />
+    <Compile Include="FilesStatus.ashx.cs" />
+    <Compile Include="Providers\Components\Constants.cs" />
+    <Compile Include="Providers\Components\FeatureController.cs" />
+    <Compile Include="Providers\Components\PollNotificationsController.cs" />
+    <Compile Include="Data\DataProvider.cs" />
+    <Compile Include="FileTransferHandler.ashx.cs">
+      <DependentUpon>FileTransferHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Register.ascx.cs">
+      <DependentUpon>Register.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register.ascx.designer.cs">
+      <DependentUpon>Register.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Scripts\UploadImage\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SocialPollsModuleBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SocialPollsModuleSettingsBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Edit.ascx.cs">
+      <DependentUpon>Edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Edit.ascx.designer.cs">
+      <DependentUpon>Edit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Providers\DataProviders\SqlDataProvider\SqlDataProvider.cs" />
+    <Compile Include="Settings.ascx.cs">
+      <DependentUpon>Settings.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Settings.ascx.designer.cs">
+      <DependentUpon>Settings.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Thumbnail.ashx.cs">
+      <DependentUpon>Thumbnail.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="View.ascx.cs">
+      <DependentUpon>View.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App\viewmodels\publicheader.js" />
+    <Content Include="App\viewmodels\index.js" />
+    <Content Include="App\services\dataservice\ds.user.js" />
+    <Content Include="App\viewmodels\components\modal.js" />
+    <Content Include="App\config.js" />
+    <Content Include="App\durandal\amd\almond-custom.js" />
+    <Content Include="App\durandal\amd\optimizer.exe" />
+    <Content Include="App\durandal\amd\r.js" />
+    <Content Include="App\durandal\amd\require.js" />
+    <Content Include="App\durandal\amd\text.js" />
+    <Content Include="App\durandal\app.js" />
+    <Content Include="App\durandal\composition.js" />
+    <Content Include="App\durandal\events.js" />
+    <Content Include="App\durandal\http.js" />
+    <Content Include="App\durandal\messageBox.html" />
+    <Content Include="App\durandal\messageBox.js" />
+    <Content Include="App\durandal\modalDialog.js" />
+    <Content Include="App\Scripts\moment.js" />
+    <Content Include="App\durandal\plugins\router.js" />
+    <Content Include="App\durandal\system.js" />
+    <Content Include="App\durandal\viewEngine.js" />
+    <Content Include="App\durandal\viewLocator.js" />
+    <Content Include="App\durandal\viewModel.js" />
+    <Content Include="App\durandal\viewModelBinder.js" />
+    <Content Include="App\durandal\widget.js" />
+    <Content Include="App\main.js" />
+    <Content Include="App\services\datacontext.js" />
+    <Content Include="App\services\dataservice\ds.notification.js" />
+    <Content Include="App\services\dove.js" />
+    <Content Include="App\services\dataservice.js" />
+    <Content Include="App\services\dnn.js" />
+    <Content Include="App\services\htmlscraper.js" />
+    <Content Include="App\services\logger.js" />
+    <Content Include="App\services\model.js" />
+    <Content Include="App\services\model\member.js" />
+    <Content Include="App\services\model\model.notification.js" />
+    <Content Include="App\services\moment.js" />
+    <Content Include="App\services\util.js" />
+    <Content Include="App\viewmodels\components\rating.js" />
+    <Content Include="App\viewmodels\create.js" />
+    <Content Include="App\viewmodels\create\create-2.js" />
+    <Content Include="App\viewmodels\dev.js" />
+    <Content Include="App\viewmodels\inviteFacebook.js" />
+    <Content Include="App\viewmodels\membersDirectory.js" />
+    <Content Include="App\viewmodels\members\members.js" />
+    <Content Include="App\viewmodels\my.js" />
+    <Content Include="App\viewmodels\notifications\notifications.js" />
+    <Content Include="App\viewmodels\polldetail.js" />
+    <Content Include="App\viewmodels\polls.js" />
+    <Content Include="App\viewmodels\poll\editpoll.js" />
+    <Content Include="App\viewmodels\poll\pollPreview.js" />
+    <Content Include="App\viewmodels\profile\editaccount.js" />
+    <Content Include="App\viewmodels\profile\editsettings.js" />
+    <Content Include="App\viewmodels\profile\editprofile.js" />
+    <Content Include="App\viewmodels\profile\profile.js" />
+    <Content Include="App\viewmodels\publicshell.js" />
+    <Content Include="App\viewmodels\shell.js" />
+    <Content Include="App\viewmodels\topnav.js" />
+    <Content Include="App\views\components\modal.html" />
+    <Content Include="App\views\components\rating.html" />
+    <Content Include="App\views\index.html" />
+    <Content Include="App\views\inviteFacebook.html" />
+    <Content Include="App\views\members\members.html" />
+    <Content Include="App\views\members\myfollowers.html" />
+    <Content Include="App\views\members\myfollowing.html" />
+    <Content Include="App\views\poll\boolPollDetail.html" />
+    <Content Include="App\views\poll\categorySelector.html" />
+    <Content Include="App\views\poll\mypolls.html" />
+    <Content Include="App\views\poll\myvotes.html" />
+    <Content Include="App\views\create.html" />
+    <Content Include="App\views\create\create-2-old.html" />
+    <Content Include="App\views\create\create-2.html" />
+    <Content Include="App\views\create\create-1.html" />
+    <Content Include="App\views\create\create-3.html" />
+    <Content Include="App\views\dev.html" />
+    <Content Include="App\views\my.html" />
+    <Content Include="App\views\notifications\notifications.html" />
+    <Content Include="App\views\polldetail.html" />
+    <Content Include="App\views\PollPreview.html" />
+    <Content Include="App\views\poll\poll.html" />
+    <Content Include="App\views\poll\pollOptions.html" />
+    <Content Include="App\views\polls.html" />
+    <Content Include="App\views\poll\editpoll.html" />
+    <Content Include="App\views\poll\pollprevEdit.html" />
+    <Content Include="App\views\poll\publicpolls.html" />
+    <Content Include="App\views\profile\editaccount.html" />
+    <Content Include="App\views\profile\editprofile.html" />
+    <Content Include="App\views\profile\editsettings.html" />
+    <Content Include="App\views\profile\profile.html" />
+    <Content Include="App\views\empty.html" />
+    <Content Include="App\views\publicheader.html" />
+    <Content Include="App\views\publicshell.html" />
+    <Content Include="Content\membersStyle.css" />
+    <Content Include="Copy of module.css" />
+    <Content Include="fbobject\index.html" />
+    <Content Include="images\default_thumb.jpg" />
+    <Content Include="module.css">
+      <DependentUpon>module.less</DependentUpon>
+    </Content>
+    <Content Include="module.min.css">
+      <DependentUpon>module.less</DependentUpon>
+    </Content>
+    <Content Include="Register.ascx" />
+    <Content Include="Scripts\dnn.jquery.js" />
+    <Content Include="Scripts\framework\SPAFileUploader.js" />
+    <Content Include="Scripts\framework\SPAServicesFramework.js" />
+    <Content Include="FileTransferHandler.ashx" />
+    <None Include="Scripts\jquery-1.4.4-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.4.js" />
+    <Content Include="Scripts\jquery-1.4.4.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\knockout.validation.js" />
+    <Content Include="temp\PollPreview.html" />
+    <Content Include="App\views\results.html" />
+    <Content Include="App\views\shell.html" />
+    <Content Include="App\views\topnav.html" />
+    <Content Include="Content\durandal.css" />
+    <Content Include="Content\jquery.nailthumb.1.1.min.css" />
+    <Content Include="Content\Polls.css" />
+    <Content Include="Content\smart_wizard.css" />
+    <Content Include="Content\toastr.css" />
+    <Content Include="Content\toastr.min.css" />
+    <Content Include="Documentation\Documentation.css" />
+    <Content Include="Documentation\Documentation.html" />
+    <Content Include="Edit.ascx" />
+    <Content Include="images\HtmlPage1.html" />
+    <Content Include="images\imagePlaceHolder.png" />
+    <Content Include="images\pollAction.png" />
+    <Content Include="images\PollArrowIcon.png" />
+    <Content Include="images\profilePicBottomShaddow.png" />
+    <Content Include="images\ratingicon.png" />
+    <Content Include="images\selectionicon.png" />
+    <Content Include="images\thvLogoBlack.png" />
+    <Content Include="images\yesnoicon.png" />
+    <Content Include="License.txt" />
+    <None Include="module.less" />
+    <Content Include="ReleaseNotes.txt" />
+    <Content Include="AjaxFileHandler.ashx" />
+    <Content Include="ProfilePicHandler.ashx" />
+    <None Include="Scripts\jquery-1.6.4-vsdoc.js" />
+    <None Include="Scripts\breeze.intellisense.js" />
+    <Content Include="Scripts\breeze.debug.js" />
+    <Content Include="Scripts\breeze.min.js" />
+    <Content Include="Scripts\dove.js" />
+    <Content Include="Scripts\jquery-1.6.4.js" />
+    <Content Include="Scripts\jquery-1.6.4.min.js" />
+    <Content Include="Scripts\jquery.masonry.js" />
+    <Content Include="Scripts\jquery.masonry.min.js" />
+    <Content Include="Scripts\jquery.nailthumb.1.1.min.js" />
+    <Content Include="Scripts\jquery.smartWizard-2.0.js" />
+    <Content Include="Scripts\jquery.smartWizard-2.0.min.js" />
+    <Content Include="Scripts\knockout-2.2.1.debug.js" />
+    <Content Include="Scripts\knockout-2.2.1.js" />
+    <Content Include="Scripts\moment.js" />
+    <Content Include="Scripts\moment.min.js" />
+    <Content Include="Scripts\q.js" />
+    <Content Include="Scripts\q.min.js" />
+    <Content Include="Scripts\sammy.js" />
+    <Content Include="Scripts\sammy-0.7.4.min.js" />
+    <Content Include="Scripts\toastr.js" />
+    <Content Include="Scripts\toastr.min.js" />
+    <Content Include="Scripts\UploadImage\Default.aspx" />
+    <Content Include="Scripts\UploadImage\js\cors\jquery.postmessage-transport.js" />
+    <Content Include="Scripts\UploadImage\js\cors\jquery.xdr-transport.js" />
+    <Content Include="Scripts\UploadImage\js\jquery.fileupload-fp.js" />
+    <Content Include="Scripts\UploadImage\js\jquery.fileupload-ui.js" />
+    <Content Include="Scripts\UploadImage\js\jquery.fileupload.js" />
+    <Content Include="Scripts\UploadImage\js\jquery.iframe-transport.js" />
+    <Content Include="Scripts\UploadImage\js\locale.js" />
+    <Content Include="Scripts\UploadImage\js\main.js" />
+    <Content Include="Scripts\UploadImage\js\vendor\jquery.ui.widget.js" />
+    <Content Include="Settings.ascx" />
+    <Content Include="View.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SocialPolls.dnn" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BuildScripts\ModulePackage.targets" />
+    <Content Include="BuildScripts\MSBuild.Community.Tasks.Targets" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\View.ascx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\Edit.ascx.resx" />
+    <Content Include="App_LocalResources\Settings.ascx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Providers\DataProviders\SqlDataProvider\00.00.01.SqlDataProvider" />
+    <Content Include="Providers\DataProviders\SqlDataProvider\Uninstall.SqlDataProvider" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Scripts\UploadImage\AjaXFileHandler.ashx" />
+    <Content Include="Thumbnail.ashx" />
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App\components\modal\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\Register.ascx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\ManageUsers.ascx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\EditGroups.ascx.resx" />
+    <Content Include="App_LocalResources\EditProfileDefinition.ascx.resx" />
+    <Content Include="App_LocalResources\EditRoles.ascx.resx" />
+    <Content Include="App_LocalResources\MemberServices.ascx.resx" />
+    <Content Include="App_LocalResources\Membership.ascx.resx" />
+    <Content Include="App_LocalResources\Password.ascx.resx" />
+    <Content Include="App_LocalResources\Profile.ascx.Portal-0.resx" />
+    <Content Include="App_LocalResources\Profile.ascx.resx" />
+    <Content Include="App_LocalResources\ProfileDefinitions.ascx.resx" />
+    <Content Include="App_LocalResources\Roles.ascx.resx" />
+    <Content Include="App_LocalResources\SecurityRoles.ascx.resx" />
+    <Content Include="App_LocalResources\SharedResources.resx" />
+    <Content Include="App_LocalResources\User.ascx.resx" />
+    <Content Include="App_LocalResources\Users.ascx.resx" />
+    <Content Include="App_LocalResources\UserSettings.ascx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\ThingVoteGlobal.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Framework\SocialPolls.Model\SocialPolls.Model.csproj">
+      <Project>{407fc060-2fad-4e5d-9f18-9f8d020fe390}</Project>
+      <Name>SocialPolls.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Framework\SocialVotes.Models\SocialVotes.Models.csproj">
+      <Project>{fcf2896e-10ea-425a-a003-858ebd0d5683}</Project>
+      <Name>SocialVotes.Models</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://local.thv.aspvia.com/desktopmodules/SocialPolls</IISUrl>
+          <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
+          <IISAppRootUrl>http://local.thv.aspvia.com/</IISAppRootUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup>
+    <Extension>zip</Extension>
+    <DNNFileName>SocialPolls</DNNFileName>
+    <PackageName>SocialPolls</PackageName>
+    <MSBuildCommunityTasksPath>$(SolutionDir)\Build</MSBuildCommunityTasksPath>
+  </PropertyGroup>
+  <Import Project="BuildScripts\ModulePackage.Targets" />
+  <Target Name="AfterBuild" DependsOnTargets="PackageModule">
+  </Target>
+</Project>

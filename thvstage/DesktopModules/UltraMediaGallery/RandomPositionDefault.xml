@@ -1,0 +1,8 @@
+	<gallery 
+		fullscreen_button="true"
+		tween_duration="0.5"
+		thumbnail_border_size="5"
+		thumbnail_border_color="FFFFFF"
+		photo_border_size="5"
+		photo_border_color="FFFFFF">
+	</gallery>

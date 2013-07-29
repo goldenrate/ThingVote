@@ -1,0 +1,174 @@
+</div>
+</div>
+
+</td>
+<td><a class="nextPage" href="javascript:void(0);"><img src="[CURRENTFOLDER]whitetriangle2.png" border="0" /></a>
+</td>
+</tr>
+</table>
+
+<script>
+var manuallyReach = true;
+var items;
+var imgIndex = -1;
+
+jQuery(document).ready(function(){ 
+	jQuery("div.scrollable").scrollable({globalNav:true, keyboard:false});//.autoscroll({autoplay: true,api: true });;
+
+	initscrollable();
+});
+
+function initscrollable() {
+
+	items = jQuery(".items img");
+
+	for (var i=0;i<items.length;i++)
+	{
+		jQuery(items[i]).fadeTo(500,.4);
+	}
+
+	jQuery(".items img").click(function() {
+
+		if (manuallyReach)
+		{
+			if (autoPlayHandler)
+			{
+				window.clearInterval(autoPlayHandler);
+				autoPlayHandler = undefined;
+			}
+		}
+
+		var newIndex = getNodeIndex(this);
+		if (newIndex == imgIndex) return;
+
+		if (imgIndex >= 0)
+		{
+			//reset the opacity of the previous item.
+			jQuery(items[imgIndex]).fadeTo(500, .4);
+		}
+
+		imgIndex = newIndex;
+
+		imgIndex>0?jQuery(".prevImg").show():jQuery(".prevImg").hide();
+		imgIndex<items.length-1?jQuery(".nextImg").show():jQuery(".nextImg").hide();
+
+		// calclulate large image's URL based on the thumbnail URL (flickr specific)
+		var url = jQuery(this).attr("largeSrc");
+
+
+		// get handle to element that wraps the image and make it semitransparent
+		var wrap = jQuery("#image_wrap").fadeTo("medium", 0.5);
+
+		// the large image from flickr
+		var img = new Image();
+
+		// call this function after it's loaded
+		img.onload = function() {
+			var maxWidth = 600;
+			var maxHeight = 400;
+
+			// make wrapper fully visible
+			wrap.fadeTo("fast", 1);
+
+			// change the image
+			var imgContainer = wrap.find("img");
+			if (this.width > maxWidth || this.height > maxHeight )
+			{
+				var xRatio = this.width / maxWidth;
+				var yRatio = this.height / maxHeight;
+				var ratio = Math.max(xRatio, yRatio);
+				var newWidth = Math.round(this.width / ratio);
+				var newHeight = Math.round(this.height / ratio);
+				imgContainer.attr("width", newWidth);
+				imgContainer.attr("height", newHeight);
+			}
+			imgContainer.attr("src", url);
+		};
+
+		// begin loading the image from flickr
+		img.src = url;
+
+		jQuery("#image_title").html( jQuery(this).attr("title") + "</p><p>"+jQuery(this).attr("Description")+"</p>");
+		jQuery(this).fadeTo(500, 1);
+
+		manuallyReach = true;
+
+	}).filter(":first").click();
+
+	jQuery(".items img").hover(function() {
+		jQuery(this).fadeTo(500, 1);
+	});
+
+	jQuery(".items img").mouseout(function() {
+		if (imgIndex == getNodeIndex(this))
+		{
+			return;
+		}
+		jQuery(this).fadeTo(500, .4);
+	});
+
+	var autoPlayHandler = window.setInterval("auto_play()", 5000);
+
+
+
+
+	var keyId = "keydown." + Math.random().toString().substring(10); 
+	jQuery(document).unbind(keyId).bind(keyId, function(evt)
+	{
+		if (evt.altKey || evt.ctrlKey) { return; }
+											
+		if (evt.keyCode == 37)
+		{
+			var items = jQuery(".items img");
+			if (imgIndex > 0 ) jQuery(items[imgIndex - 1]).click();
+		}
+		else if(evt.keyCode == 39)
+		{
+			var items = jQuery(".items img");
+			if (imgIndex < items.length -1 ) jQuery(items[imgIndex + 1]).click();
+		}
+		return true;					
+	});
+}
+
+
+jQuery(".prevImg").click(function() {
+	jQuery(jQuery(".items img")[imgIndex - 1]).click();
+});
+
+jQuery(".nextImg").click(function() {
+	jQuery(jQuery(".items img")[imgIndex + 1]).click();
+});
+
+function auto_play()
+{
+	var items = jQuery(".items img");
+	if (imgIndex < items.length -1 )
+	{
+		manuallyReach = false;
+		jQuery(items[imgIndex + 1]).click();
+	}
+}
+function viewLarge()
+{
+	if (imgIndex < 0)
+		return;
+	
+	var item = jQuery(jQuery(".items img")[imgIndex]);
+	var url = item.attr("largeSrc");
+	var title = item.attr("title");
+	tb_show(title, url);
+}
+
+function getNodeIndex(node)
+{
+	var elem = node;
+	var k = 0; 
+	while(elem.previousSibling){ 
+		k++; 
+		elem = elem.previousSibling; 
+	} 
+	return k;
+}
+
+</script>

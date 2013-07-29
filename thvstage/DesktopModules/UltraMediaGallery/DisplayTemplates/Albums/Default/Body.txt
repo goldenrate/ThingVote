@@ -1,0 +1,6 @@
+<tr>
+ <td class='Normal' align='center'><a href='[LINK]' title='[AUTHOR] / [CREATEDDATE]'>[LOGO]</a></td>
+ <td class='Normal'><a href='[LINK]' class='SubSubHead'>[TITLE]</a>
+  <br>
+  <I>[DESCRIPTION:50]</I></td>
+</tr>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>1.3</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+
+	<data name="Sunday.Text">
+		<value>Sun</value>
+	</data>
+	<data name="Monday.Text">
+		<value>Mon</value>
+	</data>
+	<data name="Tuesday.Text">
+		<value>Tue</value>
+	</data>
+	<data name="Wednesday.Text">
+		<value>Wed</value>
+	</data>
+	<data name="Thursday.Text">
+		<value>Thu</value>
+	</data>
+	<data name="Friday.Text">
+		<value>Fri</value>
+	</data>
+	<data name="Saturday.Text">
+		<value>Sat</value>
+	</data>
+	<data name="XPhotos.Text">
+		<value>&lt;div align=center class=Normal&gt;
+&lt;font class=Head&gt;[DAY]&lt;/font&gt;
+
+&lt;a href='[DAYLINK]'&gt;
+&lt;br&gt;&lt;img src='[FIRSTPHOTO_THUMBNAILURL]' style="border:1px solid #000000"&gt;
+&lt;br&gt;
+[X] photos
+&lt;/a&gt;
+&lt;/div&gt;</value>
+	</data>
+	<data name="NoPhotos.Text">
+		<value>&lt;div align=center class=Normal&gt;
+&lt;font class=Head&gt;[DAY]&lt;/font&gt;
+&lt;/div&gt;</value>
+	</data>
+	<data name="XPhotos_OtherMonth.Text">
+		<value>&lt;div align=center class=Normal&gt;
+&lt;font class=Head&gt;&lt;font color='#999999'&gt;[DAY]&lt;/font&gt;&lt;/font&gt;
+
+&lt;a href='[DAYLINK]'&gt;
+&lt;br&gt;&lt;img src='[FIRSTPHOTO_THUMBNAILURL]' style="border:1px solid #000000"&gt;
+&lt;br&gt;
+&lt;font color='#999999'&gt;[X] photos&lt;/font&gt;
+&lt;/a&gt;
+&lt;/div&gt;</value>
+	</data>
+	<data name="NoPhotos_OtherMonth.Text">
+		<value>&lt;div align=center class=Normal&gt;
+&lt;font class=Head&gt;&lt;font color='#aaaaaa'&gt;[DAY]&lt;/font&gt;&lt;/font&gt;
+&lt;/div&gt;</value>
+	</data>
+	<data name="MonthHeader.Text">
+		<value>&lt;a href='[MONTHLINK]'&gt;[MONTH] [YEAR]&lt;/a&gt;</value>
+	</data>
+	<data name="WeekHeader.Text">
+		<value>&lt;a href='[WEEKLINK]'&gt;&lt;font color="black" face="Arial"&gt;&lt;font style="FONT-SIZE:20px"&gt;[WEEKOFYEAR]&lt;sup&gt;th&lt;/sup&gt;&lt;/font&gt;&lt;br&gt;
+		&lt;font style="FONT-SIZE:14px"&gt;week&lt;/font&gt;&lt;/font&gt;&lt;/a&gt;</value>
+	</data>
+</root>

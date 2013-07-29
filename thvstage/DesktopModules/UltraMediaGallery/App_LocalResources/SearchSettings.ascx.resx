@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>1.3</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+
+	<data name="ControlTitle_modulesettings.Text">
+		<value>Module Settings</value>
+	</data>
+	<data name="plSearchMode.Text">
+		<value>Search Mode</value>
+	</data>
+	<data name="plSearchMode.Help">
+		<value>When work in Word mode, UMG requires the keyword to exactly match a word in media title and description; when work in String mode, UMG returns medias partially match the keyword.</value>
+	</data>
+	<data name="plSearchInGallery.Text">
+		<value>Search in Gallery</value>
+	</data>
+	<data name="plSearchInGallery.Help">
+		<value>Search medias in specific gallery or all galleries</value>
+	</data>
+	<data name="plResultsMode.Text">
+		<value>Show Results in</value>
+	</data>
+	<data name="plResultsMode.Help">
+		<value>When choose lightbox, users can enlarge a thumbnail to see it in lightbox window; or you can choose to see it in the chosen presentation of the source gallery, this feature is only available for most flash presentations.</value>
+	</data>
+	<data name="Lightbox.Text">
+		<value>Lightbox window</value>
+	</data>
+	<data name="ChosenPresentation.Text">
+		<value>Chosen presentation</value>
+	</data>
+	<data name="AllModules.Text">
+		<value>All galleries</value>
+	</data>
+	<data name="Word.Text">
+		<value>Word</value>
+	</data>
+	<data name="String.Text">
+		<value>String</value>
+	</data>
+</root>

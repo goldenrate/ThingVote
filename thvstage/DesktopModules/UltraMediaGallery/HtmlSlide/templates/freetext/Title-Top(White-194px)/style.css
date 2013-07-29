@@ -1,0 +1,152 @@
+	#umg_container[MODULEID]
+	{
+		background-color:#fff;
+		color:#[TEXTCOLOR];
+		width: [GALLERYWIDTH]px; 
+		height: [GALLERYHEIGHT]px;
+		font-size:[TEXTSIZE]px;
+		position:relative;
+		overflow:hidden;
+	}
+
+	#umg_largelist[MODULEID]
+	{
+		z-index:10;
+		width:MATH[[GALLERYWIDTH]-2]px !important;
+		width:100%;
+		height:MATH[[GALLERYHEIGHT]-32]px !important;
+		height:MATH[[GALLERYHEIGHT]-30]px;
+		top:30px;
+		position:absolute;
+		overflow:hidden;
+		border-left:1px solid #999;
+		border-right:1px solid #999;
+		border-bottom:1px solid #999;
+	}
+
+	#umg_large[MODULEID]
+	{
+		width:100%;
+		height:100%;
+	}
+
+	#umg_large[MODULEID] .freetext
+	{
+		padding:30px;
+		width:MATH[[GALLERYWIDTH]-2-60]px !important;
+		width:100%;
+	}
+
+	#umg_caption[MODULEID]
+	{
+		display:none;
+	}
+
+	#umg_xofy[MODULEID]
+	{
+		display:none;
+	}
+
+	#umg_more[MODULEID]
+	{
+		display:none;
+	}
+
+	#umg_buttons[MODULEID]
+	{
+		/*display:none*/;
+	}
+
+	#umg_prev[MODULEID]
+	{
+		z-index:11;
+		position:absolute;
+		width:22px;
+		height:22px;
+		left:10px;
+		top:MATH[[GALLERYHEIGHT]-22-10]px;
+		background-image:url('[CURRENTPATH]previous.png');
+	}
+
+	#umg_next[MODULEID]
+	{
+		z-index:12;
+		position:absolute;
+		width:22px;
+		height:22px;
+		left:MATH[[GALLERYWIDTH]-22-10]px;
+		top:MATH[[GALLERYHEIGHT]-22-10]px;
+		background-image:url('[CURRENTPATH]next.png');
+	}
+
+	#umg_next[MODULEID]:hover
+	{
+	}
+
+	#umg_play[MODULEID]
+	{
+		display:none;
+	}
+
+	#umg_countdown[MODULEID]
+	{
+		display:none;
+	}
+
+	#umg_loading[MODULEID]
+	{
+		display:none;
+	}
+	
+	/* position and dimensions of the navigator */
+	#umg_navi[MODULEID] {
+		display:none;
+	}
+
+#umg_thumbslist[MODULEID]
+{
+	z-index:13;
+	position:absolute;
+	width:10000px;
+	height:30px;
+	height:25px;
+	background-color:#fff;     
+}
+
+#umg_thumbs[MODULEID]
+{
+		position:absolute;
+}
+
+#umg_thumbslist[MODULEID] a
+{
+	float:left;
+	width: 194px;
+	height:30px;
+	line-height:30px;
+	background-image:url('[CURRENTPATH]tabs.png');
+	background-position:0 0;     
+	color:#000;
+	font-size:120%;
+	text-align:center;
+}
+
+
+#umg_thumbslist[MODULEID] a:hover
+{
+	background-position:0 -31px;   
+	color:#fff;
+}
+
+#umg_thumbslist[MODULEID] a.active, #umg_thumbslist[MODULEID] a.active:visited, #umg_thumbslist[MODULEID] a.active:hover
+{
+	background-position:0 -62px;   
+	color:#000;
+}
+
+#umg_thumbslist[MODULEID] .umg_page_last
+{
+	height:29px !important;
+	height:30px;
+	border-bottom:1px solid #999;
+}

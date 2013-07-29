@@ -1,0 +1,87 @@
+if not exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}DataSprings_DynamicLogin_FacebookWallPosts]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+	CREATE TABLE {databaseOwner}[{objectQualifier}DataSprings_DynamicLogin_FacebookWallPosts] (
+		[FacebookWallPostID]  uniqueidentifier ROWGUIDCOL  NOT NULL CONSTRAINT [DF_DataSprings_DynamicLogin_FacebookWallPostID]         DEFAULT (newid()),
+                [FacebookUserID] [bigint] NOT NULL  DEFAULT (0),
+                [ModuleID] [int] NOT NULL  DEFAULT (0),
+		[PortalID] [int] NOT NULL DEFAULT (0),
+                [IPAddress] [nvarchar] (200)  NULL DEFAULT (''),
+		[PostDateTime] [DateTime] NULL,
+		CONSTRAINT [PK_DataSprings_FacebookWallPost] PRIMARY KEY  CLUSTERED 
+		(
+			[FacebookWallPostID]
+		)  ON [PRIMARY] 
+	) ON [PRIMARY]
+	GO
+
+
+
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}{objectQualifier}DataSprings_DynamicLogin_AddUpdateFacebookWallPost') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_AddUpdateFacebookWallPost
+GO
+
+
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}{objectQualifier}DataSprings_DynamicLogin_GetDaysFromLastFacebookWallPostUserID') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_GetDaysFromLastFacebookWallPostUserID
+GO
+
+
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}{objectQualifier}DataSprings_DynamicLogin_GetLastFacebookWallPostUserID') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_GetLastFacebookWallPostUserID
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_AddUpdateFacebookWallPost
+	@FacebookUserID bigint,
+	@ModuleID int,
+	@PortalID int,
+        @IPAddress nvarchar(200),
+        @PostDateTime datetime
+
+AS
+
+Declare @MyCount  Int
+Set @MyCount = (Select Count(*) from {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_FacebookWallPosts Where @FacebookUserID = FacebookUserID AND ModuleID = @ModuleID)
+
+if @MyCount > 0
+BEGIN
+
+Update  {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_FacebookWallPosts
+Set  PostDateTime = @PostDateTime Where ModuleID = @ModuleID AND FacebookUserID = @FacebookUserID
+
+END
+ELSE
+BEGIN
+
+Insert Into {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_FacebookWallPosts
+(FacebookUserID, ModuleID, PortalID, IPAddress, PostDateTime) Values (@FacebookUserID, @ModuleID, @PortalID, @IPAddress, @PostDateTime)
+
+END
+
+GO
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_GetDaysFromLastFacebookWallPostUserID
+	@FacebookUserID bigint,
+	@ModuleID int
+
+AS
+
+Select (DATEDIFF(DAY,GetDate(),MAX(PostDateTime)) * -1) AS NumberOfDaysSinceLastPost From  {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_FacebookWallPosts 
+Where FaceBookUserID = @FaceBookUserID and ModuleID = @ModuleID
+
+GO
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_GetLastFacebookWallPostUserID
+	@FacebookUserID bigint,
+	@ModuleID int
+
+AS
+
+Select * from {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_FacebookWallPosts
+Where FacebookUserID = @FacebookUserID and ModuleID = @ModuleID

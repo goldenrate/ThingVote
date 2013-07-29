@@ -1,0 +1,63 @@
+2013-05-23 12:02:33,516 [WIN-SQUVIVLQ4HM][Thread:8][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.NullReferenceException: Object reference not set to an instance of an object.
+   at System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   at DotNetNuke.Entities.Users.UserInfo.get_Social()
+   at DotNetNuke.Entities.Users.UserInfo.get_Roles()
+   at DotNetNuke.Entities.Users.UserInfo.IsInRole(String role)
+   at DotNetNuke.HttpModules.Membership.MembershipModule.AuthenticateRequest(HttpContextBase context, Boolean allowUnknownExtensinons)
+   at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-23 12:02:33,516 [WIN-SQUVIVLQ4HM][Thread:14][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.NullReferenceException: Object reference not set to an instance of an object.
+   at System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   at DotNetNuke.Entities.Users.UserInfo.get_Social()
+   at DotNetNuke.Entities.Users.UserInfo.get_Roles()
+   at DotNetNuke.Entities.Users.UserInfo.IsInRole(String role)
+   at DotNetNuke.HttpModules.Membership.MembershipModule.AuthenticateRequest(HttpContextBase context, Boolean allowUnknownExtensinons)
+   at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-23 12:30:51,851 [WIN-SQUVIVLQ4HM][Thread:62][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Entities.Users.UserController.ValidatePassword(String password)
+   at DotNetNuke.Entities.Users.UserController.ChangePassword(UserInfo user, String oldPassword, String newPassword)
+   at ASPvia.SocialVotes.DataServices.Controller.PollMemberController.UpdateAccount(AccountDTO account)
+2013-05-23 12:32:41,360 [WIN-SQUVIVLQ4HM][Thread:53][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Entities.Users.UserController.ValidatePassword(String password)
+   at DotNetNuke.Entities.Users.UserController.ChangePassword(UserInfo user, String oldPassword, String newPassword)
+   at ASPvia.SocialVotes.DataServices.Controller.PollMemberController.UpdateAccount(AccountDTO account)
+2013-05-23 12:34:17,214 [WIN-SQUVIVLQ4HM][Thread:33][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Entities.Users.UserController.ValidatePassword(String password)
+   at DotNetNuke.Entities.Users.UserController.ChangePassword(UserInfo user, String oldPassword, String newPassword)
+   at ASPvia.SocialVotes.DataServices.Controller.PollMemberController.UpdateAccount(AccountDTO account)
+2013-05-23 12:35:43,418 [WIN-SQUVIVLQ4HM][Thread:50][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Entities.Users.UserController.ValidatePassword(String password)
+   at DotNetNuke.Entities.Users.UserController.ChangePassword(UserInfo user, String oldPassword, String newPassword)
+   at ASPvia.SocialVotes.DataServices.Controller.PollMemberController.UpdateAccount(AccountDTO account)
+2013-05-23 12:36:01,492 [WIN-SQUVIVLQ4HM][Thread:50][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Entities.Users.UserController.ValidatePassword(String password)
+   at DotNetNuke.Entities.Users.UserController.ChangePassword(UserInfo user, String oldPassword, String newPassword)
+   at ASPvia.SocialVotes.DataServices.Controller.PollMemberController.UpdateAccount(AccountDTO account)
+2013-05-23 12:36:18,036 [WIN-SQUVIVLQ4HM][Thread:46][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Entities.Users.UserController.ValidatePassword(String password)
+   at DotNetNuke.Entities.Users.UserController.ChangePassword(UserInfo user, String oldPassword, String newPassword)
+   at ASPvia.SocialVotes.DataServices.Controller.PollMemberController.UpdateAccount(AccountDTO account)
+2013-05-23 12:45:30,041 [WIN-SQUVIVLQ4HM][Thread:46][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Entities.Users.UserController.ValidatePassword(String password)
+   at DotNetNuke.Entities.Users.UserController.ChangePassword(UserInfo user, String oldPassword, String newPassword)
+   at ASPvia.SocialVotes.DataServices.Controller.PollMemberController.UpdateAccount(AccountDTO account)
+2013-05-23 12:47:00,224 [WIN-SQUVIVLQ4HM][Thread:65][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Entities.Users.UserController.ValidatePassword(String password)
+   at DotNetNuke.Entities.Users.UserController.ChangePassword(UserInfo user, String oldPassword, String newPassword)
+   at ASPvia.SocialVotes.DataServices.Controller.PollMemberController.UpdateAccount(AccountDTO account)
+2013-05-23 12:50:06,358 [WIN-SQUVIVLQ4HM][Thread:7][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Entities.Users.UserController.ValidatePassword(String password)
+   at DotNetNuke.Entities.Users.UserController.ChangePassword(UserInfo user, String oldPassword, String newPassword)
+   at ASPvia.SocialVotes.DataServices.Controller.PollMemberController.UpdateAccount(AccountDTO account)
+2013-05-23 12:58:00,171 [WIN-SQUVIVLQ4HM][Thread:103][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Entities.Users.UserController.ValidatePassword(String password)
+   at DotNetNuke.Entities.Users.UserController.ChangePassword(UserInfo user, String oldPassword, String newPassword)
+   at ASPvia.SocialVotes.DataServices.Controller.PollMemberController.UpdateAccount(AccountDTO account)
+2013-05-23 13:22:38,332 [WIN-SQUVIVLQ4HM][Thread:9][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.NullReferenceException: Object reference not set to an instance of an object.
+   at System.Web.Http.WebHost.HttpControllerHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.OnAsyncHandlerCompletion(IAsyncResult ar)
+2013-05-23 13:32:52,675 [WIN-SQUVIVLQ4HM][Thread:40][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Entities.Users.UserController.ValidatePassword(String password)
+   at DotNetNuke.Entities.Users.UserController.ChangePassword(UserInfo user, String oldPassword, String newPassword)
+   at ASPvia.SocialVotes.DataServices.Controller.PollMemberController.UpdateAccount(AccountDTO account)

@@ -1,0 +1,1 @@
+<%@ Page Language="vb" AutoEventWireup="false" Codebehind="jUpload.aspx.vb" Inherits="BizModules.UltraPhotoGallery.jUpload" %>

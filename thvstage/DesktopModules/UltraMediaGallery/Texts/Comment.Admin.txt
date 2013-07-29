@@ -1,0 +1,19 @@
+<table width="100%" cellspacing="3" cellpadding="0" class="Normal">
+    <tr>
+        <td rowspan="3" width="50">
+            <div class="UVGAvatar" style="margin:3px;">
+                [AVATAR:50]</div>
+        </td>
+        <td class="verticalMiddle">
+            [DELETE] <a href='mailto:[EMAIL]'><font class="UMGKeyword">[AUTHOR]</font></a> <font class="SubSubHead">says:</font>
+        </td>
+    </tr>
+    <tr>
+        <td id='UVGComment_[ITEMID]' class="Normal">
+            [COMMENT]</td>
+    </tr>
+    <tr>
+        <td>
+            <font color="#555555">[CREATEDDATE]</font> (<a href='javascript:quoteComment("UVGComment_[ITEMID]", "[AUTHOR]")'><font class="UMGKeyword">Reply</font></a>)</td>
+    </tr>	
+</table>

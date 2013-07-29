@@ -1,0 +1,1 @@
+<%@ Page Language="vb" AutoEventWireup="false" Codebehind="EmailAFriend.aspx.vb" Inherits="BizModules.UltraPhotoGallery.EmailAFriend" %>

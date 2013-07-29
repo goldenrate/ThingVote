@@ -1,0 +1,447 @@
+/* ================================
+    CSS STYLES FOR Module UltraPhotoGallery
+   ================================
+*/
+.UMGViewer
+{
+	text-align:center;
+}
+
+.UMGViewer > div
+{
+	margin:auto;
+}
+
+
+.Money
+{
+	color:Red;
+	text-align:right;
+}
+
+.CartItem_Header
+{
+    border-bottom:1px solid #000000;
+    font-family: Tahoma, Arial, Helvetica;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.CartItem_Footer
+{
+    border-top:1px solid #000000;
+    font-family: Tahoma, Arial, Helvetica;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.CartItem_Normal
+{
+    font-family: Tahoma, Arial, Helvetica;
+    font-size: 11px;
+    font-weight: normal;
+}
+
+.CartItem_Alternating
+{
+    background-color:#EEEEEE;
+    color: #222222;
+    font-family: Tahoma, Arial, Helvetica;
+    font-size: 11px;
+    font-weight: normal;
+}
+
+.CartItem_ItemHeader
+{
+	text-decoration:underline;
+	font-weight:bold;
+    font-size: 12px;
+	height:20px;
+}
+
+.ItemHeader
+{
+	height:20px;
+	background-color:#EEEEEE;
+}
+
+.DaysWithoutPhoto
+{
+	vertical-align:top;
+	height:70px;
+}
+
+.DaysWithPhoto
+{
+	vertical-align:top;
+}
+
+.OtherMonthDays
+{
+}
+
+.Today
+{
+	border: 1px solid #CCCCCC;
+	vertical-align:top;
+}
+
+.Weekday
+{
+	border-bottom: 1px solid black;
+}
+
+.AlternativeWeekClass
+{
+	background-color:#EEEEEE;
+}
+
+.WeekHeader
+{
+	vertical-align:top;
+}
+
+.MonthHeader
+{
+    font-family: Tahoma, Arial, Helvetica;
+    font-size:  14px;
+    font-weight:    normal;
+    color: #333333;
+}
+
+.Script
+{
+    font-family: Tahoma, Arial, Helvetica;
+	font-size:10px;
+	color:#FF0000;
+}
+
+.Script2
+{
+	font-size:11px;
+	color:#555555;
+}
+
+.UMGKeyword
+{
+	text-decoration:underline;
+}
+
+.UMGKeyword A:link
+{
+	text-decoration:underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================================
+    CSS For Paging Control
+   ================================
+*/
+.PagerDisabled
+{
+	color:#000000;
+	border:1px solid #888888;
+	padding-left:5px;
+	padding-right:5px;
+	padding-top:2px;
+	padding-bottom:2px;
+	line-height:26px;
+	background-color:#CCCCCC;
+}
+
+.Pager TD A:Link,.Pager TD A:visited
+{
+	color:#000000;
+	border:1px solid #CCCCCC;
+	padding-left:5px;
+	padding-right:5px;
+	padding-top:2px;
+	padding-bottom:2px;
+	line-height:26px;
+	margin:2px;
+}
+
+.Pager TD A:Hover
+{
+	color:#000000;
+	border:1px solid #CCCCCC;
+	padding-left:5px;
+	padding-right:5px;
+	padding-top:2px;
+	padding-bottom:2px;
+	line-height:26px;
+	background-color:#EAEAEA;
+}
+
+
+
+
+
+.verticalMiddle *
+{
+	vertical-align:middle;
+}
+
+.UMGButtonBar
+{
+	background-color:#F5F5F5;
+	border:1px solid #C2D1DF;
+	height:30px;
+}
+
+.SectionHeader
+{
+	background-color:#F5F5F5;
+	border-bottom:1px solid #CCCCCC;
+	height:28px;
+	padding-left:5px;
+}
+
+.SectionFooter
+{
+	border-top:1px solid #D6D6D6;
+	height:25px;
+}
+
+.UMGMenuActive
+{
+	padding:5px;
+	background-color:#CCCCCC;
+}
+
+.UMGMenuBody
+{
+	padding:5px;
+	border:1px solid #CCCCCC;
+	line-height: 150%;
+	background: url('images/semiwhite.png');
+}
+
+.ComboWithoutBorder
+{
+	background-color: #F6F6F6;
+}
+
+.ComboWithoutBorderOuter
+{
+	margin: -2px
+}
+
+
+
+
+.UVGQuote
+{
+	border:1px solid #DDDDDD;
+	background-color:#F6F6F6;
+	padding:2px;
+	margin:3px;
+}
+
+.UVGAvatar
+{
+	border:3px solid #F4F4F4;
+}
+
+.UVGCommentFooter
+{
+	background-color:#F4F4F4;
+	height:20px;
+}
+
+.TagCloudLevel1
+{
+	color:#E71A1A;
+	font-size:200%;
+}
+.TagCloudLevel2
+{
+	color:#0063DC;
+	font-size:160%;
+}
+.TagCloudLevel3
+{
+	color:#333333;
+	font-size:125%;
+}
+.TagCloudLevel4
+{
+	color:#666666;
+}
+
+
+
+.UMGSection
+{
+	border: 1px solid #CCCCCC;
+}
+
+.Group1
+{
+	width:278px !important;
+	width:300px;
+	border: 1px solid #CCCCCC; 
+	padding: 10px;
+}
+
+.Group1 ol
+{
+	margin-left:20px;
+}
+
+.Group2
+{
+	width:280px !important;
+	width:300px;
+	height:130px;
+	background-image: url('images/group2.png');
+	background-repeat: no-repeat;
+	text-align: left; 
+	padding: 10px;
+}
+
+.Group3
+{
+	text-align: left; 
+	border: 1px solid #CCCCCC; 
+	padding: 10px;
+	width:540px;
+}
+
+.Group3 ol
+{
+	margin-left:20px;
+}
+
+.Tag
+{
+	border: 1px solid #AAAAAA; 
+	padding:1px;
+	margin-right:5px;
+	display:inline-block;
+	margin-bottom:1px;
+}
+
+table
+{
+	text-align:left;
+}
+
+.MenuActive span
+{
+	font-weight:bold;
+	color:#333333;
+}
+
+.header
+{
+	width:150px;
+	height:30px;
+}
+
+.header2
+{
+	width:110px;
+	height:30px;
+}
+
+.watermark {
+	color: #999 !important;
+	font-style: italic !important;
+}
+
+.separator
+{
+	background: url('images/semiwhite.png');
+}
+
+.fbtitle
+{
+	background-color:#eee;
+	border-top:1px solid #ddd;
+	font-size:11px;
+	font-weight:bold;
+	margin-top:5px;
+	margin-bottom:5px;
+	padding-left:5px;
+}
+
+.fbalbum .logo
+{
+	width:130px;
+	padding:3px;
+	text-align:center;
+	border:1px solid #ccc;
+}
+
+.fbalbum .logo a
+{
+	width:100%;
+	background-color:#ccc;
+}
+
+.fbalbum .title
+{
+	text-align:left;
+	font-weight:bold;
+	color:#3B5998;
+}
+
+.fbalbum .script
+{
+	text-align:left;
+	color:#999;
+}
+
+/*overrides this style in jquery-ui-1.8.6.custom.css*/
+.ui-menu .ui-menu-item
+{
+	list-style:none;
+}
+
+.linkcontrol >table
+{
+	margin-top:-16px;
+	margin-bottom:-30px;
+}
+
+.linkcontrol span, .linkcontrol label, .linkcontrol input
+{
+	font-weight:Normal;
+    font-family: Tahoma, Arial, Helvetica;
+    font-size: 11px;
+}
+
+.linkcontrol tr, .linkcontrol td
+{
+	line-height:16px;
+}
+
+
+
+
+
+
+
+
+
+
+.warning
+{
+	text-align:left;
+	display:block;
+	padding:5px 10px 5px 35px;
+	margin-bottom:5px;
+	background:#feffce url(images/yellow-warning_16px.gif) no-repeat 10px center;border:2px #cdb21f solid;color:#41370C;text-shadow:0px 1px 1px #fff;
+}

@@ -1,0 +1,2268 @@
+﻿--****************************
+--******** UMG TABLES ********
+--****************************
+
+CREATE TABLE {databaseOwner}{objectQualifier}BizModules_UPG_Album(
+	ItemId int IDENTITY(1,1) NOT NULL,
+	PortalId int NOT NULL,
+	Title nvarchar(100) NULL,
+	Description nvarchar(1000) NULL,
+	Audio nvarchar(200) NULL,
+	AudioCaption nvarchar(100) NULL,
+	Logo nvarchar(200) NULL,
+	TnWidth int NOT NULL,
+	TnHeight int NOT NULL,
+	CreatedDate smalldatetime NOT NULL,
+	LastModifiedDate smalldatetime NULL,
+	CreatedByUser int NOT NULL,
+	SortOrder int NULL,
+	ComposeRoles varchar(500) NULL,
+	ModerationRoles varchar(500) NULL,
+	MaxPhotoWidth int NULL,
+	MaxPhotoHeight int NULL,
+	Owner int NULL,
+	ParentId int NULL,
+	NeedApproval bit NULL,
+	ViewRoles nvarchar(500) NULL,
+	RssUrl nvarchar(1000) NULL,
+	ApprovalRoles nvarchar(500) NULL,
+	AWS_Bucket nvarchar(50) NULL,
+	AWS_AudioKey nvarchar(100) NULL,
+	AWS_LogoKey nvarchar(100) NULL,
+	ServerPath nvarchar(200) NULL,
+	SubAlbums int NULL,
+	Photos int NULL,
+	ManagedFolder bit NULL,
+ CONSTRAINT PK_BizModules_UPG_Album PRIMARY KEY CLUSTERED 
+(
+	ItemId ASC
+)
+)
+
+GO
+
+
+
+CREATE TABLE {databaseOwner}{objectQualifier}BizModules_UPG_AlbumModule(
+	ItemId int IDENTITY(1,1) NOT NULL,
+	AlbumId int NOT NULL,
+	ModuleId int NOT NULL,
+ CONSTRAINT PK_BizModules_UPG_AlbumModule PRIMARY KEY CLUSTERED 
+(
+	ItemId ASC
+)
+)
+
+GO
+
+
+CREATE TABLE {databaseOwner}{objectQualifier}BizModules_UPG_CartItem(
+	ItemId int IDENTITY(1,1) NOT NULL,
+	PortalId int NOT NULL,
+	UserId int NOT NULL,
+	PhotoId int NOT NULL,
+	DownloadId int NOT NULL,
+	Tn nvarchar(200) NOT NULL,
+	Title nvarchar(150) NULL,
+	Description nvarchar(1000) NULL,
+	CreatedDate datetime NULL
+)
+
+GO
+
+
+CREATE TABLE {databaseOwner}{objectQualifier}BizModules_UPG_Comment(
+	ItemId int IDENTITY(1,1) NOT NULL,
+	PhotoId int NOT NULL,
+	UserId int NULL,
+	UserIP varchar(15) COLLATE Latin1_General_CI_AS NULL,
+	UserFullName nvarchar(50) COLLATE Latin1_General_CI_AS NOT NULL,
+	Comment nvarchar(1000) COLLATE Latin1_General_CI_AS NOT NULL,
+	Email varchar(50) COLLATE Latin1_General_CI_AS NOT NULL,
+	CreatedDate datetime NOT NULL,
+ CONSTRAINT PK_UPG_Comment PRIMARY KEY CLUSTERED 
+(
+	ItemId ASC
+)
+)
+
+GO
+
+
+CREATE TABLE {databaseOwner}{objectQualifier}BizModules_UPG_Invoice(
+	ItemId int IDENTITY(1,1) NOT NULL,
+	PortalId int NOT NULL,
+	UserId int NOT NULL,
+	Currency varchar(50) NULL,
+	CreatedDate datetime NOT NULL,
+	PaymentDate datetime NULL,
+	PaidAmount money NULL,
+	TransactionDetail nvarchar(2000) NULL,
+	Finished bit NOT NULL,
+ CONSTRAINT PK_BizModules_UPG_Invoice PRIMARY KEY CLUSTERED 
+(
+	ItemId ASC
+)
+)
+
+GO
+
+
+CREATE TABLE {databaseOwner}{objectQualifier}BizModules_UPG_InvoiceItem(
+	ItemId int IDENTITY(1,1) NOT NULL,
+	InvoiceId int NOT NULL,
+	PhotoId int NOT NULL,
+	DownloadId int NOT NULL,
+	Price money NOT NULL,
+	DownloadTimes int NOT NULL
+)
+
+GO
+
+
+CREATE TABLE {databaseOwner}{objectQualifier}BizModules_UPG_Photo(
+	ItemId int IDENTITY(1,1) NOT NULL,
+	AlbumId int NOT NULL,
+	Title nvarchar(150) NULL,
+	Description ntext NULL,
+	Link nvarchar(150) NULL,
+	Src nvarchar(200) NULL,
+	Approved bit NOT NULL,
+	CreatedByUser int NOT NULL,
+	CreatedDate smalldatetime NOT NULL,
+	LastModifiedDate smalldatetime NULL,
+	SortOrder int NULL,
+	TnWidth int NULL,
+	TnHeight int NULL,
+	TakenDate smalldatetime NULL,
+	AWS_Bucket nvarchar(50) NULL,
+	AWS_PhotoKey nvarchar(100) NULL,
+	AWS_ThumbKey nvarchar(100) NULL,
+	TnSrc nvarchar(200) NULL,
+	GPSLatitude decimal(10, 4) NULL,
+	GPSLongitude decimal(10, 4) NULL,
+	AverageRating decimal(5, 2) NULL,
+	TotalRatings int NULL,
+	MediaType int NOT NULL,
+	MediaWidth int NULL,
+	MediaHeight int NULL,
+	HtmlContent ntext NULL,
+	ResName nvarchar(200) NULL,
+	ResSize int NULL,
+	ResOriginalName nvarchar(100) NULL,
+	ResContentType varchar(50) NULL,
+	ResPrice money NULL,
+	ResCreatedDate datetime NULL,
+	ResDownloads int NULL,
+	AWS_ResKey nvarchar(100) NULL,
+ CONSTRAINT PK_BizModules_UPG_Photo PRIMARY KEY CLUSTERED 
+(
+	ItemId ASC
+)
+)
+
+GO
+
+
+CREATE TABLE {databaseOwner}{objectQualifier}BizModules_UPG_PhotoTag(
+	ItemId int IDENTITY(1,1) NOT NULL,
+	PhotoId int NOT NULL,
+	TagId int NOT NULL
+)
+
+GO
+
+
+CREATE TABLE {databaseOwner}{objectQualifier}BizModules_UPG_Presentation(
+	ItemId int IDENTITY(1,1) NOT NULL,
+	Name varchar(100) NOT NULL,
+	Description varchar(500) NULL,
+	GallerySettingCtl varchar(50) NULL,
+	Type varchar(200) NOT NULL,
+	DefaultWidth int NULL,
+	DefaultHeight int NULL,
+	RestrictPhotoCount bit NULL,
+	AllowFullScreen bit NULL,
+	DisplayCtl varchar(50) NULL,
+	Category varchar(50) NULL,
+ CONSTRAINT PK_BizModules_UPG_Presentation PRIMARY KEY CLUSTERED 
+(
+	ItemId ASC
+)
+)
+
+GO
+
+
+CREATE TABLE {databaseOwner}{objectQualifier}BizModules_UPG_Rating(
+	ItemId int IDENTITY(1,1) NOT NULL,
+	UserId int NULL,
+	UserIP varchar(15) COLLATE Latin1_General_CI_AS NULL,
+	PhotoId int NOT NULL,
+	Rating int NOT NULL,
+ CONSTRAINT PK_BizModules_UPG_Rating PRIMARY KEY CLUSTERED 
+(
+	ItemId ASC
+)
+)
+
+GO
+
+
+CREATE TABLE {databaseOwner}{objectQualifier}BizModules_UPG_Tag(
+	ItemId int IDENTITY(1,1) NOT NULL,
+	ModuleId int NOT NULL,
+	Tag nvarchar(200) NOT NULL,
+	CreatedByUser int NOT NULL,
+	CreatedDate datetime NOT NULL,
+ CONSTRAINT PK_UPG_Tag PRIMARY KEY CLUSTERED 
+(
+	ItemId ASC
+)
+)
+
+GO
+
+
+
+ALTER TABLE {databaseOwner}{objectQualifier}BizModules_UPG_AlbumModule  WITH CHECK ADD  CONSTRAINT FK_BizModules_UPG_AlbumModule_BizModules_UPG_Album FOREIGN KEY(AlbumId)
+REFERENCES {databaseOwner}{objectQualifier}BizModules_UPG_Album (ItemId)
+ON DELETE CASCADE
+GO
+ALTER TABLE {databaseOwner}{objectQualifier}BizModules_UPG_AlbumModule  WITH CHECK ADD  CONSTRAINT FK_BizModules_UPG_AlbumModule_Modules FOREIGN KEY(ModuleId)
+REFERENCES {databaseOwner}{objectQualifier}Modules (ModuleID)
+ON DELETE CASCADE
+GO
+ALTER TABLE {databaseOwner}{objectQualifier}BizModules_UPG_CartItem  WITH CHECK ADD  CONSTRAINT FK_BizModules_UPG_CartItem_BizModules_UPG_Photo FOREIGN KEY(PhotoId)
+REFERENCES {databaseOwner}{objectQualifier}BizModules_UPG_Photo (ItemId)
+ON DELETE CASCADE
+GO
+ALTER TABLE {databaseOwner}{objectQualifier}BizModules_UPG_Comment  WITH CHECK ADD  CONSTRAINT FK_BizModules_UPG_Comment_BizModules_UPG_Photo FOREIGN KEY(PhotoId)
+REFERENCES {databaseOwner}{objectQualifier}BizModules_UPG_Photo (ItemId)
+ON DELETE CASCADE
+GO
+ALTER TABLE {databaseOwner}{objectQualifier}BizModules_UPG_InvoiceItem  WITH CHECK ADD  CONSTRAINT FK_BizModules_UPG_InvoiceItem_BizModules_UPG_Invoice FOREIGN KEY(InvoiceId)
+REFERENCES {databaseOwner}{objectQualifier}BizModules_UPG_Invoice (ItemId)
+ON DELETE CASCADE
+GO
+ALTER TABLE {databaseOwner}{objectQualifier}BizModules_UPG_InvoiceItem  WITH CHECK ADD  CONSTRAINT FK_BizModules_UPG_InvoiceItem_BizModules_UPG_Photo FOREIGN KEY(PhotoId)
+REFERENCES {databaseOwner}{objectQualifier}BizModules_UPG_Photo (ItemId)
+ON DELETE CASCADE
+GO
+ALTER TABLE {databaseOwner}{objectQualifier}BizModules_UPG_Photo  WITH CHECK ADD  CONSTRAINT FK_BizModules_UPG_Photo_BizModules_UPG_Album FOREIGN KEY(AlbumId)
+REFERENCES {databaseOwner}{objectQualifier}BizModules_UPG_Album (ItemId)
+GO
+ALTER TABLE {databaseOwner}{objectQualifier}BizModules_UPG_PhotoTag  WITH CHECK ADD  CONSTRAINT FK_BizModules_UPG_PhotoTag_BizModules_UPG_Photo FOREIGN KEY(PhotoId)
+REFERENCES {databaseOwner}{objectQualifier}BizModules_UPG_Photo (ItemId)
+ON DELETE CASCADE
+GO
+ALTER TABLE {databaseOwner}{objectQualifier}BizModules_UPG_PhotoTag  WITH CHECK ADD  CONSTRAINT FK_BizModules_UPG_PhotoTag_BizModules_UPG_Tag FOREIGN KEY(TagId)
+REFERENCES {databaseOwner}{objectQualifier}BizModules_UPG_Tag (ItemId)
+ON DELETE CASCADE
+GO
+ALTER TABLE {databaseOwner}{objectQualifier}BizModules_UPG_Rating  WITH CHECK ADD  CONSTRAINT FK_BizModules_UPG_Rating_BizModules_UPG_Photo FOREIGN KEY(PhotoId)
+REFERENCES {databaseOwner}{objectQualifier}BizModules_UPG_Photo (ItemId)
+ON DELETE CASCADE
+GO
+
+
+--Create views
+CREATE VIEW {databaseOwner}{objectQualifier}UPG_vw_Album
+AS
+SELECT A.*, M.ModuleId
+FROM  {databaseOwner}{objectQualifier}BizModules_UPG_Album A INNER JOIN
+               {databaseOwner}{objectQualifier}BizModules_UPG_AlbumModule M ON A.ItemId = M.AlbumId
+GO
+
+
+
+
+
+
+
+
+
+
+
+--****************************
+--***** UMG PRESENTATIONS ****
+--****************************
+
+insert {databaseOwner}{objectQualifier}Bizmodules_upg_presentation(Name,Description,GallerySettingCtl,Type,DefaultWidth,DefaultHeight,RestrictPhotoCount,AllowFullScreen,DisplayCtl,Category) values(     'UMG Classic'                                                                                          ,    'The classic and most widely adopted presentation, the flash player fully support all features like album list, rate & comment, email a friend. etc.'                                                                                                            ,    'UMGClassicAppearance'                               ,    'BizModules.UltraPhotoGallery.Presentation.UMGClassic, BizModules.UltraPhotoGallery'                                                                                                                       ,    600          ,    450           ,    NULL               ,    0               ,    'UMGClassic'                                         ,    'FullFlash'                                          )
+GO
+
+insert {databaseOwner}{objectQualifier}Bizmodules_upg_presentation(Name,Description,GallerySettingCtl,Type,DefaultWidth,DefaultHeight,RestrictPhotoCount,AllowFullScreen,DisplayCtl,Category) values(     'Headline'                                                                                             ,    'Display a series of numeric buttons at lower right corner, ideal for headline news, site navigation, quick links, etc. '                                                                                                                                        ,    'HeadlineAppearance'                                 ,    'BizModules.UltraPhotoGallery.Presentation.Headline, BizModules.UltraPhotoGallery'                                                                                                                         ,    320          ,    240           ,    NULL               ,    0               ,    'Headline'                                           ,    'SimpleFlash'                                        )
+GO
+
+insert {databaseOwner}{objectQualifier}Bizmodules_upg_presentation(Name,Description,GallerySettingCtl,Type,DefaultWidth,DefaultHeight,RestrictPhotoCount,AllowFullScreen,DisplayCtl,Category) values(     'Highslide'                                                                                            ,    'This presentation shows an html grid of thumbnails and allows you to click-to-enlarge in ajax style.'                                                                                                                                                           ,    'HighslideAppearance'                                ,    'BizModules.UltraPhotoGallery.Presentation.Highslide, BizModules.UltraPhotoGallery'                                                                                                                        ,    600          ,    400           ,    NULL               ,    1               ,    'Highslide'                                          ,    'Html'                                               )
+GO
+
+insert {databaseOwner}{objectQualifier}Bizmodules_upg_presentation(Name,Description,GallerySettingCtl,Type,DefaultWidth,DefaultHeight,RestrictPhotoCount,AllowFullScreen,DisplayCtl,Category) values(     'SmoothGallery'                                                                                        ,    'This presentation is written in html and javascript, but delivers similar effect as other flash presentations in UMG like UMG Classic'                                                                                                                          ,    'SmoothGalleryAppearance'                            ,    'BizModules.UltraPhotoGallery.Presentation.SmoothGallery, BizModules.UltraPhotoGallery'                                                                                                                    ,    600          ,    450           ,    NULL               ,    0               ,    'SmoothGallery'                                      ,    'Html'                                               )
+GO
+
+insert {databaseOwner}{objectQualifier}Bizmodules_upg_presentation(Name,Description,GallerySettingCtl,Type,DefaultWidth,DefaultHeight,RestrictPhotoCount,AllowFullScreen,DisplayCtl,Category) values(     '3DImageStack'                                                                                         ,    'This presentation display pictures in a 3D stack with mirror effect'                                                                                                                                                                                            ,    'ThreeDImageStackAppearance'                         ,    'BizModules.UltraPhotoGallery.Presentation.ThreeDImageStack, BizModules.UltraPhotoGallery'                                                                                                                 ,    500          ,    400           ,    NULL               ,    0               ,    'ThreeDCarousel'                                     ,    'SimpleFlash'                                        )
+GO
+
+insert {databaseOwner}{objectQualifier}Bizmodules_upg_presentation(Name,Description,GallerySettingCtl,Type,DefaultWidth,DefaultHeight,RestrictPhotoCount,AllowFullScreen,DisplayCtl,Category) values(     'UMGProfessional'                                                                                      ,    'This presentation allows you to update photo title and description inside flash with professional look and feel'                                                                                                                                                ,    'UMGProfessionalAppearance'                          ,    'BizModules.UltraPhotoGallery.Presentation.UMGProfessional, BizModules.UltraPhotoGallery'                                                                                                                  ,    700          ,    400           ,    NULL               ,    1               ,    'UMGProfessional'                                    ,    'FullFlash'                                          )
+GO
+
+insert {databaseOwner}{objectQualifier}Bizmodules_upg_presentation(Name,Description,GallerySettingCtl,Type,DefaultWidth,DefaultHeight,RestrictPhotoCount,AllowFullScreen,DisplayCtl,Category) values(     '3DCarousel'                                                                                           ,    'Display thumbnails in a ellipse with mirror effect, move your mouse to scroll the ellipse.'                                                                                                                                                                     ,    'ThreeDCarouselAppearance'                           ,    'BizModules.UltraPhotoGallery.Presentation.ThreeDCarousel, BizModules.UltraPhotoGallery'                                                                                                                   ,    600          ,    450           ,    NULL               ,    0               ,    'ThreeDCarousel'                                     ,    'SimpleFlash'                                        )
+GO
+
+insert {databaseOwner}{objectQualifier}Bizmodules_upg_presentation(Name,Description,GallerySettingCtl,Type,DefaultWidth,DefaultHeight,RestrictPhotoCount,AllowFullScreen,DisplayCtl,Category) values(     'SideNav'                                                                                              ,    'Unlike the classic persentation, thumbnails are displayed vertically in left or right side.'                                                                                                                                                                    ,    'SideNavAppearance'                                  ,    'BizModules.UltraPhotoGallery.Presentation.SideNav, BizModules.UltraPhotoGallery'                                                                                                                          ,    600          ,    450           ,    NULL               ,    0               ,    'SideNav'                                            ,    'SimpleFlash'                                        )
+GO
+
+insert {databaseOwner}{objectQualifier}Bizmodules_upg_presentation(Name,Description,GallerySettingCtl,Type,DefaultWidth,DefaultHeight,RestrictPhotoCount,AllowFullScreen,DisplayCtl,Category) values(     'RandomPosition'                                                                                       ,    'Display thumbnails in random position, change "feed" to adjust the randomicity.'                                                                                                                                                                                ,    'RandomPositionAppearance'                           ,    'BizModules.UltraPhotoGallery.Presentation.RandomPosition, BizModules.UltraPhotoGallery'                                                                                                                   ,    600          ,    450           ,    NULL               ,    0               ,    'RandomPosition'                                     ,    'SimpleFlash'                                        )
+GO
+
+insert {databaseOwner}{objectQualifier}Bizmodules_upg_presentation(Name,Description,GallerySettingCtl,Type,DefaultWidth,DefaultHeight,RestrictPhotoCount,AllowFullScreen,DisplayCtl,Category) values(     'RightHeader'                                                                                          ,    'Display a series of text buttons in left or right side, ideal for quick links, featured contents.'                                                                                                                                                              ,    'RightHeaderAppearance'                              ,    'BizModules.UltraPhotoGallery.Presentation.RightHeader, BizModules.UltraPhotoGallery'                                                                                                                      ,    470          ,    240           ,    NULL               ,    0               ,    'ThreeDCarousel'                                     ,    'SimpleFlash'                                        )
+GO
+
+insert {databaseOwner}{objectQualifier}Bizmodules_upg_presentation(Name,Description,GallerySettingCtl,Type,DefaultWidth,DefaultHeight,RestrictPhotoCount,AllowFullScreen,DisplayCtl,Category) values(     'VirtualTour'                                                                                          ,    'Browse your pictures with a virtual tour effect, ideal for real estate showcase, landscape pictures.'                                                                                                                                                           ,    'VirtualTourAppearance'                              ,    'BizModules.UltraPhotoGallery.Presentation.VirtualTour, BizModules.UltraPhotoGallery'                                                                                                                      ,    600          ,    400           ,    NULL               ,    1               ,    'SideNav'                                            ,    'SimpleFlash'                                        )
+GO
+
+insert {databaseOwner}{objectQualifier}Bizmodules_upg_presentation(Name,Description,GallerySettingCtl,Type,DefaultWidth,DefaultHeight,RestrictPhotoCount,AllowFullScreen,DisplayCtl,Category) values(     'WidescreenShowroom'                                                                                   ,    'This presentation support multiple albums and videos, which must be specified as a photo link.'                                                                                                                                                                 ,    'WidescreenshowroomAppearance'                       ,    'BizModules.UltraPhotoGallery.Presentation.WidescreenShowroom, BizModules.UltraPhotoGallery'                                                                                                               ,    758          ,    383           ,    NULL               ,    0               ,    'UMGProfessional'                                    ,    'FullFlash'                                          )
+GO
+
+insert {databaseOwner}{objectQualifier}Bizmodules_upg_presentation(Name,Description,GallerySettingCtl,Type,DefaultWidth,DefaultHeight,RestrictPhotoCount,AllowFullScreen,DisplayCtl,Category) values(     'ShadowViewer'                                                                                         ,    'This presentation can be used as another major gallery viewer like UMG Classic, nested albums and flv videos are supported'                                                                                                                                     ,    'ShadowViewerAppearance'                             ,    'BizModules.UltraPhotoGallery.Presentation.ShadowViewer, BizModules.UltraPhotoGallery'                                                                                                                     ,    550          ,    400           ,    NULL               ,    1               ,    'UMGProfessional'                                    ,    'FullFlash'                                          )
+GO
+
+insert {databaseOwner}{objectQualifier}Bizmodules_upg_presentation(Name,Description,GallerySettingCtl,Type,DefaultWidth,DefaultHeight,RestrictPhotoCount,AllowFullScreen,DisplayCtl,Category) values(     'MooFlow'                                                                                              ,    'This html presentation creates a carousel effect gallery like 3D Carousel presentation'                                                                                                                                                                         ,    'MooFlowAppearance'                                  ,    'BizModules.UltraPhotoGallery.Presentation.MooFlow, BizModules.UltraPhotoGallery'                                                                                                                          ,    760          ,    456           ,    NULL               ,    0               ,    'MooFlow'                                            ,    'Html'                                               )
+GO
+
+insert {databaseOwner}{objectQualifier}Bizmodules_upg_presentation(Name,Description,GallerySettingCtl,Type,DefaultWidth,DefaultHeight,RestrictPhotoCount,AllowFullScreen,DisplayCtl,Category) values(     'TiltViewer'                                                                                           ,    'This flash viewer creates a real 3D image grid and allows you to click-to-enlarge.'                                                                                                                                                                             ,    'TiltViewerAppearance'                               ,    'BizModules.UltraPhotoGallery.Presentation.TiltViewer, BizModules.UltraPhotoGallery'                                                                                                                       ,    700          ,    400           ,    NULL               ,    0               ,    'TiltViewer'                                         ,    'SimpleFlash'                                        )
+GO
+
+insert {databaseOwner}{objectQualifier}Bizmodules_upg_presentation(Name,Description,GallerySettingCtl,Type,DefaultWidth,DefaultHeight,RestrictPhotoCount,AllowFullScreen,DisplayCtl,Category) values(     'MacStyle'                                                                                             ,    'This flash viewer comes with multiple album support and present images in Mac style.'                                                                                                                                                                           ,    'MacStyleAppearance'                                 ,    'BizModules.UltraPhotoGallery.Presentation.MacStyle, BizModules.UltraPhotoGallery'                                                                                                                         ,    480          ,    320           ,    NULL               ,    0               ,    'MacStyle'                                           ,    'SimpleFlash'                                        )
+GO
+
+insert {databaseOwner}{objectQualifier}Bizmodules_upg_presentation(Name,Description,GallerySettingCtl,Type,DefaultWidth,DefaultHeight,RestrictPhotoCount,AllowFullScreen,DisplayCtl,Category) values(     'WidescreenTour1'                                                                                      ,    'This flash viewer allows you to present images and videos in same stage.'                                                                                                                                                                                       ,    'WidescreenTour1Appearance'                          ,    'BizModules.UltraPhotoGallery.Presentation.WidescreenTour1, BizModules.UltraPhotoGallery'                                                                                                                  ,    980          ,    400           ,    NULL               ,    0               ,    'UMGProfessional'                                    ,    'FullFlash'                                          )
+GO
+
+insert {databaseOwner}{objectQualifier}Bizmodules_upg_presentation(Name,Description,GallerySettingCtl,Type,DefaultWidth,DefaultHeight,RestrictPhotoCount,AllowFullScreen,DisplayCtl,Category) values(     'Html Slideshow'                                                                                       ,    'This html presentation includes 10+ display templates which can be used to build various image slideshows with pure javascript and css.'                                                                                                                        ,    'HtmlslideAppearance'                                ,    'BizModules.UltraPhotoGallery.Presentation.Htmlslide, BizModules.UltraPhotoGallery'                                                                                                                        ,    600          ,    400           ,    NULL               ,    0               ,    'Htmlslide'                                          ,    'Html'                                               )
+GO
+
+insert {databaseOwner}{objectQualifier}Bizmodules_upg_presentation(Name,Description,GallerySettingCtl,Type,DefaultWidth,DefaultHeight,RestrictPhotoCount,AllowFullScreen,DisplayCtl,Category) values(     'WidescreenTour2'                                                                                      ,    'This Javascript+CSS implemented presentation allows you to smoothly deliver photos and videos acrossing all major platforms'                                                                                                                                    ,    'WidescreenTour2Appearance'                          ,    'BizModules.UltraPhotoGallery.Presentation.WidescreenTour2, BizModules.UltraPhotoGallery'                                                                                                                  ,    980          ,    417           ,    NULL               ,    0               ,    'WidescreenTour2'                                    ,    'Html'                                               )
+GO
+
+insert {databaseOwner}{objectQualifier}Bizmodules_upg_presentation(Name,Description,GallerySettingCtl,Type,DefaultWidth,DefaultHeight,RestrictPhotoCount,AllowFullScreen,DisplayCtl,Category) values(     'MediaLibrary'                                                                                         ,    'This Javascript+CSS implemented presentation fully support all kind of medias and it even works on iPhone/iPad.'                                                                                                                                                ,    'MediaLibraryAppearance'                             ,    'BizModules.UltraPhotoGallery.Presentation.MediaLibrary, BizModules.UltraPhotoGallery'                                                                                                                     ,    980          ,    471           ,    NULL               ,    0               ,    'MediaLibrary'                                       ,    'Html'                                               )
+GO
+
+insert {databaseOwner}{objectQualifier}Bizmodules_upg_presentation(Name,Description,GallerySettingCtl,Type,DefaultWidth,DefaultHeight,RestrictPhotoCount,AllowFullScreen,DisplayCtl,Category) values(     'HtmlImageStack'                                                                                       ,    'This html presentation displays images in a stack with reflection effect.'                                                                                                                                                                                      ,    'HtmlImageStackAppearance'                           ,    'BizModules.UltraPhotoGallery.Presentation.HtmlImageStack, BizModules.UltraPhotoGallery'                                                                                                                   ,    800          ,    595           ,    NULL               ,    0               ,    'HtmlImageStack'                                     ,    'Html'                                               )
+GO
+
+insert {databaseOwner}{objectQualifier}Bizmodules_upg_presentation(Name,Description,GallerySettingCtl,Type,DefaultWidth,DefaultHeight,RestrictPhotoCount,AllowFullScreen,DisplayCtl,Category) values(     'TagGroupedGrid'                                                                                       ,    'This presentation allows you to choose multiple tags and organize medias with these tags in a HTML grid.'                                                                                                                                                       ,    'TagGroupedGridAppearance'                           ,    'BizModules.UltraPhotoGallery.Presentation.TagGroupedGrid, BizModules.UltraPhotoGallery'                                                                                                                   ,    980          ,    735           ,    NULL               ,    0               ,    'TagGroupedGrid'                                     ,    'Html'                                               )
+GO
+
+insert {databaseOwner}{objectQualifier}Bizmodules_upg_presentation(Name,Description,GallerySettingCtl,Type,DefaultWidth,DefaultHeight,RestrictPhotoCount,AllowFullScreen,DisplayCtl,Category) values(     'PhotoStack'                                                                                           ,    'This html presentation align images in a stack with multiple albums support.'                                                                                                                                                                                   ,    'PhotoStackAppearance'                               ,    'BizModules.UltraPhotoGallery.Presentation.HtmlImageStack, BizModules.UltraPhotoGallery'                                                                                                                   ,    700          ,    450           ,    NULL               ,    0               ,    'PhotoStack'                                         ,    'Html'                                               )
+GO
+
+insert {databaseOwner}{objectQualifier}Bizmodules_upg_presentation(Name,Description,GallerySettingCtl,Type,DefaultWidth,DefaultHeight,RestrictPhotoCount,AllowFullScreen,DisplayCtl,Category) values(     'CloudCarousel'                                                                                        ,    'The pure CSS+Javascript implementation of the 3D Carousel presentation.'                                                                                                                                                                                        ,    'CloudCarouselAppearance'                            ,    'BizModules.UltraPhotoGallery.Presentation.CloudCarousel, BizModules.UltraPhotoGallery'                                                                                                                    ,    570          ,    384           ,    NULL               ,    0               ,    'CloudCarousel'                                      ,    'Html'                                               )
+GO
+
+insert {databaseOwner}{objectQualifier}Bizmodules_upg_presentation(Name,Description,GallerySettingCtl,Type,DefaultWidth,DefaultHeight,RestrictPhotoCount,AllowFullScreen,DisplayCtl,Category) values(     'MultiMediaGallery'                                                                                    ,    'MultiMediaGallery supports multiple albums and all 4 kinds of medias. '                                                                                                                                                                                         ,    'MultiMediaGalleryAppearance'                        ,    'BizModules.UltraPhotoGallery.Presentation.MultiMediaGallery, BizModules.UltraPhotoGallery'                                                                                                                ,    712          ,    460           ,    NULL               ,    0               ,    'MultiMediaGallery'                                  ,    'Html'                                               )
+GO
+
+insert {databaseOwner}{objectQualifier}Bizmodules_upg_presentation(Name,Description,GallerySettingCtl,Type,DefaultWidth,DefaultHeight,RestrictPhotoCount,AllowFullScreen,DisplayCtl,Category) values(     '3DWall'                                                                                               ,    'This presentation displays images in a wall effect with navigation buttons and sliders.'                                                                                                                                                                        ,    'ThreeDWallAppearance'                               ,    'BizModules.UltraPhotoGallery.Presentation.ThreeDWall, BizModules.UltraPhotoGallery'                                                                                                                       ,    980          ,    560           ,    NULL               ,    0               ,    'ThreeDWall'                                         ,    'Html'                                               )
+GO
+
+insert {databaseOwner}{objectQualifier}Bizmodules_upg_presentation(Name,Description,GallerySettingCtl,Type,DefaultWidth,DefaultHeight,RestrictPhotoCount,AllowFullScreen,DisplayCtl,Category) values(     'PieceRotator'                                                                                         ,    'A flash media rotator with a cute transition effect, images, videos and even flash movies are supported.'                                                                                                                                                       ,    'PieceRotatorAppearance'                             ,    'BizModules.UltraPhotoGallery.Presentation.PieceRotator, BizModules.UltraPhotoGallery'                                                                                                                     ,    860          ,    520           ,    NULL               ,    0               ,    'PieceRotator'                                       ,    'SimpleFlash'                                        )
+GO
+
+
+
+
+
+
+
+
+
+
+
+--****************************
+--******* UMG FUNCTIONS ******
+--****************************
+
+CREATE function {databaseOwner}{objectQualifier}BizModules_UPG_GetPhotosWithTag
+(
+@TagId int
+)
+returns int
+as
+BEGIN
+	declare @Photos int
+	select @Photos = count(*) from {databaseOwner}{objectQualifier}BizModules_UPG_PhotoTag PT inner join {databaseOwner}{objectQualifier}BizModules_UPG_Photo P on PT.PhotoId = P.ItemId where 
+	PT.TagId = @TagId and P.Approved = 1
+
+	return @Photos
+END
+GO
+
+
+
+
+Create Function {databaseOwner}{objectQualifier}BizModules_UPG_GetUserPhotos(
+@albumid int,
+@userid int
+)
+returns int
+as
+begin
+	declare @photos int
+
+	select @photos=count(*) from {databaseOwner}{objectQualifier}BizModules_UPG_Photo where albumid = @albumid and createdbyuser = @userid
+
+	return @photos
+end
+GO
+
+
+
+
+
+
+
+
+
+--****************************
+--****** UMG PROCEDURES ******
+--****************************
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_AlbumAdd
+	@ModuleId int,
+	@PortalId int,
+	@ParentId int,
+	@ServerPath nvarchar(200),
+	@Title nvarchar(100),
+	@Description nvarchar(1000),
+	@TnWidth int,
+	@TnHeight int,
+	@CreatedByUser int,
+	@ComposeRoles varchar(500),
+	@ModerationRoles varchar(500),
+	@MaxPhotoWidth int,
+	@MaxPhotoHeight int,
+	@Owner int,
+	@NeedApproval bit,
+	@ViewRoles nvarchar(500),
+	@RssUrl nvarchar(1000),
+	@ApprovalRoles nvarchar(500),
+	@ManagedFolder bit
+AS
+
+declare @SortOrder int 
+set @SortOrder = 1 
+SELECT TOP 1 @SortOrder=ISNULL(SortOrder,0)+1 from {databaseOwner}{objectQualifier}UPG_vw_Album where ModuleId=@ModuleId Order by SortOrder DESC
+
+INSERT INTO {databaseOwner}{objectQualifier}BizModules_UPG_Album (
+	PortalId,
+	ParentId,
+	ServerPath,
+	Title,
+	Description,
+	TnWidth,
+	TnHeight,
+	CreatedByUser,
+	CreatedDate,
+	ComposeRoles,
+	ModerationRoles,
+	MaxPhotoWidth,
+	MaxPhotoHeight,
+	Owner,
+	NeedApproval,
+	ViewRoles,
+	RssUrl,
+	ApprovalRoles,
+	SortOrder,
+	ManagedFolder
+) VALUES (
+	@PortalId,
+	@ParentId,
+	@ServerPath,
+	@Title,
+	@Description,
+	@TnWidth,
+	@TnHeight,
+	@CreatedByUser,
+	getdate(),
+	@ComposeRoles,
+	@ModerationRoles,
+	@MaxPhotoWidth,
+	@MaxPhotoHeight,
+	@Owner,
+	@NeedApproval,
+	@ViewRoles,
+	@RssUrl,
+	@ApprovalRoles,
+	@SortOrder,
+	@ManagedFolder
+)
+
+declare @AlbumId int
+select @AlbumId = SCOPE_IDENTITY()
+update {databaseOwner}{objectQualifier}BizModules_UPG_Album set ServerPath = replace(ServerPath, '(Album ID)', cast(@AlbumId as varchar(10)))
+insert {databaseOwner}{objectQualifier}BizModules_UPG_AlbumModule (AlbumId, ModuleId) values(@AlbumId, @ModuleId)
+exec {databaseOwner}{objectQualifier}BizModules_UPG_AlbumIndexA @ModuleId
+
+select @AlbumId
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_AlbumDelete
+	@ItemId int
+AS
+
+DELETE FROM {databaseOwner}{objectQualifier}BizModules_UPG_Rating WHERE PhotoId in (select ItemId from {databaseOwner}{objectQualifier}BizModules_UPG_Photo where AlbumId = @ItemId)
+
+DELETE FROM {databaseOwner}{objectQualifier}BizModules_UPG_Comment WHERE PhotoId in (select ItemId from {databaseOwner}{objectQualifier}BizModules_UPG_Photo where AlbumId = @ItemId)
+
+DELETE FROM {databaseOwner}{objectQualifier}BizModules_UPG_Photo WHERE AlbumId = @ItemId
+
+DECLARE module_cursor CURSOR FOR 
+SELECT ModuleID FROM {databaseOwner}{objectQualifier}BizModules_UPG_AlbumModule where AlbumId = @ItemId
+OPEN module_cursor
+
+DELETE FROM {databaseOwner}{objectQualifier}BizModules_UPG_AlbumModule WHERE AlbumId = @ItemId
+
+DELETE FROM {databaseOwner}{objectQualifier}BizModules_UPG_Album WHERE ItemId = @ItemId
+
+UPDATE {databaseOwner}{objectQualifier}BizModules_UPG_Album SET ParentId = NULL WHERE ParentId = @ItemId
+
+declare @ModuleId int
+FETCH NEXT FROM module_cursor INTO @ModuleId
+WHILE @@FETCH_STATUS = 0
+BEGIN
+	print cast (@ModuleId as varchar(10))
+	exec {databaseOwner}{objectQualifier}BizModules_UPG_AlbumIndexA @ModuleId
+	FETCH NEXT FROM module_cursor INTO @ModuleId
+END
+CLOSE module_cursor
+DEALLOCATE module_cursor
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_AlbumGet
+	@ItemId int 
+AS
+
+SELECT
+	*
+FROM {databaseOwner}{objectQualifier}UPG_vw_Album
+WHERE
+	ItemId = @ItemId
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_AlbumGetFirst
+	@moduleId int
+AS
+		SELECT TOP 1
+			*
+		FROM {databaseOwner}{objectQualifier}UPG_vw_Album
+		WHERE
+			ModuleId = @ModuleId And isnull(ParentId,-1) <= 0
+		ORDER BY SortOrder DESC
+
+GO
+
+
+
+
+
+--Album
+CREATE PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_AlbumIndexA
+	@AlbumId int
+AS
+update {databaseOwner}{objectQualifier}BizModules_UPG_Album set SubAlbums=(select count(*) from {databaseOwner}{objectQualifier}BizModules_UPG_Album A2 where A2.ParentId = {databaseOwner}{objectQualifier}BizModules_UPG_Album.ItemId)
+
+GO
+
+
+
+
+
+--Photos
+CREATE PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_AlbumIndexP
+	@AlbumId int
+AS
+update {databaseOwner}{objectQualifier}BizModules_UPG_Album set Photos=(select count(*) from {databaseOwner}{objectQualifier}BizModules_UPG_Photo P where P.AlbumId = {databaseOwner}{objectQualifier}BizModules_UPG_Album.ItemId)
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_AlbumIsOwner
+	@moduleId int,
+	@userId int
+AS
+	IF EXISTS(SELECT * FROM {databaseOwner}{objectQualifier}UPG_vw_Album WHERE ModuleId = @ModuleId AND Owner = @UserId)
+		SELECT 1
+	ELSE
+		SELECT 0
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_AlbumList
+	@moduleId int,
+	@ParentId int
+AS
+
+IF @ParentId < 0
+	SELECT
+		*
+	FROM {databaseOwner}{objectQualifier}UPG_vw_Album
+	WHERE
+		ModuleId = @ModuleId
+	ORDER BY 
+		ParentId ASC,SortOrder DESC,CreatedDate DESC
+ELSE
+	SELECT
+		*
+	FROM {databaseOwner}{objectQualifier}UPG_vw_Album
+	WHERE
+		ModuleId = @ModuleId
+	AND
+		(ISNULL(ParentId,0) = @ParentId)
+	ORDER BY 
+		SortOrder DESC,CreatedDate DESC
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_AlbumListAndSort
+	@moduleId int,
+	@Max int,
+	@SortBy varchar(10)
+AS
+
+DECLARE @SQLString NVARCHAR(2000)
+SET @SQLString = 'SELECT'
+if @Max > 0
+	SET @SQLString = @SQLString + ' TOP ' + cast(@Max as varchar(10))
+
+SET @SQLString = @SQLString + ' * FROM {databaseOwner}{objectQualifier}UPG_vw_Album where Photos > 0 and ModuleId=' + cast(@ModuleId as varchar(10)) + ' order by '
+
+if @SortBy = 'latest'
+	SET @SQLString = @SQLString + ' createddate desc '
+else if @SortBy = 'oldest'
+	SET @SQLString = @SQLString + ' createddate asc '
+
+EXECUTE sp_executesql @SQLString
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_AlbumListByPortal
+	@portalId int
+AS
+
+	SELECT
+		*
+	FROM {databaseOwner}{objectQualifier}UPG_vw_Album
+	WHERE
+		PortalId = @PortalId
+	ORDER BY 
+		Title ASC,CreatedDate DESC
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_AlbumListByUser
+	@moduleId int,
+	@ParentId int,
+	@UserId int
+AS
+
+IF @ParentId < 0
+	SELECT
+		*
+	FROM {databaseOwner}{objectQualifier}UPG_vw_Album
+	WHERE
+		ModuleId = @ModuleId AND CreatedByUser = @UserId
+	ORDER BY 
+		ParentId ASC,SortOrder DESC,CreatedDate DESC
+ELSE
+	SELECT
+		*
+	FROM {databaseOwner}{objectQualifier}UPG_vw_Album
+	WHERE
+		ModuleId = @ModuleId AND CreatedByUser = @UserId
+	AND
+		(ISNULL(ParentId,0) = @ParentId)
+	ORDER BY 
+		SortOrder DESC,CreatedDate DESC
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_AlbumListByUserWork
+	@moduleId int,
+	@userId int
+AS
+
+	SELECT ItemId,PortalId,Title,Description,Audio,AudioCaption,Logo,TnWidth,TnHeight,CreatedDate,LastModifiedDate,CreatedByUser,SortOrder,ComposeRoles,ModerationRoles,MaxPhotoWidth,MaxPhotoHeight,Owner,ParentId,NeedApproval,ViewRoles,RssUrl,ApprovalRoles,AWS_Bucket,AWS_AudioKey,AWS_LogoKey,ServerPath,SubAlbums,Photos,ManagedFolder,ModuleId,{databaseOwner}{objectQualifier}BizModules_UPG_GetUserPhotos(ItemId, @userId) as Photos
+	FROM {databaseOwner}{objectQualifier}UPG_vw_Album
+	WHERE
+		ModuleId = @ModuleId and {databaseOwner}{objectQualifier}BizModules_UPG_GetUserPhotos(ItemId, @userId) > 0
+	ORDER BY 
+		SortOrder DESC
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_AlbumListTransferable
+	@maxItems int
+AS
+SET ROWCOUNT @MaxItems
+SELECT * FROM {databaseOwner}{objectQualifier}UPG_vw_Album
+WHERE 
+(ISNULL(Logo, '') <> '' AND lower(substring(Logo, 1, 7)) <> 'http://' AND lower(substring(Logo, 1, 8)) <> 'https://')
+OR
+(ISNULL(Audio, '') <> '' AND lower(substring(Audio, 1, 7)) <> 'http://' AND lower(substring(Audio, 1, 8)) <> 'https://')
+ORDER BY ItemId ASC
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_AlbumUpdate
+	@ItemId int,
+	@ParentId int, 
+	@Title nvarchar(100), 
+	@Description nvarchar(1000), 
+	@Audio nvarchar(200), 
+	@AudioCaption nvarchar(100), 
+	@Logo nvarchar(200), 
+	@TnWidth int, 
+	@TnHeight int, 
+	@SortOrder int,
+	@ComposeRoles varchar(500), 
+	@ModerationRoles varchar(500), 
+	@MaxPhotoWidth int, 
+	@MaxPhotoHeight int, 
+	@Owner int, 	
+	@NeedApproval bit, 
+	@ViewRoles nvarchar(500), 
+	@RssUrl nvarchar(1000),
+	@ApprovalRoles nvarchar(500), 
+	@AWS_Bucket nvarchar(50), 
+	@AWS_AudioKey nvarchar(100), 
+	@AWS_LogoKey nvarchar(100) 
+AS
+
+declare @oldParent int
+select @oldParent = isnull(ParentId,0) from {databaseOwner}{objectQualifier}BizModules_UPG_Album where ItemId = @ItemId
+
+UPDATE {databaseOwner}{objectQualifier}BizModules_UPG_Album SET
+	ParentId = @ParentId,
+	Title = @Title,
+	Description = @Description,
+	Audio = @Audio,
+	AudioCaption = @AudioCaption,
+	Logo = @Logo,
+	TnWidth = @TnWidth,
+	TnHeight = @TnHeight,	
+	SortOrder = @SortOrder,
+	ComposeRoles = @ComposeRoles,
+	ModerationRoles = @ModerationRoles,
+	ViewRoles = @ViewRoles,
+	MaxPhotoWidth = @MaxPhotoWidth,
+	MaxPhotoHeight = @MaxPhotoHeight,
+	Owner = @Owner,
+	NeedApproval = @NeedApproval,
+	RssUrl = @RssUrl,
+	ApprovalRoles = @ApprovalRoles,
+	AWS_Bucket = @AWS_Bucket,
+	AWS_AudioKey = @AWS_AudioKey,
+	AWS_LogoKey = @AWS_LogoKey
+WHERE
+	ItemId = @ItemId
+
+print '@oldParent=' + cast(@oldParent as varchar(10))
+print '@Parent=' + cast(@ParentId as varchar(10))
+
+if @oldParent<> isnull(@ParentId,0)
+begin
+		declare @ModuleId int
+		declare module_cursor cursor for select ModuleId  from {databaseOwner}{objectQualifier}BizModules_UPG_AlbumModule WHERE AlbumId = @ItemId
+
+		open module_cursor
+		fetch next from module_cursor into @ModuleId
+		while @@FETCH_STATUS = 0
+		begin
+			print 'BizModules_UPG_AlbumIndexA' + cast( @ModuleId as varchar(10))
+			exec {databaseOwner}{objectQualifier}BizModules_UPG_AlbumIndexA @ModuleId
+			fetch next from module_cursor into @ModuleId
+		end
+		close module_cursor
+		deallocate module_cursor
+end
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_CartItemAdd
+	@PortalId int,
+	@UserId int,
+	@PhotoId int,
+	@DownloadId int,
+	@Tn nvarchar(200),
+	@Title nvarchar(150),
+	@Description nvarchar(1000),
+	@CreatedDate datetime
+AS
+
+IF EXISTS(SELECT * FROM {databaseOwner}{objectQualifier}BizModules_UPG_CartItem WHERE PortalId = @PortalId AND UserId = @UserId AND DownloadId = @DownloadId)
+	RETURN -1
+
+INSERT INTO {databaseOwner}{objectQualifier}BizModules_UPG_CartItem (
+	PortalId,
+	UserId,
+	PhotoId,
+	DownloadId,
+	Tn,
+	Title,
+	Description,
+	CreatedDate
+) VALUES (
+	@PortalId,
+	@UserId,
+	@PhotoId,
+	@DownloadId,
+	@Tn,
+	@Title,
+	@Description,
+	@CreatedDate
+)
+
+select SCOPE_IDENTITY()
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_CartItemDelete
+	@ItemId int
+AS
+
+DELETE FROM {databaseOwner}{objectQualifier}BizModules_UPG_CartItem
+WHERE
+	ItemId = @ItemId
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_CartItemEmpty
+	@UserId int
+AS
+
+DELETE FROM {databaseOwner}{objectQualifier}BizModules_UPG_CartItem
+WHERE
+	UserId = @UserId
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_CartItemGet
+	@ItemId int
+	
+AS
+
+SELECT
+	C.ItemId,
+	C.PortalId,
+	C.UserId,
+	C.PhotoId,
+	C.DownloadId,
+	C.Tn,
+	C.Title,
+	C.Description,
+	C.CreatedDate,
+	D.Price
+FROM {databaseOwner}{objectQualifier}BizModules_UPG_CartItem C INNER JOIN {databaseOwner}{objectQualifier}BizModules_UPG_Download D ON C.DownloadId = D.ItemId
+WHERE
+	C.ItemId = @ItemId
+	
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_CartItemList
+	@PortalId int,
+	@UserId int
+AS
+
+SELECT
+	*
+FROM {databaseOwner}{objectQualifier}BizModules_UPG_CartItem
+WHERE
+	PortalId = @PortalId
+AND
+	UserId = @UserId
+
+
+GO
+
+
+
+
+
+--Coment
+CREATE PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_CommentAdd
+	@PhotoId int,
+	@UserId int,
+	@UserIP varchar(15),
+	@UserFullName varchar(50),
+	@Comment nvarchar(1000),
+	@Email varchar(50),
+	@CreatedDate datetime
+AS
+
+INSERT INTO {databaseOwner}{objectQualifier}BizModules_UPG_Comment (
+	PhotoId,
+	UserId,
+	UserIP,
+	UserFullName,
+	Comment,
+	Email,
+	CreatedDate
+) VALUES (
+	@PhotoId,
+	@UserId,
+	@UserIP,
+	@UserFullName,
+	@Comment,
+	@Email,
+	@CreatedDate
+)
+
+--update {databaseOwner}{objectQualifier}BizModules_UPG_Photo set Comments = (select count(*) from {databaseOwner}{objectQualifier}BizModules_UPG_Comment where {databaseOwner}{objectQualifier}BizModules_UPG_Comment.PhotoId = {databaseOwner}{objectQualifier}BizModules_UPG_Photo.ItemId) where ItemId = @PhotoId
+select SCOPE_IDENTITY()
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_CommentDelete
+	@ItemId int
+AS
+DELETE FROM {databaseOwner}{objectQualifier}BizModules_UPG_Comment
+WHERE
+	ItemId = @ItemId
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_CommentGet
+	@ItemId int
+AS
+SELECT
+	*
+FROM {databaseOwner}{objectQualifier}BizModules_UPG_Comment
+WHERE
+	ItemId = @ItemId
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_CommentList
+	@PhotoId int
+AS
+SELECT	* from {databaseOwner}{objectQualifier}BizModules_UPG_Comment where PhotoId = @PhotoId
+order by CreatedDate DESC
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_CommentListAndSort
+	@ModuleId int,
+	@AlbumId int,
+	@Max int,
+	@SortBy varchar(10)
+AS
+
+DECLARE @SQLString NVARCHAR(2000)
+SET @SQLString = 'SELECT'
+if @Max > 0
+	SET @SQLString = @SQLString + ' TOP ' + cast(@Max as varchar(10))
+
+SET @SQLString = @SQLString + ' R.* FROM {databaseOwner}{objectQualifier}BizModules_UPG_PhotoReview R inner join {databaseOwner}{objectQualifier}BizModules_UPG_Photo P on R.PhotoId = P.ItemId where isnull(Comment,'''')<>'''' and '
+if @AlbumId > 0
+	SET @SQLString = @SQLString + ' P.AlbumId=' + cast(@AlbumId as varchar(10))
+else
+	SET @SQLString = @SQLString + ' P.AlbumId in (Select ItemId from {databaseOwner}{objectQualifier}UPG_vw_Album where ModuleId = ' +cast(@ModuleId as varchar(10)) + ')'
+
+SET @SQLString = @SQLString + ' order by '
+
+if @SortBy = 'random'
+	SET @SQLString = @SQLString + ' newid() '
+else
+	SET @SQLString = @SQLString + ' createddate desc '
+
+EXECUTE sp_executesql @SQLString
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_InvoiceAdd
+	@PortalId int,
+	@UserId int,
+	@Currency varchar(10),
+	@CreatedDate datetime,
+	@PaymentDate datetime,
+	@PaidAmount money,
+	@TransactionDetail nvarchar(2000),
+	@Finished bit
+AS
+
+--DELETE {databaseOwner}{objectQualifier}BizModules_UPG_InvoiceItem WHERE InvoiceId IN (SELECT ItemId FROM {databaseOwner}{objectQualifier}BizModules_UPG_Invoice WHERE PortalId = @PortalId AND UserId = @UserId AND Finished = 0)
+--DELETE {databaseOwner}{objectQualifier}BizModules_UPG_Invoice WHERE PortalId = @PortalId AND UserId = @UserId AND Finished = 0
+
+INSERT INTO {databaseOwner}{objectQualifier}BizModules_UPG_Invoice (
+	PortalId,
+	UserId,
+	Currency,
+	CreatedDate,
+	PaymentDate,
+	PaidAmount,
+	TransactionDetail,
+	Finished
+) VALUES (
+	@PortalId,
+	@UserId,
+	@Currency,
+	@CreatedDate,
+	@PaymentDate,
+	@PaidAmount,
+	@TransactionDetail,
+	@Finished
+)
+
+select SCOPE_IDENTITY()
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_InvoiceDelete
+	@ItemId int
+AS
+
+DELETE FROM {databaseOwner}{objectQualifier}BizModules_UPG_Invoice
+WHERE
+	ItemId = @ItemId
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_InvoiceFinish
+	@ItemId int, 
+	@PaidAmount money, 
+	@TransactionDetail nvarchar(2000)
+AS
+
+UPDATE {databaseOwner}{objectQualifier}BizModules_UPG_Invoice SET
+	PaymentDate = getdate(),
+	PaidAmount = @PaidAmount,
+	TransactionDetail = @TransactionDetail,
+	Finished = 1
+WHERE
+	ItemId = @ItemId
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_InvoiceGet
+	@ItemId int	
+AS
+
+SELECT
+	ItemId,
+	PortalId,
+	UserId,
+	Currency,
+	CreatedDate,
+	PaymentDate,
+	PaidAmount,
+	TransactionDetail,
+	Finished
+FROM {databaseOwner}{objectQualifier}BizModules_UPG_Invoice
+WHERE
+	ItemId = @ItemId
+	
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_InvoiceItemAdd
+	@InvoiceId int,
+	@PhotoId int,
+	@DownloadId int,
+	@Price money,
+	@DownloadTimes int
+AS
+
+INSERT INTO {databaseOwner}{objectQualifier}BizModules_UPG_InvoiceItem (
+	InvoiceId,
+	PhotoId,
+	DownloadId,
+	Price,
+	DownloadTimes
+) VALUES (
+	@InvoiceId,
+	@PhotoId,
+	@DownloadId,
+	@Price,
+	@DownloadTimes
+)
+
+select SCOPE_IDENTITY()
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_InvoiceItemDelete
+	@ItemId int
+AS
+
+DELETE FROM {databaseOwner}{objectQualifier}BizModules_UPG_InvoiceItem
+WHERE
+	ItemId = @ItemId
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_InvoiceItemDeleteByInvoiceId
+	@InvoiceId int
+AS
+
+DELETE FROM {databaseOwner}{objectQualifier}BizModules_UPG_InvoiceItem 
+WHERE
+	InvoiceId = @InvoiceId
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_InvoiceItemGet
+	@ItemId int
+	
+AS
+
+SELECT
+	ItemId,
+	InvoiceId,
+	PhotoId,
+	DownloadId,
+	Price,
+	DownloadTimes
+FROM {databaseOwner}{objectQualifier}BizModules_UPG_InvoiceItem
+WHERE
+	ItemId = @ItemId
+	
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_InvoiceItemList
+	@InvoiceId int
+AS
+
+SELECT
+	ItemId,
+	InvoiceId,
+	PhotoId,
+	DownloadId,
+	Price,
+	DownloadTimes
+FROM {databaseOwner}{objectQualifier}BizModules_UPG_InvoiceItem
+WHERE
+	InvoiceId = @InvoiceId
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_InvoiceList
+	@PortalId int,
+	@UserId int
+AS
+
+SELECT
+	ItemId,
+	PortalId,
+	UserId,
+	Currency,
+	CreatedDate,
+	PaymentDate,
+	PaidAmount,
+	TransactionDetail,
+	Finished
+FROM {databaseOwner}{objectQualifier}BizModules_UPG_Invoice
+WHERE
+	PortalId = @PortalId
+AND (UserId = @UserId OR @UserId <= 0)
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_InvoiceUpdate
+	@ItemId int, 
+	@PortalId int, 
+	@UserId int, 
+	@Currency varchar(10),
+	@CreatedDate datetime, 
+	@PaymentDate datetime, 
+	@PaidAmount money, 
+	@TransactionDetail nvarchar(2000), 
+	@Finished bit 
+AS
+
+UPDATE {databaseOwner}{objectQualifier}BizModules_UPG_Invoice SET
+	PortalId = @PortalId,
+	UserId = @UserId,
+	Currency = @Currency,
+	CreatedDate = @CreatedDate,
+	PaymentDate = @PaymentDate,
+	PaidAmount = @PaidAmount,
+	TransactionDetail = @TransactionDetail,
+	Finished = @Finished
+WHERE
+	ItemId = @ItemId
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_PhotoAdd
+	@AlbumId int,
+	@Title nvarchar(150),
+	@Src nvarchar(150),
+	@TnSrc nvarchar(150),
+	@Link nvarchar(150),
+	@Approved bit, 
+	@CreatedByUser int,
+	@CreatedDate datetime,
+	@TnWidth int,
+	@TnHeight int,
+	@TakenDate smalldatetime,
+	@GPSLatitude decimal(10, 4),
+	@GPSLongitude decimal(10, 4),
+	@MediaType int,
+	@MediaWidth int,
+	@MediaHeight int,
+	@HtmlContent ntext,
+	@ResName nvarchar(200), 
+	@ResSize int, 
+	@ResOriginalName nvarchar(100), 
+	@ResContentType varchar(50),
+	@ResPrice money, 
+	@ResCreatedDate datetime, 
+	@ResDownloads int
+AS
+
+if exists(select * from {databaseOwner}{objectQualifier}BizModules_UPG_Photo where AlbumId=@AlbumId and Src = @Src)
+begin
+	select -1
+	return
+end
+
+declare @SortOrder int
+SELECT TOP 1 @SortOrder=ISNULL(SortOrder,0)+1 from {databaseOwner}{objectQualifier}BizModules_UPG_Photo where AlbumId=@AlbumId Order by SortOrder DESC
+
+INSERT INTO {databaseOwner}{objectQualifier}BizModules_UPG_Photo (
+	AlbumId,
+	Title,
+	Src,
+	TnSrc,
+	Link,
+	Approved,
+	CreatedByUser,
+	CreatedDate,
+	SortOrder,
+	TnWidth,
+	TnHeight,
+	TakenDate,
+	GPSLatitude,
+	GPSLongitude,
+	MediaType,
+	MediaWidth,
+	MediaHeight,
+	HtmlContent,
+	ResName, 
+	ResSize, 
+	ResOriginalName, 
+	ResContentType,
+	ResPrice, 
+	ResCreatedDate,
+	ResDownloads
+) VALUES (
+	@AlbumId,
+	@Title,
+	@Src,
+	@TnSrc,
+	@Link,
+	@Approved,
+	@CreatedByUser,
+	@CreatedDate,
+	@SortOrder,
+	@TnWidth,
+	@TnHeight,
+	@TakenDate,
+	@GPSLatitude,
+	@GPSLongitude,
+	@MediaType,
+	@MediaWidth,
+	@MediaHeight,
+	@HtmlContent,
+	@ResName, 
+	@ResSize, 
+	@ResOriginalName, 
+	@ResContentType,
+	@ResPrice, 
+	@ResCreatedDate,
+	@ResDownloads
+)
+
+update {databaseOwner}{objectQualifier}BizModules_UPG_Album set LastModifiedDate = @CreatedDate where ItemId = @AlbumId
+exec {databaseOwner}{objectQualifier}BizModules_UPG_AlbumIndexP @AlbumId
+select SCOPE_IDENTITY()
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_PhotoApprove
+	@ItemId int
+AS
+
+UPDATE {databaseOwner}{objectQualifier}BizModules_UPG_Photo
+SET
+Approved = 1
+WHERE
+	ItemId = @ItemId
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_PhotoCalendarListByUserId
+	@UserId int,
+	@ModuleId int
+AS
+
+SELECT
+	P.*,
+	A.ModuleId,
+	A.PortalId
+FROM {databaseOwner}{objectQualifier}BizModules_UPG_Photo P INNER JOIN {databaseOwner}{objectQualifier}UPG_vw_Album A on P.AlbumId = A.ItemId
+WHERE
+	P.CreatedByUser = @UserId
+AND
+	P.AlbumId IN
+			(
+				SELECT ItemId FROM {databaseOwner}{objectQualifier}UPG_vw_Album WHERE ModuleId=@ModuleId Or @ModuleId < 0
+			)
+ORDER BY 
+	P.SortOrder DESC,P.CreatedDate DESC
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_PhotoDelete
+	@ItemId int
+AS
+
+declare @AlbumId int
+select @AlbumId = AlbumId from {databaseOwner}{objectQualifier}BizModules_UPG_Photo WHERE ItemId = @ItemId
+
+DELETE FROM {databaseOwner}{objectQualifier}BizModules_UPG_Rating
+WHERE
+	PhotoId = @ItemId
+
+DELETE FROM {databaseOwner}{objectQualifier}BizModules_UPG_Comment
+WHERE
+	PhotoId = @ItemId
+
+DELETE FROM {databaseOwner}{objectQualifier}BizModules_UPG_PhotoTag
+WHERE
+	PhotoId = @ItemId
+	
+DELETE FROM {databaseOwner}{objectQualifier}BizModules_UPG_Tag
+WHERE ItemId not in (select distinct TagId from {databaseOwner}{objectQualifier}BizModules_UPG_PhotoTag)
+
+
+DELETE FROM {databaseOwner}{objectQualifier}BizModules_UPG_Photo
+WHERE
+	ItemId = @ItemId
+
+exec {databaseOwner}{objectQualifier}BizModules_UPG_AlbumIndexP @AlbumId
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_PhotoGet
+	@ItemId int
+AS
+
+SELECT
+	*
+FROM {databaseOwner}{objectQualifier}BizModules_UPG_Photo
+WHERE
+	ItemId = @ItemId
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_PhotoIsUserPurchased
+	@PhotoId int, 
+	@UserId int
+AS
+
+IF EXISTS(SELECT * FROM {databaseOwner}{objectQualifier}BizModules_UPG_InvoiceItem II INNER JOIN {databaseOwner}{objectQualifier}BizModules_UPG_Invoice I ON II.InvoiceId = I.ItemId WHERE II.PhotoId = @PhotoId AND I.UserId = @UserId AND I.Finished = 1)
+	SELECT 1
+ELSE
+	SELECT 0
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_PhotoList
+	@AlbumId int,
+	@Status int,
+	@MediaType int,
+	@DirectFileOnly bit
+AS
+
+SELECT
+	*
+FROM {databaseOwner}{objectQualifier}BizModules_UPG_Photo
+WHERE
+	AlbumId = @AlbumId
+AND
+	((Approved = 1 and @Status = 1) or (Approved = 0 and @Status = 0) or @Status = 2)
+AND
+	(@MediaType = 0 or MediaType & @MediaType = MediaType)
+AND
+	(@DirectFileOnly = 0 or (MediaType = 1 or isnull(Src,'') <> '' ))
+ORDER BY 
+	SortOrder DESC,CreatedDate DESC
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_PhotoListAll
+	@ModuleId int,
+	@UserId int,
+	@Status int
+AS
+
+SELECT
+	*
+FROM {databaseOwner}{objectQualifier}BizModules_UPG_Photo
+WHERE
+	AlbumId in (Select ItemId from {databaseOwner}{objectQualifier}UPG_vw_Album where ModuleId = @ModuleId)
+AND
+	((Approved = 1 and @Status = 1) or (Approved = 0 and @Status = 0) or @Status = 2)
+AND
+	(CreatedByUser = @UserId or @UserId <= 0)
+ORDER BY 
+	AlbumId DESC,SortOrder DESC,CreatedDate DESC
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_PhotoListAndSort
+	@ModuleId int,
+	@AlbumId int,
+	@Max int,
+	@SortBy varchar(50),
+	@MediaType int
+AS
+
+DECLARE @SQLString NVARCHAR(2000)
+SET @SQLString = 'SELECT'
+if @Max > 0
+	SET @SQLString = @SQLString + ' TOP ' + cast(@Max as varchar(10))
+
+SET @SQLString = @SQLString + ' * FROM {databaseOwner}{objectQualifier}BizModules_UPG_Photo where '
+if @AlbumId > 0
+	SET @SQLString = @SQLString + ' AlbumId=' + cast(@AlbumId as varchar(10))
+else
+	SET @SQLString = @SQLString + ' AlbumId in (Select ItemId from {databaseOwner}{objectQualifier}UPG_vw_Album where ModuleId = ' +cast(@ModuleId as varchar(10)) + ')'
+
+if @MediaType <> 0
+	SET @SQLString = @SQLString + ' and MediaType & ' + cast(@MediaType as varchar(10)) +' = MediaType'
+
+if @SortBy = 'random'
+	SET @SQLString = @SQLString + ' order by newid() '
+else if @SortBy = 'highestrated'
+	SET @SQLString = @SQLString + ' order by averagerating desc '
+else if @SortBy = 'latest'
+	SET @SQLString = @SQLString + ' order by createddate desc '
+else
+	SET @SQLString = @SQLString + @SortBy
+
+EXECUTE sp_executesql @SQLString
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_PhotoListApproved
+	@AlbumId int,
+	@CreatedByUser int
+AS
+
+SELECT
+	*
+FROM {databaseOwner}{objectQualifier}BizModules_UPG_Photo
+WHERE
+	AlbumId = @AlbumId
+AND
+	Approved = 1
+AND
+	(CreatedByUser = @CreatedByUser Or @CreatedByUser < 0)
+ORDER BY 
+	SortOrder DESC,CreatedDate DESC
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_PhotoListByModuleId
+	@ModuleId int,
+	@PortalId int,
+	@StartDate Datetime,
+	@EndDate Datetime,
+	@UseTakendate bit,
+	@MediaType int
+AS
+
+IF @UseTakendate = 1
+	SELECT
+		P.*,
+		A.ModuleId,
+		A.PortalId
+	FROM {databaseOwner}{objectQualifier}BizModules_UPG_Photo P INNER JOIN {databaseOwner}{objectQualifier}UPG_vw_Album A on P.AlbumId = A.ItemId
+	WHERE
+	((A.ModuleId = @ModuleId AND @ModuleId > 0) OR (A.PortalId = @PortalId AND @ModuleId <= 0))
+	AND	ISNULL(P.TakenDate, P.CreatedDate) BETWEEN @StartDate AND @EndDate
+	AND	Approved = 1
+	AND	(@MediaType = 0 or P.MediaType & @MediaType = P.MediaType)
+	ORDER BY 
+		ISNULL(P.TakenDate, P.CreatedDate) ASC
+ELSE
+	SELECT
+		P.*,
+		A.ModuleId,
+		A.PortalId
+	FROM {databaseOwner}{objectQualifier}BizModules_UPG_Photo P INNER JOIN {databaseOwner}{objectQualifier}UPG_vw_Album A on P.AlbumId = A.ItemId
+	WHERE
+	((A.ModuleId = @ModuleId AND @ModuleId > 0) OR (A.PortalId = @PortalId AND @ModuleId <= 0))
+	AND	P.CreatedDate BETWEEN @StartDate AND @EndDate
+	AND	Approved = 1
+	AND	(@MediaType = 0 or P.MediaType & @MediaType = P.MediaType)
+	ORDER BY 
+		P.CreatedDate ASC
+
+
+GO
+
+
+
+
+
+CREATE procedure {databaseOwner}{objectQualifier}BizModules_UPG_PhotoListByTag
+	@Tag nvarchar(200)
+as
+
+
+SELECT * FROM {databaseOwner}{objectQualifier}BizModules_UPG_Photo P Inner Join {databaseOwner}{objectQualifier}BizModules_UPG_PhotoTag PT 
+on P.ItemId = PT.PhotoId 
+Inner Join {databaseOwner}{objectQualifier}BizModules_UPG_Tag T on PT.TagId = T.ItemId
+where T.Tag = @Tag
+	 And Approved = 1
+Order By P.CreatedDate DESC
+
+GO
+
+
+
+
+
+CREATE procedure {databaseOwner}{objectQualifier}BizModules_UPG_PhotoListByTagId
+	@TagId int
+as
+
+
+SELECT * FROM {databaseOwner}{objectQualifier}BizModules_UPG_Photo P Inner Join {databaseOwner}{objectQualifier}BizModules_UPG_PhotoTag T on P.ItemId = T.PhotoId where T.TagId = cast(@TagId as varchar(10))
+	 And Approved = 1
+Order By 	SortOrder DESC,CreatedDate DESC
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_PhotoListByUserId
+	@ModuleId int,
+	@UserId int,
+	@MediaType int
+AS
+
+SELECT
+	*
+FROM {databaseOwner}{objectQualifier}BizModules_UPG_Photo
+WHERE
+	CreatedByUser = @UserId
+AND
+	AlbumId IN
+			(
+				SELECT ItemId FROM {databaseOwner}{objectQualifier}UPG_vw_Album WHERE ModuleId=@ModuleId
+			)
+AND
+	(@MediaType = 0 or MediaType & @MediaType = MediaType)
+ORDER BY 
+	SortOrder DESC,CreatedDate DESC
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_PhotoListByUserId2
+	@AlbumId int,
+	@UserId int,
+	@Status int,
+	@MediaType int,
+	@DirectFileOnly bit
+AS
+
+SELECT
+	*
+FROM {databaseOwner}{objectQualifier}BizModules_UPG_Photo
+WHERE
+	AlbumId = @AlbumId
+AND
+	CreatedByUser = @UserId
+AND
+	((Approved = 1 and @Status = 1) or (Approved = 0 and @Status = 0) or @Status = 2)
+AND
+	(@MediaType = 0 or MediaType & @MediaType = MediaType)
+AND
+	(@DirectFileOnly = 0 or (MediaType = 1 or isnull(Src,'') <> '' ))
+ORDER BY 
+	SortOrder DESC,CreatedDate DESC
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_PhotoListPurchased
+	@UserId int
+AS
+
+SELECT
+	P.*,
+	I.Currency,
+	I.PaymentDate,
+	II.InvoiceId,
+	II.PhotoId,
+	II.Price AS ActualPrice,
+	II.DownloadTimes
+FROM {databaseOwner}{objectQualifier}BizModules_UPG_InvoiceItem II
+INNER JOIN {databaseOwner}{objectQualifier}BizModules_UPG_Invoice I ON II.InvoiceId = I.ItemId
+INNER JOIN {databaseOwner}{objectQualifier}BizModules_UPG_Photo P ON II.PhotoId = P.ItemId
+WHERE
+	I.Finished = 1 AND I.UserId = @UserId
+ORDER BY 
+	I.PaymentDate DESC
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_PhotoListTopX
+	@ModuleId int,
+	@MaxItems int
+AS
+
+if @MaxItems > 0
+	set rowcount @MaxItems
+SELECT
+	P.*
+FROM {databaseOwner}{objectQualifier}BizModules_UPG_Photo P INNER JOIN {databaseOwner}{objectQualifier}UPG_vw_Album A on P.AlbumId = A.ItemId
+WHERE
+(A.ModuleId = @ModuleId AND @ModuleId > 0)
+AND	Approved = 1
+ORDER BY 
+	P.CreatedDate DESC
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_PhotoListTransferable
+	@maxItems int
+AS
+SET ROWCOUNT @MaxItems
+SELECT * FROM {databaseOwner}{objectQualifier}BizModules_UPG_Photo
+WHERE 
+(ISNULL(Src, '') <> '' AND lower(substring(Src, 1, 7)) <> 'http://' AND lower(substring(Src, 1, 8)) <> 'https://')
+OR
+(ISNULL(ResName, '') <> '' AND lower(substring(ResName, 1, 7)) <> 'http://' AND lower(substring(ResName, 1, 8)) <> 'https://')
+ORDER BY ItemId ASC
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_PhotoSearch
+	@PortalId int,
+	@Keyword nvarchar(200),
+	@WordMode bit,
+	@SearchInGallery int
+AS
+
+
+DECLARE @SQLString NVARCHAR(2000)
+SET @SQLString = 'select * from {databaseOwner}{objectQualifier}BizModules_UPG_Photo where AlbumId in('
+if @SearchInGallery > 0
+	SET @SQLString = @SQLString + 'select AlbumId from {databaseOwner}{objectQualifier}BizModules_UPG_AlbumModule where ModuleId = ' +cast( @SearchInGallery as varchar(10)) + ')'
+else
+	SET @SQLString = @SQLString + 'select ItemId from {databaseOwner}{objectQualifier}BizModules_UPG_Album where PortalId = ' + cast(@PortalId as varchar(10)) + ')'
+
+SET @SQLString = @SQLString + ' and Approved = 1 '
+
+if @WordMode = 1
+	SET @SQLString = @SQLString + ' and ('' '' + Title + '' '' + ISNULL(cast(Description as varchar(4000)), '''') + '' '' like ''% ' + @Keyword + ' %'' '
+else
+	SET @SQLString = @SQLString + ' and (Title + ISNULL(cast(Description as varchar(4000)), '''') like ''%' + @Keyword + '%'' '
+
+
+--Tag
+declare @TagId int
+SELECT	@TagId = ItemId FROM {databaseOwner}{objectQualifier}BizModules_UPG_Tag WHERE Tag = @Keyword AND 	(ModuleId = @SearchInGallery or @SearchInGallery <=0)
+if @TagId > 0
+	SET @SQLString = @SQLString + ' or ItemId in (select PhotoId from {databaseOwner}{objectQualifier}BizModules_UPG_PhotoTag where TagId = ' + cast(@TagId as varchar(10)) + ')'
+
+
+SET @SQLString = @SQLString + ') order by SortOrder DESC,CreatedDate DESC'
+
+EXECUTE sp_executesql @SQLString
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_PhotoTransfer
+	@ItemId int,
+	@AlbumId int
+AS
+
+declare @OldAlbumId int
+SELECT @OldAlbumId=AlbumId from {databaseOwner}{objectQualifier}BizModules_UPG_Photo where ItemId=@ItemId
+
+update {databaseOwner}{objectQualifier}BizModules_UPG_Photo set AlbumId = @AlbumId where ItemId = @ItemId
+
+exec {databaseOwner}{objectQualifier}BizModules_UPG_AlbumIndexP @OldAlbumId
+exec {databaseOwner}{objectQualifier}BizModules_UPG_AlbumIndexP @AlbumId
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_PhotoUpdate
+	@ItemId int, 
+	@Title nvarchar(150), 
+	@Src nvarchar(150),
+	@TnSrc nvarchar(150),
+	@Description ntext, 
+	@Link nvarchar(150), 
+	@Approved bit,
+	@SortOrder int,
+	@TnWidth int,
+	@TnHeight int,
+	@AWS_Bucket nvarchar(50),
+	@AWS_PhotoKey nvarchar(100),
+	@AWS_ThumbKey nvarchar(100),
+	@HtmlContent ntext,
+	@ResName nvarchar(200), 
+	@ResSize int, 
+	@ResOriginalName nvarchar(100), 
+	@ResContentType varchar(50),
+	@ResPrice money, 
+	@ResCreatedDate datetime, 
+	@ResDownloads int,
+	@AWS_ResKey nvarchar(100)
+AS
+
+UPDATE {databaseOwner}{objectQualifier}BizModules_UPG_Photo SET
+	Title = @Title,
+	Src = @Src,
+	TnSrc = @TnSrc,
+	Description = @Description,
+	Link = @Link,
+	Approved = @Approved,
+	LastModifiedDate = getdate(),
+	SortOrder = @SortOrder,
+	TnWidth = @TnWidth,
+	TnHeight = @TnHeight,
+	AWS_Bucket = @AWS_Bucket,
+	AWS_PhotoKey = @AWS_PhotoKey,
+	AWS_ThumbKey = @AWS_ThumbKey,
+	HtmlContent = @HtmlContent,
+	ResName = @ResName, 
+	ResSize = @ResSize, 
+	ResOriginalName = @ResOriginalName, 
+	ResContentType = @ResContentType,
+	ResPrice = @ResPrice, 
+	ResCreatedDate = @ResCreatedDate, 
+	ResDownloads = @ResDownloads,
+	AWS_ResKey = @AWS_ResKey
+WHERE
+	ItemId = @ItemId
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_PhotoUpdateGPS
+	@ItemId int, 
+	@GPSLatitude decimal(10, 4),
+	@GPSLongitude decimal(10, 4)
+AS
+
+UPDATE {databaseOwner}{objectQualifier}BizModules_UPG_Photo SET
+	GPSLatitude = @GPSLatitude,
+	GPSLongitude = @GPSLongitude
+WHERE
+	ItemId = @ItemId
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_PresentationGet
+	@ItemId int
+AS
+SELECT
+	*
+FROM {databaseOwner}{objectQualifier}BizModules_UPG_Presentation
+WHERE
+	ItemId = @ItemId
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_PresentationList
+AS
+SELECT
+	*
+FROM {databaseOwner}{objectQualifier}BizModules_UPG_Presentation
+
+GO
+
+
+
+
+
+--Presentation
+CREATE PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_PresentationListByCategory
+	@Category varchar(20)
+AS
+SELECT
+	*
+FROM {databaseOwner}{objectQualifier}BizModules_UPG_Presentation where Category = @Category
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_PresentationSafeGet
+	@ItemId int
+AS
+IF EXISTS(SELECT ItemId FROM {databaseOwner}{objectQualifier}BizModules_UPG_Presentation WHERE ItemId = @ItemId)
+	SELECT * FROM {databaseOwner}{objectQualifier}BizModules_UPG_Presentation WHERE ItemId = @ItemId
+ELSE
+	SELECT TOP 1 * FROM {databaseOwner}{objectQualifier}BizModules_UPG_Presentation ORDER By ItemId ASC
+
+GO
+
+
+
+
+
+--Rating
+CREATE PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_RatingAdd
+	@UserId int,
+	@UserIP nvarchar(15),
+	@PhotoId int,
+	@Rating int
+AS
+
+INSERT INTO {databaseOwner}{objectQualifier}BizModules_UPG_Rating (
+	UserId,
+	UserIP,
+	PhotoId,
+	Rating
+) VALUES (
+	@UserId,
+	@UserIP,
+	@PhotoId,
+	@Rating
+)
+
+declare @TotalRatings int
+declare @AverageRating decimal(5,2)
+select @TotalRatings = count(*) from {databaseOwner}{objectQualifier}BizModules_UPG_Rating where PhotoId = @PhotoId
+select @AverageRating = cast(sum(rating) as decimal(5,2))/@TotalRatings from {databaseOwner}{objectQualifier}BizModules_UPG_Rating where PhotoId = @PhotoId
+print cast(@AverageRating as varchar(10))
+update {databaseOwner}{objectQualifier}BizModules_UPG_Photo 
+set AverageRating = @AverageRating,
+TotalRatings=(Select count(*) from {databaseOwner}{objectQualifier}BizModules_UPG_Rating where PhotoId = @PhotoId)
+ where ItemId = @PhotoId
+select SCOPE_IDENTITY()
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_RatingIsDuplicated
+	@PhotoId int,
+	@UserId int,
+	@UserIP nvarchar(15)
+AS
+
+IF @UserId>0 
+BEGIN
+	IF EXISTS(
+	select * from {databaseOwner}{objectQualifier}BizModules_UPG_Rating where UserId = @UserId and PhotoId=@PhotoId
+	)
+	BEGIN
+		SELECT 1
+		RETURN
+	END
+END
+ELSE
+BEGIN
+	IF EXISTS(
+	select * from {databaseOwner}{objectQualifier}BizModules_UPG_Rating where UserIP=@UserIP and PhotoId=@PhotoId
+	)
+	BEGIN
+		SELECT 1
+		RETURN
+	END
+END
+
+SELECT 0
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_SearchUsers
+	@PortalId int,
+	@Prefix varchar(20)
+AS
+
+select * from vw_Users where (PortalId = @PortalId or PortalId is null) and (username like @Prefix + '%' or email like @Prefix + '%')
+
+GO
+
+
+
+
+
+--Tag
+CREATE PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_TagAdd
+	@ModuleId int,
+	@Tag nvarchar(200),
+	@CreatedByUser int
+AS
+
+INSERT INTO {databaseOwner}{objectQualifier}BizModules_UPG_Tag (
+	ModuleId,
+	Tag,
+	CreatedByUser
+) VALUES (
+	@ModuleId,
+	@Tag,
+	@CreatedByUser
+)
+
+select SCOPE_IDENTITY()
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_TagDelete
+	@ItemId int
+AS
+
+DELETE FROM {databaseOwner}{objectQualifier}BizModules_UPG_Tag
+WHERE
+	ItemId = @ItemId
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_TagEnsure
+	@PhotoId int,
+	@UserId int,
+	@BelongedTags nvarchar(500)
+AS
+	DECLARE @Offset int
+	DECLARE @NextPosition int
+	DECLARE @Tags nvarchar(500)
+	DECLARE @Tag nvarchar(200)
+	DECLARE @TagId int
+	DECLARE @ModuleId int
+
+	select @ModuleId = A.ModuleId from {databaseOwner}{objectQualifier}BizModules_UPG_Photo P inner join {databaseOwner}{objectQualifier}UPG_vw_Album A on P.AlbumId=A.ItemId where P.ItemId = @PhotoId
+	Set @Tags = ',' + @BelongedTags + ','
+	if CharIndex('\,',@Tags) > 0
+		select @Tags = replace(@Tags, '\,', 'SPACE')
+
+	begin transaction
+	Set NoCount ON
+	delete from {databaseOwner}{objectQualifier}BizModules_UPG_PhotoTag where PhotoId=@PhotoId
+
+	select @Offset = CharIndex(',',@Tags)
+	select @NextPosition = CharIndex(',',@Tags,@Offset + 1)
+
+	while @NextPosition > 0
+	begin
+		set @Tag= SUBSTRING(@Tags,@Offset + 1,@NextPosition - @Offset - 1)
+		if CharIndex('SPACE',@Tag) > 0
+			select @Tag = replace(@Tag, 'SPACE' , ',')
+		set @TagId = 0
+		select @TagId = ItemId from {databaseOwner}{objectQualifier}BizModules_UPG_Tag where Tag = @Tag
+		if isnull(@TagId, 0) =0 
+		begin
+			insert {databaseOwner}{objectQualifier}BizModules_UPG_Tag (ModuleId, Tag, CreatedByUser,CreatedDate) values (@ModuleId, @Tag, @UserId,getdate())
+			select @TagId =  SCOPE_IDENTITY()
+		end 
+		Insert into {databaseOwner}{objectQualifier}BizModules_UPG_PhotoTag (PhotoId,TagId) Values(@PhotoId,@TagId)
+		select @Offset = @NextPosition
+		select @NextPosition = CharIndex(',',@Tags,@Offset + 1)
+	end
+	delete {databaseOwner}{objectQualifier}BizModules_UPG_Tag where not exists(select * from {databaseOwner}{objectQualifier}BizModules_UPG_PhotoTag where {databaseOwner}{objectQualifier}BizModules_UPG_PhotoTag.TagId = {databaseOwner}{objectQualifier}BizModules_UPG_Tag.ItemId)
+	
+	Set NoCount OFF
+	if @@error=0
+	begin
+		commit transaction
+	end
+	else
+	begin
+		rollback transaction
+	end
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_TagGet
+	@ItemId int
+AS
+
+SELECT
+	*
+FROM {databaseOwner}{objectQualifier}BizModules_UPG_Tag
+WHERE
+	ItemId = @ItemId
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_TagList
+	@ModuleId int,
+	@Max int,
+	@SortingField varchar(50)
+AS
+if @Max > 0
+	set rowcount @Max
+
+if @SortingField = 'Photos'
+	SELECT	*, {databaseOwner}{objectQualifier}BizModules_UPG_GetPhotosWithTag(ItemId) as Photos 
+	from {databaseOwner}{objectQualifier}BizModules_UPG_Tag where ModuleId = @ModuleId
+	order by Photos DESC
+else
+	SELECT	*, {databaseOwner}{objectQualifier}BizModules_UPG_GetPhotosWithTag(ItemId) as Photos 
+	from {databaseOwner}{objectQualifier}BizModules_UPG_Tag where ModuleId = @ModuleId
+	order by CreatedDate DESC
+
+GO
+
+
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_TagListByPhoto
+	@PhotoId int
+AS
+
+SELECT	T.*, {databaseOwner}{objectQualifier}BizModules_UPG_GetPhotosWithTag(T.ItemId) as Photos 
+from {databaseOwner}{objectQualifier}BizModules_UPG_Tag T inner join {databaseOwner}{objectQualifier}BizModules_UPG_PhotoTag AT on T.ItemId = AT.TagId
+where AT.PhotoId = @PhotoId
+GO
+
+

@@ -1,0 +1,12 @@
+﻿--New presentation
+if not exists(select * from {databaseOwner}{objectQualifier}BizModules_upg_presentation where name='Galleria')
+INSERT {databaseOwner}{objectQualifier}BizModules_upg_presentation(Name,Description,DisplayCtl,GallerySettingCtl,Type,DefaultWidth,DefaultHeight,AllowFullScreen,Category, Featured) VALUES('Galleria','Galleria is a JavaScript image gallery framework built on top of the jQuery library.','Galleria','GalleriaAppearance','BizModules.UltraPhotoGallery.Presentation.Galleria, BizModules.UltraPhotoGallery','620','320','0','SmallGallery', 0)
+GO
+
+Update {databaseOwner}{objectQualifier}BizModules_upg_presentation set IsHtml = 1 where name in (
+'TonicGallery',
+'Translucent',
+'Galleria'
+)
+GO
+

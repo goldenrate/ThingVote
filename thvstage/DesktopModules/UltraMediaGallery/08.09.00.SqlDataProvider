@@ -1,0 +1,208 @@
+﻿-- Alter Existing Tables
+if not exists(select 1 from syscolumns where id = object_id('{databaseOwner}{objectQualifier}BizModules_UPG_PhotoTag') and name = 'X') 
+  alter table {databaseOwner}{objectQualifier}BizModules_UPG_PhotoTag 
+    add X integer
+GO
+
+if not exists(select 1 from syscolumns where id = object_id('{databaseOwner}{objectQualifier}BizModules_UPG_PhotoTag') and name = 'Y') 
+  alter table {databaseOwner}{objectQualifier}BizModules_UPG_PhotoTag 
+    add Y integer
+GO
+
+
+ALTER PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_TagEnsure
+	@PhotoId int,
+	@UserId int,
+	@BelongedTags nvarchar(500)
+AS
+	DECLARE @Offset int
+	DECLARE @NextPosition int
+	DECLARE @Tags nvarchar(500)
+	DECLARE @Tag nvarchar(200)
+	DECLARE @TagId int
+	DECLARE @ModuleId int
+	
+	DECLARE @AddedTags nvarchar(500)
+	select @AddedTags = ''
+
+	select @ModuleId = A.ModuleId from {databaseOwner}{objectQualifier}BizModules_UPG_Photo P inner join {databaseOwner}{objectQualifier}UPG_vw_Album A on P.AlbumId=A.ItemId where P.ItemId = @PhotoId
+	Set @Tags = ',' + @BelongedTags + ','
+	if CharIndex('\,',@Tags) > 0
+		select @Tags = replace(@Tags, '\,', 'SPACE')
+
+	begin transaction
+	Set NoCount ON
+	--delete from {databaseOwner}{objectQualifier}BizModules_UPG_PhotoTag where PhotoId=@PhotoId
+
+	select @Offset = CharIndex(',',@Tags)
+	select @NextPosition = CharIndex(',',@Tags,@Offset + 1)
+
+	while @NextPosition > 0
+	begin
+		set @Tag= SUBSTRING(@Tags,@Offset + 1,@NextPosition - @Offset - 1)
+		if CharIndex('SPACE',@Tag) > 0
+			select @Tag = replace(@Tag, 'SPACE' , ',')
+		set @TagId = 0
+		set @Tag = ltrim(rtrim(@Tag))		
+
+		if len(@AddedTags) > 0
+			select @AddedTags = @AddedTags + ','
+		select @AddedTags = @AddedTags + '''' + @Tag + ''''
+		
+		select @TagId = ItemId from {databaseOwner}{objectQualifier}BizModules_UPG_Tag where ltrim(rtrim(Tag)) = @Tag
+		if isnull(@TagId, 0) =0 
+		begin
+			insert {databaseOwner}{objectQualifier}BizModules_UPG_Tag (ModuleId, Tag, CreatedByUser,CreatedDate) values (@ModuleId, @Tag, @UserId,getdate())
+			select @TagId =  SCOPE_IDENTITY()
+		end 
+		
+		if not exists (select * from {databaseOwner}{objectQualifier}BizModules_UPG_PhotoTag where PhotoId = @PhotoId and TagId = @TagId)
+			Insert into {databaseOwner}{objectQualifier}BizModules_UPG_PhotoTag (PhotoId,TagId) Values(@PhotoId,@TagId)
+			
+		select @Offset = @NextPosition
+		select @NextPosition = CharIndex(',',@Tags,@Offset + 1)
+	end
+	
+	--delete tags that were linked to current photo but not now
+	DECLARE @SQLString NVARCHAR(2000)
+	SET @SQLString = 'delete {databaseOwner}{objectQualifier}BizModules_UPG_PhotoTag where PhotoId = ' + cast(@PhotoId as varchar(10)) + ' and TagId in (select ItemId from {databaseOwner}{objectQualifier}BizModules_UPG_Tag where tag not in (' + @AddedTags + '))'
+	EXECUTE sp_executesql @SQLString
+
+	--delete tags not being used
+	delete {databaseOwner}{objectQualifier}BizModules_UPG_Tag where not exists(select * from {databaseOwner}{objectQualifier}BizModules_UPG_PhotoTag where {databaseOwner}{objectQualifier}BizModules_UPG_PhotoTag.TagId = {databaseOwner}{objectQualifier}BizModules_UPG_Tag.ItemId)
+	
+	Set NoCount OFF
+	if @@error=0
+	begin
+		commit transaction
+	end
+	else
+	begin
+		rollback transaction
+	end
+
+GO
+
+
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'{databaseOwner}{objectQualifier}BizModules_UPG_TagEnsure2') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_TagEnsure2
+GO
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_TagEnsure2
+	@PhotoId int,
+	@UserId int,
+	@BelongedTags nvarchar(500)
+AS
+	DECLARE @Offset int
+	DECLARE @NextPosition int
+	DECLARE @Tags nvarchar(500)
+	DECLARE @Tag nvarchar(200)
+	DECLARE @TagId int
+	DECLARE @ModuleId int
+	
+	DECLARE @AddedTags nvarchar(500)
+	select @AddedTags = ''
+
+	select @ModuleId = A.ModuleId from {databaseOwner}{objectQualifier}BizModules_UPG_Photo P inner join {databaseOwner}{objectQualifier}UPG_vw_Album A on P.AlbumId=A.ItemId where P.ItemId = @PhotoId
+	Set @Tags = ',' + @BelongedTags + ','
+	if CharIndex('\,',@Tags) > 0
+		select @Tags = replace(@Tags, '\,', 'SPACE')
+
+	begin transaction
+	Set NoCount ON
+
+	select @Offset = CharIndex(',',@Tags)
+	select @NextPosition = CharIndex(',',@Tags,@Offset + 1)
+
+	while @NextPosition > 0
+	begin
+		set @Tag= SUBSTRING(@Tags,@Offset + 1,@NextPosition - @Offset - 1)
+		if CharIndex('SPACE',@Tag) > 0
+			select @Tag = replace(@Tag, 'SPACE' , ',')
+		set @TagId = 0
+		set @Tag = ltrim(rtrim(@Tag))
+		
+		--Read coordinates
+		declare @puretag varchar(200)
+		declare @x int
+		declare @y int
+		if isnumeric(SUBSTRING(@Tag, 1,4)) = 1 and isnumeric(SUBSTRING(@Tag, 6,4)) = 1 and SUBSTRING(@Tag, 5,1) = '|'
+		begin
+			select @puretag = ltrim(rtrim(substring(@Tag, 10, len(@Tag) - 9)))
+			select @x = CAST(SUBSTRING(@Tag, 1,4) as integer)
+			select @y = CAST(SUBSTRING(@Tag, 6,4) as integer)
+		end
+		else
+		begin
+			continue
+		end
+		--done
+		
+		if len(@AddedTags) > 0
+			select @AddedTags = @AddedTags + ','
+		select @AddedTags = @AddedTags + '''' + @puretag + ''''
+		
+		select @TagId = ItemId from {databaseOwner}{objectQualifier}BizModules_UPG_Tag where ltrim(rtrim(Tag)) = @puretag
+		if isnull(@TagId, 0) =0 
+		begin
+			insert {databaseOwner}{objectQualifier}BizModules_UPG_Tag (ModuleId, Tag, CreatedByUser,CreatedDate) values (@ModuleId, @puretag, @UserId,getdate())
+			select @TagId =  SCOPE_IDENTITY()
+		end 
+		
+		if not exists (select * from {databaseOwner}{objectQualifier}BizModules_UPG_PhotoTag where PhotoId = @PhotoId and TagId = @TagId)
+			Insert into {databaseOwner}{objectQualifier}BizModules_UPG_PhotoTag (PhotoId,TagId) Values(@PhotoId,@TagId)
+		
+		update {databaseOwner}{objectQualifier}BizModules_UPG_PhotoTag set X = @x, Y=@y where PhotoId = @PhotoId and TagId = @TagId
+			
+		select @Offset = @NextPosition
+		select @NextPosition = CharIndex(',',@Tags,@Offset + 1)
+	end
+	
+	--delete tags that were linked to current photo but not now
+	DECLARE @SQLString NVARCHAR(2000)
+	SET @SQLString = 'delete {databaseOwner}{objectQualifier}BizModules_UPG_PhotoTag where PhotoId = ' + cast(@PhotoId as varchar(10)) + ' And X IS NULL and TagId in (select ItemId from {databaseOwner}{objectQualifier}BizModules_UPG_Tag where tag not in (' + @AddedTags + '))'
+	EXECUTE sp_executesql @SQLString
+
+	--delete tags not being used
+	delete {databaseOwner}{objectQualifier}BizModules_UPG_Tag where not exists(select * from {databaseOwner}{objectQualifier}BizModules_UPG_PhotoTag where {databaseOwner}{objectQualifier}BizModules_UPG_PhotoTag.TagId = {databaseOwner}{objectQualifier}BizModules_UPG_Tag.ItemId)
+	
+	Set NoCount OFF
+	if @@error=0
+	begin
+		commit transaction
+	end
+	else
+	begin
+		rollback transaction
+	end
+
+GO
+
+
+
+
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'{databaseOwner}{objectQualifier}BizModules_UPG_TagList2') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_TagList2
+GO
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_TagList2
+	@PhotoId int
+AS
+
+select PT.*, T.Tag, {databaseOwner}{objectQualifier}BizModules_UPG_GetPhotosWithTag(T.ItemId) as Photos from {databaseOwner}{objectQualifier}BizModules_UPG_PhotoTag PT inner join {databaseOwner}{objectQualifier}BizModules_UPG_Tag T on PT.TagId = T.ItemId
+where PT.PhotoId = @PhotoId
+GO
+
+
+--Rename UMGClassic & Combine ShadowViewer
+Update {databaseOwner}{objectQualifier}BizModules_UPG_Presentation set Name='UMGClassicNG', DefaultWidth=840, DefaultHeight=525,AllowFullScreen=1,Featured=1, IsHtml=1 where Name='UMG Classic'
+GO
+
+update {databaseOwner}{objectQualifier}ModuleSettings set SettingValue = (select Itemid from {databaseOwner}{objectQualifier}BizModules_UPG_Presentation where Name='UMGClassicNG') where SettingValue = (select Itemid from {databaseOwner}{objectQualifier}BizModules_UPG_Presentation where Name='ShadowViewer') And SettingName like 'PreferedPresentation%'
+GO
+
+delete {databaseOwner}{objectQualifier}BizModules_UPG_Presentation Where Name = 'ShadowViewer'
+GO
+
+
+

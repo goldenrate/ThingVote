@@ -1,0 +1,7 @@
+[THICKBOX]
+<script type="text/javascript" language="javascript">
+if(($+"").length<100)
+	jQuery.noConflict();
+</script>
+
+<table border='0' width='100%'>

@@ -1,0 +1,1 @@
+<%@ Page Language="vb" AutoEventWireup="false" Codebehind="FlashUploadPage.aspx.vb" Inherits="BizModules.UltraPhotoGallery.Flash.FlashUploadPage" %>

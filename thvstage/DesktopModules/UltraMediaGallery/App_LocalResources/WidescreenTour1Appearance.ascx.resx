@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>1.3</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+
+	<data name="backgroundColor.Text">
+		<value>Background Color</value>
+	</data>
+	<data name="backgroundColor.Help">
+		<value>Background color of the stage</value>
+	</data>
+	<data name="lightboxBackground.Text">
+		<value>Lightbox Background</value>
+	</data>
+	<data name="lightboxBackground.Help">
+		<value>Background color of the lightbox window</value>
+	</data>
+	<data name="easing.Text">
+		<value>Easing Effect</value>
+	</data>
+	<data name="easing.Help">
+		<value>The easing effect of animations</value>
+	</data>
+	<data name="animSpeed.Text">
+		<value>Animation Speed</value>
+	</data>
+	<data name="animSpeed.Help">
+		<value>Numbers of milliseconds used to run an animation</value>
+	</data>
+	<data name="gridSize.Text">
+		<value>Image Grid</value>
+	</data>
+	<data name="gridSize.Help">
+		<value>Number of rows and columns of the image grid</value>
+	</data>
+	<data name="randomicity.Text">
+		<value>Randomicity</value>
+	</data>
+	<data name="randomicity.Help">
+		<value>The random offset of image position, choose 0 for a fixed grid layout.</value>
+	</data>
+	<data name="infoWidth.Text">
+		<value>Description Width</value>
+	</data>
+	<data name="infoWidth.Help">
+		<value>The size of the media description in lightbox window.</value>
+	</data>
+	<data name="openLinkInNewWindow.Text">
+		<value>Open links in new window</value>
+	</data>
+	<data name="autoPlayVideo.Text">
+		<value>Auto play the first video, if exists</value>
+	</data>
+	<data name="showVideoControls.Text">
+		<value>Show video player control bar</value>
+	</data>
+
+	<data name="scrollIndicatorColor.Text">
+		<value>Scroll Indicator</value>
+	</data>
+	<data name="captionBackgroundColor.Text">
+		<value>Caption Background</value>
+	</data>
+	<data name="textColor.Text">
+		<value>Text Color</value>
+	</data>
+	<data name="descriptionColor.Text">
+		<value>Description Color</value>
+	</data>
+	<data name="seed.Text">
+		<value>Randomicity</value>
+	</data>
+	<data name="videoPlayerSize.Text">
+		<value>Video Player Size</value>
+	</data>
+	<data name="exploreMoreLink.Text">
+		<value>Explore More Link</value>
+	</data>
+	<data name="useEmbedFonts.Text">
+		<value>Use embed fonts. do not turn on this option when use non-latin characters in this gallery</value>
+	</data>
+	<data name="fixedPosition.Text">
+		<value>Place images in fixed positions assigned by album description, when turn on this option, you should enter the cordinates of images in album description filed, separated by a break(new line), and the cordinate should be in "x,y" format</value>
+	</data>
+	<data name="DoYouKnow.Text">
+		<value>This presentation displays your album logo as background image so it requires all logos to be in same resolution as your gallery, othewise the background will be blur.&lt;p&gt;Please click Settings in top menu and set Album Logo Size to same size of your gallery and upload album logos again.&lt;/p&gt;</value>
+	</data>
+</root>

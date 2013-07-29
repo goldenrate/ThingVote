@@ -1,0 +1,72 @@
+2013-05-08 17:43:16,518 [WIN-SQUVIVLQ4HM][Thread:26][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.IO.IOException: The process cannot access the file 'C:\Workspaces\Tipped\Websites\thvstage\Portals\0\Users\SocialPolls\2\DSC_0125.JPG' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.File.Create(String path, Int32 bufferSize)
+   at AjaXFileHandler.SaveStreamToFile(String fileFullPath, Stream stream) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\AjaxFileHandler.ashx:line 76
+   at AjaXFileHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\AjaxFileHandler.ashx:line 37
+2013-05-08 17:43:16,629 [WIN-SQUVIVLQ4HM][Thread:11][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.IO.IOException: The process cannot access the file 'C:\Workspaces\Tipped\Websites\thvstage\Portals\0\Users\SocialPolls\2\DSC_0127.JPG' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.File.Create(String path, Int32 bufferSize)
+   at AjaXFileHandler.SaveStreamToFile(String fileFullPath, Stream stream) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\AjaxFileHandler.ashx:line 76
+   at AjaXFileHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\AjaxFileHandler.ashx:line 37
+2013-05-08 17:43:17,049 [WIN-SQUVIVLQ4HM][Thread:26][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.IO.IOException: The process cannot access the file 'C:\Workspaces\Tipped\Websites\thvstage\Portals\0\Users\SocialPolls\2\DSC_0125.JPG' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.File.Create(String path, Int32 bufferSize)
+   at AjaXFileHandler.SaveStreamToFile(String fileFullPath, Stream stream) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\AjaxFileHandler.ashx:line 76
+   at AjaXFileHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\AjaxFileHandler.ashx:line 69
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-08 17:43:17,049 [WIN-SQUVIVLQ4HM][Thread:11][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.IO.IOException: The process cannot access the file 'C:\Workspaces\Tipped\Websites\thvstage\Portals\0\Users\SocialPolls\2\DSC_0127.JPG' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.File.Create(String path, Int32 bufferSize)
+   at AjaXFileHandler.SaveStreamToFile(String fileFullPath, Stream stream) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\AjaxFileHandler.ashx:line 76
+   at AjaXFileHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\AjaxFileHandler.ashx:line 69
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-08 22:24:28,936 [WIN-SQUVIVLQ4HM][Thread:28][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.IO.IOException: The process cannot access the file 'C:\Workspaces\Tipped\Websites\thvstage\Portals\0\Users\SocialPolls\2\DSC_0128.JPG' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.File.Create(String path, Int32 bufferSize)
+   at AjaXFileHandler.SaveStreamToFile(String fileFullPath, Stream stream) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\AjaxFileHandler.ashx:line 76
+   at AjaXFileHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\AjaxFileHandler.ashx:line 37
+2013-05-08 22:24:29,234 [WIN-SQUVIVLQ4HM][Thread:28][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.IO.IOException: The process cannot access the file 'C:\Workspaces\Tipped\Websites\thvstage\Portals\0\Users\SocialPolls\2\DSC_0128.JPG' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.File.Create(String path, Int32 bufferSize)
+   at AjaXFileHandler.SaveStreamToFile(String fileFullPath, Stream stream) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\AjaxFileHandler.ashx:line 76
+   at AjaXFileHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\AjaxFileHandler.ashx:line 69
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-08 22:32:47,721 [WIN-SQUVIVLQ4HM][Thread:37][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.IO.IOException: The process cannot access the file 'C:\Workspaces\Tipped\Websites\thvstage\Portals\0\Users\SocialPolls\2\DSC_0128.JPG' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.File.Create(String path, Int32 bufferSize)
+   at AjaXFileHandler.SaveStreamToFile(String fileFullPath, Stream stream) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\AjaxFileHandler.ashx:line 76
+   at AjaXFileHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\AjaxFileHandler.ashx:line 37
+2013-05-08 22:32:47,783 [WIN-SQUVIVLQ4HM][Thread:37][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.IO.IOException: The process cannot access the file 'C:\Workspaces\Tipped\Websites\thvstage\Portals\0\Users\SocialPolls\2\DSC_0128.JPG' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.File.Create(String path, Int32 bufferSize)
+   at AjaXFileHandler.SaveStreamToFile(String fileFullPath, Stream stream) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\AjaxFileHandler.ashx:line 76
+   at AjaXFileHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\AjaxFileHandler.ashx:line 69
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)

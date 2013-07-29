@@ -1,0 +1,6 @@
+<TR>
+ <TD class='Normal' align='center'><a href='[LINK]' title='[PHOTOTITLE]'><img src='[THUMBNAIL]' border=0 vspace=2 hspace=2></a></TD>
+ <td class='Normal'>[AUTHOR] says... 
+  <br>
+  <I>[COMMENT]</I></td>
+</TR>

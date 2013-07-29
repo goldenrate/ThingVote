@@ -1,0 +1,29 @@
+2013-05-29 10:24:27,167 [WIN-SQUVIVLQ4HM][Thread:8][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.NullReferenceException: Object reference not set to an instance of an object.
+   at System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   at DotNetNuke.Entities.Users.UserInfo.get_Social()
+   at DotNetNuke.Entities.Users.UserInfo.get_Roles()
+   at DotNetNuke.Entities.Users.UserInfo.IsInRole(String role)
+   at DotNetNuke.HttpModules.Membership.MembershipModule.AuthenticateRequest(HttpContextBase context, Boolean allowUnknownExtensinons)
+   at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-29 11:32:26,313 [WIN-SQUVIVLQ4HM][Thread:34][ERROR] DotNetNuke.Services.Exceptions.Exceptions - Resource Not Found: - /profilepic.ashx?userId=[object%20Object]&h=45&w=45
+System.Web.HttpException (0x80004005): Resource Not Found
+2013-05-29 11:32:26,371 [WIN-SQUVIVLQ4HM][Thread:34][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): Resource Not Found
+   at DotNetNuke.Services.Exceptions.Exceptions.ProcessHttpException(HttpException exc, String URL)
+   at DotNetNuke.Services.UserProfile.UserProfilePicHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-29 11:34:44,879 [WIN-SQUVIVLQ4HM][Thread:55][ERROR] DotNetNuke.Services.Exceptions.Exceptions - Resource Not Found: - /profilepic.ashx?userId=[object%20Object]&h=45&w=45
+System.Web.HttpException (0x80004005): Resource Not Found
+2013-05-29 11:34:44,885 [WIN-SQUVIVLQ4HM][Thread:55][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): Resource Not Found
+   at DotNetNuke.Services.Exceptions.Exceptions.ProcessHttpException(HttpException exc, String URL)
+   at DotNetNuke.Services.UserProfile.UserProfilePicHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-29 11:35:55,756 [WIN-SQUVIVLQ4HM][Thread:52][ERROR] DotNetNuke.Services.Exceptions.Exceptions - Resource Not Found: - /profilepic.ashx?userId=[object%20Object]&h=45&w=45
+System.Web.HttpException (0x80004005): Resource Not Found
+2013-05-29 11:35:55,762 [WIN-SQUVIVLQ4HM][Thread:52][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): Resource Not Found
+   at DotNetNuke.Services.Exceptions.Exceptions.ProcessHttpException(HttpException exc, String URL)
+   at DotNetNuke.Services.UserProfile.UserProfilePicHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)

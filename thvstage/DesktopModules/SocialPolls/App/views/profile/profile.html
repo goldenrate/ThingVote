@@ -1,0 +1,50 @@
+﻿<div data-bind="with: Member">
+    <ul id="profile-info" class="unstyled">
+        <li>
+            <div id="profile-picture" class="">
+                <img data-bind="attr: { src: PhotoURL() }" />
+            </div>
+
+        </li>
+        <li>
+            <div class="bio">
+                <h2 data-bind=" text: DisplayName() " class="blueTheme"></h2>
+                <div data-bind="text: ProfileProperties.Biography()"></div>
+            </div>
+        </li>
+        <li id="profile-actions" class="pull-right">
+            <ul class="unstyled">
+                <li>
+                    <span data-bind="text: FollowersCount()"></span><span>followers</span>
+                    <span data-bind="text: VotesCount() "></span><span>votes</span>
+                </li>
+                <li>
+                    <span data-bind="text: PollsCount() "></span><span>polls</span>
+                    <span data-bind="text: FollowingCount() "></span><span>following</span>
+
+                </li>
+            </ul>
+
+            <ul class="user-hover-actions unstyled pull-left"
+                data-bind="visible:!IsUser()">
+                <li class="user-follow" data-bind="visible: !IsFollowing()">
+                    <a href="#" title="" class="btn rounded-corners linear-grad-baige-btn"
+                        data-bind="click: follow">
+                        <i class="icon-plus"></i>
+                        <span data-bind="    text: FollowText"></span>
+                    </a>
+                </li>
+                <li class="user-unfollow" data-bind="visible: IsFollowing()">
+                    <a href="#" title="" class="btn rounded-corners linear-grad-baige-btn"
+                        data-bind="  click: unFollow">
+                        <i class="icon-minus"></i>
+                        <span data-bind="    text: UnFollowText"></span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+         <li  class="clear"></li>
+    </ul>
+<div class="clear"></div>
+</div>
+

@@ -1,0 +1,106 @@
+2013-06-11 11:15:02,183 [WIN-SQUVIVLQ4HM][Thread:46][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): Validation of viewstate MAC failed. If this application is hosted by a Web Farm or cluster, ensure that <machineKey> configuration specifies the same validationKey and validation algorithm. AutoGenerate cannot be used in a cluster. ---> System.Web.UI.ViewStateException: Invalid viewstate. 
+	Client IP: 127.0.0.1
+	Port: 1737
+	Referer: http://thvstage/Splash/tabid/87/Default.aspx?returnurl=%2f
+	Path: /Default.aspx
+	User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1535.2 Safari/537.36
+	ViewState: fh1t0aFs7o+vD/Jn0oW1wGGQEZ4qBEvTMlGgZ6MmeEGYtS/lWxExN1HN4jussi2ShxTlI9vBHkXndi/hkQrqGGMDCYZ9iT8B4YTvD9f3Dv8UTer9DJZ9UOEIIrLIY1Jh7zbq1FNHW9TQRujr3qjzJV5LIGk0/9pgBMVLyS/fwfQB8gsNeZBN5657bm0gCdsDUu7i9UgmDOkjItc4A/1SLaBz1aXtSkeetSbVkCcatb5wsK1Q8nU8aDdCGkoEsGBNSQ5JpW+Vyftf5F2Mka+rFgNoDAsNSEF9udjXlFrQUYSa0JY9VHYRUgh49rQOtVh2+en8fq0NdZL1M/i0zHoAHuxY+JRbHF7OiTcdcQHmtBXoBS0dVUylLScYeZeC2uAo0PuvglNWI9/9epgTLRHjQne2nc0/ZAxgqLKpJmhaEwhJHA9aHumradRK7vj9MLAlt6Le1Jt3KgYlYJ0yANtXsE71WR1c6+d245c0D79GTuMMQa9af89ZBzTchn1I/z0PqthRCB+pM0NgA69Vi9fusmOz7X0ksEKMsblkBz1CQUy7WgGWmXXgUte5amIG8T2D/LT+7vl+lfO/Q3JclsRXHfpbcinE4E0/YCfdnqxXZIS7WDJakFM0XlTl1fXfWQUItGtUywbfOYWv+HC9ZeKUTBMM23c41V9Iyi+eoBpUcIYhjWgaRR+vi1xCdd4yadjSEi6zBA2pyWzlOpVLNQ/Kex0oxJ12BqOezUlqOCjTVHfsvOhtrxaNo...
+   at System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   at System.Web.UI.ObjectStateFormatter.Deserialize(String inputString, Purpose purpose)
+   at System.Web.UI.Util.DeserializeWithAssert(IStateFormatter2 formatter, String serializedState, Purpose purpose)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   at System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   at System.Web.UI.Page.LoadAllState()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-06-11 11:15:02,289 [WIN-SQUVIVLQ4HM][Thread:46][ERROR] DotNetNuke.Services.Exceptions.Exceptions - DotNetNuke.Services.Exceptions.PageLoadException: Validation of viewstate MAC failed. If this application is hosted by a Web Farm or cluster, ensure that <machineKey> configuration specifies the same validationKey and validation algorithm. AutoGenerate cannot be used in a cluster. ---> System.Web.HttpException: Validation of viewstate MAC failed. If this application is hosted by a Web Farm or cluster, ensure that <machineKey> configuration specifies the same validationKey and validation algorithm. AutoGenerate cannot be used in a cluster. ---> System.Web.UI.ViewStateException: Invalid viewstate. 
+	Client IP: 127.0.0.1
+	Port: 1737
+	Referer: http://thvstage/Splash/tabid/87/Default.aspx?returnurl=%2f
+	Path: /Default.aspx
+	User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1535.2 Safari/537.36
+	ViewState: fh1t0aFs7o+vD/Jn0oW1wGGQEZ4qBEvTMlGgZ6MmeEGYtS/lWxExN1HN4jussi2ShxTlI9vBHkXndi/hkQrqGGMDCYZ9iT8B4YTvD9f3Dv8UTer9DJZ9UOEIIrLIY1Jh7zbq1FNHW9TQRujr3qjzJV5LIGk0/9pgBMVLyS/fwfQB8gsNeZBN5657bm0gCdsDUu7i9UgmDOkjItc4A/1SLaBz1aXtSkeetSbVkCcatb5wsK1Q8nU8aDdCGkoEsGBNSQ5JpW+Vyftf5F2Mka+rFgNoDAsNSEF9udjXlFrQUYSa0JY9VHYRUgh49rQOtVh2+en8fq0NdZL1M/i0zHoAHuxY+JRbHF7OiTcdcQHmtBXoBS0dVUylLScYeZeC2uAo0PuvglNWI9/9epgTLRHjQne2nc0/ZAxgqLKpJmhaEwhJHA9aHumradRK7vj9MLAlt6Le1Jt3KgYlYJ0yANtXsE71WR1c6+d245c0D79GTuMMQa9af89ZBzTchn1I/z0PqthRCB+pM0NgA69Vi9fusmOz7X0ksEKMsblkBz1CQUy7WgGWmXXgUte5amIG8T2D/LT+7vl+lfO/Q3JclsRXHfpbcinE4E0/YCfdnqxXZIS7WDJakFM0XlTl1fXfWQUItGtUywbfOYWv+HC9ZeKUTBMM23c41V9Iyi+eoBpUcIYhjWgaRR+vi1xCdd4yadjSEi6zBA2pyWzlOpVLNQ/Kex0oxJ12BqOezUlqOCjTVHfsvOhtrxaNo...
+   --- End of inner exception stack trace ---
+   at System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   at System.Web.UI.ObjectStateFormatter.Deserialize(String inputString, Purpose purpose)
+   at System.Web.UI.Util.DeserializeWithAssert(IStateFormatter2 formatter, String serializedState, Purpose purpose)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   at System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   at System.Web.UI.Page.LoadAllState()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- End of inner exception stack trace ---
+2013-06-11 11:20:42,086 [WIN-SQUVIVLQ4HM][Thread:52][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.ApplicationException: ReaderWriterLockStrategy.GetWriteLock timed out
+   at DotNetNuke.Collections.Internal.ReaderWriterLockStrategy.GetWriteLock(TimeSpan timeout)
+   at DotNetNuke.Services.Scheduling.Scheduler.CoreScheduler.RemoveFromScheduleQueue(ScheduleItem scheduleItem)
+2013-06-11 13:44:13,850 [WIN-SQUVIVLQ4HM][Thread:66][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.ArgumentException: An item with the same key has already been added.
+   at System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   at DotNetNuke.Entities.Users.UserInfo.get_Social()
+   at DotNetNuke.Entities.Users.UserInfo.get_Roles()
+   at DotNetNuke.Entities.Users.UserInfo.IsInRole(String role)
+   at DotNetNuke.HttpModules.Membership.MembershipModule.AuthenticateRequest(HttpContextBase context, Boolean allowUnknownExtensinons)
+   at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-06-11 13:45:52,636 [WIN-SQUVIVLQ4HM][Thread:53][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): Maximum request length exceeded.
+   at System.Web.HttpRequest.GetEntireRawContent()
+   at System.Web.HttpRequest.GetMultipartContent()
+   at System.Web.HttpRequest.FillInFormCollection()
+   at System.Web.HttpRequest.EnsureForm()
+   at System.Web.HttpRequest.get_Form()
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.postHandler(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 94
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 79
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 63
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-06-11 13:46:25,604 [WIN-SQUVIVLQ4HM][Thread:94][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): Maximum request length exceeded.
+   at System.Web.HttpRequest.GetEntireRawContent()
+   at System.Web.HttpRequest.GetMultipartContent()
+   at System.Web.HttpRequest.FillInFormCollection()
+   at System.Web.HttpRequest.EnsureForm()
+   at System.Web.HttpRequest.get_Form()
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.postHandler(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 94
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 79
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 63
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-06-11 13:46:46,178 [WIN-SQUVIVLQ4HM][Thread:93][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): Maximum request length exceeded.
+   at System.Web.HttpRequest.GetEntireRawContent()
+   at System.Web.HttpRequest.GetMultipartContent()
+   at System.Web.HttpRequest.FillInFormCollection()
+   at System.Web.HttpRequest.EnsureForm()
+   at System.Web.HttpRequest.get_Form()
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.postHandler(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 94
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 79
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 63
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-06-11 13:47:10,254 [WIN-SQUVIVLQ4HM][Thread:66][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): Maximum request length exceeded.
+   at System.Web.HttpRequest.GetEntireRawContent()
+   at System.Web.HttpRequest.GetMultipartContent()
+   at System.Web.HttpRequest.FillInFormCollection()
+   at System.Web.HttpRequest.EnsureForm()
+   at System.Web.HttpRequest.get_Form()
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.postHandler(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 94
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 79
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 63
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-06-11 18:27:11,704 [WIN-SQUVIVLQ4HM][Thread:16][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidOperationException: Collection was modified; enumeration operation may not execute.
+   at System.Collections.Generic.List`1.Enumerator.MoveNextRare()
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPublicPollsByCategories(String categories) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 334
+2013-06-11 18:34:48,023 [WIN-SQUVIVLQ4HM][Thread:67][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidOperationException: Collection was modified; enumeration operation may not execute.
+   at System.Collections.Generic.List`1.Enumerator.MoveNextRare()
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPublicPollsByCategories(String categories) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 334
+2013-06-11 18:55:17,246 [WIN-SQUVIVLQ4HM][Thread:35][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidOperationException: Collection was modified; enumeration operation may not execute.
+   at System.Collections.Generic.List`1.Enumerator.MoveNextRare()
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPublicPollsByCategories(String categories) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 314
+2013-06-11 18:58:56,825 [WIN-SQUVIVLQ4HM][Thread:81][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.InvalidOperationException: Collection was modified; enumeration operation may not execute.
+   at System.Collections.Generic.List`1.Enumerator.MoveNextRare()
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPublicPollsByCategories(String categories) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 314
+2013-06-11 19:22:14,399 [WIN-SQUVIVLQ4HM][Thread:29][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.NullReferenceException: Object reference not set to an instance of an object.
+   at System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   at DotNetNuke.Entities.Users.UserInfo.get_Social()
+   at DotNetNuke.Entities.Users.UserInfo.get_Roles()
+   at DotNetNuke.Entities.Users.UserInfo.IsInRole(String role)
+   at DotNetNuke.HttpModules.Membership.MembershipModule.AuthenticateRequest(HttpContextBase context, Boolean allowUnknownExtensinons)
+   at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)

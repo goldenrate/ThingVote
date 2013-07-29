@@ -1,0 +1,50 @@
+﻿<div class="poll-container">
+    <section id="votesContainer"
+        data-bind="foreach: { data: MyVotes }, masonry: itemSelector()"  
+        class="unstyled nav centered">
+        <article class="pollItem outerShadow " data-bind="css: { longPoll: IsSelectionPoll(), shortPoll: !IsSelectionPoll() }">
+
+            <div class="pollActions previewBlock">
+                <a href="#" class="viewIcon">
+                    <img data-bind=" attr: { src: pollIconUrl }" />
+                </a>
+                <a class="btn dropdown-toggle actionIcon"
+                    data-toggle="dropdown" href="#">
+                    <span class="caret"></span>
+                </a>
+            </div>
+            <div class="pollHeader  previewBlock">
+                <div class="blueTheme">
+                    <h4 data-bind="text: OwnerDisplayName"></h4>
+                </div>
+                <div style="font-size: 75%">
+                    <span data-bind="text: pollTypeName"></span>,
+                    created <span data-bind="text: CreatedOn"></span>
+                </div>
+                <div id="previewUserInfo" class=" blueTheme">
+                    <img data-bind="attr: { src: userPreviewProfilePicture }" />
+                    <!-- ko  text: Question -->
+                    <!-- /ko -->
+                    <div class="clear"></div>
+                </div>
+            </div> 
+            <div class="pollImages previewBlock">
+                <div id="pollOptions">
+                    <ul id="optionsList" class="unstyled" data-bind="foreach: {data: PollOptions}"
+                        data-toggle="buttons-radio">
+                        <li data-bind="attr: { id: $parent.PollId }">
+                            <div class="previewImageContainer">
+                                <img data-bind="attr: { src: getPrevThumbnailHdl(), id: OptionId() }" />
+                            </div>
+                        </li>   
+                    </ul>
+                </div>
+
+
+            </div>
+        </article>
+    </section>
+    <!---->
+</div>
+
+<div id="pollDetailModal"></div>

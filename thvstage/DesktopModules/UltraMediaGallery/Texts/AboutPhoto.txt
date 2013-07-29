@@ -1,0 +1,22 @@
+<table width="100%" cellspacing="3" cellpadding="0" class="Normal">
+    <tr>
+        <td rowspan="3" width="50">
+            <div class="UVGAvatar" style="margin:3px;">
+                <img src="[THUMBNAIL]" border="0"/></div>
+        </td>
+        <td class="SubSubHead">
+            [TITLE]
+        </td>
+    </tr>
+    <tr>
+        <td class="Normal">
+            [AUTHOR]</td>
+    </tr>
+    <tr>
+        <td class="Normal">
+           [ADDTOCART]</td>
+    </tr>
+</table>
+<table class="Normal">
+<tr><td>Keywords:</td><td class='UMGKeyword'>[TAGS]</td></tr>
+</table>

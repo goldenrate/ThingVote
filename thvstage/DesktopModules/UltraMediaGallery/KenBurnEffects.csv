@@ -1,0 +1,6 @@
+Start Position, Zoom, End Position, ZoomFact,Caption
+right bottom,in,center top,3,cp-left
+right top,out,left bottom,1.5,cp-right
+left bottom,in,center center,3,cp-bottom
+right top,out,left bottom,1.2,cp-top
+center top,in,center bottom,1.6,cp-left

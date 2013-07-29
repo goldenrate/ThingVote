@@ -1,0 +1,1 @@
+<img src="[THUMBNAIL]" largeSrc="[PHOTO]" title="[TITLE]" description="[DESCRIPTION]" />

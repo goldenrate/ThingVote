@@ -1,0 +1,14 @@
+<a href="[LARGE]" class="listitem" data-umgid="[PHOTOID]" style="height:[THUMBHEIGHT]px;">
+	<span class="imgntime">
+		<img src="[THUMBNAIL]" border="0" alt="Screenshot" />
+	</span>
+
+	<span class="texts">
+	<span class='likes'>[LIKES]</span>
+	<span class="title hl">[TITLE]</span>
+		<span class="desc">[DESCRIPTION:150]</span>
+		<span class="meta">
+			by [AUTHOR] | <font class="hl">[CREATEDDATE]</font>
+		</span>
+	</span>
+</a>

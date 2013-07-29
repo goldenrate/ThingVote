@@ -1,0 +1,1 @@
+<%@ Page Language="vb" AutoEventWireup="false" Codebehind="Save.aspx.vb" Inherits="BizModules.UltraPhotoGallery.Save" %>

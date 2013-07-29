@@ -1,0 +1,8 @@
+<table cellpadding="2" border="0" width="100%">
+<tr><td width="30%" style="text-align:center;">
+	<a href="[LINK]"><img src="[THUMBNAIL]" border="0" style="border:1px solid #666;"/></a>
+</td><td>
+	<a href="[LINK]" style="display:block;margin-bottom:10px;text-transform:uppercase;" class="SubHead">[TITLE]</a>
+	<div class="Normal">by [AUTHOR]</div>
+	<div class="Normal">[ALBUMTITLE] | [CREATEDDATE]</div>
+</td></tr></table>

@@ -1,0 +1,1 @@
+<input class='CommandButton' type='button' value='Add to cart' onclick='if(UPG_AddToCart)UPG_AddToCart([PHOTOID],"[THUMBNAIL]");'>

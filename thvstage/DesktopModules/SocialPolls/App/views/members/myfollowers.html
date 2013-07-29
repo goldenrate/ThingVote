@@ -1,0 +1,53 @@
+﻿<section>
+    <article>
+        <ul id="mdMemberList" class="mdMemberList dnnClear" 
+            data-bind="foreach: { data: Followers }">
+            <li>
+                <div>
+                     <span class="pull-left">
+                         <img data-bind="attr: { src: getProfilePicture(60, 60), title: DisplayName }" />
+                     </span>
+                  
+                    <address>
+                        <strong data-bind="text: DisplayName" class="blueTheme"></strong>
+                        <div>
+                            <span>Poll created:</span>
+                            <span>52</span>
+                        </div>
+                        <div>
+                            <span>Voted on:</span>
+                            <span>5</span>
+                        </div>
+                    </address>
+                  
+                </div>
+                <div class="clear"></div>
+                <div>
+                    <address class="pull-left">
+                        <i class="icon-map-marker"></i>
+                        <!--  ko text:City -->
+                        <!-- /ko -->
+                    </address>
+                    <ul class="user-hover-actions unstyled pull-right"  data-bind="visible: !IsUser() && IsAuthenticated">
+                          <li class="user-follow" data-bind="visible: !IsFollowing()">
+                              <a href="#" title="" class="btn rounded-corners linear-grad-baige-btn" data-bind="click: follow">
+                                  <i class="icon-plus"></i>
+                                  <span data-bind="    text: FollowText"></span>
+                              </a>
+                          </li>
+                          <li class="user-unfollow" data-bind="visible: IsFollowing()">
+                              <a href="#" title="" class="btn rounded-corners linear-grad-baige-btn" data-bind="  click: unFollow">
+                                  <i class="icon-minus"></i>
+                                  <span data-bind="    text: UnFollowText"></span>
+
+                              </a>
+                          </li>
+                    </ul>
+
+                </div>
+
+            </li>
+        </ul>
+    </article>
+
+</section>

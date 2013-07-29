@@ -1,0 +1,14 @@
+﻿--New presentation
+if not exists(select * from {databaseOwner}{objectQualifier}BizModules_upg_presentation where name='TripleLayerSlider')
+INSERT {databaseOwner}{objectQualifier}BizModules_upg_presentation(Name,Description,DisplayCtl,GallerySettingCtl,Type,DefaultWidth,DefaultHeight,AllowFullScreen,Category) VALUES('TripleLayerSlider','A cool image slider with 3 animation layers','TripleLayerSlider','TripleLayerSliderAppearance','BizModules.UltraPhotoGallery.Presentation.TripleLayerSlider, BizModules.UltraPhotoGallery','988','388','0','Html')
+GO
+
+--"Featured" column in presentation table
+ALTER TABLE {databaseOwner}{objectQualifier}BizModules_UPG_Presentation
+ADD
+	Featured bit
+GO
+
+Update {databaseOwner}{objectQualifier}BizModules_upg_presentation set featured = 1 where name in ('UMG Classic', 'UMGProfessional', 'VirtualTour', 'WidescreenShowroom', 'WidescreenTour1', 'Html Slideshow', 'WidescreenTour2', 'MediaLibrary', '3DWall', 'PieceRotator', 'TripleLayerSlider', 'RandomPosition', 'MultiMediaGallery')
+GO
+

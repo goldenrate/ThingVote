@@ -1,0 +1,941 @@
+2013-05-15 01:26:58,530 [WIN-SQUVIVLQ4HM][Thread:30][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): Maximum request length exceeded.
+   at System.Web.HttpRequest.GetEntireRawContent()
+   at System.Web.HttpRequest.GetMultipartContent()
+   at System.Web.HttpRequest.FillInFormCollection()
+   at System.Web.HttpRequest.EnsureForm()
+   at System.Web.HttpRequest.get_Form()
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.postHandler(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 94
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 79
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 63
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-15 08:36:45,156 [WIN-SQUVIVLQ4HM][Thread:10][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPolOptionsDTO(Int32 pollId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 440
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.PopulatePollDto(Vote item) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 485
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.<>c__DisplayClass11.<GetPublicPolls>b__a(Vote p) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPublicPolls() in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+2013-05-15 08:38:07,244 [WIN-SQUVIVLQ4HM][Thread:43][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPolOptionsDTO(Int32 pollId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 440
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.PopulatePollDto(Vote item) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 485
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.<>c__DisplayClass11.<GetPublicPolls>b__a(Vote p) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPublicPolls() in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+2013-05-15 08:39:03,322 [WIN-SQUVIVLQ4HM][Thread:45][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPolOptionsDTO(Int32 pollId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 440
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.PopulatePollDto(Vote item) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 485
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.<>c__DisplayClass11.<GetPublicPolls>b__a(Vote p) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPublicPolls() in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+2013-05-15 08:44:11,682 [WIN-SQUVIVLQ4HM][Thread:62][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPolOptionsDTO(Int32 pollId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 440
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.PopulatePollDto(Vote item) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 485
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.<>c__DisplayClass11.<GetPublicPolls>b__a(Vote p) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPublicPolls() in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+2013-05-15 08:44:30,944 [WIN-SQUVIVLQ4HM][Thread:56][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPolOptionsDTO(Int32 pollId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 440
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.PopulatePollDto(Vote item) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 485
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.<>c__DisplayClass11.<GetPublicPolls>b__a(Vote p) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPublicPolls() in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+2013-05-15 08:46:46,744 [WIN-SQUVIVLQ4HM][Thread:39][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPolOptionsDTO(Int32 pollId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 440
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.PopulatePollDto(Vote item) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 485
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.<>c__DisplayClass11.<GetPublicPolls>b__a(Vote p) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPublicPolls() in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+2013-05-15 08:48:39,731 [WIN-SQUVIVLQ4HM][Thread:49][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPolOptionsDTO(Int32 pollId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 440
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.PopulatePollDto(Vote item) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 485
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.<>c__DisplayClass11.<GetPublicPolls>b__a(Vote p) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPublicPolls() in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+2013-05-15 08:48:42,170 [WIN-SQUVIVLQ4HM][Thread:22][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPolOptionsDTO(Int32 pollId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 440
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.PopulatePollDto(Vote item) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 485
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.<>c__DisplayClass11.<GetPublicPolls>b__a(Vote p) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPublicPolls() in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+2013-05-15 08:50:22,260 [WIN-SQUVIVLQ4HM][Thread:21][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPolOptionsDTO(Int32 pollId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 440
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.PopulatePollDto(Vote item) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 485
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.<>c__DisplayClass11.<GetPublicPolls>b__a(Vote p) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPublicPolls() in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+2013-05-15 08:52:33,502 [WIN-SQUVIVLQ4HM][Thread:22][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPolOptionsDTO(Int32 pollId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 440
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.PopulatePollDto(Vote item) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 485
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.<>c__DisplayClass11.<GetPublicPolls>b__a(Vote p) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPublicPolls() in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+2013-05-15 08:52:35,690 [WIN-SQUVIVLQ4HM][Thread:22][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPolOptionsDTO(Int32 pollId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 440
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.PopulatePollDto(Vote item) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 485
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.<>c__DisplayClass11.<GetPublicPolls>b__a(Vote p) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPublicPolls() in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+2013-05-15 08:52:40,646 [WIN-SQUVIVLQ4HM][Thread:49][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPolOptionsDTO(Int32 pollId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 440
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.PopulatePollDto(Vote item) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 485
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.<>c__DisplayClass11.<GetPublicPolls>b__a(Vote p) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPublicPolls() in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+2013-05-15 08:52:55,289 [WIN-SQUVIVLQ4HM][Thread:49][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPolOptionsDTO(Int32 pollId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 440
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.PopulatePollDto(Vote item) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 485
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.<>c__DisplayClass11.<GetPublicPolls>b__a(Vote p) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPublicPolls() in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+2013-05-15 08:54:10,475 [WIN-SQUVIVLQ4HM][Thread:22][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPolOptionsDTO(Int32 pollId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 440
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.PopulatePollDto(Vote item) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 485
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.<>c__DisplayClass11.<GetPublicPolls>b__a(Vote p) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPublicPolls() in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+2013-05-15 08:55:36,072 [WIN-SQUVIVLQ4HM][Thread:6][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPolOptionsDTO(Int32 pollId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 440
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.PopulatePollDto(Vote item) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 485
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.<>c__DisplayClass11.<GetPublicPolls>b__a(Vote p) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPublicPolls() in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+2013-05-15 08:55:42,928 [WIN-SQUVIVLQ4HM][Thread:21][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPolOptionsDTO(Int32 pollId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 440
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.PopulatePollDto(Vote item) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 485
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.<>c__DisplayClass11.<GetPublicPolls>b__a(Vote p) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPublicPolls() in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+2013-05-15 08:55:53,193 [WIN-SQUVIVLQ4HM][Thread:20][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPolOptionsDTO(Int32 pollId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 440
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.PopulatePollDto(Vote item) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 485
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.<>c__DisplayClass11.<GetPublicPolls>b__a(Vote p) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPublicPolls() in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+2013-05-15 08:56:16,164 [WIN-SQUVIVLQ4HM][Thread:11][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPolOptionsDTO(Int32 pollId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 440
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.PopulatePollDto(Vote item) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 485
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.<>c__DisplayClass11.<GetPublicPolls>b__a(Vote p) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPublicPolls() in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+2013-05-15 08:57:35,623 [WIN-SQUVIVLQ4HM][Thread:38][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPolOptionsDTO(Int32 pollId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 440
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.PopulatePollDto(Vote item) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 485
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.<>c__DisplayClass11.<GetPublicPolls>b__a(Vote p) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPublicPolls() in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+2013-05-15 08:58:09,752 [WIN-SQUVIVLQ4HM][Thread:21][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPolOptionsDTO(Int32 pollId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 440
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.PopulatePollDto(Vote item) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 485
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.<>c__DisplayClass11.<GetPublicPolls>b__a(Vote p) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPublicPolls() in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+2013-05-15 08:58:44,133 [WIN-SQUVIVLQ4HM][Thread:59][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPolOptionsDTO(Int32 pollId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 440
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.PopulatePollDto(Vote item) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 485
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.<>c__DisplayClass11.<GetPublicPolls>b__a(Vote p) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPublicPolls() in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+2013-05-15 09:02:55,347 [WIN-SQUVIVLQ4HM][Thread:23][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPolOptionsDTO(Int32 pollId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 440
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.PopulatePollDto(Vote item) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 485
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.<>c__DisplayClass11.<GetPublicPolls>b__a(Vote p) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPublicPolls() in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+2013-05-15 09:04:14,107 [WIN-SQUVIVLQ4HM][Thread:31][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPolOptionsDTO(Int32 pollId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 440
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.PopulatePollDto(Vote item) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 485
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.<>c__DisplayClass11.<GetPublicPolls>b__a(Vote p) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPublicPolls() in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+2013-05-15 09:04:19,537 [WIN-SQUVIVLQ4HM][Thread:56][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPolOptionsDTO(Int32 pollId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 440
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.PopulatePollDto(Vote item) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 485
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.<>c__DisplayClass11.<GetPublicPolls>b__a(Vote p) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPublicPolls() in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+2013-05-15 09:08:10,386 [WIN-SQUVIVLQ4HM][Thread:31][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPolOptionsDTO(Int32 pollId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 440
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.PopulatePollDto(Vote item) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 485
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.<>c__DisplayClass11.<GetPublicPolls>b__a(Vote p) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPublicPolls() in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+2013-05-15 09:09:04,273 [WIN-SQUVIVLQ4HM][Thread:40][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPolOptionsDTO(Int32 pollId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 440
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.PopulatePollDto(Vote item) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 485
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.<>c__DisplayClass11.<GetPublicPolls>b__a(Vote p) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPublicPolls() in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+2013-05-15 09:09:31,937 [WIN-SQUVIVLQ4HM][Thread:45][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPolOptionsDTO(Int32 pollId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 440
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.PopulatePollDto(Vote item) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 485
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.<>c__DisplayClass11.<GetPublicPolls>b__a(Vote p) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPublicPolls() in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+2013-05-15 09:11:12,150 [WIN-SQUVIVLQ4HM][Thread:6][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPolOptionsDTO(Int32 pollId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 440
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.PopulatePollDto(Vote item) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 485
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.<>c__DisplayClass11.<GetPublicPolls>b__a(Vote p) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPublicPolls() in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+2013-05-15 09:13:25,200 [WIN-SQUVIVLQ4HM][Thread:53][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int16.Parse(String s, NumberStyles style, NumberFormatInfo info)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.Create(PollDTO data) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 148
+2013-05-15 09:24:07,069 [WIN-SQUVIVLQ4HM][Thread:37][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPolOptionsDTO(Int32 pollId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 440
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.PopulatePollDto(Vote item) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 485
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.<>c__DisplayClass11.<GetPublicPolls>b__a(Vote p) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPublicPolls() in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+2013-05-15 09:25:07,789 [WIN-SQUVIVLQ4HM][Thread:55][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPolOptionsDTO(Int32 pollId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 440
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.PopulatePollDto(Vote item) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 485
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.<>c__DisplayClass11.<GetPublicPolls>b__a(Vote p) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPublicPolls() in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+2013-05-15 09:25:46,852 [WIN-SQUVIVLQ4HM][Thread:47][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPolOptionsDTO(Int32 pollId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 440
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.PopulatePollDto(Vote item) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 485
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.<>c__DisplayClass11.<GetPublicPolls>b__a(Vote p) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPublicPolls() in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+2013-05-15 09:26:32,482 [WIN-SQUVIVLQ4HM][Thread:47][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPolOptionsDTO(Int32 pollId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 440
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.PopulatePollDto(Vote item) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 485
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.<>c__DisplayClass11.<GetPublicPolls>b__a(Vote p) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPublicPolls() in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+2013-05-15 09:26:47,804 [WIN-SQUVIVLQ4HM][Thread:38][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPolOptionsDTO(Int32 pollId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 440
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.PopulatePollDto(Vote item) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 485
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.<>c__DisplayClass11.<GetPublicPolls>b__a(Vote p) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPublicPolls() in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+2013-05-15 09:28:33,611 [WIN-SQUVIVLQ4HM][Thread:38][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPolOptionsDTO(Int32 pollId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 440
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.PopulatePollDto(Vote item) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 485
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.<>c__DisplayClass11.<GetPublicPolls>b__a(Vote p) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPublicPolls() in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+2013-05-15 09:29:06,895 [WIN-SQUVIVLQ4HM][Thread:50][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPolOptionsDTO(Int32 pollId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 440
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.PopulatePollDto(Vote item) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 485
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.<>c__DisplayClass11.<GetPublicPolls>b__a(Vote p) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPublicPolls() in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+2013-05-15 09:30:56,878 [WIN-SQUVIVLQ4HM][Thread:62][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPolOptionsDTO(Int32 pollId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 440
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.PopulatePollDto(Vote item) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 485
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.<>c__DisplayClass11.<GetPublicPolls>b__a(Vote p) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPublicPolls() in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+2013-05-15 09:34:04,739 [WIN-SQUVIVLQ4HM][Thread:61][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPolOptionsDTO(Int32 pollId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 440
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.PopulatePollDto(Vote item) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 485
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.<>c__DisplayClass11.<GetPublicPolls>b__a(Vote p) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPublicPolls() in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+2013-05-15 09:51:37,371 [WIN-SQUVIVLQ4HM][Thread:13][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPolOptionsDTO(Int32 pollId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 440
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.PopulatePollDto(Vote item) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 485
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.<>c__DisplayClass11.<GetPublicPolls>b__a(Vote p) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPublicPolls() in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+2013-05-15 09:58:33,044 [WIN-SQUVIVLQ4HM][Thread:23][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPolOptionsDTO(Int32 pollId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 440
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.PopulatePollDto(Vote item) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 485
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.<>c__DisplayClass11.<GetPublicPolls>b__a(Vote p) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPublicPolls() in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+2013-05-15 09:59:05,051 [WIN-SQUVIVLQ4HM][Thread:51][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPolOptionsDTO(Int32 pollId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 440
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.PopulatePollDto(Vote item) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 485
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.<>c__DisplayClass11.<GetPublicPolls>b__a(Vote p) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPublicPolls() in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+2013-05-15 09:59:40,688 [WIN-SQUVIVLQ4HM][Thread:38][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPolOptionsDTO(Int32 pollId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 440
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.PopulatePollDto(Vote item) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 485
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.<>c__DisplayClass11.<GetPublicPolls>b__a(Vote p) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPublicPolls() in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+2013-05-15 10:01:40,945 [WIN-SQUVIVLQ4HM][Thread:14][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPolOptionsDTO(Int32 pollId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 440
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.PopulatePollDto(Vote item) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 485
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.<>c__DisplayClass11.<GetPublicPolls>b__a(Vote p) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPublicPolls() in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+2013-05-15 10:02:14,560 [WIN-SQUVIVLQ4HM][Thread:47][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPolOptionsDTO(Int32 pollId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 440
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.PopulatePollDto(Vote item) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 485
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.<>c__DisplayClass11.<GetPublicPolls>b__a(Vote p) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPublicPolls() in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+2013-05-15 10:04:33,745 [WIN-SQUVIVLQ4HM][Thread:23][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPolOptionsDTO(Int32 pollId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 440
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.PopulatePollDto(Vote item) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 485
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.<>c__DisplayClass11.<GetPublicPolls>b__a(Vote p) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPublicPolls() in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+2013-05-15 10:07:58,614 [WIN-SQUVIVLQ4HM][Thread:23][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPolOptionsDTO(Int32 pollId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 440
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.PopulatePollDto(Vote item) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 485
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.<>c__DisplayClass11.<GetPublicPolls>b__a(Vote p) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPublicPolls() in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+2013-05-15 10:09:23,944 [WIN-SQUVIVLQ4HM][Thread:47][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPolOptionsDTO(Int32 pollId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 440
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.PopulatePollDto(Vote item) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 485
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.<>c__DisplayClass11.<GetPublicPolls>b__a(Vote p) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPublicPolls() in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+2013-05-15 10:16:47,415 [WIN-SQUVIVLQ4HM][Thread:51][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPolOptionsDTO(Int32 pollId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 440
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.PopulatePollDto(Vote item) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 485
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.<>c__DisplayClass11.<GetPublicPolls>b__a(Vote p) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPublicPolls() in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+2013-05-15 10:16:54,646 [WIN-SQUVIVLQ4HM][Thread:41][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPolOptionsDTO(Int32 pollId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 440
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.PopulatePollDto(Vote item) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 485
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPollsByUser(Int32 userId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 294
+2013-05-15 10:16:56,106 [WIN-SQUVIVLQ4HM][Thread:53][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPolOptionsDTO(Int32 pollId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 440
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.PopulatePollDto(Vote item) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 485
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPollsByUser(Int32 userId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 294
+2013-05-15 10:16:56,128 [WIN-SQUVIVLQ4HM][Thread:45][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPolOptionsDTO(Int32 pollId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 440
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.PopulatePollDto(Vote item) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 485
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPollsByUser(Int32 userId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 294
+2013-05-15 10:17:16,829 [WIN-SQUVIVLQ4HM][Thread:53][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPolOptionsDTO(Int32 pollId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 440
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.PopulatePollDto(Vote item) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 485
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPollsByUser(Int32 userId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 294
+2013-05-15 10:17:16,830 [WIN-SQUVIVLQ4HM][Thread:45][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPolOptionsDTO(Int32 pollId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 440
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.PopulatePollDto(Vote item) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 485
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPollsByUser(Int32 userId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 294
+2013-05-15 10:17:19,356 [WIN-SQUVIVLQ4HM][Thread:13][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPolOptionsDTO(Int32 pollId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 440
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.PopulatePollDto(Vote item) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 485
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPollsByUser(Int32 userId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 294
+2013-05-15 10:17:19,356 [WIN-SQUVIVLQ4HM][Thread:45][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPolOptionsDTO(Int32 pollId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 440
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.PopulatePollDto(Vote item) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 485
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPollsByUser(Int32 userId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 294
+2013-05-15 10:23:36,256 [WIN-SQUVIVLQ4HM][Thread:22][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPolOptionsDTO(Int32 pollId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 440
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.PopulatePollDto(Vote item) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 485
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.<>c__DisplayClass11.<GetPublicPolls>b__a(Vote p) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPublicPolls() in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+2013-05-15 10:24:54,366 [WIN-SQUVIVLQ4HM][Thread:11][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPolOptionsDTO(Int32 pollId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 440
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.PopulatePollDto(Vote item) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 485
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPollsByUser(Int32 userId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 294
+2013-05-15 10:26:05,321 [WIN-SQUVIVLQ4HM][Thread:66][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPolOptionsDTO(Int32 pollId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 440
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.PopulatePollDto(Vote item) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 485
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.<>c__DisplayClass11.<GetPublicPolls>b__a(Vote p) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPublicPolls() in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+2013-05-15 10:26:06,183 [WIN-SQUVIVLQ4HM][Thread:55][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPolOptionsDTO(Int32 pollId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 440
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.PopulatePollDto(Vote item) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 485
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.<>c__DisplayClass11.<GetPublicPolls>b__a(Vote p) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPublicPolls() in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+2013-05-15 11:48:40,010 [WIN-SQUVIVLQ4HM][Thread:8][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.NullReferenceException: Object reference not set to an instance of an object.
+   at System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   at DotNetNuke.Entities.Users.UserInfo.get_Social()
+   at DotNetNuke.Entities.Users.UserInfo.get_Roles()
+   at DotNetNuke.Entities.Users.UserInfo.IsInRole(String role)
+   at DotNetNuke.HttpModules.Membership.MembershipModule.AuthenticateRequest(HttpContextBase context, Boolean allowUnknownExtensinons)
+   at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-15 11:48:40,010 [WIN-SQUVIVLQ4HM][Thread:12][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.ArgumentException: An item with the same key has already been added.
+   at System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   at DotNetNuke.Entities.Users.UserInfo.get_Social()
+   at DotNetNuke.Entities.Users.UserInfo.get_Roles()
+   at DotNetNuke.Entities.Users.UserInfo.IsInRole(String role)
+   at DotNetNuke.HttpModules.Membership.MembershipModule.AuthenticateRequest(HttpContextBase context, Boolean allowUnknownExtensinons)
+   at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-15 12:00:42,565 [WIN-SQUVIVLQ4HM][Thread:61][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): The file '/DesktopModules/SocialPolls/tn_FileTransferHandler.ashx' does not exist.
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-15 12:00:42,565 [WIN-SQUVIVLQ4HM][Thread:57][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): The file '/DesktopModules/SocialPolls/tn_FileTransferHandler.ashx' does not exist.
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-15 12:00:43,245 [WIN-SQUVIVLQ4HM][Thread:63][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): The file '/DesktopModules/SocialPolls/tn_FileTransferHandler.ashx' does not exist.
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-15 12:15:03,285 [WIN-SQUVIVLQ4HM][Thread:100][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Services.FileSystem.FolderManager.GetUserFolder(UserInfo userInfo)
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_UserFolderUrl() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 190
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_UserFolder() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 198
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_StorageRoot() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 166
+   at DotNetNuke.Modules.SocialPolls.Thumbnail.DeliverFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Thumbnail.ashx.cs:line 66
+   at DotNetNuke.Modules.SocialPolls.Thumbnail.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Thumbnail.ashx.cs:line 53
+2013-05-15 12:15:03,291 [WIN-SQUVIVLQ4HM][Thread:113][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Services.FileSystem.FolderManager.GetUserFolder(UserInfo userInfo)
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_UserFolderUrl() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 190
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_UserFolder() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 198
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_StorageRoot() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 166
+   at DotNetNuke.Modules.SocialPolls.Thumbnail.DeliverFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Thumbnail.ashx.cs:line 66
+   at DotNetNuke.Modules.SocialPolls.Thumbnail.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Thumbnail.ashx.cs:line 53
+2013-05-15 12:15:03,299 [WIN-SQUVIVLQ4HM][Thread:97][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Services.FileSystem.FolderManager.GetUserFolder(UserInfo userInfo)
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_UserFolderUrl() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 190
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_UserFolder() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 198
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_StorageRoot() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 166
+   at DotNetNuke.Modules.SocialPolls.Thumbnail.DeliverFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Thumbnail.ashx.cs:line 66
+   at DotNetNuke.Modules.SocialPolls.Thumbnail.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Thumbnail.ashx.cs:line 53
+2013-05-15 12:15:03,302 [WIN-SQUVIVLQ4HM][Thread:155][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Services.FileSystem.FolderManager.GetUserFolder(UserInfo userInfo)
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_UserFolderUrl() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 190
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_UserFolder() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 198
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_StorageRoot() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 166
+   at DotNetNuke.Modules.SocialPolls.Thumbnail.DeliverFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Thumbnail.ashx.cs:line 66
+   at DotNetNuke.Modules.SocialPolls.Thumbnail.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Thumbnail.ashx.cs:line 53
+2013-05-15 12:15:03,308 [WIN-SQUVIVLQ4HM][Thread:82][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Services.FileSystem.FolderManager.GetUserFolder(UserInfo userInfo)
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_UserFolderUrl() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 190
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_UserFolder() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 198
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_StorageRoot() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 166
+   at DotNetNuke.Modules.SocialPolls.Thumbnail.DeliverFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Thumbnail.ashx.cs:line 66
+   at DotNetNuke.Modules.SocialPolls.Thumbnail.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Thumbnail.ashx.cs:line 53
+2013-05-15 12:15:03,377 [WIN-SQUVIVLQ4HM][Thread:108][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Services.FileSystem.FolderManager.GetUserFolder(UserInfo userInfo)
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_UserFolderUrl() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 190
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_UserFolder() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 198
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_StorageRoot() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 166
+   at DotNetNuke.Modules.SocialPolls.Thumbnail.DeliverFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Thumbnail.ashx.cs:line 66
+   at DotNetNuke.Modules.SocialPolls.Thumbnail.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Thumbnail.ashx.cs:line 53
+2013-05-15 12:15:03,394 [WIN-SQUVIVLQ4HM][Thread:100][ERROR] DotNetNuke.Services.Exceptions.Exceptions - Resource Not Found: - /DesktopModules/SocialPolls/Thumbnail.ashx?f=DSC_0772.jpg&tnmaxwidth=200&tnmaxheight=205&ownerId=3
+System.Web.HttpException (0x80004005): Resource Not Found
+2013-05-15 12:15:03,397 [WIN-SQUVIVLQ4HM][Thread:97][ERROR] DotNetNuke.Services.Exceptions.Exceptions - Resource Not Found: - /DesktopModules/SocialPolls/Thumbnail.ashx?f=DSC_0128.JPG&tnmaxwidth=200&tnmaxheight=205&ownerId=2
+System.Web.HttpException (0x80004005): Resource Not Found
+2013-05-15 12:15:03,397 [WIN-SQUVIVLQ4HM][Thread:82][ERROR] DotNetNuke.Services.Exceptions.Exceptions - Resource Not Found: - /DesktopModules/SocialPolls/Thumbnail.ashx?f=FileTransferHandler.ashx?f=DSC_0124.JPG&tnmaxwidth=200&tnmaxheight=205&ownerId=2
+System.Web.HttpException (0x80004005): Resource Not Found
+2013-05-15 12:15:03,410 [WIN-SQUVIVLQ4HM][Thread:108][ERROR] DotNetNuke.Services.Exceptions.Exceptions - Resource Not Found: - /DesktopModules/SocialPolls/Thumbnail.ashx?f=DSC_0130.JPG&tnmaxwidth=200&tnmaxheight=205&ownerId=4
+System.Web.HttpException (0x80004005): Resource Not Found
+2013-05-15 12:15:03,417 [WIN-SQUVIVLQ4HM][Thread:82][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): Resource Not Found
+   at DotNetNuke.Services.Exceptions.Exceptions.ProcessHttpException(HttpException exc, String URL)
+   at DotNetNuke.Modules.SocialPolls.Thumbnail.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Thumbnail.ashx.cs:line 58
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-15 12:15:03,420 [WIN-SQUVIVLQ4HM][Thread:108][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): Resource Not Found
+   at DotNetNuke.Services.Exceptions.Exceptions.ProcessHttpException(HttpException exc, String URL)
+   at DotNetNuke.Modules.SocialPolls.Thumbnail.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Thumbnail.ashx.cs:line 58
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-15 12:15:03,396 [WIN-SQUVIVLQ4HM][Thread:113][ERROR] DotNetNuke.Services.Exceptions.Exceptions - Resource Not Found: - /DesktopModules/SocialPolls/Thumbnail.ashx?f=DSC_0129.JPG&tnmaxwidth=200&tnmaxheight=205&ownerId=2
+System.Web.HttpException (0x80004005): Resource Not Found
+2013-05-15 12:15:03,409 [WIN-SQUVIVLQ4HM][Thread:100][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): Resource Not Found
+   at DotNetNuke.Services.Exceptions.Exceptions.ProcessHttpException(HttpException exc, String URL)
+   at DotNetNuke.Modules.SocialPolls.Thumbnail.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Thumbnail.ashx.cs:line 58
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-15 12:15:03,410 [WIN-SQUVIVLQ4HM][Thread:97][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): Resource Not Found
+   at DotNetNuke.Services.Exceptions.Exceptions.ProcessHttpException(HttpException exc, String URL)
+   at DotNetNuke.Modules.SocialPolls.Thumbnail.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Thumbnail.ashx.cs:line 58
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-15 12:15:03,394 [WIN-SQUVIVLQ4HM][Thread:155][ERROR] DotNetNuke.Services.Exceptions.Exceptions - Resource Not Found: - /DesktopModules/SocialPolls/Thumbnail.ashx?f=DSC_0127.JPG&tnmaxwidth=200&tnmaxheight=205&ownerId=2
+System.Web.HttpException (0x80004005): Resource Not Found
+2013-05-15 12:15:03,434 [WIN-SQUVIVLQ4HM][Thread:113][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): Resource Not Found
+   at DotNetNuke.Services.Exceptions.Exceptions.ProcessHttpException(HttpException exc, String URL)
+   at DotNetNuke.Modules.SocialPolls.Thumbnail.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Thumbnail.ashx.cs:line 58
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-15 12:15:03,440 [WIN-SQUVIVLQ4HM][Thread:119][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Services.FileSystem.FolderManager.GetUserFolder(UserInfo userInfo)
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_UserFolderUrl() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 190
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_UserFolder() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 198
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_StorageRoot() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 166
+   at DotNetNuke.Modules.SocialPolls.Thumbnail.DeliverFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Thumbnail.ashx.cs:line 66
+   at DotNetNuke.Modules.SocialPolls.Thumbnail.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Thumbnail.ashx.cs:line 53
+2013-05-15 12:15:03,447 [WIN-SQUVIVLQ4HM][Thread:132][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Services.FileSystem.FolderManager.GetUserFolder(UserInfo userInfo)
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_UserFolderUrl() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 190
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_UserFolder() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 198
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_StorageRoot() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 166
+   at DotNetNuke.Modules.SocialPolls.Thumbnail.DeliverFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Thumbnail.ashx.cs:line 66
+   at DotNetNuke.Modules.SocialPolls.Thumbnail.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Thumbnail.ashx.cs:line 53
+2013-05-15 12:15:03,474 [WIN-SQUVIVLQ4HM][Thread:155][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): Resource Not Found
+   at DotNetNuke.Services.Exceptions.Exceptions.ProcessHttpException(HttpException exc, String URL)
+   at DotNetNuke.Modules.SocialPolls.Thumbnail.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Thumbnail.ashx.cs:line 58
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-15 12:15:03,472 [WIN-SQUVIVLQ4HM][Thread:108][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Services.FileSystem.FolderManager.GetUserFolder(UserInfo userInfo)
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_UserFolderUrl() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 190
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_UserFolder() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 198
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_StorageRoot() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 166
+   at DotNetNuke.Modules.SocialPolls.Thumbnail.DeliverFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Thumbnail.ashx.cs:line 66
+   at DotNetNuke.Modules.SocialPolls.Thumbnail.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Thumbnail.ashx.cs:line 53
+2013-05-15 12:15:03,500 [WIN-SQUVIVLQ4HM][Thread:108][ERROR] DotNetNuke.Services.Exceptions.Exceptions - Resource Not Found: - /DesktopModules/SocialPolls/Thumbnail.ashx?f=IMG_0261.JPG&tnmaxwidth=200&tnmaxheight=205&ownerId=3
+System.Web.HttpException (0x80004005): Resource Not Found
+2013-05-15 12:15:03,503 [WIN-SQUVIVLQ4HM][Thread:141][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Services.FileSystem.FolderManager.GetUserFolder(UserInfo userInfo)
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_UserFolderUrl() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 190
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_UserFolder() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 198
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_StorageRoot() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 166
+   at DotNetNuke.Modules.SocialPolls.Thumbnail.DeliverFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Thumbnail.ashx.cs:line 66
+   at DotNetNuke.Modules.SocialPolls.Thumbnail.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Thumbnail.ashx.cs:line 53
+2013-05-15 12:15:03,513 [WIN-SQUVIVLQ4HM][Thread:141][ERROR] DotNetNuke.Services.Exceptions.Exceptions - Resource Not Found: - /DesktopModules/SocialPolls/Thumbnail.ashx?f=IMG_0248.JPG&tnmaxwidth=200&tnmaxheight=205&ownerId=3
+System.Web.HttpException (0x80004005): Resource Not Found
+2013-05-15 12:15:03,515 [WIN-SQUVIVLQ4HM][Thread:100][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Services.FileSystem.FolderManager.GetUserFolder(UserInfo userInfo)
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_UserFolderUrl() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 190
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_UserFolder() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 198
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_StorageRoot() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 166
+   at DotNetNuke.Modules.SocialPolls.Thumbnail.DeliverFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Thumbnail.ashx.cs:line 66
+   at DotNetNuke.Modules.SocialPolls.Thumbnail.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Thumbnail.ashx.cs:line 53
+2013-05-15 12:15:03,519 [WIN-SQUVIVLQ4HM][Thread:155][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Services.FileSystem.FolderManager.GetUserFolder(UserInfo userInfo)
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_UserFolderUrl() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 190
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_UserFolder() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 198
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_StorageRoot() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 166
+   at DotNetNuke.Modules.SocialPolls.Thumbnail.DeliverFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Thumbnail.ashx.cs:line 66
+   at DotNetNuke.Modules.SocialPolls.Thumbnail.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Thumbnail.ashx.cs:line 53
+2013-05-15 12:15:03,523 [WIN-SQUVIVLQ4HM][Thread:100][ERROR] DotNetNuke.Services.Exceptions.Exceptions - Resource Not Found: - /DesktopModules/SocialPolls/Thumbnail.ashx?f=DSC_0575.JPG&tnmaxwidth=200&tnmaxheight=205&ownerId=4
+System.Web.HttpException (0x80004005): Resource Not Found
+2013-05-15 12:15:03,483 [WIN-SQUVIVLQ4HM][Thread:119][ERROR] DotNetNuke.Services.Exceptions.Exceptions - Resource Not Found: - /DesktopModules/SocialPolls/Thumbnail.ashx?f=FileTransferHandler.ashx?f=DSC_0127.JPG&tnmaxwidth=200&tnmaxheight=205&ownerId=2
+System.Web.HttpException (0x80004005): Resource Not Found
+2013-05-15 12:15:03,539 [WIN-SQUVIVLQ4HM][Thread:119][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): Resource Not Found
+   at DotNetNuke.Services.Exceptions.Exceptions.ProcessHttpException(HttpException exc, String URL)
+   at DotNetNuke.Modules.SocialPolls.Thumbnail.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Thumbnail.ashx.cs:line 58
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-15 12:15:03,515 [WIN-SQUVIVLQ4HM][Thread:146][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Services.FileSystem.FolderManager.GetUserFolder(UserInfo userInfo)
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_UserFolderUrl() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 190
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_UserFolder() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 198
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_StorageRoot() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 166
+   at DotNetNuke.Modules.SocialPolls.Thumbnail.DeliverFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Thumbnail.ashx.cs:line 66
+   at DotNetNuke.Modules.SocialPolls.Thumbnail.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Thumbnail.ashx.cs:line 53
+2013-05-15 12:15:03,528 [WIN-SQUVIVLQ4HM][Thread:155][ERROR] DotNetNuke.Services.Exceptions.Exceptions - Resource Not Found: - /DesktopModules/SocialPolls/Thumbnail.ashx?f=DSC_0574.JPG&tnmaxwidth=200&tnmaxheight=205&ownerId=4
+System.Web.HttpException (0x80004005): Resource Not Found
+2013-05-15 12:15:03,529 [WIN-SQUVIVLQ4HM][Thread:100][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): Resource Not Found
+   at DotNetNuke.Services.Exceptions.Exceptions.ProcessHttpException(HttpException exc, String URL)
+   at DotNetNuke.Modules.SocialPolls.Thumbnail.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Thumbnail.ashx.cs:line 58
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-15 12:15:03,559 [WIN-SQUVIVLQ4HM][Thread:155][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): Resource Not Found
+   at DotNetNuke.Services.Exceptions.Exceptions.ProcessHttpException(HttpException exc, String URL)
+   at DotNetNuke.Modules.SocialPolls.Thumbnail.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Thumbnail.ashx.cs:line 58
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-15 12:15:03,505 [WIN-SQUVIVLQ4HM][Thread:108][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): Resource Not Found
+   at DotNetNuke.Services.Exceptions.Exceptions.ProcessHttpException(HttpException exc, String URL)
+   at DotNetNuke.Modules.SocialPolls.Thumbnail.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Thumbnail.ashx.cs:line 58
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-15 12:15:03,565 [WIN-SQUVIVLQ4HM][Thread:164][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Services.FileSystem.FolderManager.GetUserFolder(UserInfo userInfo)
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_UserFolderUrl() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 190
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_UserFolder() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 198
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_StorageRoot() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 166
+   at DotNetNuke.Modules.SocialPolls.Thumbnail.DeliverFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Thumbnail.ashx.cs:line 66
+   at DotNetNuke.Modules.SocialPolls.Thumbnail.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Thumbnail.ashx.cs:line 53
+2013-05-15 12:15:03,558 [WIN-SQUVIVLQ4HM][Thread:146][ERROR] DotNetNuke.Services.Exceptions.Exceptions - Resource Not Found: - /DesktopModules/SocialPolls/Thumbnail.ashx?f=DSC_0573.JPG&tnmaxwidth=200&tnmaxheight=205&ownerId=4
+System.Web.HttpException (0x80004005): Resource Not Found
+2013-05-15 12:15:03,487 [WIN-SQUVIVLQ4HM][Thread:132][ERROR] DotNetNuke.Services.Exceptions.Exceptions - Resource Not Found: - /DesktopModules/SocialPolls/Thumbnail.ashx?f=FileTransferHandler.ashx?f=DSC_0125.JPG&tnmaxwidth=200&tnmaxheight=205&ownerId=2
+System.Web.HttpException (0x80004005): Resource Not Found
+2013-05-15 12:15:03,519 [WIN-SQUVIVLQ4HM][Thread:141][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): Resource Not Found
+   at DotNetNuke.Services.Exceptions.Exceptions.ProcessHttpException(HttpException exc, String URL)
+   at DotNetNuke.Modules.SocialPolls.Thumbnail.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Thumbnail.ashx.cs:line 58
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-15 12:15:03,583 [WIN-SQUVIVLQ4HM][Thread:164][ERROR] DotNetNuke.Services.Exceptions.Exceptions - Resource Not Found: - /DesktopModules/SocialPolls/Thumbnail.ashx?f=imagePlaceHolder.png&tnmaxwidth=200&tnmaxheight=205&ownerId=4
+System.Web.HttpException (0x80004005): Resource Not Found
+2013-05-15 12:15:03,591 [WIN-SQUVIVLQ4HM][Thread:132][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): Resource Not Found
+   at DotNetNuke.Services.Exceptions.Exceptions.ProcessHttpException(HttpException exc, String URL)
+   at DotNetNuke.Modules.SocialPolls.Thumbnail.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Thumbnail.ashx.cs:line 58
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-15 12:15:03,596 [WIN-SQUVIVLQ4HM][Thread:164][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): Resource Not Found
+   at DotNetNuke.Services.Exceptions.Exceptions.ProcessHttpException(HttpException exc, String URL)
+   at DotNetNuke.Modules.SocialPolls.Thumbnail.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Thumbnail.ashx.cs:line 58
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-15 12:15:03,585 [WIN-SQUVIVLQ4HM][Thread:146][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): Resource Not Found
+   at DotNetNuke.Services.Exceptions.Exceptions.ProcessHttpException(HttpException exc, String URL)
+   at DotNetNuke.Modules.SocialPolls.Thumbnail.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Thumbnail.ashx.cs:line 58
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-15 12:15:03,625 [WIN-SQUVIVLQ4HM][Thread:97][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Services.FileSystem.FolderManager.GetUserFolder(UserInfo userInfo)
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_UserFolderUrl() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 190
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_UserFolder() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 198
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_StorageRoot() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 166
+   at DotNetNuke.Modules.SocialPolls.Thumbnail.DeliverFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Thumbnail.ashx.cs:line 66
+   at DotNetNuke.Modules.SocialPolls.Thumbnail.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Thumbnail.ashx.cs:line 53
+2013-05-15 12:15:03,633 [WIN-SQUVIVLQ4HM][Thread:97][ERROR] DotNetNuke.Services.Exceptions.Exceptions - Resource Not Found: - /DesktopModules/SocialPolls/Thumbnail.ashx?f=12.JPG&tnmaxwidth=200&tnmaxheight=205&ownerId=4
+System.Web.HttpException (0x80004005): Resource Not Found
+2013-05-15 12:15:03,635 [WIN-SQUVIVLQ4HM][Thread:160][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Services.FileSystem.FolderManager.GetUserFolder(UserInfo userInfo)
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_UserFolderUrl() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 190
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_UserFolder() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 198
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_StorageRoot() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 166
+   at DotNetNuke.Modules.SocialPolls.Thumbnail.DeliverFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Thumbnail.ashx.cs:line 66
+   at DotNetNuke.Modules.SocialPolls.Thumbnail.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Thumbnail.ashx.cs:line 53
+2013-05-15 12:15:03,639 [WIN-SQUVIVLQ4HM][Thread:97][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): Resource Not Found
+   at DotNetNuke.Services.Exceptions.Exceptions.ProcessHttpException(HttpException exc, String URL)
+   at DotNetNuke.Modules.SocialPolls.Thumbnail.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Thumbnail.ashx.cs:line 58
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-15 12:15:03,653 [WIN-SQUVIVLQ4HM][Thread:160][ERROR] DotNetNuke.Services.Exceptions.Exceptions - Resource Not Found: - /DesktopModules/SocialPolls/Thumbnail.ashx?f=13.JPG&tnmaxwidth=200&tnmaxheight=205&ownerId=4
+System.Web.HttpException (0x80004005): Resource Not Found
+2013-05-15 12:15:03,668 [WIN-SQUVIVLQ4HM][Thread:160][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): Resource Not Found
+   at DotNetNuke.Services.Exceptions.Exceptions.ProcessHttpException(HttpException exc, String URL)
+   at DotNetNuke.Modules.SocialPolls.Thumbnail.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Thumbnail.ashx.cs:line 58
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-15 12:15:03,733 [WIN-SQUVIVLQ4HM][Thread:132][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Services.FileSystem.FolderManager.GetUserFolder(UserInfo userInfo)
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_UserFolderUrl() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 190
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_UserFolder() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 198
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_StorageRoot() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 166
+   at DotNetNuke.Modules.SocialPolls.Thumbnail.DeliverFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Thumbnail.ashx.cs:line 66
+   at DotNetNuke.Modules.SocialPolls.Thumbnail.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Thumbnail.ashx.cs:line 53
+2013-05-15 12:15:03,733 [WIN-SQUVIVLQ4HM][Thread:113][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Services.FileSystem.FolderManager.GetUserFolder(UserInfo userInfo)
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_UserFolderUrl() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 190
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_UserFolder() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 198
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_StorageRoot() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 166
+   at DotNetNuke.Modules.SocialPolls.Thumbnail.DeliverFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Thumbnail.ashx.cs:line 66
+   at DotNetNuke.Modules.SocialPolls.Thumbnail.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Thumbnail.ashx.cs:line 53
+2013-05-15 12:15:03,734 [WIN-SQUVIVLQ4HM][Thread:164][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Services.FileSystem.FolderManager.GetUserFolder(UserInfo userInfo)
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_UserFolderUrl() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 190
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_UserFolder() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 198
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_StorageRoot() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 166
+   at DotNetNuke.Modules.SocialPolls.Thumbnail.DeliverFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Thumbnail.ashx.cs:line 66
+   at DotNetNuke.Modules.SocialPolls.Thumbnail.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Thumbnail.ashx.cs:line 53
+2013-05-15 12:15:03,744 [WIN-SQUVIVLQ4HM][Thread:132][ERROR] DotNetNuke.Services.Exceptions.Exceptions - Resource Not Found: - /DesktopModules/SocialPolls/Thumbnail.ashx?f=19.JPG&tnmaxwidth=200&tnmaxheight=205&ownerId=4
+System.Web.HttpException (0x80004005): Resource Not Found
+2013-05-15 12:15:03,748 [WIN-SQUVIVLQ4HM][Thread:146][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Services.FileSystem.FolderManager.GetUserFolder(UserInfo userInfo)
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_UserFolderUrl() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 190
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_UserFolder() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 198
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_StorageRoot() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 166
+   at DotNetNuke.Modules.SocialPolls.Thumbnail.DeliverFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Thumbnail.ashx.cs:line 66
+   at DotNetNuke.Modules.SocialPolls.Thumbnail.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Thumbnail.ashx.cs:line 53
+2013-05-15 12:15:03,754 [WIN-SQUVIVLQ4HM][Thread:113][ERROR] DotNetNuke.Services.Exceptions.Exceptions - Resource Not Found: - /DesktopModules/SocialPolls/Thumbnail.ashx?f=18.JPG&tnmaxwidth=200&tnmaxheight=205&ownerId=4
+System.Web.HttpException (0x80004005): Resource Not Found
+2013-05-15 12:15:03,755 [WIN-SQUVIVLQ4HM][Thread:146][ERROR] DotNetNuke.Services.Exceptions.Exceptions - Resource Not Found: - /DesktopModules/SocialPolls/Thumbnail.ashx?f=11.JPG&tnmaxwidth=200&tnmaxheight=205&ownerId=4
+System.Web.HttpException (0x80004005): Resource Not Found
+2013-05-15 12:15:03,755 [WIN-SQUVIVLQ4HM][Thread:164][ERROR] DotNetNuke.Services.Exceptions.Exceptions - Resource Not Found: - /DesktopModules/SocialPolls/Thumbnail.ashx?f=20.JPG&tnmaxwidth=200&tnmaxheight=205&ownerId=4
+System.Web.HttpException (0x80004005): Resource Not Found
+2013-05-15 12:15:03,755 [WIN-SQUVIVLQ4HM][Thread:132][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): Resource Not Found
+   at DotNetNuke.Services.Exceptions.Exceptions.ProcessHttpException(HttpException exc, String URL)
+   at DotNetNuke.Modules.SocialPolls.Thumbnail.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Thumbnail.ashx.cs:line 58
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-15 12:15:03,770 [WIN-SQUVIVLQ4HM][Thread:146][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): Resource Not Found
+   at DotNetNuke.Services.Exceptions.Exceptions.ProcessHttpException(HttpException exc, String URL)
+   at DotNetNuke.Modules.SocialPolls.Thumbnail.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Thumbnail.ashx.cs:line 58
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-15 12:15:03,770 [WIN-SQUVIVLQ4HM][Thread:113][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): Resource Not Found
+   at DotNetNuke.Services.Exceptions.Exceptions.ProcessHttpException(HttpException exc, String URL)
+   at DotNetNuke.Modules.SocialPolls.Thumbnail.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Thumbnail.ashx.cs:line 58
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-15 12:15:03,782 [WIN-SQUVIVLQ4HM][Thread:164][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): Resource Not Found
+   at DotNetNuke.Services.Exceptions.Exceptions.ProcessHttpException(HttpException exc, String URL)
+   at DotNetNuke.Modules.SocialPolls.Thumbnail.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Thumbnail.ashx.cs:line 58
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-15 12:15:37,573 [WIN-SQUVIVLQ4HM][Thread:132][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Services.FileSystem.FolderManager.GetUserFolder(UserInfo userInfo)
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_UserFolderUrl() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 190
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_UserFolder() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 198
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_StorageRoot() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 166
+   at DotNetNuke.Modules.SocialPolls.Thumbnail.DeliverFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Thumbnail.ashx.cs:line 66
+   at DotNetNuke.Modules.SocialPolls.Thumbnail.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Thumbnail.ashx.cs:line 53
+2013-05-15 12:15:37,582 [WIN-SQUVIVLQ4HM][Thread:132][ERROR] DotNetNuke.Services.Exceptions.Exceptions - Resource Not Found: - /DesktopModules/SocialPolls/Thumbnail.ashx?f=option0&tnmaxwidth=200&tnmaxheight=205&ownerId=2
+System.Web.HttpException (0x80004005): Resource Not Found
+2013-05-15 12:15:37,586 [WIN-SQUVIVLQ4HM][Thread:132][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): Resource Not Found
+   at DotNetNuke.Services.Exceptions.Exceptions.ProcessHttpException(HttpException exc, String URL)
+   at DotNetNuke.Modules.SocialPolls.Thumbnail.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Thumbnail.ashx.cs:line 58
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-15 12:16:41,237 [WIN-SQUVIVLQ4HM][Thread:155][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.NullReferenceException: Object reference not set to an instance of an object.
+   at System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   at DotNetNuke.Entities.Users.UserInfo.get_Social()
+   at DotNetNuke.Entities.Users.UserInfo.get_Roles()
+   at DotNetNuke.Entities.Users.UserInfo.IsInRole(String role)
+   at DotNetNuke.HttpModules.Membership.MembershipModule.AuthenticateRequest(HttpContextBase context, Boolean allowUnknownExtensinons)
+   at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-15 12:33:35,510 [WIN-SQUVIVLQ4HM][Thread:202][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.NullReferenceException: Object reference not set to an instance of an object.
+   at System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   at DotNetNuke.Entities.Users.UserInfo.get_Social()
+   at DotNetNuke.Entities.Users.UserInfo.get_Roles()
+   at DotNetNuke.Entities.Users.UserInfo.IsInRole(String role)
+   at DotNetNuke.HttpModules.Membership.MembershipModule.AuthenticateRequest(HttpContextBase context, Boolean allowUnknownExtensinons)
+   at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-15 12:34:16,153 [WIN-SQUVIVLQ4HM][Thread:131][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Services.FileSystem.FolderManager.GetUserFolder(UserInfo userInfo)
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_UserFolderUrl() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 196
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_UserFolder() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 207
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_StorageRoot() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 166
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 230
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 197
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.postHandler(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 108
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 79
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 63
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-15 12:34:36,380 [WIN-SQUVIVLQ4HM][Thread:128][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Services.FileSystem.FolderManager.GetUserFolder(UserInfo userInfo)
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_UserFolderUrl() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 196
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_UserFolder() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 207
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_StorageRoot() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 166
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 230
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 197
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.postHandler(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 108
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 79
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 63
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-15 12:35:18,933 [WIN-SQUVIVLQ4HM][Thread:87][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Services.FileSystem.FolderManager.GetUserFolder(UserInfo userInfo)
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_UserFolderUrl() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 196
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_UserFolder() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 207
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_StorageRoot() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 166
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 230
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 197
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.postHandler(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 108
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 79
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 63
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-15 12:37:30,549 [WIN-SQUVIVLQ4HM][Thread:93][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): The file '/DesktopModules/SocialPolls/tn_FileTransferHandler.ashx' does not exist.
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-15 12:37:30,550 [WIN-SQUVIVLQ4HM][Thread:131][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): The file '/DesktopModules/SocialPolls/tn_FileTransferHandler.ashx' does not exist.
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-15 12:37:31,437 [WIN-SQUVIVLQ4HM][Thread:84][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): The file '/DesktopModules/SocialPolls/tn_FileTransferHandler.ashx' does not exist.
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-15 12:40:37,356 [WIN-SQUVIVLQ4HM][Thread:202][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Services.FileSystem.FolderManager.GetUserFolder(UserInfo userInfo)
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_UserFolderUrl() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 196
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_UserFolder() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 207
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_StorageRoot() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 166
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 230
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 197
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.postHandler(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 108
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 79
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 63
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-15 12:46:20,961 [WIN-SQUVIVLQ4HM][Thread:112][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Services.FileSystem.FolderManager.GetUserFolder(UserInfo userInfo)
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_UserFolderUrl() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 196
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_UserFolder() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 207
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_StorageRoot() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 166
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 230
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 197
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.postHandler(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 108
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 79
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 63
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-15 12:47:07,218 [WIN-SQUVIVLQ4HM][Thread:84][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Services.FileSystem.FolderManager.GetUserFolder(UserInfo userInfo)
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_UserFolderUrl() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 196
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_UserFolder() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 207
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_StorageRoot() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 166
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 230
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 197
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.postHandler(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 108
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 79
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 63
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-15 15:24:16,100 [WIN-SQUVIVLQ4HM][Thread:52][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Data.SqlClient.SqlException (0x80131904): A transport-level error has occurred when receiving results from the server. (provider: TCP Provider, error: 0 - The semaphore timeout period has expired.) ---> System.ComponentModel.Win32Exception (0x80004005): The semaphore timeout period has expired
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   at System.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   at System.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   at System.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   at System.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at DotNetNuke.Data.PetaPoco.PetaPocoExt.ExecuteReader(Database database, String sql, Object[] args)
+   at DotNetNuke.Data.SqlDataProvider.ExecuteReader(String procedureName, Object[] commandParameters)
+   at DotNetNuke.Data.DataProvider.GetNextScheduledTask(String Server)
+   at DotNetNuke.Services.Scheduling.DNNScheduler.GetNextScheduledTask(String server)
+   at DotNetNuke.Services.Scheduling.SchedulingProvider.set_ScheduleLastPolled(DateTime value)
+   at DotNetNuke.Common.Initialize.RunSchedule(HttpRequest request)
+ClientConnectionId:3a3e79d9-3ac8-4739-a8ec-0560047e8d66
+2013-05-15 15:24:16,100 [WIN-SQUVIVLQ4HM][Thread:54][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Data.SqlClient.SqlException (0x80131904): A transport-level error has occurred when receiving results from the server. (provider: TCP Provider, error: 0 - The semaphore timeout period has expired.) ---> System.ComponentModel.Win32Exception (0x80004005): The semaphore timeout period has expired
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   at System.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   at System.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   at System.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   at System.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at DotNetNuke.Data.PetaPoco.PetaPocoExt.ExecuteReader(Database database, String sql, Object[] args)
+   at DotNetNuke.Data.SqlDataProvider.ExecuteReader(String procedureName, Object[] commandParameters)
+   at DotNetNuke.Data.DataProvider.GetSchedule(String Server)
+   at DotNetNuke.Services.Scheduling.Scheduler.CoreScheduler.LoadQueueFromTimer()
+   at DotNetNuke.Services.Scheduling.Scheduler.CoreScheduler.Start()
+ClientConnectionId:e56edc02-7fc8-4eaf-8bdd-21d520e32318
+2013-05-15 15:24:21,336 [WIN-SQUVIVLQ4HM][Thread:54][ERROR] DotNetNuke.Services.Log.EventLog.DBLoggingProvider - System.Data.SqlClient.SqlException (0x80131904): A transport-level error has occurred when receiving results from the server. (provider: TCP Provider, error: 0 - The semaphore timeout period has expired.) ---> System.ComponentModel.Win32Exception (0x80004005): The semaphore timeout period has expired
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   at System.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   at System.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   at System.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   at System.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at PetaPoco.Database.Execute(String sql, Object[] args)
+   at DotNetNuke.Data.DataProvider.AddLog(String logGUID, String logTypeKey, Int32 logUserID, String logUserName, Int32 logPortalID, String logPortalName, DateTime logCreateDate, String logServerName, String logProperties, Int32 logConfigID)
+   at DotNetNuke.Services.Log.EventLog.DBLoggingProvider.WriteLog(LogQueueItem logQueueItem)
+ClientConnectionId:3b6c9f2b-8bb2-4961-a315-5af073ba4d47
+2013-05-15 16:39:58,701 [WIN-SQUVIVLQ4HM][Thread:30][ERROR] DotNetNuke.Services.FileSystem.FileManager - System.IO.IOException: The process cannot access the file 'C:\Workspaces\Tipped\Websites\thvstage\Portals\0\Users\004\04\4\11_thumb_108_81.JPG' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at DotNetNuke.Services.FileSystem.Internal.FileWrapper.Create(String path)
+   at DotNetNuke.Services.FileSystem.StandardFolderProvider.UpdateFile(IFolderInfo folder, String fileName, Stream content)
+   at DotNetNuke.Services.FileSystem.FileManager.AddFile(IFolderInfo folder, String fileName, Stream fileContent, Boolean overwrite, Boolean checkPermissions, String contentType)
+2013-05-15 16:39:58,778 [WIN-SQUVIVLQ4HM][Thread:30][ERROR] DotNetNuke.Services.Exceptions.Exceptions - DotNetNuke.Services.FileSystem.FolderProviderException: The underlying system threw an exception. The file has not been added. ---> System.IO.IOException: The process cannot access the file 'C:\Workspaces\Tipped\Websites\thvstage\Portals\0\Users\004\04\4\11_thumb_108_81.JPG' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at DotNetNuke.Services.FileSystem.Internal.FileWrapper.Create(String path)
+   at DotNetNuke.Services.FileSystem.StandardFolderProvider.UpdateFile(IFolderInfo folder, String fileName, Stream content)
+   at DotNetNuke.Services.FileSystem.FileManager.AddFile(IFolderInfo folder, String fileName, Stream fileContent, Boolean overwrite, Boolean checkPermissions, String contentType)
+   --- End of inner exception stack trace ---
+   at DotNetNuke.Services.FileSystem.FileManager.AddFile(IFolderInfo folder, String fileName, Stream fileContent, Boolean overwrite, Boolean checkPermissions, String contentType)
+   at DotNetNuke.Services.FileSystem.FileManager.AddFile(IFolderInfo folder, String fileName, Stream fileContent, Boolean overwrite)
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.SaveFile(Stream stream, PortalSettings portalSettings, UserInfo userInfo, String folder, String filter, String fileName) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 327
+2013-05-15 17:34:25,121 [WIN-SQUVIVLQ4HM][Thread:6][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.ArgumentException: An item with the same key has already been added.
+   at System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   at DotNetNuke.Entities.Users.UserInfo.get_Social()
+   at DotNetNuke.Entities.Users.UserInfo.get_Roles()
+   at DotNetNuke.Entities.Users.UserInfo.IsInRole(String role)
+   at DotNetNuke.HttpModules.Membership.MembershipModule.AuthenticateRequest(HttpContextBase context, Boolean allowUnknownExtensinons)
+   at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)

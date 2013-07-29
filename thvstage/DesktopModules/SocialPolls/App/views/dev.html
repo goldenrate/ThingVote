@@ -1,0 +1,159 @@
+﻿<!-- ko compose{model:'viewmodels/polldetail'} -->
+<!-- /ko -->
+
+
+
+
+<div id="imageUploadScope"
+    data-bind="uploadHandler: $parent.doneUploadHandler,
+    fileHandlerUrl: $parent.fileHandlerUrl ">
+    <button id="imageUploaderTrigger"
+        class="btn rounded-corners">
+        Upload Photos</button>
+    <input id="imagesUploader"
+        name="ximagesUploader"
+        class="poll-image-upload hide"
+        type="file" multiple="multiple" />
+    <div class="progress progress-striped">
+        <div class="bar" style="width: 0%;"></div>
+    </div>
+    <ul id="PollImagesList" class="images-container"
+        data-bind="foreach: { data: PollOptions() }">
+        <li>
+            <img data-bind="attr: {src: OptionImageUrl, id: OptionId}"
+                style="cursor: pointer;" />
+        </li>
+    </ul>
+</div>
+
+
+
+
+<!--<table id="testform" data-bind="validator:rules">
+    <tr>
+        <td class="label">
+            <label id="lfirstname" 
+                for="firstname">First Name</label></td>
+        <td class="field">
+            <input id="firstname" 
+                name="firstname" 
+                type="text" value="" 
+                maxlength="100"></td>
+        <td class="status"></td>
+    </tr>
+</table>-->
+
+<button data-bind="click:validate">validate</button>
+
+
+
+<div style="display: none">
+
+    <h1>FileUploadScope</h1>
+    <div id="dnnFileUploadScope">
+        <div class="dnnLeft">
+            <div id="FoldersComboBox" class="RadComboBox RadComboBox_Default">
+                <table summary="combobox" style="border-width: 0px; border-collapse: collapse; width: 100%;" class="rcbFocused">
+                    <tbody>
+                        <tr class="rcbReadOnly">
+                            <td style="width: 100%;" class="rcbInputCell rcbInputCellLeft">
+                                <input name="dnn$ctr$ManageUsers$Profile$ProfileProperties$Photo$PhotoFileControl$FoldersComboBox"
+                                    type="text" class="rcbInput radPreventDecorate"
+                                    id="dnn_ctr_ManageUsers_Profile_ProfileProperties_Photo_PhotoFileControl_FoldersComboBox_Input" value="My Folder" readonly="readonly" autocomplete="off"></td>
+                            <td class="rcbArrowCell rcbArrowCellRight">
+                                <a id="dnn_ctr_ManageUsers_Profile_ProfileProperties_Photo_PhotoFileControl_FoldersComboBox_Arrow"
+                                    style="overflow: hidden; display: block; position: relative; outline: none;">select</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="rcbSlide" style="z-index: 6000;">
+                    <div id="dnn_ctr_ManageUsers_Profile_ProfileProperties_Photo_PhotoFileControl_FoldersComboBox_DropDown" class="RadComboBoxDropDown RadComboBoxDropDown_Default " style="display: none;">
+                        <div class="rcbScroll rcbWidth" style="height: 240px; width: 100%;">
+                            <ul class="rcbList" style="list-style: none; margin: 0; padding: 0; zoom: 1;">
+                                <li class="rcbItem ">My Folder</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <input id="dnn_ctr_ManageUsers_Profile_ProfileProperties_Photo_PhotoFileControl_FoldersComboBox_ClientState" name="dnn_ctr_ManageUsers_Profile_ProfileProperties_Photo_PhotoFileControl_FoldersComboBox_ClientState" type="hidden" autocomplete="off">
+            </div>
+            <div class="dnnFormItem">
+                <span>File</span>
+                <div id="FilesComboBox" class="RadComboBox RadComboBox_Default">
+                    <table summary="combobox" style="border-width: 0px; border-collapse: collapse; width: 100%;" class="rcbFocused">
+                        <tbody>
+                            <tr class="rcbReadOnly">
+                                <td style="width: 100%;" class="rcbInputCell rcbInputCellLeft">
+                                    <input name="dnn$ctr$ManageUsers$Profile$ProfileProperties$Photo$PhotoFileControl$FilesComboBox" type="text" class="rcbInput radPreventDecorate" id="dnn_ctr_ManageUsers_Profile_ProfileProperties_Photo_PhotoFileControl_FilesComboBox_Input" value="mr-spock.jpg" readonly="readonly" autocomplete="off"></td>
+                                <td class="rcbArrowCell rcbArrowCellRight"><a id="dnn_ctr_ManageUsers_Profile_ProfileProperties_Photo_PhotoFileControl_FilesComboBox_Arrow" style="overflow: hidden; display: block; position: relative; outline: none;">select</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="rcbSlide" style="z-index: 6000;">
+                        <div id="dnn_ctr_ManageUsers_Profile_ProfileProperties_Photo_PhotoFileControl_FilesComboBox_DropDown" class="RadComboBoxDropDown RadComboBoxDropDown_Default " style="display: none;">
+                            <div class="rcbScroll rcbWidth" style="height: 240px; width: 100%;">
+                                <ul class="rcbList" style="list-style: none; margin: 0; padding: 0; zoom: 1;">
+                                    <li class="rcbItem ">31AROEAb6aL._SL500_AA300_.jpg</li>
+                                    <li class="rcbItem ">41plCnZV7HL._SL500_AA300_.jpg</li>
+                                    <li class="rcbItem ">I0000k.KFhR7vFjM.jpg</li>
+                                    <li class="rcbItem ">mr-spock.jpg</li>
+                                    <li class="rcbItem ">p1065632038-11.jpg</li>
+                                    <li class="rcbItem ">p148960595-11.jpg</li>
+                                    <li class="rcbItem ">p475925558-11.jpg</li>
+                                    <li class="rcbItem ">p855426362-11.jpg</li>
+                                    <li class="rcbItem ">shorey.jpg</li>
+                                    <li class="rcbItem ">thumb.jpg</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <input id="dnn_ctr_ManageUsers_Profile_ProfileProperties_Photo_PhotoFileControl_FilesComboBox_ClientState" name="dnn_ctr_ManageUsers_Profile_ProfileProperties_Photo_PhotoFileControl_FilesComboBox_ClientState" type="hidden" autocomplete="off">
+                </div>
+            </div>
+            <div class="dnnFormItem">
+                <input type="file" name="postfile" multiple="" data-text="Upload File">
+            </div>
+        </div>
+        <div class="dnnLeft">
+            <div id="dnnFileUploadDropZone" class="dnnFileUploadDropZone">
+
+                <img src="/Portals/0/Users/003/03/3/p1065632038-11.jpg"
+                    style="max-width: 180px; max-height: 150px;"><span style="">Drop File(s) Here</span>
+            </div>
+        </div>
+        <div class="dnnClear"></div>
+        <div class="dnnFormItem" style="display: none;">
+            <div id="dnnFileUploadProgressBar" class="ui-progressbar">
+                <div class="ui-progressbar-value"></div>
+            </div>
+        </div>
+
+        <input type="hidden" name="dnn$ctr$ManageUsers$Profile$ProfileProperties$Photo$PhotoFileControl$dnnFileUploadFilePath"
+            id="dnnFileUploadFilePath" value="Users/003/03/3//p475925558-11.jpg">
+        <input type="hidden" name="dnn$ctr$ManageUsers$Profile$ProfileProperties$Photo$PhotoFileControl$dnnFileUploadFileId"
+            id="dnnFileUploadFileId" value="181">
+    </div>
+
+    <div>
+        <h1>dev</h1>
+
+        <h2>The Rating Is
+    <span data-bind="text: rating"></span>
+            <input data-bind="value: rating" />
+        </h2>
+        <div class="ratingControl" style="width: 200px; top: 200px">
+            <div id="internaRating" data-bind="starRating: rating">
+            </div>
+        </div>
+    </div>
+
+    <div class="voteAction" data-toggle="buttons-radio"
+        id="booleanOption" data-bind="visible: $parent.IsBoolPoll">
+        <span>
+            <button id="yes" class="btn">Yes</button></span>
+        <span>
+            <button id="no" class="btn">No</button></span>
+    </div>
+
+
+</div>

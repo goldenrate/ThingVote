@@ -1,0 +1,33 @@
+﻿<section id="profile">
+    <article id="profile-container" class="outer-shadow profile-inner">
+        <!-- ko compose:{view: 'profile/profile'} -->
+        <!-- /ko -->
+    </article>
+    <article id="tabs-nav-container">
+        <div class="outer-center">
+            <div class="inner-center">
+                <ul class="nav nav-tabs">
+                    <li><a href="#Polls" data-toggle="tab">Polls</a></li>
+                    <li><a href="#Votes" data-toggle="tab">Votes</a></li>
+                    <li><a href="#Notifications"
+                        data-bind="visible: IsUser()"
+                        data-toggle="tab">Notifications</a></li>
+                    <li><a href="#Followers" data-toggle="tab">Followers</a></li>
+                    <li><a href="#Following" data-toggle="tab">Following</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </article>
+</section>
+<div class="clear"></div>
+<section id="userContent">
+    <div class="tab-content">
+        <div class="tab-pane active" id="Polls"></div>
+        <div class="tab-pane" id="Votes"></div>
+        <div class="tab-pane profile-inner" id="Notifications"></div>
+        <div class="tab-pane" id="Followers"></div>
+        <div class="tab-pane" id="Following"></div>
+    </div>
+
+</section>

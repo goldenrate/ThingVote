@@ -1,0 +1,6 @@
+﻿--New presentation
+if not exists(select * from {databaseOwner}{objectQualifier}BizModules_upg_presentation where name='SimpleSlider')
+INSERT {databaseOwner}{objectQualifier}BizModules_upg_presentation(Name,Description,DisplayCtl,GallerySettingCtl,Type,DefaultWidth,DefaultHeight,AllowFullScreen,Category) VALUES('SimpleSlider','A simple image slider with 3 different UI themes','SimpleSlider','SimpleSliderAppearance','BizModules.UltraPhotoGallery.Presentation.SimpleSlider, BizModules.UltraPhotoGallery','618','246','0','Html')
+GO
+
+

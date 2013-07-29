@@ -1,0 +1,34 @@
+﻿--Rating
+ALTER PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_RatingAdd
+	@UserId int,
+	@UserIP nvarchar(15),
+	@PhotoId int,
+	@Rating int
+AS
+
+INSERT INTO {databaseOwner}{objectQualifier}BizModules_UPG_Rating (
+	UserId,
+	UserIP,
+	PhotoId,
+	Rating
+) VALUES (
+	@UserId,
+	@UserIP,
+	@PhotoId,
+	@Rating
+)
+
+declare @TotalRatings int
+declare @AverageRating decimal(5,2)
+select @TotalRatings = count(*) from {databaseOwner}{objectQualifier}BizModules_UPG_Rating where PhotoId = @PhotoId
+select @AverageRating = avg(rating) from {databaseOwner}{objectQualifier}BizModules_UPG_Rating where PhotoId = @PhotoId
+
+update {databaseOwner}{objectQualifier}BizModules_UPG_Photo 
+set AverageRating = @AverageRating,
+TotalRatings=@TotalRatings
+
+ where ItemId = @PhotoId
+select SCOPE_IDENTITY()
+
+GO
+

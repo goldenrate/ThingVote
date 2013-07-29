@@ -1,0 +1,197 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>Guide</title>
+<style>
+h3
+{
+    font-family: Tahoma, Arial, Helvetica;
+	font-size:12px;
+	padding:5px;
+	font-weight:bold;
+	color:#333;
+}
+p
+{
+ 	margin:5px;
+    font-family: Tahoma, Arial, Helvetica;
+	font-size:12px;
+	padding:5px;
+}
+</style>
+<script type="text/javascript" src="scripts/jquery.min.js"></script>
+</head>
+<body>
+
+<h3>Don't know what presentation to choose? don't worry, I can give you some suggestions after answering some simple questions:</h3>
+
+<form name="form1" method="post" action="">
+
+<p>1, Would you like to use Flash or Html presentation?
+<br />
+        <input type="radio" name="flashorhtml" value="flash">
+        Flash
+        <input type="radio" name="flashorhtml" value="html">
+Html
+<input type="radio" name="flashorhtml" value=""> 
+Whatever</p>
+<p>2, What kind of gallery do you wish to have? <br />
+  <input type="radio" name="mediatype" value="image">
+Image gallery
+<input type="radio" name="mediatype" value="multimedia">
+Multi media gallery
+<input type="radio" name="mediatype" value="slider">
+Slider / Rotator
+</p>
+<p>3, Will you have single or multiple albums?
+<br />
+        <input type="radio" name="albums" value="single">
+        Single
+        <input type="radio" name="albums" value="multiple"> 
+        Multiple</p>
+<p>4, How many medias do you expect to have in this gallery? <br />
+  <input type="radio" name="medias" value="few">
+A few
+<input type="radio" name="medias" value="dozens">
+Dozens 
+<input type="radio" name="medias" value="hundreds"> 
+Hundreds</p>
+<p>5, Do you add medias from Youtube or other video sharing websites? <br />
+  <input type="radio" name="youtube" value="yes">
+Yes
+<input type="radio" name="youtube" value="no"> 
+No
+</p>
+<p>6, Which interface do you prefer? <br />
+  <input type="radio" name="feature" value="powerful">
+Powerful and professional 
+<input type="radio" name="feature" value="clean"> 
+Clean and neat
+</p>
+</form>
+
+
+<p id="divResults" style="display:none;">
+aaa
+</p>
+<script type="text/javascript">
+$(document).ready(function(){
+	var divResults;
+	var presentations;
+	var type; 
+	var mediatype; 
+	var albums; 
+	var medias; 
+	var youtube; 
+	var feature; 
+	
+	function compare(presentation)
+	{
+		if (!compareValue(presentation.type, type)) return false;
+		if (!compareValue(presentation.mediatype, mediatype)) return false;
+		if (!compareValue(presentation.albums, albums)) return false;
+		if (!compareValue(presentation.medias, medias)) return false;
+		if (!compareValue(presentation.youtube, youtube)) return false;
+		if (!compareValue(presentation.feature, feature)) return false;
+		
+		return true;
+	}
+	function compareValue(source, target)
+	{
+		if (target == "" || target == undefined) return true;
+		
+		return ("|"+source.toLowerCase()+"|").indexOf("|"+target.toLowerCase()+"|") >= 0
+	}
+		
+	$("input").change(function(){
+		type = $("input[name=flashorhtml]:checked").val(); 
+		mediatype = $("input[name=mediatype]:checked").val(); 
+		albums = $("input[name=albums]:checked").val(); 
+		medias = $("input[name=medias]:checked").val(); 
+		youtube = $("input[name=youtube]:checked").val(); 
+		feature = $("input[name=feature]:checked").val();
+		
+		var answered = 6;
+		if (type == undefined) answered -= 1;
+		if (mediatype == undefined) answered -= 1;
+		if (albums == undefined) answered -= 1;
+		if (medias == undefined) answered -= 1;
+		if (youtube == undefined) answered -= 1;
+		if (feature == undefined) answered -= 1;
+		
+		if (answered < 3) return;
+	
+		if (!divResults)
+		{
+			divResults = $("#divResults");
+			divResults.show();
+		}
+		
+		if (!presentations)
+		{
+			presentations = new Array();
+			presentations[0]={name: "UMGClassicNG", type:"html", mediatype:"image|multimedia", albums:"single|multiple", medias:"dozens|hundreds", youtube:"yes|no", feature:"powerful"};
+			presentations[1]={name: "UMG Professional", type:"flash", mediatype:"image", albums:"single|multiple", medias:"dozens|hundreds", youtube:"no", feature:"powerful"};
+			presentations[2]={name: "WidescreenShowroom", type:"flash", mediatype:"image|multimedia", albums:"single|multiple", medias:"dozens", youtube:"no", feature:"powerful"};
+			presentations[3]={name: "WidescreenTour1", type:"html", mediatype:"image|multimedia", albums:"multiple", medias:"dozens|few", youtube:"no", feature:"powerful"};
+			presentations[4]={name: "Headline", type:"flash", mediatype:"slider", albums:"single", medias:"few", youtube:"no", feature:"clean"};
+			presentations[5]={name: "3DImageStack", type:"flash", mediatype:"image", albums:"single", medias:"few", youtube:"no", feature:"clean"};
+			presentations[6]={name: "3DCarousel", type:"flash", mediatype:"image", albums:"single", medias:"dozens|few", youtube:"no", feature:"clean"};
+			presentations[7]={name: "SideNav", type:"flash", mediatype:"image", albums:"single", medias:"dozens|few", youtube:"no", feature:"clean"};
+			presentations[8]={name: "RandomPosition", type:"flash", mediatype:"image", albums:"single", medias:"dozens|few", youtube:"no", feature:"clean"};
+			presentations[9]={name: "RightHeader", type:"flash", mediatype:"image", albums:"single", medias:"few", youtube:"no", feature:"clean"};
+			presentations[10]={name: "VirtualTour", type:"flash", mediatype:"image", albums:"single", medias:"dozens|few", youtube:"no", feature:"powerful|clean"};
+			presentations[11]={name: "TiltViewer", type:"flash", mediatype:"image", albums:"single", medias:"dozens", youtube:"no", feature:"clean"};
+			presentations[12]={name: "MacStyle", type:"flash", mediatype:"image", albums:"multiple", medias:"dozens|few", youtube:"no", feature:"clean"};
+			presentations[13]={name: "PieceRotator", type:"flash", mediatype:"slider", albums:"single", medias:"few", youtube:"no", feature:"clean"};
+			presentations[14]={name: "Highslide", type:"html", mediatype:"image|multimedia", albums:"multiple", medias:"dozens|hundreds", youtube:"yes|no", feature:"powerful|clean"};
+			presentations[15]={name: "SmoothGallery", type:"html", mediatype:"image", albums:"single|multiple", medias:"dozens|hundreds", youtube:"no", feature:"powerful"};
+			presentations[16]={name: "MooFlow", type:"html", mediatype:"image", albums:"single", medias:"few", youtube:"no", feature:"clean"};
+			presentations[17]={name: "Html Slideshow", type:"html", mediatype:"image|slider", albums:"single", medias:"dozens", youtube:"no", feature:"powerful"};
+			presentations[18]={name: "WidescreenTour2", type:"html", mediatype:"image|multimedia", albums:"single|multiple", medias:"dozens|few", youtube:"no", feature:"powerful|clean"};
+			presentations[19]={name: "MediaLibrary", type:"html", mediatype:"image|multimedia", albums:"single|multiple", medias:"dozens|hundreds", youtube:"yes|no", feature:"powerful"};
+			presentations[20]={name: "HtmlImageStack", type:"html", mediatype:"image", albums:"single", medias:"few", youtube:"no", feature:"clean"};
+			presentations[21]={name: "TagGroupedGrid", type:"html", mediatype:"image|multimedia", albums:"single", medias:"dozens|hundreds", youtube:"yes|no", feature:"powerful|clean"};
+			presentations[22]={name: "PhotoStack", type:"html", mediatype:"image", albums:"multiple", medias:"dozens|few", youtube:"no", feature:"clean"};
+			presentations[23]={name: "CarouselEvolution", type:"html", mediatype:"slider", albums:"single", medias:"dozens|few", youtube:"no", feature:"clean"};
+			presentations[24]={name: "MultiMediaGallery", type:"html", mediatype:"multimedia", albums:"single|multiple", medias:"dozens|few", youtube:"yes|no", feature:"powerful"};
+			presentations[25]={name: "3DWall", type:"html", mediatype:"image", albums:"single", medias:"few", youtube:"no", feature:"clean"};
+			presentations[26]={name: "BlacknWhite", type:"html", mediatype:"image", albums:"multiple", medias:"dozens|few", youtube:"no", feature:"clean"};
+			presentations[27]={name: "SliderMaster", type:"html", mediatype:"slider|multimedia", albums:"single", medias:"few", youtube:"no", feature:"clean"};
+			presentations[28]={name: "TripleLayerSlider", type:"html", mediatype:"slider", albums:"single", medias:"few", youtube:"no", feature:"clean"};
+			presentations[29]={name: "SpotlightSlider", type:"html", mediatype:"slider", albums:"single", medias:"few", youtube:"no", feature:"clean"};
+			presentations[30]={name: "TonicGallery", type:"html", mediatype:"image|multimedia", albums:"multiple", medias:"dozens|hundredsw", youtube:"yes|no", feature:"powerful|clean"};
+			presentations[31]={name: "Translucent", type:"html", mediatype:"image|slider", albums:"single", medias:"few", youtube:"no", feature:"clean"};
+			presentations[32]={name: "Galleria", type:"html", mediatype:"image", albums:"single", medias:"dozens", youtube:"no", feature:"clean"};
+			presentations[33]={name: "Accordion", type:"html", mediatype:"image|multimedia", albums:"single", medias:"few", youtube:"no", feature:"clean"};
+			presentations[34]={name: "KenBurnSlider", type:"html", mediatype:"image|multimedia", albums:"single", medias:"few", youtube:"no", feature:"clean"};
+			presentations[35]={name: "TimelineSlider", type:"html", mediatype:"image", albums:"single", medias:"few|dozens", youtube:"no", feature:"clean"};
+			presentations[36]={name: "PhotoMap", type:"html", mediatype:"image", albums:"multiple", medias:"dozens|hundreds", youtube:"no", feature:"clean"};
+
+		}
+		
+		var results = "";
+		for (var i=0;i<presentations.length;i++)
+		{
+			if (compare(presentations[i]) == true)
+			{
+				if (results != "") results += ", ";
+				results += "<b>" + presentations[i].name + "</b>";
+			}
+		}
+		
+		if (results == "")
+		{
+			divResults.html("We can not find a presentation which fully meets your requirements.");
+			return;
+		}
+		else
+		{
+			divResults.html("We suggest you to try: " + results);
+		}
+		
+	});
+});
+</script>
+</body>
+</html>

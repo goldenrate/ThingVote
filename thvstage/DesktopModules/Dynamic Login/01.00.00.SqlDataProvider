@@ -1,0 +1,473 @@
+﻿/************************************************************/
+/*****              SQLDataProvider                     *****/
+/*****              DynamicLogin               *****/
+/*****                                                  *****/
+/***** Note: To manually execute this script you must   *****/
+/*****       perform a search and replace operation     *****/
+/*****       for {databaseOwner} and {objectQualifier}  *****/
+/*****                                                  *****/
+/************************************************************/
+
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}{objectQualifier}DataSprings_DynamicLogin_GetItem') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_GetItem
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}{objectQualifier}DataSprings_DynamicLogin_GetByPortalID') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_GetByPortalID
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}{objectQualifier}DataSprings_DynamicLogin_GetByUserID') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_GetByUserID
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}{objectQualifier}DataSprings_DynamicLogin_Add') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_Add
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}{objectQualifier}DataSprings_DynamicLogin_Update') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_Update
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}{objectQualifier}DataSprings_DynamicLogin_Delete') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_Delete
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}{objectQualifier}DataSprings_DynamicRole_GetItem') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure {databaseOwner}{objectQualifier}DataSprings_DynamicRole_GetItem
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}{objectQualifier}DataSprings_DynamicRole_List') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure {databaseOwner}{objectQualifier}DataSprings_DynamicRole_List
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}{objectQualifier}DataSprings_DynamicRole_GetByRoleID') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure {databaseOwner}{objectQualifier}DataSprings_DynamicRole_GetByRoleID
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}{objectQualifier}DataSprings_DynamicRole_Add') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure {databaseOwner}{objectQualifier}DataSprings_DynamicRole_Add
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}{objectQualifier}DataSprings_DynamicRole_Update') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure {databaseOwner}{objectQualifier}DataSprings_DynamicRole_Update
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}{objectQualifier}DataSprings_DynamicRole_Delete') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure {databaseOwner}{objectQualifier}DataSprings_DynamicRole_Delete
+GO
+
+
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}DataSprings_DynamicLogin]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+drop table {databaseOwner}[{objectQualifier}DataSprings_DynamicLogin]
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}DataSprings_DynamicLogin_Role]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+drop table {databaseOwner}[{objectQualifier}DataSprings_DynamicLogin_Role]
+GO
+
+CREATE TABLE {databaseOwner}[{objectQualifier}DataSprings_DynamicLogin_Role] (
+	[ItemID] [int] IDENTITY (1, 1) NOT NULL ,
+	[PortalID] [int] NOT NULL ,
+	[RoleID] [int] NOT NULL ,
+	[Url] [nvarchar] (256) NOT NULL ,
+	[Priority] [int] NOT NULL,
+	[Message] [nvarchar] (2000) NOT NULL
+) ON [PRIMARY]
+GO
+
+ALTER TABLE {databaseOwner}[{objectQualifier}DataSprings_DynamicLogin_Role] WITH NOCHECK ADD 
+	CONSTRAINT [PK_{objectQualifier}DataSprings_DynamicLogin_Role] PRIMARY KEY  CLUSTERED 
+	(
+		[ItemID]
+	)  ON [PRIMARY] 
+GO
+
+ALTER TABLE {databaseOwner}[{objectQualifier}DataSprings_DynamicLogin_Role] ADD 
+	CONSTRAINT [FK_{objectQualifier}DataSprings_DynamicLogin_Role_{objectQualifier}Roles] FOREIGN KEY 
+	(
+		[RoleID]
+	) REFERENCES {databaseOwner}[{objectQualifier}Roles] (
+		[RoleID]
+	) NOT FOR REPLICATION 
+GO
+
+CREATE TABLE {databaseOwner}[{objectQualifier}DataSprings_DynamicLogin] (
+	[ItemID] [int] IDENTITY (1, 1) NOT NULL ,
+	[PortalID] [int] NOT NULL ,
+	[UserID] [int] NOT NULL ,
+	[UserMessage] [nvarchar] (2000) NOT NULL ,
+	[SendNotification] [bit] NOT NULL 
+) ON [PRIMARY]
+GO
+
+ALTER TABLE {databaseOwner}[{objectQualifier}DataSprings_DynamicLogin] WITH NOCHECK ADD 
+	CONSTRAINT [PK_{objectQualifier}DataSprings_DynamicLogin] PRIMARY KEY  CLUSTERED 
+	(
+		[ItemID]
+	)  ON [PRIMARY] 
+GO
+
+ALTER TABLE {databaseOwner}[{objectQualifier}DataSprings_DynamicLogin] ADD 
+	CONSTRAINT [FK_{objectQualifier}DataSprings_DynamicLogin_{objectQualifier}UserPortals] FOREIGN KEY 
+	(
+		[UserID],
+		[PortalID]
+	) REFERENCES {databaseOwner}[{objectQualifier}UserPortals] (
+		[UserId],
+		[PortalId]
+	) NOT FOR REPLICATION 
+GO
+
+
+
+/* -------------------------------------------------------------------------------------
+/  DataSprings_DynamicLogin_GetItem
+/  ------------------------------------------------------------------------------------- */
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS OFF 
+GO
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_GetItem
+	@ItemID int
+	
+AS
+
+SELECT
+	[ItemID],
+	[PortalID],
+	[UserID],
+	[UserMessage],
+	[SendNotification]
+FROM {objectQualifier}DataSprings_DynamicLogin
+WHERE
+	[ItemID] = @ItemID
+	
+GO
+
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS ON 
+GO
+
+
+/* -------------------------------------------------------------------------------------
+/  DataSprings_DynamicLogin_GetByPortalID
+/  ------------------------------------------------------------------------------------- */
+SET QUOTED_IDENTIFIER ON 
+GO
+SET ANSI_NULLS OFF 
+GO
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_GetByPortalID	
+	@PortalID int
+AS
+
+SELECT     {objectQualifier}DataSprings_DynamicLogin.ItemID, {objectQualifier}DataSprings_DynamicLogin.PortalID, {objectQualifier}DataSprings_DynamicLogin.UserID, 
+               {objectQualifier}DataSprings_DynamicLogin.UserMessage, {objectQualifier}DataSprings_DynamicLogin.SendNotification, {objectQualifier}Users.FirstName, {objectQualifier}Users.LastName
+FROM         {objectQualifier}DataSprings_DynamicLogin 
+INNER JOIN {objectQualifier}Users ON {objectQualifier}DataSprings_DynamicLogin.UserID = {objectQualifier}Users.UserID
+WHERE     ({objectQualifier}DataSprings_DynamicLogin.PortalID = @PortalID)
+GO
+
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS ON 
+GO
+
+/* -------------------------------------------------------------------------------------
+/  DataSprings_DynamicLogin_GetByUserID
+/  ------------------------------------------------------------------------------------- */
+SET QUOTED_IDENTIFIER ON 
+GO
+SET ANSI_NULLS OFF 
+GO
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_GetByUserID
+	@UserID int	
+AS
+
+SELECT
+	[ItemID],
+	[PortalID],
+	[UserID],
+	[UserMessage],
+	[SendNotification]
+FROM {objectQualifier}DataSprings_DynamicLogin
+WHERE
+	[UserID]=@UserID
+GO
+
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS ON 
+GO
+
+/* -------------------------------------------------------------------------------------
+/  DataSprings_DynamicLogin_Add
+/  ------------------------------------------------------------------------------------- */
+SET QUOTED_IDENTIFIER ON 
+GO
+SET ANSI_NULLS OFF 
+GO
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_Add
+	@PortalID int,
+	@UserID int,
+	@UserMessage nvarchar(2000),
+	@SendNotification bit
+AS
+
+INSERT INTO {objectQualifier}DataSprings_DynamicLogin (
+	[PortalID],
+	[UserID],
+	[UserMessage],
+	[SendNotification]
+) VALUES (
+	@PortalID,
+	@UserID,
+	@UserMessage,
+	@SendNotification
+)
+
+select SCOPE_IDENTITY()
+GO
+
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS ON 
+GO
+
+/* -------------------------------------------------------------------------------------
+/  DataSprings_DynamicLogin_Update
+/  ------------------------------------------------------------------------------------- */
+SET QUOTED_IDENTIFIER ON 
+GO
+SET ANSI_NULLS OFF 
+GO
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_Update
+	@ItemID int, 
+	@PortalID int, 
+	@UserID int, 
+	@UserMessage nvarchar(2000), 
+	@SendNotification bit 
+AS
+
+UPDATE {objectQualifier}DataSprings_DynamicLogin SET
+	[PortalID] = @PortalID,
+	[UserID] = @UserID,
+	[UserMessage] = @UserMessage,
+	[SendNotification] = @SendNotification
+WHERE
+	[ItemID] = @ItemID
+GO
+
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS ON 
+GO
+
+/* -------------------------------------------------------------------------------------
+/  DataSprings_DynamicLogin_Delete
+/  ------------------------------------------------------------------------------------- */
+SET QUOTED_IDENTIFIER ON 
+GO
+SET ANSI_NULLS OFF 
+GO
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_Delete
+	@ItemID int
+AS
+
+DELETE FROM {objectQualifier}DataSprings_DynamicLogin
+WHERE
+	[ItemID] = @ItemID
+GO
+
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS ON 
+GO
+
+/* -------------------------------------------------------------------------------------
+/  DataSprings_DynamicRole_GetItem
+/  ------------------------------------------------------------------------------------- */
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS OFF 
+GO
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}DataSprings_DynamicRole_GetItem
+	@ItemID int
+	
+AS
+
+SELECT
+	[ItemID],
+	[PortalID],
+	[RoleID],
+	[Url],
+	[Priority],
+	[Message]
+FROM {objectQualifier}DataSprings_DynamicLogin_Role
+WHERE
+	[ItemID] = @ItemID
+	
+GO
+
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS ON 
+GO
+
+/* -------------------------------------------------------------------------------------
+/  DataSprings_DynamicRole_List 
+/  ------------------------------------------------------------------------------------- */
+SET QUOTED_IDENTIFIER ON 
+GO
+SET ANSI_NULLS OFF 
+GO
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}DataSprings_DynamicRole_List
+	@PortalID int
+AS
+
+	SELECT     {objectQualifier}DataSprings_DynamicLogin_Role.ItemID, {objectQualifier}DataSprings_DynamicLogin_Role.PortalID, {objectQualifier}DataSprings_DynamicLogin_Role.RoleID, 
+		       {objectQualifier}DataSprings_DynamicLogin_Role.Url, {objectQualifier}DataSprings_DynamicLogin_Role.Priority,{objectQualifier}DataSprings_DynamicLogin_Role.Message, {objectQualifier}Roles.RoleName
+	FROM       {objectQualifier}DataSprings_DynamicLogin_Role 
+	INNER JOIN {objectQualifier}Roles ON {objectQualifier}DataSprings_DynamicLogin_Role.RoleID = {objectQualifier}Roles.RoleID
+	WHERE {objectQualifier}DataSprings_DynamicLogin_Role.PortalID = @PortalID
+GO
+
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS ON 
+GO
+
+/* -------------------------------------------------------------------------------------
+/  DataSprings_DynamicRole_GetByRoleID
+/  ------------------------------------------------------------------------------------- */
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS OFF 
+GO
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}DataSprings_DynamicRole_GetByRoleID
+	@RoleID int	
+AS
+
+SELECT
+	[ItemID],
+	[PortalID],
+	[RoleID],
+	[Url],
+	[Priority],
+	[Message]
+FROM {objectQualifier}DataSprings_DynamicLogin_Role
+WHERE
+	[RoleID] = @RoleID
+	
+GO
+
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS ON 
+GO
+
+
+/* -------------------------------------------------------------------------------------
+/  DataSprings_DynamicRole_Add
+/  ------------------------------------------------------------------------------------- */
+SET QUOTED_IDENTIFIER ON 
+GO
+SET ANSI_NULLS OFF 
+GO
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}DataSprings_DynamicRole_Add
+	@PortalID int,
+	@RoleID int,
+	@Url nvarchar(256),
+	@Priority int,
+	@Message nvarchar(2000)
+AS
+
+INSERT INTO {objectQualifier}DataSprings_DynamicLogin_Role (
+	[PortalID],
+	[RoleID],
+	[Url],
+	[Priority],
+	[Message]
+) VALUES (
+	@PortalID,
+	@RoleID,
+	@Url,
+	@Priority,
+	@Message
+)
+
+select SCOPE_IDENTITY()
+GO
+
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS ON 
+GO
+
+/* -------------------------------------------------------------------------------------
+/  DataSprings_DynamicRole_Update
+/  ------------------------------------------------------------------------------------- */
+SET QUOTED_IDENTIFIER ON 
+GO
+SET ANSI_NULLS OFF 
+GO
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}DataSprings_DynamicRole_Update
+	@ItemID int, 
+	@PortalID int, 
+	@RoleID int, 
+	@Url nvarchar(256), 
+	@Priority int,
+	@Message nvarchar(2000)
+AS
+
+UPDATE {objectQualifier}DataSprings_DynamicLogin_Role SET
+	[PortalID] = @PortalID,
+	[RoleID] = @RoleID,
+	[Url] = @Url,
+	[Priority] = @Priority,
+	[Message] = @Message
+WHERE
+	[ItemID] = @ItemID
+GO
+
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS ON 
+GO
+
+/* -------------------------------------------------------------------------------------
+/  DataSprings_DynamicRole_Delete
+/  ------------------------------------------------------------------------------------- */
+SET QUOTED_IDENTIFIER ON 
+GO
+SET ANSI_NULLS OFF 
+GO
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}DataSprings_DynamicRole_Delete
+	@ItemID int
+AS
+
+DELETE FROM {objectQualifier}DataSprings_DynamicLogin_Role
+WHERE
+	[ItemID] = @ItemID
+GO
+
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS ON 
+GO
+
+
+
+

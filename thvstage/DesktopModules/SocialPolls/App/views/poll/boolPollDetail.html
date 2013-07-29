@@ -1,0 +1,37 @@
+﻿<div class="double-divider"></div>
+<div id="boolpoll-results">
+
+    <ul class="unstyled inline" data-bind="foreach: BoolDistribution">
+        <li class="icon-user" data-bind="style: { color: color }"></li>
+        <li data-bind="text: Name"></li>
+        <li data-bind="text: Count"></li>
+    </ul>
+
+    <div id="yesno-bar">
+        <ul class="progress"
+            data-bind="foreach: BoolDistribution, visible: $root.canViewResults()">
+            <li class="bar" data-bind="style: { width: precent, 'background-color': color }"></li>
+        </ul>
+
+        <ul id="precent-info" class="unstyled inline"
+            data-bind="foreach: BoolDistribution">
+            <li data-bind="visible: $root.canViewResults()">0%</li>
+        </ul>
+
+        <!-- users who cannot view the results -->
+        <div data-bind="visible: !$root.canViewResults()">
+            <div class="progress">
+                <div class="bar" style="width: 100%; background-color: #616065"></div>
+            </div>
+            <ul class="unstyled inline">
+                <li>0%</li>
+                <li>0%</li>
+            </ul>
+        </div>
+    </div>
+
+
+</div>
+
+
+

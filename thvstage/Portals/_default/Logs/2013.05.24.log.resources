@@ -1,0 +1,78 @@
+2013-05-24 15:06:08,621 [WIN-SQUVIVLQ4HM][Thread:58][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Data.SqlClient.SqlException (0x80131904): Violation of UNIQUE KEY constraint 'IX_FolderPath'. Cannot insert duplicate key in object 'dbo.Folders'. The duplicate key value is (0, Users/006/).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at PetaPoco.Database.ExecuteScalar[T](String sql, Object[] args)
+   at DotNetNuke.Data.SqlDataProvider.ExecuteScalar[T](String procedureName, Object[] commandParameters)
+   at DotNetNuke.Data.DataProvider.AddFolder(Int32 portalId, Guid uniqueId, Guid versionGuid, String folderPath, Int32 storageLocation, Boolean isProtected, Boolean isCached, DateTime lastUpdated, Int32 createdByUserID, Int32 folderMappingID)
+   at DotNetNuke.Services.FileSystem.FolderManager.AddFolder(IFolderInfo folder)
+   at DotNetNuke.Services.FileSystem.FolderManager.CreateFolderInDatabase(Int32 portalID, String folderPath, Int32 folderMappingID)
+   at DotNetNuke.Services.FileSystem.FolderManager.AddFolder(FolderMappingInfo folderMapping, String folderPath)
+   at DotNetNuke.Services.FileSystem.FolderManager.AddUserFolder(UserInfo user)
+   at DotNetNuke.Services.FileSystem.FolderManager.GetUserFolder(UserInfo userInfo)
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_UserFolderUrl() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 191
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_UserFolder() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 207
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_StorageRoot() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 166
+   at DotNetNuke.Modules.SocialPolls.Thumbnail.DeliverFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Thumbnail.ashx.cs:line 66
+   at DotNetNuke.Modules.SocialPolls.Thumbnail.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Thumbnail.ashx.cs:line 53
+ClientConnectionId:199407e3-7c4b-4b19-b4f0-b32a98a9a38e
+2013-05-24 15:06:08,621 [WIN-SQUVIVLQ4HM][Thread:46][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Data.SqlClient.SqlException (0x80131904): Violation of UNIQUE KEY constraint 'IX_FolderPath'. Cannot insert duplicate key in object 'dbo.Folders'. The duplicate key value is (0, Users/006/).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at PetaPoco.Database.ExecuteScalar[T](String sql, Object[] args)
+   at DotNetNuke.Data.SqlDataProvider.ExecuteScalar[T](String procedureName, Object[] commandParameters)
+   at DotNetNuke.Data.DataProvider.AddFolder(Int32 portalId, Guid uniqueId, Guid versionGuid, String folderPath, Int32 storageLocation, Boolean isProtected, Boolean isCached, DateTime lastUpdated, Int32 createdByUserID, Int32 folderMappingID)
+   at DotNetNuke.Services.FileSystem.FolderManager.AddFolder(IFolderInfo folder)
+   at DotNetNuke.Services.FileSystem.FolderManager.CreateFolderInDatabase(Int32 portalID, String folderPath, Int32 folderMappingID)
+   at DotNetNuke.Services.FileSystem.FolderManager.AddFolder(FolderMappingInfo folderMapping, String folderPath)
+   at DotNetNuke.Services.FileSystem.FolderManager.AddUserFolder(UserInfo user)
+   at DotNetNuke.Services.FileSystem.FolderManager.GetUserFolder(UserInfo userInfo)
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_UserFolderUrl() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 191
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_UserFolder() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 207
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_StorageRoot() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 166
+   at DotNetNuke.Modules.SocialPolls.Thumbnail.DeliverFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Thumbnail.ashx.cs:line 66
+   at DotNetNuke.Modules.SocialPolls.Thumbnail.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Thumbnail.ashx.cs:line 53
+ClientConnectionId:01d7a5aa-7e45-42c1-a3d3-7aebfd7a81a2
+2013-05-24 15:06:08,692 [WIN-SQUVIVLQ4HM][Thread:46][ERROR] DotNetNuke.Services.Exceptions.Exceptions - Resource Not Found: - /DesktopModules/SocialPolls/Thumbnail.ashx?f=option2&tnmaxwidth=200&tnmaxheight=205&ownerId=6
+System.Web.HttpException (0x80004005): Resource Not Found
+2013-05-24 15:06:08,693 [WIN-SQUVIVLQ4HM][Thread:58][ERROR] DotNetNuke.Services.Exceptions.Exceptions - Resource Not Found: - /DesktopModules/SocialPolls/Thumbnail.ashx?f=option0&tnmaxwidth=200&tnmaxheight=205&ownerId=6
+System.Web.HttpException (0x80004005): Resource Not Found
+2013-05-24 15:06:08,703 [WIN-SQUVIVLQ4HM][Thread:46][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): Resource Not Found
+   at DotNetNuke.Services.Exceptions.Exceptions.ProcessHttpException(HttpException exc, String URL)
+   at DotNetNuke.Modules.SocialPolls.Thumbnail.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Thumbnail.ashx.cs:line 58
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-24 15:06:08,703 [WIN-SQUVIVLQ4HM][Thread:58][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): Resource Not Found
+   at DotNetNuke.Services.Exceptions.Exceptions.ProcessHttpException(HttpException exc, String URL)
+   at DotNetNuke.Modules.SocialPolls.Thumbnail.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Thumbnail.ashx.cs:line 58
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-24 21:52:31,251 [WIN-SQUVIVLQ4HM][Thread:30][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Entities.Users.UserController.ValidatePassword(String password)
+   at DotNetNuke.Entities.Users.UserController.ChangePassword(UserInfo user, String oldPassword, String newPassword)
+   at ASPvia.SocialVotes.DataServices.Controller.PollMemberController.UpdateAccount(AccountDTO account)
+2013-05-24 21:53:14,155 [WIN-SQUVIVLQ4HM][Thread:68][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Entities.Users.UserController.ValidatePassword(String password)
+   at DotNetNuke.Entities.Users.UserController.ChangePassword(UserInfo user, String oldPassword, String newPassword)
+   at ASPvia.SocialVotes.DataServices.Controller.PollMemberController.UpdateAccount(AccountDTO account)
+2013-05-24 21:54:47,246 [WIN-SQUVIVLQ4HM][Thread:42][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Entities.Users.UserController.ValidatePassword(String password)
+   at DotNetNuke.Entities.Users.UserController.ChangePassword(UserInfo user, String oldPassword, String newPassword)
+   at ASPvia.SocialVotes.DataServices.Controller.PollMemberController.UpdateAccount(AccountDTO account)

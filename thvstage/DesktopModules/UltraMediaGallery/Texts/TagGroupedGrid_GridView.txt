@@ -1,0 +1,8 @@
+<a href="[LARGE]" class="griditem" data-umgid="[PHOTOID]" style="width:[THUMBWIDTH]px;">
+	<span class="imgntime">
+	<img src="[THUMBNAIL]" border="0" alt="Screenshot" />
+	</span>
+
+	<span class="title hl">[TITLE]</span>
+	<span class="author">[AUTHOR]</span>
+</a>

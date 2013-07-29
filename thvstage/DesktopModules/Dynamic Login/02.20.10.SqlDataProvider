@@ -1,0 +1,43 @@
+/************************************************************/
+/*****              SQLDataProvider                     *****/
+/*****              DynamicLogin               *****/
+/*****                                                  *****/
+/***** Note: To manually execute this script you must   *****/
+/*****       perform a search and replace operation     *****/
+/*****       for {databaseOwner} and {objectQualifier}  *****/
+/*****                                                  *****/
+/************************************************************/
+
+
+
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}{objectQualifier}DataSprings_DynamicLogin_AddUserToUserPortalsTable') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_AddUserToUserPortalsTable
+GO
+
+/* -------------------------------------------------------------------------------------
+/  DataSprings_DynamicLogin_AddUserToUserPortalsTable
+/  ------------------------------------------------------------------------------------- */
+SET QUOTED_IDENTIFIER ON 
+GO
+SET ANSI_NULLS OFF 
+GO
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_AddUserToUserPortalsTable
+	
+      @UserID int,
+      @PortalID int
+	
+AS
+IF NOT EXISTS (SELECT * FROM {databaseOwner}{objectQualifier}UserPortals where UserID = @UserID AND PortalID = @PortalID)
+ INSERT INTO {databaseOwner}{objectQualifier}UserPortals(
+	[UserID],
+	[PortalID],
+	[Authorised])
+      VALUES (
+	@UserID,
+	@PortalID,
+	1)
+
+RETURN
+
+--select SCOPE_IDENTITY()

@@ -1,0 +1,192 @@
+	#umg_container[MODULEID]
+	{
+		background-color:#[BGCOLOR];
+		color:#[TEXTCOLOR];
+		width: [GALLERYWIDTH]px; 
+		height: [GALLERYHEIGHT]px;
+		font-size:[TEXTSIZE]px;
+		position:relative;
+		overflow:hidden;
+	}
+
+	#umg_largelist[MODULEID]
+	{
+		z-index:10;
+		width:100%;
+		height:100%;
+		position:absolute;
+		overflow:hidden;
+	}
+
+	#umg_large[MODULEID]
+	{
+		width:100%;
+		height:100%;
+	}
+
+	#umg_large[MODULEID] .image
+	{
+		position:absolute;
+		float:left;
+	}
+
+	#umg_caption[MODULEID]
+	{
+		z-index:12;
+		position:absolute;
+		background-image:url('[CURRENTPATH]bg.png');
+		width:100%;
+		height:30px;
+		overflow:hidden;
+	}
+
+	#umg_captiontext[MODULEID]
+	{
+		position:absolute;
+		width:100%;
+		height:100%;
+		line-height:30px;
+	}
+
+	#umg_captiontitle[MODULEID]
+	{
+		color:#[CAPTIONTITLECOLOR];
+		width:100%;
+		margin-left:10px;
+	}
+
+	#umg_captiondescription[MODULEID]
+	{
+		display:none;
+	}
+
+	#umg_captionauthor[MODULEID]
+	{
+		display:none;
+	}
+
+	#umg_captiontag[MODULEID]
+	{
+		display:none;
+	}
+
+	#umg_captiontakendate[MODULEID]
+	{
+		display:none;
+	}
+
+	#umg_xofy[MODULEID] 
+	{
+		z-index:14;
+		position:absolute;
+		width:83px;
+		text-align:center;
+		left:MATH[([GALLERYWIDTH]-83)/2]px;
+		top:MATH[[GALLERYHEIGHT]-18]px;
+		font-weight:bold;
+	}
+
+	#umg_more[MODULEID]
+	{
+		z-index:11;
+		position:absolute;
+
+		left:0px;
+		top:0px;
+		width:100%;
+		height:100%;
+		background-image:url('[CURRENTPATH]blank.png');
+		background-repeat:no-repeat;
+	}
+
+	#umg_buttons[MODULEID]
+	{
+		z-index:13;
+		position:absolute;
+		background-image:url('[CURRENTPATH]bg.png');
+		width:100%;
+		height:45px;
+		padding-left:MATH[([GALLERYWIDTH]-83)/2]px;
+		padding-top:3px;
+		top:MATH[[GALLERYHEIGHT]-45]px;
+		font-size:0px;
+	}
+
+	#umg_prev[MODULEID]
+	{
+		background-image:url('[CURRENTPATH]Buttons3.png');
+		width:14px;
+		height:22px;
+		float:left;
+	}
+
+	#umg_prev[MODULEID]:hover
+	{
+		background-position:0 -22px;     
+	}
+
+	#umg_next[MODULEID]
+	{
+		background-image:url('[CURRENTPATH]Buttons3.png');
+		background-position: -49px 0;
+		width:14px;
+		height:22px;
+		float:left;
+	}
+
+	#umg_next[MODULEID]:hover
+	{
+		background-position:-49px -22px;     
+	}
+
+	#umg_play[MODULEID]
+	{
+		background-image:url('[CURRENTPATH]Buttons3.png');
+		background-position: -14px 0;
+		width:35px;
+		height:22px;
+		float:left;
+		margin-left:10px;
+		margin-right:10px;
+	}
+
+	#umg_play[MODULEID].active
+	{
+		background-position:-14px -44px;     
+	}
+
+	#umg_play[MODULEID]:hover
+	{
+		background-position:-14px -22px;     
+	}
+
+	#umg_play[MODULEID].active:hover
+	{
+		background-position:-14px -66px;     
+	}
+
+	#umg_countdown[MODULEID]
+	{
+		display:none;
+	}
+
+	#umg_loading[MODULEID]
+	{
+		z-index:15;
+		width:32px;
+		height:32px;
+		position:absolute;
+		left:MATH[[GALLERYWIDTH]/2-16]px;
+		top:MATH[[GALLERYHEIGHT]/2-16]px;
+	}
+
+	#umg_loading[MODULEID].active
+	{
+		background-image:url('[CURRENTPATH]loading.gif');
+	}
+
+	
+	/* position and dimensions of the navigator */
+	#umg_navilist[MODULEID] {
+		display:none;   
+	}

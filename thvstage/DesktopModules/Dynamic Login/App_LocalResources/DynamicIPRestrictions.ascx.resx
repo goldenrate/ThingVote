@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="lnkCancel.Text">
+		<value>Done / Exit</value>
+	</data>
+	
+	
+	<data name="ControlTitle_.Text">
+		<value>IP Address Restrictions</value>
+	</data>
+	<data name="ControlTitle_login.Text">
+		<value>IP Address Restrictions</value>
+	</data>
+		<data name="Category.Header">
+		<value>List Name</value>
+	</data>
+
+
+	<data name="Description.Header">
+		<value>Description</value>
+	</data>
+<data name="AllPortals.Header">
+		<value>Affects All Module Instances?</value>
+	</data>
+
+	<data name="RestrictionDesc.Header">
+		<value>Restriction Reason</value>
+	</data>
+	
+	<data name="dgupdatetext.Text">
+		<value>Update</value>
+	</data>
+	<data name="dgcanceltext.Text">
+		<value>Cancel</value>
+	</data>
+	<data name="ControlTitle_categories.Text">
+		<value>Manage IP Address Restrictions</value>
+	</data>
+	
+		
+	<data name="dgedittext.Text">
+		<value>Edit</value>
+	</data>
+	<data name="dgdeletetext.Text">
+		<value>Delete</value>
+	</data>
+	<data name="dgaddtext.Text">
+		<value>Add</value>
+	</data>
+
+
+<data name="IPAddress.Header">
+		<value>IP Address</value>
+	</data>
+
+
+<data name="litDESC.Text">
+		<value>Need to block out specific users from signing in based on their IP Address? You can block out specific IP Addresses from the grid below, choosing the all portals option will block that specific IP address for all instances of Dynamic Login within all portals of the DNN installation.</value>
+	</data>
+<data name="litSQLDESC.Text">
+		<value>Need to block out specific users from signing in based on a SQL query? You can block out specific users by enabling this feature and returning a query with one row/one column called IsValid. If the column returns '0' or 'False' then the user will not be allowed to log in and will be presented with the error message. Any other value will be considered valid and will allow the user to sign in. </value>
+	</data>
+
+
+<data name="RestrictBySQL.Text">
+		<value>Restrict Login by SQL Validation</value>
+	</data>
+<data name="RestrictIP.Text">
+		<value>Restrict Login by IP Access</value>
+	</data>
+
+
+
+<data name="plSQLValidation.Text">
+		<value>Enable SQL Validation?</value>
+	</data>
+<data name="plSQLValidation.Help">
+		<value>Select if you would like to enable SQL Validation for this module instance.</value>
+	</data>
+
+<data name="plSQLTemplate.Text">
+		<value>SQL Validation Query (should return one column called IsValid)</value>
+	</data>
+<data name="plSQLTemplate.Help">
+		<value>Enter the query for this validation. Parameters for the query can include $(UserID), $(PortalID), and $(IPAddress).</value>
+	</data>
+
+<data name="plValidationMessage.Text">
+		<value>Validation Error Message</value>
+	</data>
+<data name="plValidationMessage.Help">
+		<value>Enter the validation error message that will be returned if the user attempts to log into the portal and doesn't match the SQL validation routine.</value>
+	</data>
+</root>

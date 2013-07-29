@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>1.3</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+
+	<data name="ModuleSettings.Action">
+		<value>Module Settings</value>
+	</data>
+
+	<data name="JustNow.Text">
+		<value>Just now</value>
+	</data>
+	<data name="XMinutesAgo.Text">
+		<value>[X] minutes ago</value>
+	</data>
+	<data name="XHoursAgo.Text">
+		<value>[X] hours ago</value>
+	</data>
+	<data name="XDaysAgo.Text">
+		<value>[X] days ago</value>
+	</data>
+	<data name="XWeeksAgo.Text">
+		<value>[X] weeks ago</value>
+	</data>
+	<data name="XMonthsAgo.Text">
+		<value>[X] months ago</value>
+	</data>
+	<data name="XYearsAgo.Text">
+		<value>[X] years ago</value>
+	</data>
+	<data name="XToYOfZ_Full.Text">
+	    <value>Showing [X] to [Y] out of [Z] comments</value>
+	</data>
+
+
+	<data name="Total.Text">
+		<value>Total</value>
+	</data>
+	<data name="Thumbnail.Text">
+		<value>Thumbnail</value>
+	</data>
+	<data name="ItemDetail.Text">
+		<value>Item Detail</value>
+	</data>
+	<data name="Price.Text">
+		<value>Price</value>
+	</data>
+	<data name="UnknownError.Text">
+		<value>Unknown Error</value>
+	</data>
+	<data name="NotifyEmailSubject.Text">
+		<value>[PORTALNAME]: New Photo Requires Approval</value>
+	</data>
+	<data name="NotifyEmailBody.Text">
+		<value>&lt;p&gt;At [POSTDATE] [COUNT] photos have been submitted for approval.
+
+&lt;p&gt;To view the complete list of pending photos, please visit:
+[APPROVALLINK]
+
+&lt;p&gt;Thank you,
+&lt;br&gt;[PORTALNAME]</value>
+	</data>
+	<data name="RatingDetail.Text">
+		<value>[AVERAGERATING] stars based on [TOTALRATINGS] rates</value>
+	</data>
+	<data name="NotRated.Text">
+		<value>Not rated yet</value>
+	</data>
+	<data name="Loading.Text">
+		<value>Loading...</value>
+	</data>
+	<data name="LoginToRate.Text">
+		<value>You must login first</value>
+	</data>
+
+
+
+	<data name="CannotDeleteRssPhoto.Text">
+		<value>You cannot delete a photo which is pulled down from a rss feed</value>
+	</data>
+
+	<data name="Pages.Help">
+		<value>Pages :</value>
+	</data>
+
+	<data name="SetPermissionByUser.Text">
+		<value>Include these users besides above roles, separated by ,</value>
+	</data>
+
+	<data name="XPhotosAdded.Text">
+		<value>Successfully uploaded [TOTAL] medias\nClick "My Work" link above to edit them</value>
+	</data>
+	<data name="NoPhotosUploaded.Text">
+		<value>Nothing is added to your gallery</value>
+	</data>
+	<data name="PleaseSelectAnAlbum.Text">
+		<value>Please select an album</value>
+	</data>
+	<data name="NoPermissionInThisAlbum.Text">
+		<value>You donot have necessary permission in this album</value>
+	</data>
+	<data name="AlbumNotSelectable.Text">
+		<value>This album contains sub albums, please select another one</value>
+	</data>
+	<data name="AddtoAlbum.Text">
+		<value>Add to album</value>
+	</data>
+
+
+
+
+
+	<data name="FlashUpload.Text">
+		<value>Flash file upload</value>
+	</data>
+	<data name="ClassicUpload.Text">
+		<value>Traditional file upload</value>
+	</data>
+	<data name="ChooseFile.Text">
+		<value>Import existing medias on server</value>
+	</data>
+	<data name="AddFromURL.Text">
+		<value>Add media(s) from internet URL</value>
+	</data>
+	<data name="AddFromHTML.Text">
+		<value>Add media(s) from any HTML code</value>
+	</data>
+	<data name="CopyAndPaste.Text">
+		<value>Copy and paste</value>
+	</data>
+	<data name="Html5Upload.Text">
+		<value>Html 5 Upload</value>
+	</data>
+	<data name="ImportFB.Text">
+		<value>(New) Import from Facebook</value>
+	</data>
+	<data name="Image.Text">
+		<value>Image</value>
+	</data>
+	<data name="Video.Text">
+		<value>Video</value>
+	</data>
+	<data name="Audio.Text">
+		<value>Audio</value>
+	</data>
+	<data name="Flash.Text">
+		<value>Flash</value>
+	</data>
+	<data name="Unknown.Text">
+		<value>Unknown</value>
+	</data>
+
+	<data name="UnknownFileType.Text">
+		<value>UMG does not recognize the file type that this URL points to</value>
+	</data>
+	<data name="FileNotSupported.Text">
+		<value>[FILENAME] is not a supported media</value>
+	</data>
+	<data name="images.Text">
+		<value>images</value>
+	</data>
+	<data name="videos.Text">
+		<value>videos (.flv, .mp4)</value>
+	</data>
+	<data name="allvideos.Text">
+		<value>videos</value>
+	</data>
+	<data name="audios.Text">
+		<value>mp3 audios</value>
+	</data>
+	<data name="flashs.Text">
+		<value>flash movie (.swf)</value>
+	</data>
+	<data name="OtherUploadOptions.Text">
+		<value>Other upload options</value>
+	</data>
+
+	<data name="Display.Text">
+		<value>Display</value>
+	</data>
+	<data name="Overview.Text">
+		<value>Overview</value>
+	</data>
+	<data name="Options.Text">
+		<value>Options</value>
+	</data>
+	<data name="MoveToAnotherAlbum.Text">
+		<value>Move to another album</value>
+	</data>
+	<data name="CropImage.Text">
+		<value>Crop this image on</value>
+	</data>
+	<data name="or.Text">
+		<value>or</value>
+	</data>
+
+	<data name="AddStandardAlbum.Text">
+		<value>Add a standard album</value>
+	</data>
+	<data name="AddRSSAlbum.Text">
+		<value>Add an album from a RSS feed</value>
+	</data>
+	<data name="OtherAlbumOptions.Text">
+		<value>Other album options</value>
+	</data>
+	<data name="BasicInformation.Text">
+		<value>Basic information</value>
+	</data>
+	<data name="AdvancedOptions.Text">
+		<value>Advanced options</value>
+	</data>
+	<data name="NoUsersFound.Text">
+		<value>no users</value>
+	</data>
+	<data name="notags.Text">
+		<value>no tags</value>
+	</data>
+</root>

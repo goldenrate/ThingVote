@@ -1,0 +1,108 @@
+﻿ALTER PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_PhotoAdd
+	@AlbumId int,
+	@Title nvarchar(150),
+	@Src nvarchar(150),
+	@TnSrc nvarchar(150),
+	@Link nvarchar(150),
+	@Approved bit, 
+	@CreatedByUser int,
+	@CreatedDate datetime,
+	@TnWidth int,
+	@TnHeight int,
+	@TakenDate smalldatetime,
+	@GPSLatitude decimal(10, 4),
+	@GPSLongitude decimal(10, 4),
+	@MediaType int,
+	@MediaWidth int,
+	@MediaHeight int,
+	@HtmlContent ntext,
+	@ResName nvarchar(200), 
+	@ResSize int, 
+	@ResOriginalName nvarchar(100), 
+	@ResContentType varchar(50),
+	@ResPrice money, 
+	@ResCreatedDate datetime, 
+	@ResDownloads int
+AS
+
+if isnull(@Src, '') <> ''
+begin
+	if exists(select * from {databaseOwner}{objectQualifier}BizModules_UPG_Photo where AlbumId=@AlbumId and Src = @Src)
+	begin
+		select -1
+		return
+	end
+end
+else
+begin
+	if exists(select * from {databaseOwner}{objectQualifier}BizModules_UPG_Photo where AlbumId=@AlbumId and TnSrc = @TnSrc)
+	begin
+		select -1
+		return
+	end
+end
+
+declare @SortOrder int
+SELECT TOP 1 @SortOrder=ISNULL(SortOrder,0)+1 from {databaseOwner}{objectQualifier}BizModules_UPG_Photo where AlbumId=@AlbumId Order by SortOrder DESC
+
+INSERT INTO {databaseOwner}{objectQualifier}BizModules_UPG_Photo (
+	AlbumId,
+	Title,
+	Src,
+	TnSrc,
+	Link,
+	Approved,
+	CreatedByUser,
+	CreatedDate,
+	SortOrder,
+	TnWidth,
+	TnHeight,
+	TakenDate,
+	GPSLatitude,
+	GPSLongitude,
+	MediaType,
+	MediaWidth,
+	MediaHeight,
+	HtmlContent,
+	ResName, 
+	ResSize, 
+	ResOriginalName, 
+	ResContentType,
+	ResPrice, 
+	ResCreatedDate,
+	ResDownloads
+) VALUES (
+	@AlbumId,
+	@Title,
+	@Src,
+	@TnSrc,
+	@Link,
+	@Approved,
+	@CreatedByUser,
+	@CreatedDate,
+	@SortOrder,
+	@TnWidth,
+	@TnHeight,
+	@TakenDate,
+	@GPSLatitude,
+	@GPSLongitude,
+	@MediaType,
+	@MediaWidth,
+	@MediaHeight,
+	@HtmlContent,
+	@ResName, 
+	@ResSize, 
+	@ResOriginalName, 
+	@ResContentType,
+	@ResPrice, 
+	@ResCreatedDate,
+	@ResDownloads
+)
+
+update {databaseOwner}{objectQualifier}BizModules_UPG_Album set LastModifiedDate = @CreatedDate where ItemId = @AlbumId
+exec {databaseOwner}{objectQualifier}BizModules_UPG_AlbumIndexP @AlbumId
+select SCOPE_IDENTITY()
+
+GO
+
+

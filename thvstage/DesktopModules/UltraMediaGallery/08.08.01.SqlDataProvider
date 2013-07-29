@@ -1,0 +1,11 @@
+﻿ALTER PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_SearchUsers
+	@PortalId int,
+	@Prefix varchar(20)
+AS
+
+select * from {databaseOwner}{objectQualifier}vw_Users where (PortalId = @PortalId or PortalId is null) and (username like @Prefix + '%' or email like @Prefix + '%')
+
+GO
+
+
+

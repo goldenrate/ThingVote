@@ -1,0 +1,74 @@
+.thumbnail
+{
+	text-align:center;
+}
+
+.drag_current
+{
+	border:1px solid #CCCCCC;
+	line-height:125%;
+
+	position: relative;
+	margin: auto;
+	z-index: 10;
+}
+
+.drag_current .thumbnail img
+{
+	border:1px solid #CCCCCC;
+	-moz-box-shadow: 0px 0px 4px rgba(0,0,0,1);
+	-webkit-box-shadow: 0px 0px 4px rgba(0,0,0,1);
+	box-shadow: 0px 0px 4px rgba(0,0,0,1);
+}
+
+.drag_noncurrent
+{
+	border:1px solid #CCCCCC;
+	line-height:125%;
+
+	position: relative;
+	margin: auto;
+	z-index: 10;
+}
+
+.drag_noncurrent .thumbnail img
+{
+	border:1px solid #CCCCCC;
+	-moz-box-shadow: 0px 0px 4px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0px 0px 4px rgba(0,0,0,0.5);
+	box-shadow: 0px 0px 4px rgba(0,0,0,0.5);
+}
+
+.drag_current #hotspot
+{
+	background-color:#FFFFFF;
+	cursor: move;
+	padding:3px;
+	line-height:125%;
+}
+
+.drag_noncurrent #hotspot
+{
+	padding:3px;
+	line-height:125%;
+}
+
+.drag_current .quickmenu
+{
+	padding:3px;
+}
+
+.drag_noncurrent .quickmenu
+{
+	padding:3px;
+}
+
+.drag_current .buttons
+{
+	visibility:visible;
+}
+
+.drag_noncurrent .buttons
+{
+	visibility:hidden;
+}

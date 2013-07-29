@@ -1,0 +1,2 @@
+[ITEMNAME] by [PORTALNAME]
+<p>Hello, <p>Thanks for buying our product, your invoice placed on [INVOICEDATE] (Invoice No.= [INVOICEID]) is completed and you can download purchased items on our website now. <p>For further information please fell free to contact us. <p> Thank you.

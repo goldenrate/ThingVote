@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="ControlTitle_edit.Text">
+		<value>Edit Login Rules</value>
+	</data>
+	<data name="cmdDone.Text">
+		<value>Done</value>
+	</data>
+	<data name="FirstName.Header">
+		<value>First Name</value>
+	</data>
+	<data name="LastName.Header">
+		<value>Last Name</value>
+	</data>
+	<data name="UserMessage.Header">
+		<value>User Message</value>
+	</data>
+	<data name="Send Notification.Header">
+		<value>Send Admin Notification</value>
+	</data>
+	<data name="AddContent.Action">
+		<value>Add New Rule (Login)</value>
+	</data>
+	<data name="ModuleHelp.Text">
+		<value>Please visit datasprings.com for additional help and user guides.</value>
+	</data>
+	<data name="lblSearch.Text">
+		<value>Filter Criteria</value>
+	</data>
+	<data name="cmdSearch.Text">
+		<value>Search</value>
+	</data>
+<data name="lnkBind.Text">
+		<value>Load Users List</value>
+	</data>
+<data name="plUser.Text">
+		<value>User</value>
+	</data>
+	<data name="plUser.Help">
+		<value>Select user</value>
+	</data>
+	<data name="plUserMessage.Text">
+		<value>Additional Message</value>
+	</data>
+	<data name="plUserMessage.Help">
+		<value>This is the message that user will see after using DynamicLogin module</value>
+	</data>
+	<data name="plSendNoification.Text">
+		<value>Send Admin Notification</value>
+	</data>
+	<data name="plSendNoification.Help">
+		<value>Notify Administrator after user login. You can edit e-mail template in module settings screen.</value>
+	</data>
+	<data name="validatorMessage.Text">
+		<value>&lt;br&gt;Please specify additional message!</value>
+	</data>
+	<data name="ModuleHelp.Text">
+		<value>Please visit www.datasprings.com for the user guide.</value>
+	</data>
+	<data name="validatorUser.Text">
+		<value>&lt;br&gt;Please select the user!</value>
+	</data>
+
+<data name="litDESC.Text">
+		<value>Security Login Rules allow you to display unique messages to specific users when they log in. The login rules also allow you to specify if you want to be notified when a specific user signs in. If the notification checkbox is checked for the rule, the administrator will be emailed based on the email notification template setup within module configuration.</value>
+	</data>
+
+
+</root>

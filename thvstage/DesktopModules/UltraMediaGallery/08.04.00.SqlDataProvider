@@ -1,0 +1,5 @@
+﻿--New presentation
+if not exists(select * from {databaseOwner}{objectQualifier}BizModules_upg_presentation where name='Translucent')
+INSERT {databaseOwner}{objectQualifier}BizModules_upg_presentation(Name,Description,DisplayCtl,GallerySettingCtl,Type,DefaultWidth,DefaultHeight,AllowFullScreen,Category, Featured) VALUES('Translucent','This is a jQuery Banner Rotator / Slideshow with translucent background set for caption. Supports touch swipe navigation for iPad and Android tablets.','Translucent','TranslucentAppearance','BizModules.UltraPhotoGallery.Presentation.Translucent, BizModules.UltraPhotoGallery','800','400','0','SlidersAndRotators', 1)
+GO
+

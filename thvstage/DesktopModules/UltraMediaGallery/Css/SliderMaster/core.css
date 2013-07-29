@@ -1,0 +1,130 @@
+.thumbNav
+{
+	position:absolute;
+	z-index:11;
+}
+
+.thumbNav a
+{
+	cursor:pointer;
+}
+
+.thumbNav img
+{
+	display:inline;
+}
+
+.tn-item
+{
+	display:block;
+}
+
+.tn-item span
+{
+	display:block;
+}
+
+.countDown {
+	position:absolute;
+	z-index:10;
+}
+
+.controlBar
+{
+	position:absolute;
+	z-index:12;
+}
+
+.overlay
+{
+	position:absolute;
+	z-index:13;
+}
+
+.nivoFrame1
+{
+	display:inline-block;
+	position:relative;
+
+	/*position:absolute; position will be changed to relative in run time*/
+	text-align:left;
+}
+.nivoFrame2, .nivoFrame3, .nivoFrame4
+{
+	display:block;
+}
+
+/*nivo core styles*/
+.nivoSlider {
+	position:absolute;
+    font-family: Helvetica, Arial, sans-serif;
+	font-size:14px;
+}
+
+.sliderMain {
+	/*position:absolute;
+	height:100%;*/
+}
+
+.sliderMain img {
+	width:100%;
+	height:100%;
+	overflow:hidden;
+}
+
+.nivoSlider a.nivo-imageLink {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	border:0;
+	padding:0;
+	margin:0;
+	z-index:6;
+	display:none;
+}
+.nivoSlider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+	display:none;
+}
+/* The slices and boxes in the Slider */
+.nivo-slice {
+	display:block;
+	position:absolute;
+	z-index:5;
+	height:100%;
+}
+.nivo-box {
+	display:block;
+	position:absolute;
+	z-index:5;
+}
+
+.quickNav1 {
+	z-index:12;
+	position:absolute;
+}
+
+.quickNav1 a {
+	cursor:pointer;
+}
+
+.nivo-directionNav a {
+	z-index:12;
+	position:absolute;
+	top:50%;
+	cursor:pointer;
+	border:0;
+}
+
+.caption {
+	position:absolute;
+	z-index:8;
+}
+
+.dataholder {
+    display:none;
+}

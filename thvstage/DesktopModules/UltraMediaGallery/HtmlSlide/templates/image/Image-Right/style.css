@@ -1,0 +1,175 @@
+	#umg_container[MODULEID]
+	{
+		background-color:#[BGCOLOR];
+		color:#[TEXTCOLOR];
+		width: [GALLERYWIDTH]px; 
+		height: [GALLERYHEIGHT]px;
+		font-size:[TEXTSIZE]px;
+		position:relative;
+		overflow:hidden;
+	}
+
+	#umg_large[MODULEID]
+	{
+		z-index:10;
+		width:100%;
+		height:100%;
+		position:absolute;
+		priority-width:MATH[[GALLERYWIDTH]-280]px;
+		priority-hdir:right;
+	}
+
+	#umg_large[MODULEID] .image
+	{
+		position:absolute;
+		float:left;
+	}
+
+	#umg_caption[MODULEID]
+	{
+		z-index:11;
+		position:absolute;
+		background-image:url('[CURRENTPATH]bg.png');
+		width:250px;
+		height:100%;
+		left:30px;
+
+		padding:16px;
+		overflow:hidden;
+	}
+
+	#umg_captiontitle[MODULEID]
+	{
+		font-size:150%;
+		color:#[CAPTIONTITLECOLOR];
+	}
+
+	#umg_captiondescription[MODULEID]
+	{
+	}
+
+	#umg_captionauthor[MODULEID]
+	{
+		display:none;
+	}
+
+	#umg_captiontag[MODULEID]
+	{
+		display:none;
+	}
+
+	#umg_captiontakendate[MODULEID]
+	{
+		display:none;
+	}
+
+	#umg_xofy[MODULEID]
+	{
+		display:none;
+	}
+
+	#umg_more[MODULEID]
+	{
+		z-index:13;
+		position:absolute;
+		top:MATH[[GALLERYHEIGHT]-40]px;
+		left:50px;
+		text-align:center;
+
+		width:50px;
+		height:18px;
+		background-image:url('[CURRENTPATH]more.png');
+		background-repeat:no-repeat;
+
+		line-height:18px;
+		text-decoration:underline;
+		color:#[TEXTCOLOR];
+	}
+
+	#umg_more[MODULEID]:hover
+	{
+		text-decoration:none;
+		color:#[CAPTIONTITLECOLOR];
+	}
+
+	#umg_buttons[MODULEID]
+	{
+		z-index:14;
+		position:absolute;
+		left:MATH[[GALLERYWIDTH]-80]px;
+		top:MATH[[GALLERYHEIGHT]-40]px;
+		font-size:0px;
+	}
+
+	#umg_prev[MODULEID]
+	{
+		background-image:url('[CURRENTPATH]previous.png');
+		width:32px;
+		height:32px;
+		float:left;
+	}
+
+	#umg_prev[MODULEID]:hover
+	{
+	}
+
+	#umg_next[MODULEID]
+	{
+		margin-left:5px;
+		background-image:url('[CURRENTPATH]next.png');
+		width:32px;
+		height:32px;
+		float:left;
+	}
+
+	#umg_next[MODULEID]:hover
+	{
+	}
+
+	#umg_play[MODULEID]
+	{
+		display:none;
+	}
+
+	#umg_countdown[MODULEID]
+	{
+		z-index:15;
+		width:20px;
+		height:20px;
+		background-image:url('[CURRENTPATH]countdown.png');
+		text-align:center;
+		line-height:20px;
+
+		position:absolute;
+		left:MATH[[GALLERYWIDTH]-20-10]px;
+		top:10px;
+		cursor:pointer;
+	}
+
+	#umg_loading[MODULEID]
+	{
+		z-index:16;
+		width:32px;
+		height:32px;
+		position:absolute;
+		left:MATH[[GALLERYWIDTH]/2-16]px;
+		top:MATH[[GALLERYHEIGHT]/2-16]px;
+	}
+
+	#umg_loading[MODULEID].active
+	{
+		background-image:url('[CURRENTPATH]loading.gif');
+	}
+
+	
+	/* position and dimensions of the navigator */
+	#umg_navi[MODULEID] {
+		display:none;
+	}
+
+	/* items inside navigator */
+
+#umg_thumbs[MODULEID]
+{
+		display:none;
+}

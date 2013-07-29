@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>1.3</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="EmailToText.Text">
+		<value>Email To:</value>
+	</data>
+	<data name="EmailToHelp.Text">
+		<value>Enter email addresses, separated by new line. 
+Maximum 200 characters.
+</value>
+	</data>
+	<data name="YourNameText.Text">
+		<value>Your First Name:</value>
+	</data>
+	<data name="YourNameHelp.Text">
+		<value>(optional)</value>
+	</data>
+	<data name="MessageText.Text">
+		<value>Add a personal message:</value>
+	</data>
+	<data name="MessageHelp.Text">
+		<value>(optional)</value>
+	</data>
+	<data name="Send.Text">
+		<value>Send</value>
+	</data>
+	<data name="PersonalMessage.Text">
+		<value>This photo is awesome!</value>
+	</data>
+	<data name="Success.Text">
+		<value>&lt;font class=SubHead&gt;
+Success!
+&lt;/font&gt;
+&lt;p&gt;
+This photo has been sent to specified address(es), they will get an email notification shortly.
+</value>
+	</data>
+	<data name="Failure.Text">
+		<value>&lt;font class=SubHead&gt;
+Failed!
+&lt;/font&gt;
+&lt;p&gt;
+This photo can't be sent to specified address(es).
+</value>
+	</data>
+	<data name="MailSubject.Text">
+		<value>[SENDER] sent you a photo!</value>
+	</data>
+	<data name="MailBody.Text">
+		<value>&lt;img src='[PORTALLOGOURL]'&gt;
+&lt;hr size=1&gt;
+&lt;p&gt;&lt;b&gt;[SENDER] wants to share a photo with you&lt;/b&gt;
+&lt;p&gt;
+&lt;a href='[PHOTOLINK]'&gt;[THUMBNAIL] [TITLE]&lt;/a&gt;
+&lt;p&gt;&lt;b&gt;Personal Message&lt;/b&gt;
+&lt;p class=Normal&gt;
+[PERSONALMESSAGE]
+&lt;p class=Normal&gt;
+To accept my friend request, &lt;a href='[PHOTOLINK]'&gt;Click Here.&lt;/a&gt;</value>
+	</data>
+</root>

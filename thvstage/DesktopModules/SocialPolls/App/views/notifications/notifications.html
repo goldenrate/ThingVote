@@ -1,0 +1,63 @@
+﻿<section id="notifications-inner">
+    <article>
+        <div class="messageControls dnnClear">
+            <div class="messageFolders">
+                <p>
+                    <strong data-bind="text: getNotificationPageNumbers()"></strong>
+                    of <strong data-bind=" text: TotalNotifications"></strong>
+                </p>
+            </div>
+        </div>
+        
+        <div id="loadingNotifications" data-bind="visible: loadingData">
+            <div class="well well-large well-transparent lead">
+                <i class="icon-spinner icon-spin icon-2x pull-left"></i>loading notification...
+            </div>
+        </div>
+        <div class="smListings" data-bind="visible: !loadingData()">
+            <ul class="unstyled messages" 
+                data-bind="foreach: { data: notifications, beforeRemove: hideNotification }">
+                <li class="active alert alert-info">
+                    <ul class="unstyled">
+                        <li class="span">
+
+                            <div data-bind="click: $parent.followBack, visible:canFollow">
+                                <a href="#"><i class="icon-plus"></i></a>
+                            </div>
+                        </li>
+                        <li class="span">
+                            <a class="profileImg" data-bind="attr: { href: SenderProfileUrl }"><span>
+                                <img alt="" data-bind="    attr: { src: SenderAvatar, alt: From, title: From }" /></span></a>
+                        </li>
+                        <li class="span">
+                            <dl>
+                                <dt class="subject"><span data-bind="text: Subject"></span></dt>
+                                <dd class="meta"><em><a data-bind="text: From, attr: { href: SenderProfileUrl }"></a></em></dd>
+                                <dd class="message" data-bind="html: Body"></dd>
+                                <!--<dd class="notificationControls" data-bind="foreach: Actions">
+                                    <a href="#" data-bind="text: Name, click: $root.performNotificationAction,
+                                        attr: { title: Description }"></a>
+                                    <span data-bind="visible: !$root.isLastNotificationAction($parent, $data)">| </span>
+                                </dd>-->
+                            </dl>
+                        </li>
+                        <li class="span">
+                            <ul class="unstyled">
+                                <li><span data-bind="text: DisplayDate" class="smTimeStamped"></span></li>
+                            </ul>
+                        </li>
+                    </ul>
+                     <button type="button" class="close" data-dismiss="alert" 
+                         data-bind="click: $parent.dismissNotification"
+                         >&times;</button>
+                    <div class="clear"></div>
+                </li>
+            </ul>
+            <div style="text-align:center">
+                <a href="#" data-bind="click: loadMore">load more notifications</a>
+            </div>
+        </div>
+
+    </article>
+
+</section>

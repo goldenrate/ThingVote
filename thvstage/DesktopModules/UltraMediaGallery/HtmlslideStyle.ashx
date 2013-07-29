@@ -1,0 +1,1 @@
+<%@ WebHandler Language="C#" CodeBehind="HtmlslideStyle.ashx.cs" Class="BizModules.UltraPhotoGallery.HtmlslideStyle" %>

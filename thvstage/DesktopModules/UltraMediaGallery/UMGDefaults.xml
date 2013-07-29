@@ -1,0 +1,112 @@
+<Config>
+	<Property name="ViewPermission">
+		<value>False</value>
+	</Property>
+	<Property name="AllowNonAdminCopy">
+		<value>False</value>
+	</Property>
+	<Property name="ShowCopyright">
+		<value>True</value>
+	</Property>
+	<Property name="LinkOriginalFile">
+		<value>False</value>
+	</Property>
+	<Property name="FixedThumbnailSize">
+		<value>True</value>
+	</Property>
+	<Property name="EncryptUserID">
+		<value>True</value>
+	</Property>
+	<Property name="ShowLicenseScreen">
+		<value>True</value>
+	</Property>
+	<Property name="ShowLinkedDownload">
+		<value>False</value>
+	</Property>
+	<Property name="AlbumLogoWidth">
+		<value>80</value>
+	</Property>
+	<Property name="AlbumLogoHeight">
+		<value>60</value>
+	</Property>
+	<Property name="SellSinglePhoto">
+		<value>False</value>
+	</Property>
+	<Property name="UserQuota">
+		<value>0</value>
+	</Property>
+	<Property name="GalleryQuota">
+		<value>0</value>
+	</Property>
+	<Property name="UserKey">
+		<value>UserId</value>
+	</Property>
+	<Property name="WatermarkPosition">
+		<value>Center</value>
+	</Property>
+	<Property name="FirstSortingField">
+		<value>CreatedDate</value>
+	</Property>
+	<Property name="SecondSortingField">
+		<value>Disabled</value>
+	</Property>
+	<Property name="SortOrder">
+		<value>Descending</value>
+	</Property>
+	<Property name="GalleryManagers">
+		<value></value>
+	</Property>
+
+
+
+
+	<Property name="LoginToRate">
+		<value>True</value>
+	</Property>
+	<Property name="RssMaxResults">
+		<value>25</value>
+	</Property>
+	<Property name="AutoSyncInterval_Rss">
+		<value>1440</value>
+	</Property>
+	<Property name="ProfileModeGenerationInterval">
+		<value>60</value>
+	</Property>
+
+	<Property name="FallbackChoice">
+		<value>Highslide</value>
+	</Property>
+
+	<Property name="SupportImages">
+		<value>True</value>
+	</Property>
+	<Property name="SupportVideos">
+		<value>True</value>
+	</Property>
+	<Property name="SupportAudios">
+		<value>True</value>
+	</Property>
+	<Property name="SupportFlashs">
+		<value>False</value>
+	</Property>
+
+	<Property name="AddRoles_0">
+		<value></value>
+	</Property>
+	<Property name="ManageRoles_0">
+		<value></value>
+	</Property>
+	<Property name="JournalSecurity">
+		<value>2</value>
+	</Property>
+
+	<Property name="BulkUpload">
+		<value>True</value>
+	</Property>
+	<Property name="UseMobileViewer">
+		<value>False</value>
+	</Property>
+	<Property name="PhotosOfYou">
+		<value>Photos of me</value>
+	</Property>
+</Config>

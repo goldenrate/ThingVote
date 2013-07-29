@@ -1,0 +1,15 @@
+C:\inetpub\wwwroot\bootstrap\bootstrapDNN\bin\SocialPolls.dll
+C:\inetpub\wwwroot\bootstrap\bootstrapDNN\bin\SocialPolls.pdb
+C:\inetpub\wwwroot\bootstrap\bootstrapDNN\DesktopModules\SocialPolls\obj\Debug\SocialPolls.csprojResolveAssemblyReference.cache
+C:\inetpub\wwwroot\bootstrap\bootstrapDNN\DesktopModules\SocialPolls\obj\Debug\SocialPolls.dll
+C:\inetpub\wwwroot\bootstrap\bootstrapDNN\DesktopModules\SocialPolls\obj\Debug\SocialPolls.pdb
+C:\Workspaces\Tipped\Websites\thvdev\bin\SocialPolls.dll
+C:\Workspaces\Tipped\Websites\thvdev\bin\SocialPolls.pdb
+C:\Workspaces\Tipped\Websites\thvdev\DesktopModules\SocialPolls\obj\Debug\SocialPolls.csprojResolveAssemblyReference.cache
+C:\Workspaces\Tipped\Websites\thvdev\DesktopModules\SocialPolls\obj\Debug\SocialPolls.dll
+C:\Workspaces\Tipped\Websites\thvdev\DesktopModules\SocialPolls\obj\Debug\SocialPolls.pdb
+C:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\obj\Debug\SocialPolls.csprojResolveAssemblyReference.cache
+C:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\obj\Debug\SocialPolls.dll
+C:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\obj\Debug\SocialPolls.pdb
+C:\Workspaces\Tipped\Websites\thvstage\bin\SocialPolls.dll
+C:\Workspaces\Tipped\Websites\thvstage\bin\SocialPolls.pdb

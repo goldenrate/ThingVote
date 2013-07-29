@@ -1,0 +1,641 @@
+2013-05-10 10:55:25,300 [WIN-SQUVIVLQ4HM][Thread:22][ERROR] DotNetNuke.Services.FileSystem.FileManager - System.IO.IOException: The process cannot access the file 'C:\Workspaces\Tipped\Websites\thvstage\Portals\0\Users\002\02\2\IMG_0066.JPG' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalDelete(String path, Boolean checkHost)
+   at DotNetNuke.Services.FileSystem.StandardFolderProvider.UpdateFile(IFolderInfo folder, String fileName, Stream content)
+   at DotNetNuke.Services.FileSystem.FileManager.AddFile(IFolderInfo folder, String fileName, Stream fileContent, Boolean overwrite, Boolean checkPermissions, String contentType)
+2013-05-10 10:55:25,644 [WIN-SQUVIVLQ4HM][Thread:22][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.ArgumentException: The path is not of a legal form.
+   at System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength)
+   at System.IO.Path.GetFullPath(String path)
+   at System.Drawing.IntSecurity.UnsafeGetFullPath(String fileName)
+   at System.Drawing.IntSecurity.DemandReadFileIO(String fileName)
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 152
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 115
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 78
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 65
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-10 10:56:12,557 [WIN-SQUVIVLQ4HM][Thread:9][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPolOptionsDTO(Int32 pollId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 440
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.PopulatePollDto(Vote item) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 485
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.<>c__DisplayClass11.<GetPublicPolls>b__a(Vote p) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPublicPolls() in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+2013-05-10 12:43:40,889 [WIN-SQUVIVLQ4HM][Thread:60][ERROR] DotNetNuke.Services.FileSystem.FileManager - System.IO.IOException: The process cannot access the file 'C:\Workspaces\Tipped\Websites\thvstage\Portals\0\Users\002\02\2\IMG_0067.JPG' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalDelete(String path, Boolean checkHost)
+   at DotNetNuke.Services.FileSystem.StandardFolderProvider.UpdateFile(IFolderInfo folder, String fileName, Stream content)
+   at DotNetNuke.Services.FileSystem.FileManager.AddFile(IFolderInfo folder, String fileName, Stream fileContent, Boolean overwrite, Boolean checkPermissions, String contentType)
+2013-05-10 12:43:40,890 [WIN-SQUVIVLQ4HM][Thread:22][ERROR] DotNetNuke.Services.FileSystem.FileManager - System.IO.IOException: The process cannot access the file 'C:\Workspaces\Tipped\Websites\thvstage\Portals\0\Users\002\02\2\IMG_0066.JPG' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalDelete(String path, Boolean checkHost)
+   at DotNetNuke.Services.FileSystem.StandardFolderProvider.UpdateFile(IFolderInfo folder, String fileName, Stream content)
+   at DotNetNuke.Services.FileSystem.FileManager.AddFile(IFolderInfo folder, String fileName, Stream fileContent, Boolean overwrite, Boolean checkPermissions, String contentType)
+2013-05-10 12:43:40,904 [WIN-SQUVIVLQ4HM][Thread:38][ERROR] DotNetNuke.Services.FileSystem.FileManager - System.IO.IOException: The process cannot access the file 'C:\Workspaces\Tipped\Websites\thvstage\Portals\0\Users\002\02\2\IMG_0068.JPG' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalDelete(String path, Boolean checkHost)
+   at DotNetNuke.Services.FileSystem.StandardFolderProvider.UpdateFile(IFolderInfo folder, String fileName, Stream content)
+   at DotNetNuke.Services.FileSystem.FileManager.AddFile(IFolderInfo folder, String fileName, Stream fileContent, Boolean overwrite, Boolean checkPermissions, String contentType)
+2013-05-10 12:43:41,041 [WIN-SQUVIVLQ4HM][Thread:22][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.ArgumentException: The path is not of a legal form.
+   at System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength)
+   at System.IO.Path.GetFullPath(String path)
+   at System.Drawing.IntSecurity.UnsafeGetFullPath(String fileName)
+   at System.Drawing.IntSecurity.DemandReadFileIO(String fileName)
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 152
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 115
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 78
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 65
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-10 12:43:41,041 [WIN-SQUVIVLQ4HM][Thread:38][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.ArgumentException: The path is not of a legal form.
+   at System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength)
+   at System.IO.Path.GetFullPath(String path)
+   at System.Drawing.IntSecurity.UnsafeGetFullPath(String fileName)
+   at System.Drawing.IntSecurity.DemandReadFileIO(String fileName)
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 152
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 115
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 78
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 65
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-10 12:43:41,042 [WIN-SQUVIVLQ4HM][Thread:60][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.ArgumentException: The path is not of a legal form.
+   at System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength)
+   at System.IO.Path.GetFullPath(String path)
+   at System.Drawing.IntSecurity.UnsafeGetFullPath(String fileName)
+   at System.Drawing.IntSecurity.DemandReadFileIO(String fileName)
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 152
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 115
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 78
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 65
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-10 15:01:48,171 [WIN-SQUVIVLQ4HM][Thread:9][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPolOptionsDTO(Int32 pollId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 440
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.PopulatePollDto(Vote item) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 485
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPollsByUser(Int32 userId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 294
+2013-05-10 18:22:14,292 [WIN-SQUVIVLQ4HM][Thread:13][ERROR] DotNetNuke.Services.FileSystem.FileManager - System.IO.IOException: The process cannot access the file 'C:\Workspaces\Tipped\Websites\thvstage\Portals\0\Users\002\02\2\IMG_0067.JPG' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalDelete(String path, Boolean checkHost)
+   at DotNetNuke.Services.FileSystem.StandardFolderProvider.UpdateFile(IFolderInfo folder, String fileName, Stream content)
+   at DotNetNuke.Services.FileSystem.FileManager.AddFile(IFolderInfo folder, String fileName, Stream fileContent, Boolean overwrite, Boolean checkPermissions, String contentType)
+2013-05-10 18:22:14,429 [WIN-SQUVIVLQ4HM][Thread:38][ERROR] DotNetNuke.Services.FileSystem.FileManager - System.IO.IOException: The process cannot access the file 'C:\Workspaces\Tipped\Websites\thvstage\Portals\0\Users\002\02\2\IMG_0066.JPG' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalDelete(String path, Boolean checkHost)
+   at DotNetNuke.Services.FileSystem.StandardFolderProvider.UpdateFile(IFolderInfo folder, String fileName, Stream content)
+   at DotNetNuke.Services.FileSystem.FileManager.AddFile(IFolderInfo folder, String fileName, Stream fileContent, Boolean overwrite, Boolean checkPermissions, String contentType)
+2013-05-10 18:22:14,462 [WIN-SQUVIVLQ4HM][Thread:13][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.ArgumentException: The path is not of a legal form.
+   at System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength)
+   at System.IO.Path.GetFullPath(String path)
+   at System.Drawing.IntSecurity.UnsafeGetFullPath(String fileName)
+   at System.Drawing.IntSecurity.DemandReadFileIO(String fileName)
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 152
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 115
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 78
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 65
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-10 18:22:14,465 [WIN-SQUVIVLQ4HM][Thread:38][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.ArgumentException: The path is not of a legal form.
+   at System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength)
+   at System.IO.Path.GetFullPath(String path)
+   at System.Drawing.IntSecurity.UnsafeGetFullPath(String fileName)
+   at System.Drawing.IntSecurity.DemandReadFileIO(String fileName)
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 152
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 115
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 78
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 65
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-10 18:22:14,541 [WIN-SQUVIVLQ4HM][Thread:15][ERROR] DotNetNuke.Services.FileSystem.FileManager - System.IO.IOException: The process cannot access the file 'C:\Workspaces\Tipped\Websites\thvstage\Portals\0\Users\002\02\2\IMG_0068.JPG' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalDelete(String path, Boolean checkHost)
+   at DotNetNuke.Services.FileSystem.StandardFolderProvider.UpdateFile(IFolderInfo folder, String fileName, Stream content)
+   at DotNetNuke.Services.FileSystem.FileManager.AddFile(IFolderInfo folder, String fileName, Stream fileContent, Boolean overwrite, Boolean checkPermissions, String contentType)
+2013-05-10 18:22:14,572 [WIN-SQUVIVLQ4HM][Thread:15][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.ArgumentException: The path is not of a legal form.
+   at System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength)
+   at System.IO.Path.GetFullPath(String path)
+   at System.Drawing.IntSecurity.UnsafeGetFullPath(String fileName)
+   at System.Drawing.IntSecurity.DemandReadFileIO(String fileName)
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 152
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 115
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 78
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 65
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-10 18:22:40,903 [WIN-SQUVIVLQ4HM][Thread:36][ERROR] DotNetNuke.Services.FileSystem.FileManager - System.IO.IOException: The process cannot access the file 'C:\Workspaces\Tipped\Websites\thvstage\Portals\0\Users\002\02\2\IMG_0068.JPG' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalDelete(String path, Boolean checkHost)
+   at DotNetNuke.Services.FileSystem.StandardFolderProvider.UpdateFile(IFolderInfo folder, String fileName, Stream content)
+   at DotNetNuke.Services.FileSystem.FileManager.AddFile(IFolderInfo folder, String fileName, Stream fileContent, Boolean overwrite, Boolean checkPermissions, String contentType)
+2013-05-10 18:22:40,959 [WIN-SQUVIVLQ4HM][Thread:36][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.ArgumentException: The path is not of a legal form.
+   at System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength)
+   at System.IO.Path.GetFullPath(String path)
+   at System.Drawing.IntSecurity.UnsafeGetFullPath(String fileName)
+   at System.Drawing.IntSecurity.DemandReadFileIO(String fileName)
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 152
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 115
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 78
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 65
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-10 18:22:41,077 [WIN-SQUVIVLQ4HM][Thread:15][ERROR] DotNetNuke.Services.FileSystem.FileManager - System.IO.IOException: The process cannot access the file 'C:\Workspaces\Tipped\Websites\thvstage\Portals\0\Users\002\02\2\IMG_0066.JPG' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalDelete(String path, Boolean checkHost)
+   at DotNetNuke.Services.FileSystem.StandardFolderProvider.UpdateFile(IFolderInfo folder, String fileName, Stream content)
+   at DotNetNuke.Services.FileSystem.FileManager.AddFile(IFolderInfo folder, String fileName, Stream fileContent, Boolean overwrite, Boolean checkPermissions, String contentType)
+2013-05-10 18:22:41,077 [WIN-SQUVIVLQ4HM][Thread:44][ERROR] DotNetNuke.Services.FileSystem.FileManager - System.IO.IOException: The process cannot access the file 'C:\Workspaces\Tipped\Websites\thvstage\Portals\0\Users\002\02\2\IMG_0067.JPG' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalDelete(String path, Boolean checkHost)
+   at DotNetNuke.Services.FileSystem.StandardFolderProvider.UpdateFile(IFolderInfo folder, String fileName, Stream content)
+   at DotNetNuke.Services.FileSystem.FileManager.AddFile(IFolderInfo folder, String fileName, Stream fileContent, Boolean overwrite, Boolean checkPermissions, String contentType)
+2013-05-10 18:22:41,132 [WIN-SQUVIVLQ4HM][Thread:44][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.ArgumentException: The path is not of a legal form.
+   at System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength)
+   at System.IO.Path.GetFullPath(String path)
+   at System.Drawing.IntSecurity.UnsafeGetFullPath(String fileName)
+   at System.Drawing.IntSecurity.DemandReadFileIO(String fileName)
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 152
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 115
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 78
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 65
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-10 18:22:41,133 [WIN-SQUVIVLQ4HM][Thread:15][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.ArgumentException: The path is not of a legal form.
+   at System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength)
+   at System.IO.Path.GetFullPath(String path)
+   at System.Drawing.IntSecurity.UnsafeGetFullPath(String fileName)
+   at System.Drawing.IntSecurity.DemandReadFileIO(String fileName)
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 152
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 115
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 78
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 65
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-10 18:39:44,519 [WIN-SQUVIVLQ4HM][Thread:44][ERROR] DotNetNuke.Services.FileSystem.FileManager - System.IO.IOException: The process cannot access the file 'C:\Workspaces\Tipped\Websites\thvstage\Portals\0\Users\002\02\2\IMG_0066.JPG' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalDelete(String path, Boolean checkHost)
+   at DotNetNuke.Services.FileSystem.StandardFolderProvider.UpdateFile(IFolderInfo folder, String fileName, Stream content)
+   at DotNetNuke.Services.FileSystem.FileManager.AddFile(IFolderInfo folder, String fileName, Stream fileContent, Boolean overwrite, Boolean checkPermissions, String contentType)
+2013-05-10 18:39:44,560 [WIN-SQUVIVLQ4HM][Thread:44][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.ArgumentException: The path is not of a legal form.
+   at System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength)
+   at System.IO.Path.GetFullPath(String path)
+   at System.Drawing.IntSecurity.UnsafeGetFullPath(String fileName)
+   at System.Drawing.IntSecurity.DemandReadFileIO(String fileName)
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 152
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 115
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 78
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 65
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-10 18:39:44,604 [WIN-SQUVIVLQ4HM][Thread:38][ERROR] DotNetNuke.Services.FileSystem.FileManager - System.IO.IOException: The process cannot access the file 'C:\Workspaces\Tipped\Websites\thvstage\Portals\0\Users\002\02\2\IMG_0068.JPG' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalDelete(String path, Boolean checkHost)
+   at DotNetNuke.Services.FileSystem.StandardFolderProvider.UpdateFile(IFolderInfo folder, String fileName, Stream content)
+   at DotNetNuke.Services.FileSystem.FileManager.AddFile(IFolderInfo folder, String fileName, Stream fileContent, Boolean overwrite, Boolean checkPermissions, String contentType)
+2013-05-10 18:39:44,615 [WIN-SQUVIVLQ4HM][Thread:38][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.ArgumentException: The path is not of a legal form.
+   at System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength)
+   at System.IO.Path.GetFullPath(String path)
+   at System.Drawing.IntSecurity.UnsafeGetFullPath(String fileName)
+   at System.Drawing.IntSecurity.DemandReadFileIO(String fileName)
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 152
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 115
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 78
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 65
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-10 18:39:44,621 [WIN-SQUVIVLQ4HM][Thread:26][ERROR] DotNetNuke.Services.FileSystem.FileManager - System.IO.IOException: The process cannot access the file 'C:\Workspaces\Tipped\Websites\thvstage\Portals\0\Users\002\02\2\IMG_0067.JPG' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalDelete(String path, Boolean checkHost)
+   at DotNetNuke.Services.FileSystem.StandardFolderProvider.UpdateFile(IFolderInfo folder, String fileName, Stream content)
+   at DotNetNuke.Services.FileSystem.FileManager.AddFile(IFolderInfo folder, String fileName, Stream fileContent, Boolean overwrite, Boolean checkPermissions, String contentType)
+2013-05-10 18:39:44,631 [WIN-SQUVIVLQ4HM][Thread:26][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.ArgumentException: The path is not of a legal form.
+   at System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength)
+   at System.IO.Path.GetFullPath(String path)
+   at System.Drawing.IntSecurity.UnsafeGetFullPath(String fileName)
+   at System.Drawing.IntSecurity.DemandReadFileIO(String fileName)
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 152
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 115
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 78
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 65
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-10 18:40:04,615 [WIN-SQUVIVLQ4HM][Thread:36][ERROR] DotNetNuke.Services.FileSystem.FileManager - System.IO.IOException: The process cannot access the file 'C:\Workspaces\Tipped\Websites\thvstage\Portals\0\Users\002\02\2\IMG_0067.JPG' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalDelete(String path, Boolean checkHost)
+   at DotNetNuke.Services.FileSystem.StandardFolderProvider.UpdateFile(IFolderInfo folder, String fileName, Stream content)
+   at DotNetNuke.Services.FileSystem.FileManager.AddFile(IFolderInfo folder, String fileName, Stream fileContent, Boolean overwrite, Boolean checkPermissions, String contentType)
+2013-05-10 18:40:04,651 [WIN-SQUVIVLQ4HM][Thread:36][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.ArgumentException: The path is not of a legal form.
+   at System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength)
+   at System.IO.Path.GetFullPath(String path)
+   at System.Drawing.IntSecurity.UnsafeGetFullPath(String fileName)
+   at System.Drawing.IntSecurity.DemandReadFileIO(String fileName)
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 152
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 115
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 78
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 65
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-10 18:40:04,709 [WIN-SQUVIVLQ4HM][Thread:14][ERROR] DotNetNuke.Services.FileSystem.FileManager - System.IO.IOException: The process cannot access the file 'C:\Workspaces\Tipped\Websites\thvstage\Portals\0\Users\002\02\2\IMG_0066.JPG' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalDelete(String path, Boolean checkHost)
+   at DotNetNuke.Services.FileSystem.StandardFolderProvider.UpdateFile(IFolderInfo folder, String fileName, Stream content)
+   at DotNetNuke.Services.FileSystem.FileManager.AddFile(IFolderInfo folder, String fileName, Stream fileContent, Boolean overwrite, Boolean checkPermissions, String contentType)
+2013-05-10 18:40:04,720 [WIN-SQUVIVLQ4HM][Thread:14][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.ArgumentException: The path is not of a legal form.
+   at System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength)
+   at System.IO.Path.GetFullPath(String path)
+   at System.Drawing.IntSecurity.UnsafeGetFullPath(String fileName)
+   at System.Drawing.IntSecurity.DemandReadFileIO(String fileName)
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 152
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 115
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 78
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 65
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-10 18:40:04,738 [WIN-SQUVIVLQ4HM][Thread:12][ERROR] DotNetNuke.Services.FileSystem.FileManager - System.IO.IOException: The process cannot access the file 'C:\Workspaces\Tipped\Websites\thvstage\Portals\0\Users\002\02\2\IMG_0068.JPG' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalDelete(String path, Boolean checkHost)
+   at DotNetNuke.Services.FileSystem.StandardFolderProvider.UpdateFile(IFolderInfo folder, String fileName, Stream content)
+   at DotNetNuke.Services.FileSystem.FileManager.AddFile(IFolderInfo folder, String fileName, Stream fileContent, Boolean overwrite, Boolean checkPermissions, String contentType)
+2013-05-10 18:40:04,748 [WIN-SQUVIVLQ4HM][Thread:12][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.ArgumentException: The path is not of a legal form.
+   at System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength)
+   at System.IO.Path.GetFullPath(String path)
+   at System.Drawing.IntSecurity.UnsafeGetFullPath(String fileName)
+   at System.Drawing.IntSecurity.DemandReadFileIO(String fileName)
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 152
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 115
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 78
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 65
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-10 18:45:19,507 [WIN-SQUVIVLQ4HM][Thread:43][ERROR] DotNetNuke.Services.FileSystem.FileManager - System.IO.IOException: The process cannot access the file 'C:\Workspaces\Tipped\Websites\thvstage\Portals\0\Users\002\02\2\IMG_0262.JPG' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalDelete(String path, Boolean checkHost)
+   at DotNetNuke.Services.FileSystem.StandardFolderProvider.UpdateFile(IFolderInfo folder, String fileName, Stream content)
+   at DotNetNuke.Services.FileSystem.FileManager.AddFile(IFolderInfo folder, String fileName, Stream fileContent, Boolean overwrite, Boolean checkPermissions, String contentType)
+2013-05-10 18:45:19,518 [WIN-SQUVIVLQ4HM][Thread:43][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.ArgumentException: The path is not of a legal form.
+   at System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength)
+   at System.IO.Path.GetFullPath(String path)
+   at System.Drawing.IntSecurity.UnsafeGetFullPath(String fileName)
+   at System.Drawing.IntSecurity.DemandReadFileIO(String fileName)
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 152
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 115
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 78
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 65
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-10 18:45:19,524 [WIN-SQUVIVLQ4HM][Thread:38][ERROR] DotNetNuke.Services.FileSystem.FileManager - System.IO.IOException: The process cannot access the file 'C:\Workspaces\Tipped\Websites\thvstage\Portals\0\Users\002\02\2\IMG_0263.JPG' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalDelete(String path, Boolean checkHost)
+   at DotNetNuke.Services.FileSystem.StandardFolderProvider.UpdateFile(IFolderInfo folder, String fileName, Stream content)
+   at DotNetNuke.Services.FileSystem.FileManager.AddFile(IFolderInfo folder, String fileName, Stream fileContent, Boolean overwrite, Boolean checkPermissions, String contentType)
+2013-05-10 18:45:19,535 [WIN-SQUVIVLQ4HM][Thread:38][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.ArgumentException: The path is not of a legal form.
+   at System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength)
+   at System.IO.Path.GetFullPath(String path)
+   at System.Drawing.IntSecurity.UnsafeGetFullPath(String fileName)
+   at System.Drawing.IntSecurity.DemandReadFileIO(String fileName)
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 152
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 115
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 78
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 65
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-10 18:45:19,538 [WIN-SQUVIVLQ4HM][Thread:16][ERROR] DotNetNuke.Services.FileSystem.FileManager - System.IO.IOException: The process cannot access the file 'C:\Workspaces\Tipped\Websites\thvstage\Portals\0\Users\002\02\2\IMG_0264.JPG' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalDelete(String path, Boolean checkHost)
+   at DotNetNuke.Services.FileSystem.StandardFolderProvider.UpdateFile(IFolderInfo folder, String fileName, Stream content)
+   at DotNetNuke.Services.FileSystem.FileManager.AddFile(IFolderInfo folder, String fileName, Stream fileContent, Boolean overwrite, Boolean checkPermissions, String contentType)
+2013-05-10 18:45:19,546 [WIN-SQUVIVLQ4HM][Thread:16][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.ArgumentException: The path is not of a legal form.
+   at System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength)
+   at System.IO.Path.GetFullPath(String path)
+   at System.Drawing.IntSecurity.UnsafeGetFullPath(String fileName)
+   at System.Drawing.IntSecurity.DemandReadFileIO(String fileName)
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 152
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 115
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 78
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 65
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-10 18:48:16,007 [WIN-SQUVIVLQ4HM][Thread:44][ERROR] DotNetNuke.Services.FileSystem.FileManager - System.IO.IOException: The process cannot access the file 'C:\Workspaces\Tipped\Websites\thvstage\Portals\0\Users\002\02\2\IMG_0267.JPG' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalDelete(String path, Boolean checkHost)
+   at DotNetNuke.Services.FileSystem.StandardFolderProvider.UpdateFile(IFolderInfo folder, String fileName, Stream content)
+   at DotNetNuke.Services.FileSystem.FileManager.AddFile(IFolderInfo folder, String fileName, Stream fileContent, Boolean overwrite, Boolean checkPermissions, String contentType)
+2013-05-10 18:48:16,017 [WIN-SQUVIVLQ4HM][Thread:44][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.ArgumentException: The path is not of a legal form.
+   at System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength)
+   at System.IO.Path.GetFullPath(String path)
+   at System.Drawing.IntSecurity.UnsafeGetFullPath(String fileName)
+   at System.Drawing.IntSecurity.DemandReadFileIO(String fileName)
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 152
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 115
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 78
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 65
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-10 18:48:16,032 [WIN-SQUVIVLQ4HM][Thread:33][ERROR] DotNetNuke.Services.FileSystem.FileManager - System.IO.IOException: The process cannot access the file 'C:\Workspaces\Tipped\Websites\thvstage\Portals\0\Users\002\02\2\IMG_0268.JPG' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalDelete(String path, Boolean checkHost)
+   at DotNetNuke.Services.FileSystem.StandardFolderProvider.UpdateFile(IFolderInfo folder, String fileName, Stream content)
+   at DotNetNuke.Services.FileSystem.FileManager.AddFile(IFolderInfo folder, String fileName, Stream fileContent, Boolean overwrite, Boolean checkPermissions, String contentType)
+2013-05-10 18:48:16,042 [WIN-SQUVIVLQ4HM][Thread:33][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.ArgumentException: The path is not of a legal form.
+   at System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength)
+   at System.IO.Path.GetFullPath(String path)
+   at System.Drawing.IntSecurity.UnsafeGetFullPath(String fileName)
+   at System.Drawing.IntSecurity.DemandReadFileIO(String fileName)
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 152
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 115
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 78
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 65
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-10 18:54:23,285 [WIN-SQUVIVLQ4HM][Thread:36][ERROR] DotNetNuke.Services.FileSystem.FileManager - System.IO.IOException: The process cannot access the file 'C:\Workspaces\Tipped\Websites\thvstage\Portals\0\Users\002\02\2\IMG_0261.JPG' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalDelete(String path, Boolean checkHost)
+   at DotNetNuke.Services.FileSystem.StandardFolderProvider.UpdateFile(IFolderInfo folder, String fileName, Stream content)
+   at DotNetNuke.Services.FileSystem.FileManager.AddFile(IFolderInfo folder, String fileName, Stream fileContent, Boolean overwrite, Boolean checkPermissions, String contentType)
+2013-05-10 18:54:23,298 [WIN-SQUVIVLQ4HM][Thread:36][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.ArgumentException: The path is not of a legal form.
+   at System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength)
+   at System.IO.Path.GetFullPath(String path)
+   at System.Drawing.IntSecurity.UnsafeGetFullPath(String fileName)
+   at System.Drawing.IntSecurity.DemandReadFileIO(String fileName)
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 152
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 115
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 78
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 65
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-10 18:54:23,303 [WIN-SQUVIVLQ4HM][Thread:16][ERROR] DotNetNuke.Services.FileSystem.FileManager - System.IO.IOException: The process cannot access the file 'C:\Workspaces\Tipped\Websites\thvstage\Portals\0\Users\002\02\2\IMG_0262.JPG' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalDelete(String path, Boolean checkHost)
+   at DotNetNuke.Services.FileSystem.StandardFolderProvider.UpdateFile(IFolderInfo folder, String fileName, Stream content)
+   at DotNetNuke.Services.FileSystem.FileManager.AddFile(IFolderInfo folder, String fileName, Stream fileContent, Boolean overwrite, Boolean checkPermissions, String contentType)
+2013-05-10 18:54:23,313 [WIN-SQUVIVLQ4HM][Thread:16][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.ArgumentException: The path is not of a legal form.
+   at System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength)
+   at System.IO.Path.GetFullPath(String path)
+   at System.Drawing.IntSecurity.UnsafeGetFullPath(String fileName)
+   at System.Drawing.IntSecurity.DemandReadFileIO(String fileName)
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 152
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 115
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 78
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 65
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-10 18:55:59,915 [WIN-SQUVIVLQ4HM][Thread:36][ERROR] DotNetNuke.Services.FileSystem.FileManager - System.IO.IOException: The process cannot access the file 'C:\Workspaces\Tipped\Websites\thvstage\Portals\0\Users\002\02\2\IMG_0263.JPG' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalDelete(String path, Boolean checkHost)
+   at DotNetNuke.Services.FileSystem.StandardFolderProvider.UpdateFile(IFolderInfo folder, String fileName, Stream content)
+   at DotNetNuke.Services.FileSystem.FileManager.AddFile(IFolderInfo folder, String fileName, Stream fileContent, Boolean overwrite, Boolean checkPermissions, String contentType)
+2013-05-10 18:55:59,926 [WIN-SQUVIVLQ4HM][Thread:36][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.ArgumentException: The path is not of a legal form.
+   at System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength)
+   at System.IO.Path.GetFullPath(String path)
+   at System.Drawing.IntSecurity.UnsafeGetFullPath(String fileName)
+   at System.Drawing.IntSecurity.DemandReadFileIO(String fileName)
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 152
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 115
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 78
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 65
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-10 18:56:23,762 [WIN-SQUVIVLQ4HM][Thread:13][ERROR] DotNetNuke.Services.FileSystem.FileManager - System.IO.IOException: The process cannot access the file 'C:\Workspaces\Tipped\Websites\thvstage\Portals\0\Users\002\02\2\IMG_0264.JPG' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalDelete(String path, Boolean checkHost)
+   at DotNetNuke.Services.FileSystem.StandardFolderProvider.UpdateFile(IFolderInfo folder, String fileName, Stream content)
+   at DotNetNuke.Services.FileSystem.FileManager.AddFile(IFolderInfo folder, String fileName, Stream fileContent, Boolean overwrite, Boolean checkPermissions, String contentType)
+2013-05-10 18:56:23,772 [WIN-SQUVIVLQ4HM][Thread:13][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.ArgumentException: The path is not of a legal form.
+   at System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength)
+   at System.IO.Path.GetFullPath(String path)
+   at System.Drawing.IntSecurity.UnsafeGetFullPath(String fileName)
+   at System.Drawing.IntSecurity.DemandReadFileIO(String fileName)
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 152
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 115
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 78
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 65
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-10 18:56:23,787 [WIN-SQUVIVLQ4HM][Thread:43][ERROR] DotNetNuke.Services.FileSystem.FileManager - System.IO.IOException: The process cannot access the file 'C:\Workspaces\Tipped\Websites\thvstage\Portals\0\Users\002\02\2\IMG_0265.JPG' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalDelete(String path, Boolean checkHost)
+   at DotNetNuke.Services.FileSystem.StandardFolderProvider.UpdateFile(IFolderInfo folder, String fileName, Stream content)
+   at DotNetNuke.Services.FileSystem.FileManager.AddFile(IFolderInfo folder, String fileName, Stream fileContent, Boolean overwrite, Boolean checkPermissions, String contentType)
+2013-05-10 18:56:23,796 [WIN-SQUVIVLQ4HM][Thread:43][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.ArgumentException: The path is not of a legal form.
+   at System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength)
+   at System.IO.Path.GetFullPath(String path)
+   at System.Drawing.IntSecurity.UnsafeGetFullPath(String fileName)
+   at System.Drawing.IntSecurity.DemandReadFileIO(String fileName)
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 152
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 115
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 78
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 65
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-10 19:40:50,977 [WIN-SQUVIVLQ4HM][Thread:23][ERROR] DotNetNuke.Services.FileSystem.FileManager - System.IO.IOException: The process cannot access the file 'C:\Workspaces\Tipped\Websites\thvstage\Portals\0\Users\002\02\2\IMG_0067.JPG' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalDelete(String path, Boolean checkHost)
+   at DotNetNuke.Services.FileSystem.StandardFolderProvider.UpdateFile(IFolderInfo folder, String fileName, Stream content)
+   at DotNetNuke.Services.FileSystem.FileManager.AddFile(IFolderInfo folder, String fileName, Stream fileContent, Boolean overwrite, Boolean checkPermissions, String contentType)
+2013-05-10 19:40:50,989 [WIN-SQUVIVLQ4HM][Thread:24][ERROR] DotNetNuke.Services.FileSystem.FileManager - System.IO.IOException: The process cannot access the file 'C:\Workspaces\Tipped\Websites\thvstage\Portals\0\Users\002\02\2\IMG_0066.JPG' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalDelete(String path, Boolean checkHost)
+   at DotNetNuke.Services.FileSystem.StandardFolderProvider.UpdateFile(IFolderInfo folder, String fileName, Stream content)
+   at DotNetNuke.Services.FileSystem.FileManager.AddFile(IFolderInfo folder, String fileName, Stream fileContent, Boolean overwrite, Boolean checkPermissions, String contentType)
+2013-05-10 19:40:51,068 [WIN-SQUVIVLQ4HM][Thread:9][ERROR] DotNetNuke.Services.FileSystem.FileManager - System.IO.IOException: The process cannot access the file 'C:\Workspaces\Tipped\Websites\thvstage\Portals\0\Users\002\02\2\IMG_0068.JPG' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalDelete(String path, Boolean checkHost)
+   at DotNetNuke.Services.FileSystem.StandardFolderProvider.UpdateFile(IFolderInfo folder, String fileName, Stream content)
+   at DotNetNuke.Services.FileSystem.FileManager.AddFile(IFolderInfo folder, String fileName, Stream fileContent, Boolean overwrite, Boolean checkPermissions, String contentType)
+2013-05-10 19:40:51,127 [WIN-SQUVIVLQ4HM][Thread:23][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.ArgumentException: The path is not of a legal form.
+   at System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength)
+   at System.IO.Path.GetFullPath(String path)
+   at System.Drawing.IntSecurity.UnsafeGetFullPath(String fileName)
+   at System.Drawing.IntSecurity.DemandReadFileIO(String fileName)
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 152
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 115
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 78
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 65
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-10 19:40:51,127 [WIN-SQUVIVLQ4HM][Thread:24][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.ArgumentException: The path is not of a legal form.
+   at System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength)
+   at System.IO.Path.GetFullPath(String path)
+   at System.Drawing.IntSecurity.UnsafeGetFullPath(String fileName)
+   at System.Drawing.IntSecurity.DemandReadFileIO(String fileName)
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 152
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 115
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 78
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 65
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-10 19:40:51,128 [WIN-SQUVIVLQ4HM][Thread:9][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.ArgumentException: The path is not of a legal form.
+   at System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength)
+   at System.IO.Path.GetFullPath(String path)
+   at System.Drawing.IntSecurity.UnsafeGetFullPath(String fileName)
+   at System.Drawing.IntSecurity.DemandReadFileIO(String fileName)
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 152
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 115
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 78
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 65
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-10 19:41:28,998 [WIN-SQUVIVLQ4HM][Thread:9][ERROR] DotNetNuke.Services.FileSystem.FileManager - System.IO.IOException: The process cannot access the file 'C:\Workspaces\Tipped\Websites\thvstage\Portals\0\Users\002\02\2\IMG_0195.JPG' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalDelete(String path, Boolean checkHost)
+   at DotNetNuke.Services.FileSystem.StandardFolderProvider.UpdateFile(IFolderInfo folder, String fileName, Stream content)
+   at DotNetNuke.Services.FileSystem.FileManager.AddFile(IFolderInfo folder, String fileName, Stream fileContent, Boolean overwrite, Boolean checkPermissions, String contentType)
+2013-05-10 19:41:29,037 [WIN-SQUVIVLQ4HM][Thread:9][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.ArgumentException: The path is not of a legal form.
+   at System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength)
+   at System.IO.Path.GetFullPath(String path)
+   at System.Drawing.IntSecurity.UnsafeGetFullPath(String fileName)
+   at System.Drawing.IntSecurity.DemandReadFileIO(String fileName)
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 152
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 115
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 78
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 65
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-10 19:41:29,109 [WIN-SQUVIVLQ4HM][Thread:24][ERROR] DotNetNuke.Services.FileSystem.FileManager - System.IO.IOException: The process cannot access the file 'C:\Workspaces\Tipped\Websites\thvstage\Portals\0\Users\002\02\2\IMG_0196.JPG' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalDelete(String path, Boolean checkHost)
+   at DotNetNuke.Services.FileSystem.StandardFolderProvider.UpdateFile(IFolderInfo folder, String fileName, Stream content)
+   at DotNetNuke.Services.FileSystem.FileManager.AddFile(IFolderInfo folder, String fileName, Stream fileContent, Boolean overwrite, Boolean checkPermissions, String contentType)
+2013-05-10 19:41:29,117 [WIN-SQUVIVLQ4HM][Thread:24][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.ArgumentException: The path is not of a legal form.
+   at System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength)
+   at System.IO.Path.GetFullPath(String path)
+   at System.Drawing.IntSecurity.UnsafeGetFullPath(String fileName)
+   at System.Drawing.IntSecurity.DemandReadFileIO(String fileName)
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 152
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 115
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 78
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 65
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-10 19:41:29,122 [WIN-SQUVIVLQ4HM][Thread:6][ERROR] DotNetNuke.Services.FileSystem.FileManager - System.IO.IOException: The process cannot access the file 'C:\Workspaces\Tipped\Websites\thvstage\Portals\0\Users\002\02\2\IMG_0197.jpg' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalDelete(String path, Boolean checkHost)
+   at DotNetNuke.Services.FileSystem.StandardFolderProvider.UpdateFile(IFolderInfo folder, String fileName, Stream content)
+   at DotNetNuke.Services.FileSystem.FileManager.AddFile(IFolderInfo folder, String fileName, Stream fileContent, Boolean overwrite, Boolean checkPermissions, String contentType)
+2013-05-10 19:41:29,130 [WIN-SQUVIVLQ4HM][Thread:6][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.ArgumentException: The path is not of a legal form.
+   at System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength)
+   at System.IO.Path.GetFullPath(String path)
+   at System.Drawing.IntSecurity.UnsafeGetFullPath(String fileName)
+   at System.Drawing.IntSecurity.DemandReadFileIO(String fileName)
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 152
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 115
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 78
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 65
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-10 19:55:21,813 [WIN-SQUVIVLQ4HM][Thread:53][ERROR] DotNetNuke.Services.FileSystem.FileManager - System.IO.IOException: The process cannot access the file 'C:\Workspaces\Tipped\Websites\thvstage\Portals\0\Users\002\02\2\IMG_0267.JPG' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalDelete(String path, Boolean checkHost)
+   at DotNetNuke.Services.FileSystem.StandardFolderProvider.UpdateFile(IFolderInfo folder, String fileName, Stream content)
+   at DotNetNuke.Services.FileSystem.FileManager.AddFile(IFolderInfo folder, String fileName, Stream fileContent, Boolean overwrite, Boolean checkPermissions, String contentType)
+2013-05-10 19:55:21,847 [WIN-SQUVIVLQ4HM][Thread:53][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.ArgumentException: The path is not of a legal form.
+   at System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength)
+   at System.IO.Path.GetFullPath(String path)
+   at System.Drawing.IntSecurity.UnsafeGetFullPath(String fileName)
+   at System.Drawing.IntSecurity.DemandReadFileIO(String fileName)
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 152
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 115
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 78
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 65
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-10 19:55:21,851 [WIN-SQUVIVLQ4HM][Thread:40][ERROR] DotNetNuke.Services.FileSystem.FileManager - System.IO.IOException: The process cannot access the file 'C:\Workspaces\Tipped\Websites\thvstage\Portals\0\Users\002\02\2\IMG_0268.JPG' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalDelete(String path, Boolean checkHost)
+   at DotNetNuke.Services.FileSystem.StandardFolderProvider.UpdateFile(IFolderInfo folder, String fileName, Stream content)
+   at DotNetNuke.Services.FileSystem.FileManager.AddFile(IFolderInfo folder, String fileName, Stream fileContent, Boolean overwrite, Boolean checkPermissions, String contentType)
+2013-05-10 19:55:21,861 [WIN-SQUVIVLQ4HM][Thread:40][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.ArgumentException: The path is not of a legal form.
+   at System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength)
+   at System.IO.Path.GetFullPath(String path)
+   at System.Drawing.IntSecurity.UnsafeGetFullPath(String fileName)
+   at System.Drawing.IntSecurity.DemandReadFileIO(String fileName)
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 152
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 115
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 78
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 65
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-10 19:55:38,759 [WIN-SQUVIVLQ4HM][Thread:42][ERROR] DotNetNuke.Services.FileSystem.FileManager - System.IO.IOException: The process cannot access the file 'C:\Workspaces\Tipped\Websites\thvstage\Portals\0\Users\002\02\2\IMG_0267.JPG' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalDelete(String path, Boolean checkHost)
+   at DotNetNuke.Services.FileSystem.StandardFolderProvider.UpdateFile(IFolderInfo folder, String fileName, Stream content)
+   at DotNetNuke.Services.FileSystem.FileManager.AddFile(IFolderInfo folder, String fileName, Stream fileContent, Boolean overwrite, Boolean checkPermissions, String contentType)
+2013-05-10 19:55:38,772 [WIN-SQUVIVLQ4HM][Thread:42][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.ArgumentException: The path is not of a legal form.
+   at System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength)
+   at System.IO.Path.GetFullPath(String path)
+   at System.Drawing.IntSecurity.UnsafeGetFullPath(String fileName)
+   at System.Drawing.IntSecurity.DemandReadFileIO(String fileName)
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 152
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 115
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 78
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 65
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-10 19:55:38,775 [WIN-SQUVIVLQ4HM][Thread:53][ERROR] DotNetNuke.Services.FileSystem.FileManager - System.IO.IOException: The process cannot access the file 'C:\Workspaces\Tipped\Websites\thvstage\Portals\0\Users\002\02\2\IMG_0268.JPG' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalDelete(String path, Boolean checkHost)
+   at DotNetNuke.Services.FileSystem.StandardFolderProvider.UpdateFile(IFolderInfo folder, String fileName, Stream content)
+   at DotNetNuke.Services.FileSystem.FileManager.AddFile(IFolderInfo folder, String fileName, Stream fileContent, Boolean overwrite, Boolean checkPermissions, String contentType)
+2013-05-10 19:55:38,786 [WIN-SQUVIVLQ4HM][Thread:53][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.ArgumentException: The path is not of a legal form.
+   at System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength)
+   at System.IO.Path.GetFullPath(String path)
+   at System.Drawing.IntSecurity.UnsafeGetFullPath(String fileName)
+   at System.Drawing.IntSecurity.DemandReadFileIO(String fileName)
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 152
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 115
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 78
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 65
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-10 19:55:38,789 [WIN-SQUVIVLQ4HM][Thread:66][ERROR] DotNetNuke.Services.FileSystem.FileManager - System.IO.IOException: The process cannot access the file 'C:\Workspaces\Tipped\Websites\thvstage\Portals\0\Users\002\02\2\IMG_0269.JPG' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalDelete(String path, Boolean checkHost)
+   at DotNetNuke.Services.FileSystem.StandardFolderProvider.UpdateFile(IFolderInfo folder, String fileName, Stream content)
+   at DotNetNuke.Services.FileSystem.FileManager.AddFile(IFolderInfo folder, String fileName, Stream fileContent, Boolean overwrite, Boolean checkPermissions, String contentType)
+2013-05-10 19:55:38,800 [WIN-SQUVIVLQ4HM][Thread:66][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.ArgumentException: The path is not of a legal form.
+   at System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength)
+   at System.IO.Path.GetFullPath(String path)
+   at System.Drawing.IntSecurity.UnsafeGetFullPath(String fileName)
+   at System.Drawing.IntSecurity.DemandReadFileIO(String fileName)
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 152
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 115
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 78
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 65
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)

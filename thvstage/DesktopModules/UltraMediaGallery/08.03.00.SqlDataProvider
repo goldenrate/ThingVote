@@ -1,0 +1,5 @@
+﻿--New presentation
+if not exists(select * from {databaseOwner}{objectQualifier}BizModules_upg_presentation where name='TonicGallery')
+INSERT {databaseOwner}{objectQualifier}BizModules_upg_presentation(Name,Description,DisplayCtl,GallerySettingCtl,Type,DefaultWidth,DefaultHeight,AllowFullScreen,Category, Featured) VALUES('TonicGallery','Tonic Gallery is a jQuery XML Portfolio Gallery that allows you to create very easily a portfolio gallery with some nice effects and flexible customization settings.','TonicGallery','TonicGalleryAppearance','BizModules.UltraPhotoGallery.Presentation.TonicGallery, BizModules.UltraPhotoGallery','960','430','0','LargeGallery', 1)
+GO
+

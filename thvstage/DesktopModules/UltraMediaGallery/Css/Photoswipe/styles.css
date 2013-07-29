@@ -1,0 +1,109 @@
+#MainContent { background: #ffffff; font-family: "Lucida Grande", Helvetica, Arial,Verdana, sans-serif;}
+
+.gallery { list-style: none; padding: 0; margin: 0; }
+.gallery:after { clear: both; content: "."; display: block; height: 0; visibility: hidden; }
+.gallery li { float: left; width: 20%; }
+.gallery li a { display: block; margin: 5px;  }
+.gallery li img { display: block; width: 100%; height: auto; }
+
+
+/* For inline examples only */2012-3-30
+#PhotoSwipeTarget { width: 100%; height: 200px; }
+
+#Indicators { text-align: center; margin-top: 20px; }
+#Indicators span { display: inline-block; height: 10px; width: 10px; margin: 0 10px 0 0; padding: 0; -webkit-border-radius:5px; -moz-border-radius:5px; -o-border-radius:5px; border-radius:5px; background: #c5c5c5; overflow:hidden; }
+#Indicators span.current{ background: #EEBF02; }
+
+
+.gallery
+{
+	border-left:1px solid #dadada;
+	border-right:1px solid #dadada;
+	border-bottom:1px solid #dadada;
+	background-color:#f0f0f0;
+	display:none;
+}
+.gallery li 
+{
+	list-style: none;
+}
+.page-content
+{
+	position:relative;
+	padding:10px;
+	display:block;
+	text-align:left;
+	clear:both;
+	background-color:#fafafa;
+	border-left:1px solid #dadada;
+	border-right:1px solid #dadada;
+	border-top:1px solid #dadada;
+	background-image:url('images/down2.png');
+	background-repeat:no-repeat;
+	background-position:99% center;
+	min-height:60px;
+}
+.last
+{
+	border:1px solid #dadada;
+}
+.page-content:hover
+{
+	background-color:#e8e8e8;
+	background-image:url('images/down.png');
+}
+.page-content .logo
+{
+	border:1px solid black;
+	padding:0px;
+	margin-right:10px;
+	width:60px;
+}
+.page-content .textfield
+{
+	position:absolute;
+	top:10px;
+	left:82px;
+	right:30px;
+	display:block;
+}
+.page-content .textfield h1
+{
+	font-size: 1.3em; padding: 15px 10px; margin: 0;
+	padding:0px;
+	text-decoration:underline;
+}
+.page-content .textfield .Normal
+{
+	text-decoration:none;
+}
+.currentalbum
+{
+	background-image:url('images/up2.png');
+	background-color:#e8e8e8;
+}
+
+.currentalbum:hover
+{
+	background-image:url('images/up.png');
+}
+
+.footer
+{
+	background-color:#666;
+	text-align:center;
+	color:#ffffff;
+	line-height:40px;
+	font-size:18px;
+}
+
+.ps-caption-content
+{
+	color:#ffffff;
+	font-size:20px;
+}
+
+.ps-carousel
+{
+	background-color:#000000;
+}

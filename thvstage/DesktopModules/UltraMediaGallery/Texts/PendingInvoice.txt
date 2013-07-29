@@ -1,0 +1,2 @@
+Pending Invoice on [PORTALNAME]
+<p>You just placed an invoice on [PORTALNAME], your invoice no. is [INVOICEID], however, currently your payment is pending and not completed, this may due to numerous reasons. <p>You will be notified once your payment become finished, for further information please fell free to contact us. <p> Thank you.

@@ -1,0 +1,74 @@
+﻿<div id="create-2" class="StepWrapper">
+  
+    <div class="span2 pull-left">
+        <div class="wizardPPWraper">
+            <img class="wizardProfileImage" data-bind="attr: { src: Wizard.UserProfilePictureUrl }" />
+        </div>
+    </div>
+    <div class="span7 pull-left">
+        <header>
+            <h3 class="blueTheme">Great Job <span data-bind="text: Wizard.DisplayName"></span></h3>
+            <p>Now lets get down to business!</p>
+        </header>
+        <div class="controls">
+            <textarea id="txtQustion" 
+                required
+                maxlength="90"
+                class="required span6" rows="8"
+                data-bind="value: Poll.Question"></textarea>
+        </div>
+        <div class="invalid">
+
+        </div>
+        <div class="controls">
+            <select style="width: 460px"
+                required
+                data-bind="options: Wizard.PollCategories, optionsText: 'Name',
+                    value: Poll.SelectedCategoryId,
+                    optionsValue: 'CategoryID', optionsCaption: 'Select...'">
+            </select>
+        </div>
+        <div id="PollImages" class="controls">
+            <p>Upload Photos: <span class="lightText"></span></p>
+            <!-- new knockout code -->
+            <ul id="PollImagesList" data-bind="foreach: { data: PollOptions }">
+                <li>
+                    <input class="poll-image-upload" type="file" style="display: none" 
+                         data-bind="attr: { id: InputId }" />
+                    <!-- -->
+                    <img data-bind="attr: { src: OptionThumbnailUrl(), id: ImageId },
+                                event: { click: $parent.TriggerInputClick }" 
+                        style="cursor: pointer;" />
+                  
+                    <!---->
+                </li>
+            </ul>
+        </div>
+        <div class="controls">
+            <ul class="inline ">
+                <li style="padding-left: 0px;">
+                    <label class="radio inline" style="padding-left: 0px;">
+                        <strong>Who can vote on this poll?</strong>
+
+                    </label>
+                </li>
+                <li>
+                    <label class="radio inline">
+                        <input type="radio" value="0" name="PostingGroup" id="rbEveryone" 
+                            data-bind="checked: Poll.IsPublicPoll" />
+                        Everyone
+                    </label>
+                </li>
+                <li>
+                    <label class="radio inline" style="white-space: nowrap">
+                        <input type="radio" value="1" name="PostingGroup" id="rbFollowersOnly" 
+                            data-bind="checked: Poll.IsFollowersPoll" />
+                        My Followers Only
+                    </label>
+                </li>
+            </ul>
+        </div>
+
+        <div class="clear"></div>
+    </div>
+</div>

@@ -1,0 +1,752 @@
+if not exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}DataSprings_DynamicLogin_Templates]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+	CREATE TABLE {databaseOwner}[{objectQualifier}DataSprings_DynamicLogin_Templates] (
+		[DynamicLoginTemplateID]  uniqueidentifier ROWGUIDCOL  NOT NULL CONSTRAINT [DF_DataSprings_DynamicLogin_DynamicLoginTemplateID]         DEFAULT (newid()),
+                [Language] [nvarchar] (200)  NULL DEFAULT ('DEFAULT'),
+		[Template] [ntext] NULL DEFAULT (''),
+		[ModuleID] [int] NOT NULL  DEFAULT (0),
+		[PortalID] [int] NOT NULL DEFAULT (0),
+		CONSTRAINT [PK_DataSprings_DynamicLoginTemplate] PRIMARY KEY  CLUSTERED 
+		(
+			[DynamicLoginTemplateID]
+		)  ON [PRIMARY] 
+	) ON [PRIMARY]
+	GO
+
+
+
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}{objectQualifier}DataSprings_DynamicLogin_AddUpdateTemplate') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_AddUpdateTemplate
+GO
+
+
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}{objectQualifier}DataSprings_DynamicLogin_GetTemplate') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_GetTemplate
+GO
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_AddUpdateTemplate
+	@Language nvarchar(200),
+        @Template ntext,
+	@ModuleID int,
+	@PortalID int
+
+
+AS
+
+Declare @MyCount  Int
+Set @MyCount = (Select Count(*) from {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_Templates Where @Language = Language AND ModuleID = @ModuleID AND PortalID = @PortalID)
+
+if @MyCount > 0
+BEGIN
+
+Update  {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_Templates
+Set  Template = @Template Where ModuleID = @ModuleID AND Language = @Language AND PortalID = @PortalID
+END
+ELSE
+BEGIN
+
+Insert Into {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_Templates
+(Language, Template, ModuleID, PortalID) Values (@Language, @Template, @ModuleID, @PortalID)
+END
+
+GO
+
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_GetTemplate
+        @Language nvarchar(200),
+        @ModuleID int
+	
+	
+AS
+
+Select * from {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_Templates
+Where ModuleID = @ModuleID AND Language = @Language
+
+GO
+
+
+ALTER TABLE {databaseOwner}{objectQualifier}DataSprings_DynamicLogin ADD ModuleID int Null
+GO
+ALTER TABLE {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_Role ADD  ModuleID int Null
+GO
+ALTER TABLE {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_RoleGroup ADD ModuleID int Null
+GO
+
+
+
+Update {databaseOwner}{objectQualifier}DataSprings_DynamicLogin Set ModuleID =0
+GO
+Update {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_Role Set ModuleID =0
+GO
+Update {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_RoleGroup Set ModuleID =0
+GO
+
+
+
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}{objectQualifier}DataSprings_DynamicRoleGroup_GetItem') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure {databaseOwner}{objectQualifier}DataSprings_DynamicRoleGroup_GetItem
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}{objectQualifier}DataSprings_DynamicRoleGroup_List') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure {databaseOwner}{objectQualifier}DataSprings_DynamicRoleGroup_List
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}{objectQualifier}DataSprings_DynamicRoleGroup_GetByRoleGroupID') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure {databaseOwner}{objectQualifier}DataSprings_DynamicRoleGroup_GetByRoleGroupID
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}{objectQualifier}DataSprings_DynamicRoleGroup_Add') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure {databaseOwner}{objectQualifier}DataSprings_DynamicRoleGroup_Add
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}{objectQualifier}DataSprings_DynamicRoleGroup_Update') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure {databaseOwner}{objectQualifier}DataSprings_DynamicRoleGroup_Update
+GO
+
+
+
+/* -------------------------------------------------------------------------------------
+/  DataSprings_DynamicRoleGroup_GetItem
+/  ------------------------------------------------------------------------------------- */
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS OFF 
+GO
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}DataSprings_DynamicRoleGroup_GetItem
+	@ItemID int
+	
+AS
+
+SELECT
+	[ItemID],
+	[PortalID],
+        [ModuleID],
+	[RoleGroupID],
+	[Url],
+	[Priority],
+	[Message]
+FROM {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_RoleGroup
+WHERE
+	[ItemID] = @ItemID
+	
+GO
+
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS ON 
+GO
+
+/* -------------------------------------------------------------------------------------
+/  DataSprings_DynamicRoleGroup_List 
+/  ------------------------------------------------------------------------------------- */
+SET QUOTED_IDENTIFIER ON 
+GO
+SET ANSI_NULLS OFF 
+GO
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}DataSprings_DynamicRoleGroup_List
+	@PortalID int,
+        @ModuleID int
+AS
+
+	SELECT     {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_RoleGroup.ItemID, 
+				{databaseOwner}{objectQualifier}DataSprings_DynamicLogin_RoleGroup.PortalID, 
+				{databaseOwner}{objectQualifier}DataSprings_DynamicLogin_RoleGroup.ModuleID,
+				{databaseOwner}{objectQualifier}DataSprings_DynamicLogin_RoleGroup.RoleGroupID, 
+		       {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_RoleGroup.Url, 
+		       {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_RoleGroup.Priority,
+		       {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_RoleGroup.Message, 
+		       {databaseOwner}{objectQualifier}RoleGroups.RoleGroupName
+	FROM       {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_RoleGroup 
+	INNER JOIN {databaseOwner}{objectQualifier}RoleGroups ON {objectQualifier}DataSprings_DynamicLogin_RoleGroup.RoleGroupID = {objectQualifier}RoleGroups.RoleGroupID
+	WHERE ({databaseOwner}{objectQualifier}DataSprings_DynamicLogin_RoleGroup.ModuleID = ModuleID) OR (ModuleID = 0 AND {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_RoleGroup.ModuleID = @PortalID)
+
+GO
+
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS ON 
+GO
+
+/* -------------------------------------------------------------------------------------
+/  DataSprings_DynamicRoleGroup_GetByRoleGroupID
+/  ------------------------------------------------------------------------------------- */
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS OFF 
+GO
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}DataSprings_DynamicRoleGroup_GetByRoleGroupID
+	@RoleGroupID int	
+AS
+
+SELECT
+	[ItemID],
+	[PortalID],
+        [ModuleID],
+	[RoleGroupID],
+	[Url],
+	[Priority],
+	[Message]
+FROM {objectQualifier}DataSprings_DynamicLogin_RoleGroup
+WHERE
+	[RoleGroupID] = @RoleGroupID
+	
+GO
+
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS ON 
+GO
+
+
+/* -------------------------------------------------------------------------------------
+/  DataSprings_DynamicRoleGroup_Add
+/  ------------------------------------------------------------------------------------- */
+SET QUOTED_IDENTIFIER ON 
+GO
+SET ANSI_NULLS OFF 
+GO
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}DataSprings_DynamicRoleGroup_Add
+	@PortalID int,
+        @ModuleID int,
+	@RoleGroupID int,
+	@Url nvarchar(256),
+	@Priority int,
+	@Message nvarchar(2000)
+AS
+
+INSERT INTO {objectQualifier}DataSprings_DynamicLogin_RoleGroup (
+	[PortalID],
+	[ModuleID],
+	[RoleGroupID],
+	[Url],
+	[Priority],
+	[Message]
+) VALUES (
+	@PortalID,
+        @ModuleID,
+	@RoleGroupID,
+	@Url,
+	@Priority,
+	@Message
+)
+
+select SCOPE_IDENTITY()
+GO
+
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS ON 
+GO
+
+/* -------------------------------------------------------------------------------------
+/  DataSprings_DynamicRoleGroup_Update
+/  ------------------------------------------------------------------------------------- */
+SET QUOTED_IDENTIFIER ON 
+GO
+SET ANSI_NULLS OFF 
+GO
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}DataSprings_DynamicRoleGroup_Update
+	@ItemID int, 
+	@PortalID int, 
+        @ModuleID int, 
+	@RoleGroupID int, 
+	@Url nvarchar(256), 
+	@Priority int,
+	@Message nvarchar(2000)
+AS
+
+UPDATE {objectQualifier}DataSprings_DynamicLogin_RoleGroup SET
+	[PortalID] = @PortalID,
+        [ModuleID] = @ModuleID,
+	[RoleGroupID] = @RoleGroupID,
+	[Url] = @Url,
+	[Priority] = @Priority,
+	[Message] = @Message
+WHERE
+	[ItemID] = @ItemID
+GO
+
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS ON 
+GO
+
+
+
+
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}{objectQualifier}DataSprings_DynamicLogin_GetItem') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_GetItem
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}{objectQualifier}DataSprings_DynamicLogin_GetByPortalID') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_GetByPortalID
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}{objectQualifier}DataSprings_DynamicLogin_GetByUserID') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_GetByUserID
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}{objectQualifier}DataSprings_DynamicLogin_Add') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_Add
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}{objectQualifier}DataSprings_DynamicLogin_Update') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_Update
+GO
+
+
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}{objectQualifier}DataSprings_DynamicRole_GetItem') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure {databaseOwner}{objectQualifier}DataSprings_DynamicRole_GetItem
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}{objectQualifier}DataSprings_DynamicRole_List') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure {databaseOwner}{objectQualifier}DataSprings_DynamicRole_List
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}{objectQualifier}DataSprings_DynamicRole_GetByRoleID') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure {databaseOwner}{objectQualifier}DataSprings_DynamicRole_GetByRoleID
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}{objectQualifier}DataSprings_DynamicRole_Add') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure {databaseOwner}{objectQualifier}DataSprings_DynamicRole_Add
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}{objectQualifier}DataSprings_DynamicRole_Update') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure {databaseOwner}{objectQualifier}DataSprings_DynamicRole_Update
+GO
+
+
+
+
+
+/* -------------------------------------------------------------------------------------
+/  DataSprings_DynamicLogin_GetItem
+/  ------------------------------------------------------------------------------------- */
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS OFF 
+GO
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_GetItem
+	@ItemID int
+	
+AS
+
+SELECT
+	[ItemID],
+	[PortalID],
+        [ModuleID],
+	[UserID],
+	[UserMessage],
+	[SendNotification]
+FROM {objectQualifier}DataSprings_DynamicLogin
+WHERE
+	[ItemID] = @ItemID
+	
+GO
+
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS ON 
+GO
+
+
+/* -------------------------------------------------------------------------------------
+/  DataSprings_DynamicLogin_GetByPortalID
+/  ------------------------------------------------------------------------------------- */
+SET QUOTED_IDENTIFIER ON 
+GO
+SET ANSI_NULLS OFF 
+GO
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_GetByPortalID	
+	@PortalID int
+AS
+
+SELECT     {databaseOwner}{objectQualifier}DataSprings_DynamicLogin.ItemID, {databaseOwner}{objectQualifier}DataSprings_DynamicLogin.PortalID, {databaseOwner}{objectQualifier}DataSprings_DynamicLogin.UserID, 
+               {databaseOwner}{objectQualifier}DataSprings_DynamicLogin.UserMessage, {databaseOwner}{objectQualifier}DataSprings_DynamicLogin.SendNotification, {databaseOwner}{objectQualifier}Users.FirstName, {databaseOwner}{objectQualifier}Users.LastName
+FROM         {databaseOwner}{objectQualifier}DataSprings_DynamicLogin 
+INNER JOIN {databaseOwner}{objectQualifier}Users ON {objectQualifier}DataSprings_DynamicLogin.UserID = {databaseOwner}{objectQualifier}Users.UserID
+WHERE     ({databaseOwner}{objectQualifier}DataSprings_DynamicLogin.PortalID = @PortalID)
+GO
+
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS ON 
+GO
+
+/* -------------------------------------------------------------------------------------
+/  DataSprings_DynamicLogin_GetByUserID
+/  ------------------------------------------------------------------------------------- */
+SET QUOTED_IDENTIFIER ON 
+GO
+SET ANSI_NULLS OFF 
+GO
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_GetByUserID
+	@UserID int	
+AS
+
+SELECT
+	[ItemID],
+	[PortalID],
+        [ModuleID],
+	[UserID],
+	[UserMessage],
+	[SendNotification]
+FROM {objectQualifier}DataSprings_DynamicLogin
+WHERE
+	[UserID]=@UserID
+GO
+
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS ON 
+GO
+
+/* -------------------------------------------------------------------------------------
+/  DataSprings_DynamicLogin_Add
+/  ------------------------------------------------------------------------------------- */
+SET QUOTED_IDENTIFIER ON 
+GO
+SET ANSI_NULLS OFF 
+GO
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_Add
+	@PortalID int,
+	@ModuleID int,
+	@UserID int,
+	@UserMessage nvarchar(2000),
+	@SendNotification bit
+AS
+
+INSERT INTO {objectQualifier}DataSprings_DynamicLogin (
+	[PortalID],
+        [ModuleID],
+	[UserID],
+	[UserMessage],
+	[SendNotification]
+) VALUES (
+	@PortalID,
+        @ModuleID,
+	@UserID,
+	@UserMessage,
+	@SendNotification
+)
+
+select SCOPE_IDENTITY()
+GO
+
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS ON 
+GO
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_Update
+	@ItemID int, 
+	@PortalID int, 
+	@ModuleID int, 
+	@UserID int, 
+	@UserMessage nvarchar(2000), 
+	@SendNotification bit 
+AS
+
+UPDATE {objectQualifier}DataSprings_DynamicLogin SET
+	[PortalID] = @PortalID,
+        [ModuleID] = @ModuleID, 
+	[UserID] = @UserID,
+	[UserMessage] = @UserMessage,
+	[SendNotification] = @SendNotification
+WHERE
+	[ItemID] = @ItemID
+GO
+
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS ON 
+GO
+
+
+/* -------------------------------------------------------------------------------------
+/  DataSprings_DynamicRole_GetItem
+/  ------------------------------------------------------------------------------------- */
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS OFF 
+GO
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}DataSprings_DynamicRole_GetItem
+	@ItemID int
+	
+AS
+
+SELECT
+	[ItemID],
+	[PortalID],
+        [ModuleID],
+	[RoleID],
+	[Url],
+	[Priority],
+	[Message]
+FROM {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_Role
+WHERE
+	[ItemID] = @ItemID
+	
+GO
+
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS ON 
+GO
+
+/* -------------------------------------------------------------------------------------
+/  DataSprings_DynamicRole_List 
+/  ------------------------------------------------------------------------------------- */
+SET QUOTED_IDENTIFIER ON 
+GO
+SET ANSI_NULLS OFF 
+GO
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}DataSprings_DynamicRole_List
+	@PortalID int,
+        @ModuleID int
+AS
+
+	SELECT     {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_Role.ItemID, {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_Role.PortalID, {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_Role.RoleID, 
+		       {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_Role.Url, {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_Role.Priority,{databaseOwner}{objectQualifier}DataSprings_DynamicLogin_Role.Message, {databaseOwner}{objectQualifier}Roles.RoleName
+	FROM       {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_Role 
+	INNER JOIN {databaseOwner}{objectQualifier}Roles ON {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_Role.RoleID = {databaseOwner}{objectQualifier}Roles.RoleID
+	WHERE ({databaseOwner}{objectQualifier}DataSprings_DynamicLogin_Role.ModuleID = @ModuleID) OR (ModuleID = 0 AND {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_Role.PortalID = @PortalID)
+GO
+
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS ON 
+GO
+
+/* -------------------------------------------------------------------------------------
+/  DataSprings_DynamicRole_GetByRoleID
+/  ------------------------------------------------------------------------------------- */
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS OFF 
+GO
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}DataSprings_DynamicRole_GetByRoleID
+	@RoleID int	
+AS
+
+SELECT
+	[ItemID],
+	[PortalID],
+        [ModuleID],
+	[RoleID],
+	[Url],
+	[Priority],
+	[Message]
+FROM {objectQualifier}DataSprings_DynamicLogin_Role
+WHERE
+	[RoleID] = @RoleID
+	
+GO
+
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS ON 
+GO
+
+
+/* -------------------------------------------------------------------------------------
+/  DataSprings_DynamicRole_Add
+/  ------------------------------------------------------------------------------------- */
+SET QUOTED_IDENTIFIER ON 
+GO
+SET ANSI_NULLS OFF 
+GO
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}DataSprings_DynamicRole_Add
+	@PortalID int,
+        @ModuleID int,
+	@RoleID int,
+	@Url nvarchar(256),
+	@Priority int,
+	@Message nvarchar(2000)
+AS
+
+INSERT INTO {objectQualifier}DataSprings_DynamicLogin_Role (
+	[PortalID],
+	[ModuleID],
+	[RoleID],
+	[Url],
+	[Priority],
+	[Message]
+) VALUES (
+	@PortalID,
+        @ModuleID,
+	@RoleID,
+	@Url,
+	@Priority,
+	@Message
+)
+
+select SCOPE_IDENTITY()
+GO
+
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS ON 
+GO
+
+/* -------------------------------------------------------------------------------------
+/  DataSprings_DynamicRole_Update
+/  ------------------------------------------------------------------------------------- */
+SET QUOTED_IDENTIFIER ON 
+GO
+SET ANSI_NULLS OFF 
+GO
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}DataSprings_DynamicRole_Update
+	@ItemID int, 
+	@PortalID int, 
+        @ModuleID int,
+	@RoleID int, 
+	@Url nvarchar(256), 
+	@Priority int,
+	@Message nvarchar(2000)
+AS
+
+UPDATE {objectQualifier}DataSprings_DynamicLogin_Role SET
+	[PortalID] = @PortalID,
+        [ModuleID] = @ModuleID,
+	[RoleID] = @RoleID,
+	[Url] = @Url,
+	[Priority] = @Priority,
+	[Message] = @Message
+WHERE
+	[ItemID] = @ItemID
+GO
+
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS ON 
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}{objectQualifier}DataSprings_DynamicLogin_SyncUserRolesBetweenPortals') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_SyncUserRolesBetweenPortals
+GO
+ 
+ 
+create procedure {databaseOwner}[{objectQualifier}DataSprings_DynamicLogin_SyncUserRolesBetweenPortals]
+(@MasterPortalID int,@ChildPortalID int,@UserID int)
+as
+begin
+
+                                                -- generate ##temp tables
+
+                -- drop table ##tempMasterPortalRoles if exists
+
+                IF object_id('tempdb..##tempMasterPortalRoles') is not null
+
+                BEGIN
+
+                        DROP TABLE ##tempMasterPortalRoles
+
+                END
+                
+                
+                
+                IF object_id('tempdb..##tempMatchedChildMasterRoles') is not null
+
+                BEGIN
+
+                        DROP TABLE ##tempMatchedChildMasterRoles
+
+                END
+                
+                
+               IF object_id('tempdb..##tempUserMasterRoleInfo') is not null
+
+                BEGIN
+
+                        DROP TABLE ##tempUserMasterRoleInfo
+
+                END
+                
+                  IF object_id('tempdb..##tempUserChildRoleInfo') is not null
+
+                BEGIN
+
+                        DROP TABLE ##tempUserChildRoleInfo
+
+                END
+                 
+
+                                                                                                --List all Roles in the Master Portal
+                                                                                                select r.RoleID, r.RoleName into ##tempMasterPortalRoles from {objectQualifier}roles r 
+
+                where r.PortalID = @MasterPortalID and r.RoleName != 'Administrators' 
+
+                                                                                                
+                                                                                                --Get a list of all Matching Roles in the Child Portal (We only want to modify these roles for the user)
+                                                                                                select r.RoleID as ChildRoleID, mpr.roleID as MasterRoleID, r.RoleName into ##tempMatchedChildMasterRoles from {objectQualifier}roles r 
+                                                                                                inner join ##tempMasterPortalRoles mpr on r.RoleName = mpr.rolename
+
+                where r.PortalID = @ChildPortalID and r.RoleName != 'Administrators' 
+
+
+                                                                                                -- Lets get the matched role info for this user for the masterportal
+                                                                                                select UserRoleID, UserID,RoleID,ExpiryDate,IsTrialUsed,EffectiveDate,CreatedByUserID,CreatedOnDate,LastModifiedByUserID,LastModifiedOnDate, mpr.MasterRoleID, mpr.ChildRoleID
+
+                                                                                                into ##tempUserMasterRoleInfo from {objectQualifier}UserRoles ur
+                                                                                                inner join ##tempMatchedChildMasterRoles mpr ON ur.RoleID = mpr.masterroleID
+                                                                                                
+                                                                                                where UserId=@UserID 
+                
+                -- Lets get the matched role info for this user for the chid Portal
+                                                                                                select UserRoleID, UserID,RoleID,ExpiryDate,IsTrialUsed,EffectiveDate,CreatedByUserID,CreatedOnDate,LastModifiedByUserID,LastModifiedOnDate, cpr.MasterRoleID, cpr.ChildRoleID
+                                                                                                into ##tempUserChildRoleInfo from {objectQualifier}UserRoles  ur
+                                                                                                inner join ##tempMatchedChildMasterRoles cpr ON ur.RoleID = cpr.childroleID
+                                                                                                where UserId=@UserID 
+                                                                                                
+                                                                                                --Lets Delete any roles that have been removed from the user in the Master Portal
+                                                                                                
+                                                                                                Delete from {objectQualifier}UserRoles Where UserRoleID In
+
+                (
+                Select UserRoleID 
+                                                                                                from ##tempUserChildRoleInfo where MasterRoleID not in (Select RoleID from ##tempUserMasterRoleInfo)
+                                                                                                )                                                                                               
+                                                                                                   
+               
+                               
+                --Update any Expiry dates for roles
+               
+                Update {objectQualifier}UserRoles
+                SET ExpiryDate = info.ExpiryDate, 
+                IsTrialUsed = info.IsTrialUsed, 
+                EffectiveDate = info.EffectiveDate,
+                CreatedByUserID = info.CreatedByUserID, 
+                CreatedOnDate = info.CreatedOnDate,
+                LastModifiedByUserID = info.LastModifiedByUserID, 
+                LastModifiedOnDate = info.LastModifiedOnDate
+                FROM {objectQualifier}UserRoles ur INNER JOIN ##tempUserMasterRoleInfo info ON ur.UserID = @UserID and ur.RoleID = info.ChildRoleID
+                
+              
+                                        
+                -- Finally, lets add any new roles in now
+                                                                                                
+                                                                        insert into {objectQualifier}UserRoles(UserID,RoleID,ExpiryDate,IsTrialUsed,EffectiveDate,CreatedByUserID,CreatedOnDate,LastModifiedByUserID,LastModifiedOnDate)
+                                                                                                
+                                                                                                select info.UserID,info.childRoleID,info.ExpiryDate,info.IsTrialUsed,info.EffectiveDate,info.CreatedByUserID,
+                info.CreatedOnDate,info.LastModifiedByUserID,info.LastModifiedOnDate 
+                from ##tempUserMasterRoleInfo info
+                where info.childRoleID not in (select RoleID from ##tempUserChildRoleInfo) 
+               
+end

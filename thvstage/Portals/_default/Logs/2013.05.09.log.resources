@@ -1,0 +1,903 @@
+2013-05-09 10:20:40,730 [WIN-SQUVIVLQ4HM][Thread:48][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.IO.IOException: The process cannot access the file 'C:\Workspaces\Tipped\Websites\thvstage\Portals\0\Users\SocialPolls\2\DSC_0129.JPG' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.File.Create(String path, Int32 bufferSize)
+   at AjaXFileHandler.SaveStreamToFile(String fileFullPath, Stream stream) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\AjaxFileHandler.ashx:line 77
+   at AjaXFileHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\AjaxFileHandler.ashx:line 38
+2013-05-09 10:20:40,821 [WIN-SQUVIVLQ4HM][Thread:48][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.IO.IOException: The process cannot access the file 'C:\Workspaces\Tipped\Websites\thvstage\Portals\0\Users\SocialPolls\2\DSC_0129.JPG' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.File.Create(String path, Int32 bufferSize)
+   at AjaXFileHandler.SaveStreamToFile(String fileFullPath, Stream stream) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\AjaxFileHandler.ashx:line 77
+   at AjaXFileHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\AjaxFileHandler.ashx:line 70
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 10:21:11,646 [WIN-SQUVIVLQ4HM][Thread:48][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.IO.IOException: The process cannot access the file 'C:\Workspaces\Tipped\Websites\thvstage\Portals\0\Users\SocialPolls\2\DSC_0129.JPG' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.File.Create(String path, Int32 bufferSize)
+   at AjaXFileHandler.SaveStreamToFile(String fileFullPath, Stream stream) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\AjaxFileHandler.ashx:line 77
+   at AjaXFileHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\AjaxFileHandler.ashx:line 38
+2013-05-09 10:21:11,658 [WIN-SQUVIVLQ4HM][Thread:48][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.IO.IOException: The process cannot access the file 'C:\Workspaces\Tipped\Websites\thvstage\Portals\0\Users\SocialPolls\2\DSC_0129.JPG' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.File.Create(String path, Int32 bufferSize)
+   at AjaXFileHandler.SaveStreamToFile(String fileFullPath, Stream stream) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\AjaxFileHandler.ashx:line 77
+   at AjaXFileHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\AjaxFileHandler.ashx:line 70
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 10:25:06,699 [WIN-SQUVIVLQ4HM][Thread:48][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.IO.IOException: The process cannot access the file 'C:\Workspaces\Tipped\Websites\thvstage\Portals\0\Users\SocialPolls\2\DSC_0128.JPG' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.File.Create(String path, Int32 bufferSize)
+   at AjaXFileHandler.SaveStreamToFile(String fileFullPath, Stream stream) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\AjaxFileHandler.ashx:line 77
+   at AjaXFileHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\AjaxFileHandler.ashx:line 38
+2013-05-09 10:25:06,752 [WIN-SQUVIVLQ4HM][Thread:48][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.IO.IOException: The process cannot access the file 'C:\Workspaces\Tipped\Websites\thvstage\Portals\0\Users\SocialPolls\2\DSC_0128.JPG' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.File.Create(String path, Int32 bufferSize)
+   at AjaXFileHandler.SaveStreamToFile(String fileFullPath, Stream stream) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\AjaxFileHandler.ashx:line 77
+   at AjaXFileHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\AjaxFileHandler.ashx:line 70
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 10:26:15,606 [WIN-SQUVIVLQ4HM][Thread:23][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.IO.IOException: The process cannot access the file 'C:\Workspaces\Tipped\Websites\thvstage\Portals\0\Users\SocialPolls\2\DSC_0129.JPG' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.File.Create(String path, Int32 bufferSize)
+   at AjaXFileHandler.SaveStreamToFile(String fileFullPath, Stream stream) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\AjaxFileHandler.ashx:line 77
+   at AjaXFileHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\AjaxFileHandler.ashx:line 38
+2013-05-09 10:26:15,673 [WIN-SQUVIVLQ4HM][Thread:23][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.IO.IOException: The process cannot access the file 'C:\Workspaces\Tipped\Websites\thvstage\Portals\0\Users\SocialPolls\2\DSC_0129.JPG' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.File.Create(String path, Int32 bufferSize)
+   at AjaXFileHandler.SaveStreamToFile(String fileFullPath, Stream stream) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\AjaxFileHandler.ashx:line 77
+   at AjaXFileHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\AjaxFileHandler.ashx:line 70
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 10:26:15,872 [WIN-SQUVIVLQ4HM][Thread:52][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.IO.IOException: The process cannot access the file 'C:\Workspaces\Tipped\Websites\thvstage\Portals\0\Users\SocialPolls\2\DSC_0128.JPG' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.File.Create(String path, Int32 bufferSize)
+   at AjaXFileHandler.SaveStreamToFile(String fileFullPath, Stream stream) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\AjaxFileHandler.ashx:line 77
+   at AjaXFileHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\AjaxFileHandler.ashx:line 38
+2013-05-09 10:26:15,944 [WIN-SQUVIVLQ4HM][Thread:52][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.IO.IOException: The process cannot access the file 'C:\Workspaces\Tipped\Websites\thvstage\Portals\0\Users\SocialPolls\2\DSC_0128.JPG' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.IO.File.Create(String path, Int32 bufferSize)
+   at AjaXFileHandler.SaveStreamToFile(String fileFullPath, Stream stream) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\AjaxFileHandler.ashx:line 77
+   at AjaXFileHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\AjaxFileHandler.ashx:line 70
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 10:40:19,169 [WIN-SQUVIVLQ4HM][Thread:27][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): The file '/DesktopModules/SocialPolls/FileTransferHandler.ashx' does not exist.
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 10:40:19,172 [WIN-SQUVIVLQ4HM][Thread:16][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): The file '/DesktopModules/SocialPolls/FileTransferHandler.ashx' does not exist.
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 10:42:09,557 [WIN-SQUVIVLQ4HM][Thread:49][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpParseException (0x80004005): Could not create type 'jQueryUploadTest.FileTransferHandler'.
+   at System.Web.UI.SimpleWebHandlerParser.GetType(String typeName)
+   at System.Web.UI.SimpleWebHandlerParser.GetTypeToCache(Assembly builtAssembly)
+   at System.Web.Compilation.SimpleHandlerBuildProvider.GetGeneratedType(CompilerResults results)
+   at System.Web.Compilation.BuildProvider.CreateBuildResult(CompilerResults results)
+   at System.Web.Compilation.BuildProvider.GetBuildResult(CompilerResults results)
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 10:44:13,024 [WIN-SQUVIVLQ4HM][Thread:10][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpParseException (0x80004005): Could not create type 'DotNetNuke.Modules.SocialPolls.FileTransferHandler'.
+   at System.Web.UI.SimpleWebHandlerParser.GetType(String typeName)
+   at System.Web.UI.SimpleWebHandlerParser.GetTypeToCache(Assembly builtAssembly)
+   at System.Web.Compilation.SimpleHandlerBuildProvider.GetGeneratedType(CompilerResults results)
+   at System.Web.Compilation.BuildProvider.CreateBuildResult(CompilerResults results)
+   at System.Web.Compilation.BuildProvider.GetBuildResult(CompilerResults results)
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 10:44:13,028 [WIN-SQUVIVLQ4HM][Thread:18][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpParseException (0x80004005): Could not create type 'DotNetNuke.Modules.SocialPolls.FileTransferHandler'.
+   at System.Web.UI.SimpleWebHandlerParser.GetType(String typeName)
+   at System.Web.UI.SimpleWebHandlerParser.GetTypeToCache(Assembly builtAssembly)
+   at System.Web.Compilation.SimpleHandlerBuildProvider.GetGeneratedType(CompilerResults results)
+   at System.Web.Compilation.BuildProvider.CreateBuildResult(CompilerResults results)
+   at System.Web.Compilation.BuildProvider.GetBuildResult(CompilerResults results)
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 11:40:45,836 [WIN-SQUVIVLQ4HM][Thread:43][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): The file '/FileTransferHandler.ashx' does not exist.
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 11:40:47,230 [WIN-SQUVIVLQ4HM][Thread:40][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): The file '/FileTransferHandler.ashx' does not exist.
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 11:40:47,999 [WIN-SQUVIVLQ4HM][Thread:41][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): The file '/FileTransferHandler.ashx' does not exist.
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 11:49:46,153 [WIN-SQUVIVLQ4HM][Thread:40][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): The file '/FileTransferHandler.ashx' does not exist.
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 11:49:46,154 [WIN-SQUVIVLQ4HM][Thread:58][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): The file '/FileTransferHandler.ashx' does not exist.
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 11:49:46,156 [WIN-SQUVIVLQ4HM][Thread:36][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): The file '/FileTransferHandler.ashx' does not exist.
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 11:55:14,783 [WIN-SQUVIVLQ4HM][Thread:60][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): The file '/FileTransferHandler.ashx' does not exist.
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 11:55:14,943 [WIN-SQUVIVLQ4HM][Thread:37][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): The file '/FileTransferHandler.ashx' does not exist.
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 11:55:15,101 [WIN-SQUVIVLQ4HM][Thread:41][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): The file '/FileTransferHandler.ashx' does not exist.
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 12:02:47,485 [WIN-SQUVIVLQ4HM][Thread:39][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): The file '/FileTransferHandler.ashx' does not exist.
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 12:02:55,140 [WIN-SQUVIVLQ4HM][Thread:39][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): The file '/FileTransferHandler.ashx' does not exist.
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 12:03:09,217 [WIN-SQUVIVLQ4HM][Thread:39][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): The file '/FileTransferHandler.ashx' does not exist.
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 12:04:00,544 [WIN-SQUVIVLQ4HM][Thread:38][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): The file '/FileTransferHandler.ashx' does not exist.
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 12:04:00,544 [WIN-SQUVIVLQ4HM][Thread:31][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): The file '/FileTransferHandler.ashx' does not exist.
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 12:04:00,683 [WIN-SQUVIVLQ4HM][Thread:12][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): The file '/FileTransferHandler.ashx' does not exist.
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 12:04:22,530 [WIN-SQUVIVLQ4HM][Thread:31][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): The file '/FileTransferHandler.ashx' does not exist.
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 12:04:27,237 [WIN-SQUVIVLQ4HM][Thread:31][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): The file '/FileTransferHandler.ashx' does not exist.
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 12:04:42,726 [WIN-SQUVIVLQ4HM][Thread:5][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): The file '/FileTransferHandler.ashx' does not exist.
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 12:05:13,548 [WIN-SQUVIVLQ4HM][Thread:31][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): The file '/desktopmodules/socailpolls/FileTransferHandler.ashx' does not exist.
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 12:21:52,601 [WIN-SQUVIVLQ4HM][Thread:6][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): The file '/desktopmodules/socailpolls/FileTransferHandler.ashx' does not exist.
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 12:23:36,160 [WIN-SQUVIVLQ4HM][Thread:5][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): The file '/DesktopModules/SocialPolls/tn_FileTransferHandler.ashx' does not exist.
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 12:23:36,188 [WIN-SQUVIVLQ4HM][Thread:6][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): The file '/DesktopModules/SocialPolls/tn_FileTransferHandler.ashx' does not exist.
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 12:23:36,212 [WIN-SQUVIVLQ4HM][Thread:52][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): The file '/DesktopModules/SocialPolls/tn_FileTransferHandler.ashx' does not exist.
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 12:50:06,466 [WIN-SQUVIVLQ4HM][Thread:45][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpParseException (0x80004005): Could not create type 'jQueryUploadTest.Thumbnail'.
+   at System.Web.UI.SimpleWebHandlerParser.GetType(String typeName)
+   at System.Web.UI.SimpleWebHandlerParser.GetTypeToCache(Assembly builtAssembly)
+   at System.Web.Compilation.SimpleHandlerBuildProvider.GetGeneratedType(CompilerResults results)
+   at System.Web.Compilation.BuildProvider.CreateBuildResult(CompilerResults results)
+   at System.Web.Compilation.BuildProvider.GetBuildResult(CompilerResults results)
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 12:51:04,786 [WIN-SQUVIVLQ4HM][Thread:46][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.IO.FileNotFoundException: Could not find file 'C:\Workspaces\Tipped\Websites\thvstage\images\default_thumb.jpg'.
+File name: 'C:\Workspaces\Tipped\Websites\thvstage\images\default_thumb.jpg'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.Web.HttpResponse.WriteFile(String filename, Boolean readIntoMemory)
+   at DotNetNuke.Modules.SocialPolls.Thumbnail.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Thumbnail.ashx.cs:line 9
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 12:55:20,830 [WIN-SQUVIVLQ4HM][Thread:20][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): The file '/DesktopModules/SocialPolls/tn_FileTransferHandler.ashx' does not exist.
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 12:55:20,836 [WIN-SQUVIVLQ4HM][Thread:20][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): The file '/DesktopModules/SocialPolls/tn_FileTransferHandler.ashx' does not exist.
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 12:55:20,843 [WIN-SQUVIVLQ4HM][Thread:31][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): The file '/DesktopModules/SocialPolls/tn_FileTransferHandler.ashx' does not exist.
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 12:55:27,091 [WIN-SQUVIVLQ4HM][Thread:6][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPolOptionsDTO(Int32 pollId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 440
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.PopulatePollDto(Vote item) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 485
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPollsByUser(Int32 userId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 294
+2013-05-09 12:55:30,185 [WIN-SQUVIVLQ4HM][Thread:39][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPolOptionsDTO(Int32 pollId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 440
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.PopulatePollDto(Vote item) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 485
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPollsByUser(Int32 userId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 294
+2013-05-09 12:55:30,204 [WIN-SQUVIVLQ4HM][Thread:20][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPolOptionsDTO(Int32 pollId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 440
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.PopulatePollDto(Vote item) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 485
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPollsByUser(Int32 userId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 294
+2013-05-09 13:31:34,298 [WIN-SQUVIVLQ4HM][Thread:35][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): The file '/DesktopModules/SocialPolls/tn_FileTransferHandler.ashx' does not exist.
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 13:31:34,298 [WIN-SQUVIVLQ4HM][Thread:38][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): The file '/DesktopModules/SocialPolls/tn_FileTransferHandler.ashx' does not exist.
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 13:31:34,298 [WIN-SQUVIVLQ4HM][Thread:28][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): The file '/DesktopModules/SocialPolls/tn_FileTransferHandler.ashx' does not exist.
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 13:52:22,737 [WIN-SQUVIVLQ4HM][Thread:52][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): The SaveAs method is configured to require a rooted path, and the path 'Users/002/02/2/DSC_0123.JPG' is not rooted.
+   at System.Web.HttpPostedFile.SaveAs(String filename)
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 149
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 117
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 80
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 66
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 13:52:22,738 [WIN-SQUVIVLQ4HM][Thread:54][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): The SaveAs method is configured to require a rooted path, and the path 'Users/002/02/2/DSC_0125.JPG' is not rooted.
+   at System.Web.HttpPostedFile.SaveAs(String filename)
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 149
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 117
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 80
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 66
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 13:52:22,738 [WIN-SQUVIVLQ4HM][Thread:58][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): The SaveAs method is configured to require a rooted path, and the path 'Users/002/02/2/DSC_0124.JPG' is not rooted.
+   at System.Web.HttpPostedFile.SaveAs(String filename)
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 149
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 117
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 80
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 66
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 14:01:40,193 [WIN-SQUVIVLQ4HM][Thread:53][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPolOptionsDTO(Int32 pollId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 440
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.PopulatePollDto(Vote item) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 485
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.<>c__DisplayClass11.<GetPublicPolls>b__a(Vote p) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPublicPolls() in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+2013-05-09 14:02:43,422 [WIN-SQUVIVLQ4HM][Thread:49][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): The SaveAs method is configured to require a rooted path, and the path 'Users/002/02/2/DSC_0127.JPG' is not rooted.
+   at System.Web.HttpPostedFile.SaveAs(String filename)
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 149
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 117
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 80
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 66
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 14:02:43,424 [WIN-SQUVIVLQ4HM][Thread:19][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): The SaveAs method is configured to require a rooted path, and the path 'Users/002/02/2/DSC_0125.JPG' is not rooted.
+   at System.Web.HttpPostedFile.SaveAs(String filename)
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 149
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 117
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 80
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 66
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 14:02:43,422 [WIN-SQUVIVLQ4HM][Thread:53][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): The SaveAs method is configured to require a rooted path, and the path 'Users/002/02/2/DSC_0124.JPG' is not rooted.
+   at System.Web.HttpPostedFile.SaveAs(String filename)
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 149
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 117
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 80
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 66
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 14:04:05,335 [WIN-SQUVIVLQ4HM][Thread:22][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPolOptionsDTO(Int32 pollId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 440
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.PopulatePollDto(Vote item) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 485
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.<>c__DisplayClass11.<GetPublicPolls>b__a(Vote p) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPublicPolls() in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+2013-05-09 14:22:47,220 [WIN-SQUVIVLQ4HM][Thread:88][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.ApplicationException: ReaderWriterLockStrategy.GetWriteLock timed out
+   at DotNetNuke.Collections.Internal.ReaderWriterLockStrategy.GetWriteLock(TimeSpan timeout)
+   at DotNetNuke.Services.Scheduling.Scheduler.CoreScheduler.RemoveFromScheduleQueue(ScheduleItem scheduleItem)
+2013-05-09 14:22:47,225 [WIN-SQUVIVLQ4HM][Thread:95][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.ApplicationException: ReaderWriterLockStrategy.GetWriteLock timed out
+   at DotNetNuke.Collections.Internal.ReaderWriterLockStrategy.GetWriteLock(TimeSpan timeout)
+   at DotNetNuke.Services.Scheduling.Scheduler.CoreScheduler.RemoveFromScheduleQueue(ScheduleItem scheduleItem)
+2013-05-09 14:22:47,231 [WIN-SQUVIVLQ4HM][Thread:93][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): The SaveAs method is configured to require a rooted path, and the path 'Users/002/02/2/DSC_0125.JPG' is not rooted.
+   at System.Web.HttpPostedFile.SaveAs(String filename)
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 122
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 90
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 53
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 39
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 14:22:47,236 [WIN-SQUVIVLQ4HM][Thread:87][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): The SaveAs method is configured to require a rooted path, and the path 'Users/002/02/2/DSC_0128.JPG' is not rooted.
+   at System.Web.HttpPostedFile.SaveAs(String filename)
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 122
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 90
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 53
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 39
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 14:22:47,262 [WIN-SQUVIVLQ4HM][Thread:90][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): The SaveAs method is configured to require a rooted path, and the path 'Users/002/02/2/DSC_0127.JPG' is not rooted.
+   at System.Web.HttpPostedFile.SaveAs(String filename)
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 122
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 90
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 53
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 39
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 16:06:43,017 [WIN-SQUVIVLQ4HM][Thread:52][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): The file '/DesktopModules/SocialPolls/tn_FileTransferHandler.ashx' does not exist.
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 16:06:43,069 [WIN-SQUVIVLQ4HM][Thread:41][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): The file '/DesktopModules/SocialPolls/tn_FileTransferHandler.ashx' does not exist.
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 16:06:43,019 [WIN-SQUVIVLQ4HM][Thread:35][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): The file '/DesktopModules/SocialPolls/tn_FileTransferHandler.ashx' does not exist.
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 17:19:17,481 [WIN-SQUVIVLQ4HM][Thread:16][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPolOptionsDTO(Int32 pollId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 440
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.PopulatePollDto(Vote item) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 485
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.<>c__DisplayClass11.<GetPublicPolls>b__a(Vote p) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPublicPolls() in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+2013-05-09 17:19:26,214 [WIN-SQUVIVLQ4HM][Thread:23][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): The file '/DesktopModules/SocialPolls/tn_FileTransferHandler.ashx' does not exist.
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 17:19:26,214 [WIN-SQUVIVLQ4HM][Thread:6][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): The file '/DesktopModules/SocialPolls/tn_FileTransferHandler.ashx' does not exist.
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 17:19:48,870 [WIN-SQUVIVLQ4HM][Thread:6][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): The file '/DesktopModules/SocialPolls/tn_FileTransferHandler.ashx' does not exist.
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 17:19:49,185 [WIN-SQUVIVLQ4HM][Thread:6][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): The file '/DesktopModules/SocialPolls/tn_FileTransferHandler.ashx' does not exist.
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 17:19:49,441 [WIN-SQUVIVLQ4HM][Thread:23][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): The file '/DesktopModules/SocialPolls/tn_FileTransferHandler.ashx' does not exist.
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 17:35:19,113 [WIN-SQUVIVLQ4HM][Thread:26][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.IO.FileNotFoundException: DSC_0120.JPG
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 146
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 114
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 77
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 64
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 17:35:19,113 [WIN-SQUVIVLQ4HM][Thread:31][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.IO.FileNotFoundException: DSC_0121.JPG
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 146
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 114
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 77
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 64
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 17:35:27,555 [WIN-SQUVIVLQ4HM][Thread:32][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.IO.FileNotFoundException: DSC_0122.JPG
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 146
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 114
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 77
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 64
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 17:37:53,665 [WIN-SQUVIVLQ4HM][Thread:47][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPolOptionsDTO(Int32 pollId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 440
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.PopulatePollDto(Vote item) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 485
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.<>c__DisplayClass11.<GetPublicPolls>b__a(Vote p) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPublicPolls() in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+2013-05-09 17:42:40,436 [WIN-SQUVIVLQ4HM][Thread:43][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.IO.FileNotFoundException: DSC_0120.JPG
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.GetThumbnail(String filename) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 29
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 153
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 114
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 77
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 64
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 17:42:40,436 [WIN-SQUVIVLQ4HM][Thread:46][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.IO.FileNotFoundException: DSC_0122.JPG
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.GetThumbnail(String filename) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 29
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 153
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 114
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 77
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 64
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 17:42:40,455 [WIN-SQUVIVLQ4HM][Thread:47][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.IO.FileNotFoundException: DSC_0121.JPG
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.GetThumbnail(String filename) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 29
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 153
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 114
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 77
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 64
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 17:48:39,672 [WIN-SQUVIVLQ4HM][Thread:9][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPolOptionsDTO(Int32 pollId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 440
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.PopulatePollDto(Vote item) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 485
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.<>c__DisplayClass11.<GetPublicPolls>b__a(Vote p) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPublicPolls() in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+2013-05-09 17:51:32,789 [WIN-SQUVIVLQ4HM][Thread:27][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.IO.FileNotFoundException: C:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Users\002\02\2\DSC_0121.JPG
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 148
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 114
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 77
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 64
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 17:51:32,789 [WIN-SQUVIVLQ4HM][Thread:28][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.IO.FileNotFoundException: C:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Users\002\02\2\DSC_0122.JPG
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 148
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 114
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 77
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 64
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 17:51:32,789 [WIN-SQUVIVLQ4HM][Thread:34][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.IO.FileNotFoundException: C:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Users\002\02\2\DSC_0120.JPG
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 148
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 114
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 77
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 64
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 17:58:15,095 [WIN-SQUVIVLQ4HM][Thread:47][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPolOptionsDTO(Int32 pollId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 440
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.PopulatePollDto(Vote item) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 485
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.<>c__DisplayClass11.<GetPublicPolls>b__a(Vote p) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPublicPolls() in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+2013-05-09 17:59:45,964 [WIN-SQUVIVLQ4HM][Thread:65][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.IO.FileNotFoundException: C:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Users\002\02\2\DSC_0121.JPG
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 148
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 114
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 77
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 64
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 17:59:45,968 [WIN-SQUVIVLQ4HM][Thread:64][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.IO.FileNotFoundException: C:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Users\002\02\2\DSC_0120.JPG
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 148
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 114
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 77
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 64
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 17:59:46,041 [WIN-SQUVIVLQ4HM][Thread:59][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.IO.FileNotFoundException: C:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Users\002\02\2\DSC_0122.JPG
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 148
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 114
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 77
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 64
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 18:01:33,220 [WIN-SQUVIVLQ4HM][Thread:47][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPolOptionsDTO(Int32 pollId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 440
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.PopulatePollDto(Vote item) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 485
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.<>c__DisplayClass11.<GetPublicPolls>b__a(Vote p) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPublicPolls() in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+2013-05-09 18:02:24,557 [WIN-SQUVIVLQ4HM][Thread:52][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Users\002\02\2\DSC_0122.JPG'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at System.Web.HttpPostedFile.SaveAs(String filename)
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 150
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 114
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 77
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 64
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 18:02:24,577 [WIN-SQUVIVLQ4HM][Thread:47][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Users\002\02\2\DSC_0121.JPG'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at System.Web.HttpPostedFile.SaveAs(String filename)
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 150
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 114
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 77
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 64
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 18:02:34,016 [WIN-SQUVIVLQ4HM][Thread:38][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Users\002\02\2\DSC_0120.JPG'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at System.Web.HttpPostedFile.SaveAs(String filename)
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 150
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 114
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 77
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 64
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 18:18:14,255 [WIN-SQUVIVLQ4HM][Thread:67][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPolOptionsDTO(Int32 pollId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 440
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.PopulatePollDto(Vote item) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 485
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.<>c__DisplayClass11.<GetPublicPolls>b__a(Vote p) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPublicPolls() in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+2013-05-09 18:24:13,391 [WIN-SQUVIVLQ4HM][Thread:6][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.IO.FileNotFoundException: C:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Users\002\02\2\DSC_0120.JPG
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 156
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 115
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 78
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 65
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 18:24:13,391 [WIN-SQUVIVLQ4HM][Thread:67][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.IO.FileNotFoundException: C:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Users\002\02\2\DSC_0122.JPG
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 156
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 115
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 78
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 65
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 18:24:13,391 [WIN-SQUVIVLQ4HM][Thread:62][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.IO.FileNotFoundException: C:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Users\002\02\2\DSC_0121.JPG
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 156
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 115
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 78
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 65
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 18:28:06,514 [WIN-SQUVIVLQ4HM][Thread:82][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.IO.FileNotFoundException: C:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Users\002\02\2\DSC_0122.JPG
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 156
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 115
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 78
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 65
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 18:28:06,541 [WIN-SQUVIVLQ4HM][Thread:92][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.IO.FileNotFoundException: C:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Users\002\02\2\DSC_0120.JPG
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 156
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 115
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 78
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 65
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 18:28:06,568 [WIN-SQUVIVLQ4HM][Thread:88][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.IO.FileNotFoundException: C:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Users\002\02\2\DSC_0121.JPG
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 156
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 115
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 78
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 65
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 18:30:57,837 [WIN-SQUVIVLQ4HM][Thread:88][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.IO.FileNotFoundException: DSC_0120.JPG
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.GetThumbnail(String filename) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 29
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 159
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 115
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 78
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 65
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 18:30:57,837 [WIN-SQUVIVLQ4HM][Thread:89][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.IO.FileNotFoundException: DSC_0121.JPG
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.GetThumbnail(String filename) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 29
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 159
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 115
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 78
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 65
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 18:30:57,837 [WIN-SQUVIVLQ4HM][Thread:94][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.IO.FileNotFoundException: DSC_0122.JPG
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.GetThumbnail(String filename) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 29
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 159
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 115
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 78
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 65
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 18:32:04,013 [WIN-SQUVIVLQ4HM][Thread:96][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPolOptionsDTO(Int32 pollId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 440
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.PopulatePollDto(Vote item) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 485
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.<>c__DisplayClass11.<GetPublicPolls>b__a(Vote p) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPublicPolls() in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+2013-05-09 19:10:03,058 [WIN-SQUVIVLQ4HM][Thread:93][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.IO.FileNotFoundException: DSC_0122.JPG
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.GetThumbnail(String filename) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 29
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 159
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 115
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 78
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 65
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 19:10:03,058 [WIN-SQUVIVLQ4HM][Thread:95][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.IO.FileNotFoundException: DSC_0121.JPG
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.GetThumbnail(String filename) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 29
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 159
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 115
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 78
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 65
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 19:10:03,062 [WIN-SQUVIVLQ4HM][Thread:84][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.IO.FileNotFoundException: DSC_0120.JPG
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.GetThumbnail(String filename) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 29
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 159
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 115
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 78
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 65
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 20:18:32,113 [WIN-SQUVIVLQ4HM][Thread:6][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPolOptionsDTO(Int32 pollId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 440
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.PopulatePollDto(Vote item) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 485
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.<>c__DisplayClass11.<GetPublicPolls>b__a(Vote p) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPublicPolls() in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+2013-05-09 20:19:38,020 [WIN-SQUVIVLQ4HM][Thread:15][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.IO.FileNotFoundException: DSC_0120.JPG
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.GetThumbnail(String filename) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 29
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 159
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 115
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 78
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 65
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 20:19:38,020 [WIN-SQUVIVLQ4HM][Thread:10][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.IO.FileNotFoundException: DSC_0121.JPG
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.GetThumbnail(String filename) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 29
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 159
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 115
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 78
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 65
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 20:19:38,020 [WIN-SQUVIVLQ4HM][Thread:11][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.IO.FileNotFoundException: DSC_0122.JPG
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.GetThumbnail(String filename) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 29
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 159
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 115
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 78
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 65
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 20:21:51,133 [WIN-SQUVIVLQ4HM][Thread:38][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPolOptionsDTO(Int32 pollId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 440
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.PopulatePollDto(Vote item) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 485
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.<>c__DisplayClass11.<GetPublicPolls>b__a(Vote p) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPublicPolls() in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+2013-05-09 23:18:03,772 [WIN-SQUVIVLQ4HM][Thread:51][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.UriFormatException: Invalid URI: The format of the URI could not be determined.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPolOptionsDTO(Int32 pollId) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 440
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.PopulatePollDto(Vote item) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 485
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.<>c__DisplayClass11.<GetPublicPolls>b__a(Vote p) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPublicPolls() in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 264
+2013-05-09 23:23:44,321 [WIN-SQUVIVLQ4HM][Thread:65][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.ArgumentException: An item with the same key has already been added.
+   at System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   at DotNetNuke.Entities.Users.UserInfo.get_Social()
+   at DotNetNuke.Entities.Users.UserInfo.get_Roles()
+   at DotNetNuke.Entities.Users.UserInfo.IsInRole(String role)
+   at DotNetNuke.HttpModules.Membership.MembershipModule.AuthenticateRequest(HttpContextBase context, Boolean allowUnknownExtensinons)
+   at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 23:23:44,321 [WIN-SQUVIVLQ4HM][Thread:62][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Entities.Users.UserInfo.get_Roles()
+   at DotNetNuke.Entities.Users.UserInfo.IsInRole(String role)
+   at DotNetNuke.HttpModules.Membership.MembershipModule.AuthenticateRequest(HttpContextBase context, Boolean allowUnknownExtensinons)
+   at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 23:23:45,494 [WIN-SQUVIVLQ4HM][Thread:61][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Entities.Users.UserInfo.get_Roles()
+   at DotNetNuke.Entities.Users.UserInfo.IsInRole(String role)
+   at DotNetNuke.HttpModules.Membership.MembershipModule.AuthenticateRequest(HttpContextBase context, Boolean allowUnknownExtensinons)
+   at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-09 23:41:44,041 [WIN-SQUVIVLQ4HM][Thread:41][ERROR] DotNetNuke.Services.FileSystem.FileManager - System.IO.IOException: The process cannot access the file 'C:\Workspaces\Tipped\Websites\thvstage\Portals\0\Users\002\02\2\IMG_0210.JPG' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalDelete(String path, Boolean checkHost)
+   at DotNetNuke.Services.FileSystem.StandardFolderProvider.UpdateFile(IFolderInfo folder, String fileName, Stream content)
+   at DotNetNuke.Services.FileSystem.FileManager.AddFile(IFolderInfo folder, String fileName, Stream fileContent, Boolean overwrite, Boolean checkPermissions, String contentType)
+2013-05-09 23:41:44,190 [WIN-SQUVIVLQ4HM][Thread:41][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.ArgumentException: The path is not of a legal form.
+   at System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength)
+   at System.IO.Path.GetFullPath(String path)
+   at System.Drawing.IntSecurity.UnsafeGetFullPath(String fileName)
+   at System.Drawing.IntSecurity.DemandReadFileIO(String fileName)
+   at System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadWholeFile(HttpContext context, List`1 statuses) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 152
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.UploadFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 115
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.HandleMethod(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 78
+   at DotNetNuke.Modules.SocialPolls.FileTransferHandler.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\FileTransferHandler.ashx.cs:line 65
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)

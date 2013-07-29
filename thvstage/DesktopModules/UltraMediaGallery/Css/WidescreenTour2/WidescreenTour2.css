@@ -1,0 +1,269 @@
+.umg_wst
+{
+	position:relative;
+	overflow:hidden;
+
+	font-size:12px;
+    font-family: Tahoma, Arial, Helvetica;
+}
+
+.umg_wst .images
+{
+	width:100%;
+	height:100%;
+	left:0px;
+	top:0px;
+	position:absolute;
+}
+
+.umg_wst .images .image
+{
+	position:absolute;
+}
+
+.umg_wst .datahtml
+{
+	display:none;
+}
+
+.umg_wst .loading
+{
+	display:none;
+
+	width:32px;
+	height:32px;
+	background-image:url('loading.gif');
+}
+
+.umg_wst .albums
+{
+	position:absolute;
+}
+
+.umg_wst .albums .album
+{
+	float:left;
+	cursor:pointer;
+	background:#FFFFFF;
+	text-align:center;
+}
+
+.umg_wst .tooltip
+{
+	display:none;
+	position:absolute;
+}
+
+.umg_wst .tooltip .left
+{
+	padding:0px;
+	margin:0px;
+	width:12px;
+	height:31px;
+	float:left;
+	background-image:url('left.png');
+}
+
+.umg_wst .tooltip .right
+{
+	padding:0px;
+	margin:0px;
+	width:12px;
+	height:31px;
+	float:left;
+	background-image:url('right.png');
+}
+
+.umg_wst .tooltip .center
+{
+	padding:0px;
+	margin:0px;
+	vertical-align:top;
+
+	height:31px;
+	float:left;
+	color:#FFFFFF;
+	font-size:12px;
+	line-height:22px;
+	background-image:url('center.png');
+	background-position:center;
+}
+
+.umg_wst .thumbnails
+{
+	width:256px;
+	height:100%;
+	position:absolute;
+	left:0px;
+	top:0px;
+	background-image:url('bg.png');
+	background-position:center right;
+}
+
+.umg_wst .thumbonright
+{
+	background-image:url('bg2.png');
+	background-position:center left;
+}
+
+.umg_wst .thumbnails .inner
+{
+	width:216px;
+	left:17px;
+	top:20px;
+	position:absolute;
+	overflow:hidden;
+}
+
+.umg_wst .thumbnails .innerinner
+{
+	left:0px;
+	width:100%;
+	position:absolute;
+}
+
+.umg_wst .thumbnails .innerinner .thumbnail
+{
+	width:100%;
+	height:26px;
+	overflow:hidden;
+	font-size:12px;
+	color:#222222;
+	line-height:26px;
+	text-align:center;
+	text-decoration:none;
+	cursor:pointer;
+	background-image:url('thumbnormal.png');
+	background-position:top right;
+}
+
+.umg_wst .thumbnails .innerinner .lastItem
+{
+	background-image:url('thumbnormal_last.png');
+}
+
+.umg_wst .thumbnails .innerinner .hover
+{
+	color:#000000;
+	background-image:url('thumbover.png');
+}
+
+.umg_wst .thumbnails .innerinner .active
+{
+	color:#000000;
+	background-image:url('thumbactive.png');
+}
+
+.umg_wst .caption
+{
+	position:absolute;
+}
+
+.umg_wst .caption .simple
+{
+	color:#FFFFFF;
+	padding:5px;
+	text-align:left;
+	background-image:url('simplebg.png');
+}
+
+.umg_wst .caption .line
+{
+}
+
+.umg_wst .caption .line .left
+{
+	width:23px;
+	height:23px;
+	float:left;
+	background-image:url('lineleft.png');
+}
+
+.umg_wst .caption .line .right
+{
+	height:23px;
+	line-height:23px;
+	padding-right:23px;
+	float:left;
+	white-space:nowrap;
+	background-image:url('lineright.png');
+	background-position:right;
+}
+
+.umg_wst .buttons
+{
+	position:absolute;
+}
+
+.umg_wst .buttons .prev
+{
+	background-image:url('buttons.png');
+	background-repeat:no-repeat;
+	display:block;
+	width:20px;
+	height:20px;
+	float:left;
+	cursor:pointer;
+}
+
+.umg_wst .buttons .prevactive
+{
+	background-position:0 -20px;     
+}
+
+.umg_wst .buttons .next
+{
+	background-image:url('buttons.png');
+	background-repeat:no-repeat;
+	background-position: -42px 0;
+	display:block;
+	width:20px;
+	height:20px;
+	float:left;
+	cursor:pointer;
+}
+
+.umg_wst .buttons .nextactive
+{
+		background-position:-42px -20px;  
+}
+
+.umg_wst .buttons .play
+{
+	background-image:url('buttons.png');
+	background-repeat:no-repeat;
+	background-position: -21px 0;
+	display:block;
+	width:20px;
+	height:20px;
+	float:left;
+	cursor:pointer;
+}
+
+.umg_wst .buttons .playactive
+{
+	background-position:-21px -20px;    
+}
+
+
+.umg_wst .buttons .pause
+{
+	background-position: -21px -40px;
+}
+
+.umg_wst .buttons .pauseactive
+{
+	background-position: -21px -60px;
+}
+
+.umg_wst .fold
+{
+	position:absolute;
+	cursor:pointer;
+}
+
+.umg_wst .nextItem
+{
+	position:absolute;
+	overflow:hidden;
+}

@@ -1,0 +1,159 @@
+﻿<div class="polldetail" data-bind="with: poll">
+    
+    <div class="span">
+        <div class="row  poll-view-header outer-shadow">
+            <div class="span">
+                <a href="#" class="viewIcon">
+                    <img data-bind=" attr: { src: pollIconUrl }" />
+                </a>
+            </div>
+            <div class="span1 profile-picture-wrapper">
+                <a href="#">
+                    <img data-bind="attr: { src: $parent.UserProfilePictureUrl }" />
+                    <!--  -->
+                </a>
+            </div>
+            <div class="span4 blueTheme  ">
+                <blockquote>
+                    <h3 data-bind="text: OwnerDisplayName"></h3>
+                    <p data-bind="text: Question "></p>
+                    <small>
+                        <span data-bind="text: pollTypeName"></span>,
+                            created <span data-bind="text: CreatedOn"></span>
+                    </small>
+                </blockquote>
+            </div>
+        </div>
+
+        <div class="row content outer-shadow">
+            <div class="span3">
+                <header>
+                    <h3>POLL RESULTS:</h3>
+                    <div>Choose & view this poll results</div>
+                </header>
+
+                <div>
+
+                    <button class="btn vote-btn" id="voteSelection"
+                        data-bind="click: $root.saveVote, visible: !$root.canViewResults() && IsSelectionPoll()">
+                        select</button>
+
+                    <div id="voteBool" data-bind="visible: IsBoolPoll() && !$root.canViewResults()">
+                        <span>
+                            <button data-bind="click: $root.saveVote"
+                                id="yes" class="btn">
+                                Yes</button></span>
+                        <span>
+                            <button data-bind="click: $root.saveVote"
+                                id="no" class="btn">
+                                No</button></span>
+                    </div>
+
+                    <div id="internaRating"  data-bind="visible: IsRatePoll() && !$root.canViewResults()">
+                        <div data-bind="starRating: PollOptions()[0].Rating, isDisplay: false,
+                            numOfStars: 5, handleAfterRating: $root.handleAfterRating">
+                        </div>
+                    </div>
+
+
+                    <ul class="unstyled result-image"
+                        data-toggle="buttons-radio"
+                        data-bind="foreach: { data: PollOptions }, visible: IsSelectionPoll()">
+                        <li style="cursor: pointer" class="btn"
+                            data-bind="css: { active: $parent.LeadingOptionUrl() == OptionImageUrl() }">
+                            <div class="double-divider"></div>
+
+                            <div class="pull-left">
+                                <img class=" outer-shadow"
+                                    data-bind="attr: { src: getPrevThumbnailHdl(), id: OptionId(), }" />
+                            </div>
+                            <div class="pull-left">
+                                <div>
+                                    <span data-bind="visible: !$root.canViewResults()">0</span>
+                                    <span data-bind="text: Proportion, visible: $root.canViewResults()"></span>%
+                                </div>
+                                <div class="results-icon  pull-right">
+                                    <span><i class="icon-user"
+                                        data-bind="style: { color: ResultsIconColor }"></i></span>
+                                    <span data-bind="text: Count, visible: $root.canViewResults()"></span>
+                                    <span data-bind="visible: !$root.canViewResults()"></span>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- ko compose:{ view:$parent.currentView()} -->
+
+                <!-- /ko -->
+
+
+                <ul id="ratepoll-results" class="unstyled" 
+                    data-bind="foreach: RatingDistribution, visible: IsRatePoll()">
+                    <li style="color: white">
+                        <ul class="unstyled nav">
+                            <li data-bind="starRating: Key, numOfStars: Key, isDisplay: true"></li>
+                            <li class="icon-user" data-bind="style: { color: color }"></li>
+                            <li data-bind="text: Count, visible: $root.canViewResults()"></li>
+                            <li data-bind="visible: !$root.canViewResults()">0</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <div class="clear"></div>
+                <div class="double-divider"></div>
+                <div style="color: white; padding: 4px 5px;">
+                    <span data-bind="visible: IsSelectionPoll()">Leading: <i class="icon-user" style="color: #77A327"></i></span>
+                    <span data-bind="visible: IsRatePoll()">Average Rate: 
+                        <strong data-bind="text: (IsRatePoll() ? AverageRating : '')"></strong>
+                    </span>
+                </div>
+            </div>
+            <div class="selected-image">
+
+                <img data-bind="attr: { src: $parent.mainImageUrl }" />
+                <!--  -->
+            </div>
+
+
+        </div>
+    </div>
+    <div class="span">
+     <!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_floating_style addthis_32x32_style">
+    <a class="addthis_button_facebook" 
+        data-bind="attr: { 'addthis:url': addthisUrl(),'addthis:title': Question() }" ></a>
+    <a class="addthis_button_twitter"
+         data-bind="attr: { 'addthis:url': addthisUrl(), 'addthis:title': Question() }"></a>
+    <a class="addthis_button_pinterest_share"
+         data-bind="attr: { 'addthis:url': addthisUrl(), 'addthis:title': Question() }"></a>
+    <a data-bind="event: { click: $parent.flag }" class="btn btn-square btn-small">
+        <i class="icon-flag"></i>
+    </a>
+</div>
+
+<script type="text/javascript">
+    var addthis_config = { "data_track_addressbar": true };
+</script>
+<script type="text/javascript" 
+    src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5169b23564677551"></script>
+<!-- AddThis Button END -->  
+    </div>
+</div>
+<div class="clear"></div>
+<div id="pollVoters" class="span">
+    <h3><span data-bind="text: totalVoters()"></span> Voters</h3>
+    <ul data-bind="foreach: { data: pollVoters }" class="unstyled inline">
+        <li><a>
+            <img data-bind="attr: { src: $parent.getProfileUrl($data, 45, 45) }" />
+        </a>
+        </li>
+    </ul>
+    <div class="pull-right">
+        <i class="icon-plus"></i>
+        <span data-bind="text: votersLeft()"></span>
+        <span> Voters</span>
+    </div>
+</div>
+
+<div id="pollDetailModal"></div>

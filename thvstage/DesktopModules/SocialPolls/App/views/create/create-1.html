@@ -1,0 +1,21 @@
+﻿<div id="create-1">
+  <div class="clear"></div>
+    <div id="selectTypeIcons">
+        <label>Please select the type of poll that you want to create</label>
+        <ul id="TypeSelectorControl" class="thumbnails" data-toggle="buttons-radio"
+            data-bind="foreach: { data: PollTypeList }">
+            <li class="TypeSelector"
+                 data-bind= "event: { click: $parent.SelectTypeId.bind($parent, VoteTypeID()) }">
+                <a class="btn">
+                    <img class="pull-left"
+                        data-bind="attr: { id: VoteTypeID, src: bigVoteTypeImageUrl }"/>
+                    <!-- ko text:VoteTypeTitle -->
+                    <!-- /ko -->
+                </a>
+            </li>
+        </ul>
+
+    </div>
+  
+</div>
+

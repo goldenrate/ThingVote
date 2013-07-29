@@ -1,0 +1,36 @@
+﻿<div id="pollOptions">
+    <ul id="optionsList" class="unstyled"
+        data-bind="foreach: { data: PollOptions }"
+        data-toggle="buttons-radio">
+        <li data-bind="attr: { id: $parent.PollId }">
+            <div class="previewImageContainer">
+                <img data-bind="attr: { src: getPrevThumbnailHdl(), id: OptionId() }" />
+            </div>
+        </li>
+        <!--  -->
+        <li class="voteAction low-opacity" id="booleanOption"
+            data-bind="visible: $parent.IsBoolPoll">
+            <div class="">
+                <span>
+                    <button id="yes" class="btn">Yes</button></span>
+                <span>
+                    <button id="no" class="btn">No</button></span>
+            </div>
+        </li>
+        <li class="ratingOption  low-opacity" id="ratingOptions"
+            data-bind="visible: $parent.IsRatePoll">
+            <div class="ratingControl">
+                <div id="internaRating" class="well">
+                    <div class="ratingTitle"><em>Rate</em></div>
+                    <div data-bind="starRating: Rating, isDisplay: false,
+                            numOfStars: 5, handleAfterRating: $root.handleAfterRating">
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="selectionOption voteAction low-opacity"
+            data-bind="visible: $parent.IsSelectionPoll">
+            <button class="btn">Select this</button>
+        </li>
+    </ul>
+</div>

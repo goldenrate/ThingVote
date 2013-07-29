@@ -1,0 +1,185 @@
+﻿<button data-bind="click: postfb" class="hide">post poll to facebook</button>
+<section id="editpoll" class="StepWrapper" data-bind="with: Poll">
+    <div class="span5">
+        <div id="createHeader" class="hide">
+            <ul class="unstyled-horizontal">
+                <li >
+                    <div style="width:80px; height: 80px; overflow: hidden;">
+                    <img data-bind="attr: { src: $parent.UserProfilePictureUrl() }"
+                        style="width: 85px;"/></div>
+                </li>
+                <li style="width:450px; ">
+                    <small style="font-style:italic; color:#334051">
+                        Congratulation 
+                        <em style="font-weight:bold; color:#1A6095;" 
+                            data-bind="text: $parent.DisplayName()"></em>
+                        lorem ipsum sit amet dilum barpum saturated  
+                    </small>
+                    <p style="color:#010101; font-size:18px;">Now Lets Build Your Poll</p>
+                </li>
+            </ul>
+        </div>
+
+        <div id="selectTypeIcons" class="controls" style="border:none;">
+             <h5><i class="icon-asterisk"></i>
+                select poll type</h5>
+            <ul id="TypeSelectorControl" class="thumbnails" data-toggle="buttons-radio"
+                data-bind="foreach: { data: $parent.PollTypeList }">
+                <li class="TypeSelector">
+                    <a class="btn" >
+                        <img class="pull-left"
+                            data-bind="attr: { id: VoteTypeID, src: bigVoteTypeImageUrl }" />
+                        <!-- ko text:VoteTypeTitle -->
+                        <!-- /ko -->
+                    </a>
+                </li>
+            </ul>
+            <div class="notes">
+            <span data-bind="text: pollTypeName"></span>
+            <span> poll selected</span></div>
+        </div>
+
+        <div class="controls" data-bind="validator: $parent.childForm">            
+            <ul class="unstyled-horizontal">
+                <li style="width:370px;"> <h5><i class="icon-asterisk"></i>ask your friends</h5></li>
+                <li> <small><strong id="charLeft">90</strong> charecters left</small></li>
+            </ul>
+            <textarea id="txtQustion"
+                name="txtQustion"
+                class="required-field span5" rows="8"
+                data-bind="value: Question, charLeft: Question,
+                maxLength: 90, messageId: 'charLeft'"></textarea>
+            <div></div>
+        </div>
+        
+        <div class="controls">
+                <h5><i class="icon-asterisk"></i>add poll images</h5>
+                <div id="FileUploader">
+                    <div id="imageUploadScope"
+                        data-bind="uploadHandler: $parent.doneUploadHandler,
+                            tnMaxW: $parent.tnMaxWith(), tnmaxH: $parent.tnMaxHeight(),
+                            limitMFUploads: filesLimit(), isSingle: !IsSelectionPoll(),
+                            fileHandlerUrl: $parent.fileHandlerUrl ">
+                        <button id="imageUploaderTrigger"
+                            class="btn rounded-corners">
+                            Browse...</button>
+                        <input id="imagesUploader"
+                            name="ximagesUploader"
+                            class="poll-image-upload hide"
+                            type="file" multiple="multiple" />
+                        <div class="progress progress-success">
+                            <div class="bar" style="width: 0%; "></div>
+                        </div>
+                    </div>
+                     <div class="notes">
+                    <span>upload 2-images, max file size (2MB)</span>
+                         </div>
+                </div>
+            
+        </div>
+
+        <div class="controls" data-bind="validator: $parent.childForm">
+                <h5><i class="icon-asterisk"></i>select category</h5>                
+                <select id="selectPollCategory"
+                    name="selectPollCategory"
+                    class="required-field"
+                    data-bind="options: $parent.PollCategories,
+                        optionsText: 'Name',
+                        value: SelectedCategoryId,
+                        optionsValue: 'CategoryID', optionsCaption: 'Select...'">
+                </select>
+           
+        </div>
+        
+        <div class="controls">
+            <ul class="inline ">
+                <li style="padding-left: 0px;">
+                    <label class="radio inline" style="padding-left: 0px;">
+                        <strong>Who can vote on this poll?</strong>
+
+                    </label>
+                </li>
+                <li>
+                    <label class="radio inline">
+                        <input type="radio" value="0" name="PostingGroup" id="rbEveryone"
+                            data-bind="checked: IsPublicPoll" />
+                        Everyone
+                    </label>
+                </li>
+                <li>
+                    <label class="radio inline" style="white-space: nowrap">
+                        <input type="radio" value="1" name="PostingGroup" id="rbFollowersOnly"
+                            data-bind="checked: IsFollowersPoll" />
+                        My Followers Only
+                    </label>
+                </li>
+            </ul>
+        </div>
+
+        <div class="clear"></div>
+    
+</div>
+
+    <div class="span3">
+        <div class="pollItem outerShadow pull-right">
+        <div class="pollActions previewBlock">
+            <a href="#" class="viewIcon">
+                <img data-bind=" attr: { src: pollIconUrl }" />
+            </a>
+            <a class="btn dropdown-toggle actionIcon"
+                data-toggle="dropdown" href="#">
+                <span class="caret"></span>
+            </a>
+        </div>
+        <div class="pollHeader  previewBlock">
+            <div class="blueTheme">
+                <h4 data-bind="text: OwnerDisplayName"></h4>
+            </div>
+            <div style="font-size: 75%">
+                <span data-bind="text: pollTypeName"></span>,
+                    created <span data-bind="text: CreatedOn"></span>
+            </div>
+            <div id="previewUserInfo" class=" blueTheme">
+                <img id="previewProfileImage"
+                    data-bind="attr: { src: userPreviewProfilePicture }" />
+                <div class="clear"></div>
+            </div>
+
+        </div>
+        <div class="pollImages previewBlock">
+            <div id="pollOptions">
+                <ul id="optionsList" class="unstyled"
+                    data-bind="foreach: { data: PollOptions }">
+                    <li>
+                        <div class="previewImageContainer" data-bind="visible: !displayPlaceholder()">
+                             <button data-bind="event: { click: deleteUrl }">
+                                    <i class="icon-remove"></i></button>
+                            <img data-bind="attr: { src: getPrevThumbnailHdl(), id: OptionId }" />
+                        </div>
+                        <div class="previewPlaceHolder"  data-bind="visible: displayPlaceholder()">
+                            <i class="icon-camera "></i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+            </div>
+    </div>
+
+</section>
+<div class="clear"></div>
+<section id="editpollFooter">
+    <ul class="unstyled-horizontal">
+        <li style="width:650px;">
+            <em>Don't forget</em><span data-bind="text:FirstName()"></span>
+            you want be able to change images or text on your post so please
+            make sure that everything is correct and then click on "I'm done,
+            post my poll" button.
+        </li>
+        <li>
+            <button data-bind="click:save" 
+                class="btn btn-primary">i'm done post my poll</button>
+        </li>
+    </ul>
+</section>
+<!--<button data-bind="click:validate">validate</button>-->

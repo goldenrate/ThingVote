@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>1.3</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+
+	<data name="RowsAndColumns.Text">
+		<value>Rows &amp; Columns</value>
+	</data>
+	<data name="BackColor.Text">
+		<value>Back Color</value>
+	</data>
+	<data name="UseReloadButton.Text">
+		<value>Use reload button</value>
+	</data>
+	<data name="LinkLabel.Text">
+		<value>Link Label</value>
+	</data>
+	<data name="AmazonS3.Text">
+		<value>Amazon S3</value>
+	</data>
+	<data name="AmazonS3Enabled.Text">
+		<value>It seems you enabled Amazon S3 integration on this website, you may not see your pictures in this agllery after the file is moved to amazon server, to fix this problem you need to upload /DesktopModules/UltraMediaGallery/crossdomain.xml to the root of your s3 bucket.</value>
+	</data>
+	<data name="Upload.Text">
+		<value>Click here to upload</value>
+	</data>
+	<data name="FileUploaded.Text">
+		<value>Successfully uploaded crossdomain.xml</value>
+	</data>
+	<data name="FailedToUpload.Text">
+		<value>Failed to upload crossdomain.xml, you can manually upload it in Firefox with S3FOX plugin.</value>
+	</data>
+</root>

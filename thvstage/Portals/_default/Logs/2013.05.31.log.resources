@@ -1,0 +1,78 @@
+2013-05-31 13:43:18,605 [WIN-SQUVIVLQ4HM][Thread:36][ERROR] DotNetNuke.Services.Exceptions.Exceptions - Resource Not Found: - /profilepic.ashx?userId=undefined&h=45&w=45
+System.Web.HttpException (0x80004005): Resource Not Found
+2013-05-31 13:43:18,659 [WIN-SQUVIVLQ4HM][Thread:36][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): Resource Not Found
+   at DotNetNuke.Services.Exceptions.Exceptions.ProcessHttpException(HttpException exc, String URL)
+   at DotNetNuke.Services.UserProfile.UserProfilePicHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-31 14:33:23,796 [WIN-SQUVIVLQ4HM][Thread:48][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'VoteTitle', table 'thv_alpha.dbo.ASPvia_SocialVotes_Vote'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at ASPvia.SocialVotes.DataAccess.VoteDataAccess.Save(Vote vote) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\DataAccess\VoteDataAccess.cs:line 49
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.Create(PollDTO data) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 124
+ClientConnectionId:d1c94beb-8407-42b4-8694-154b8975fe6f
+2013-05-31 14:46:09,676 [WIN-SQUVIVLQ4HM][Thread:39][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Data.SqlClient.SqlException (0x80131904): Violation of UNIQUE KEY constraint 'IX_FolderPath'. Cannot insert duplicate key in object 'dbo.Folders'. The duplicate key value is (0, Users/009/).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at PetaPoco.Database.ExecuteScalar[T](String sql, Object[] args)
+   at DotNetNuke.Data.SqlDataProvider.ExecuteScalar[T](String procedureName, Object[] commandParameters)
+   at DotNetNuke.Data.DataProvider.AddFolder(Int32 portalId, Guid uniqueId, Guid versionGuid, String folderPath, Int32 storageLocation, Boolean isProtected, Boolean isCached, DateTime lastUpdated, Int32 createdByUserID, Int32 folderMappingID)
+   at DotNetNuke.Services.FileSystem.FolderManager.AddFolder(IFolderInfo folder)
+   at DotNetNuke.Services.FileSystem.FolderManager.CreateFolderInDatabase(Int32 portalID, String folderPath, Int32 folderMappingID)
+   at DotNetNuke.Services.FileSystem.FolderManager.AddFolder(FolderMappingInfo folderMapping, String folderPath)
+   at DotNetNuke.Services.FileSystem.FolderManager.AddUserFolder(UserInfo user)
+   at DotNetNuke.Services.FileSystem.FolderManager.GetUserFolder(UserInfo userInfo)
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_UserFolderUrl() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 192
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_UserFolder() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 208
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_StorageRoot() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 166
+   at DotNetNuke.Modules.SocialPolls.Thumbnail.DeliverFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Thumbnail.ashx.cs:line 66
+   at DotNetNuke.Modules.SocialPolls.Thumbnail.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Thumbnail.ashx.cs:line 53
+ClientConnectionId:0aa100c0-44c6-4745-92ef-f8525fcc29d9
+2013-05-31 14:46:09,676 [WIN-SQUVIVLQ4HM][Thread:48][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Data.SqlClient.SqlException (0x80131904): Violation of UNIQUE KEY constraint 'IX_FolderPath'. Cannot insert duplicate key in object 'dbo.Folders'. The duplicate key value is (0, Users/009/).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at PetaPoco.Database.ExecuteScalar[T](String sql, Object[] args)
+   at DotNetNuke.Data.SqlDataProvider.ExecuteScalar[T](String procedureName, Object[] commandParameters)
+   at DotNetNuke.Data.DataProvider.AddFolder(Int32 portalId, Guid uniqueId, Guid versionGuid, String folderPath, Int32 storageLocation, Boolean isProtected, Boolean isCached, DateTime lastUpdated, Int32 createdByUserID, Int32 folderMappingID)
+   at DotNetNuke.Services.FileSystem.FolderManager.AddFolder(IFolderInfo folder)
+   at DotNetNuke.Services.FileSystem.FolderManager.CreateFolderInDatabase(Int32 portalID, String folderPath, Int32 folderMappingID)
+   at DotNetNuke.Services.FileSystem.FolderManager.AddFolder(FolderMappingInfo folderMapping, String folderPath)
+   at DotNetNuke.Services.FileSystem.FolderManager.AddUserFolder(UserInfo user)
+   at DotNetNuke.Services.FileSystem.FolderManager.GetUserFolder(UserInfo userInfo)
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_UserFolderUrl() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 192
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_UserFolder() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 208
+   at DotNetNuke.Modules.SocialPolls.FileHandlerBase.get_StorageRoot() in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Components\FileHandlerBase.cs:line 166
+   at DotNetNuke.Modules.SocialPolls.Thumbnail.DeliverFile(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Thumbnail.ashx.cs:line 66
+   at DotNetNuke.Modules.SocialPolls.Thumbnail.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Thumbnail.ashx.cs:line 53
+ClientConnectionId:c7ed3154-4759-4628-89df-2851e2b454f0
+2013-05-31 14:46:09,717 [WIN-SQUVIVLQ4HM][Thread:39][ERROR] DotNetNuke.Services.Exceptions.Exceptions - Resource Not Found: - /DesktopModules/SocialPolls/Thumbnail.ashx?f=option1&tnmaxwidth=200&tnmaxheight=205&ownerId=9
+System.Web.HttpException (0x80004005): Resource Not Found
+2013-05-31 14:46:09,753 [WIN-SQUVIVLQ4HM][Thread:48][ERROR] DotNetNuke.Services.Exceptions.Exceptions - Resource Not Found: - /DesktopModules/SocialPolls/Thumbnail.ashx?f=option0&tnmaxwidth=200&tnmaxheight=205&ownerId=9
+System.Web.HttpException (0x80004005): Resource Not Found
+2013-05-31 14:46:09,754 [WIN-SQUVIVLQ4HM][Thread:39][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): Resource Not Found
+   at DotNetNuke.Services.Exceptions.Exceptions.ProcessHttpException(HttpException exc, String URL)
+   at DotNetNuke.Modules.SocialPolls.Thumbnail.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Thumbnail.ashx.cs:line 58
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-05-31 14:46:09,767 [WIN-SQUVIVLQ4HM][Thread:48][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): Resource Not Found
+   at DotNetNuke.Services.Exceptions.Exceptions.ProcessHttpException(HttpException exc, String URL)
+   at DotNetNuke.Modules.SocialPolls.Thumbnail.ProcessRequest(HttpContext context) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Thumbnail.ashx.cs:line 58
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)

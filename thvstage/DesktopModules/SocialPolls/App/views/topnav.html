@@ -1,0 +1,76 @@
+﻿<div id="TopNav" class="navbar">
+
+    <!-- -->
+    <div data-bind="foreach: router.visibleRoutes" class="hide">
+        <a data-bind="css: { active: isActive }, attr: { href: hash }, html: name"></a>
+
+    </div>
+    <div class="navbar-inner">
+        <div class="container">
+            <a href="App.aspx#/index" class="brand">
+                <img src="DesktopModules/SocialPolls/Images/thvLogoBlack.png" />
+            </a>
+            <div class="navbar">
+                <ul id="polls-action" class="nav ">
+                    <li>
+                        <a id="createModalBtn" class="linear-grad-blue-btn"
+                            data-bind="event: { click: showCreateModal }">
+                            <i class="icon-edit"></i>ADD NEW POLL</a>
+                    </li>
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle">Everything<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <!-- <li class="divider"></li>-->
+                            <li><a href="#" data-bind="click: applyPopular">Popular</a></li>
+                            <li><a href="#"  data-bind="click: popupCategorySelector">By Category</a></li>
+                        </ul>
+                    </li>
+                    <li id="notificationsIcon" data-bind="click: gotoNotifications">
+                        <div class="inner" data-bind="text: getNotificationsCount()"></div>
+                        <i class="icon-rss icon-rotate-90"></i>
+                    </li>
+                </ul>
+                <ul id="searchBar" class="nav pull-right">
+                    <li id="search">
+                        <div class="input-append">
+                            <input type="text" id="appendedInputButtons" class="span2"
+                                data-bind="value: searchTerm, event: { keyup: onEnterbasicSearch }">
+                            <button type="button" data-bind="click:basicSearch"
+                                class="btn"><i class="icon-search"></i></button>
+                        </div>
+                    </li>
+                    <li id="user">
+                        <a data-bind="attr: { href: goToUser('Polls') }">
+                            <div style="width: 30px; height: 30px; overflow: hidden">
+                                <img data-bind=" attr: { src: userUrl() }" style="width: 30px" />
+                            </div>
+
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#"><b class="caret"></b></a>
+                        <ul id="user-menu" class="dropdown-menu">
+                            <li><a class="user-menu-link" id="editProfile">Edit Profile</a></li>
+                            <li><a class="user-menu-link" id="editSettings">Edit Settings</a></li>
+                            <li><a class="user-menu-link" id="editAccount">Edit Account</a></li>
+                            <li class="divider"></li>
+                            <li class="hide"><a class="user-menu-link" href="#notifications">Notifications</a></li>
+                            <li><a href="#inviteFriends"  
+                                data-bind="event: { click: inviteFriends }">
+                                <i class="icon-facebook"></i> 
+                                Invite Friends</a></li>
+                            <li class="divider"></li>
+                            <li><a data-bind="attr: { href: logout() }">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div data-bind="compose: { model: Modal }"></div>
+
+<div id="topnavModal"></div>
+

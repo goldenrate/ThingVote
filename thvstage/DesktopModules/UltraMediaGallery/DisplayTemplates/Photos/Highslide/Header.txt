@@ -1,0 +1,35 @@
+[HIGHSLIDE]
+<script type="text/javascript">
+var columnCount = 0;
+var columnsDesired = 5;
+
+// 830126e595ae5776b3745d836be3b5ba
+
+hs.graphicsDir = '[MODULEPATH]css/highslide/graphics/';
+hs.showCredits = false;
+hs.align = 'center';
+hs.transitions = ['expand', 'crossfade'];
+hs.outlineType = 'rounded-white';
+hs.fadeInOut = true;
+//hs.dimmingOpacity = 0.75;
+
+// Add the controlbar
+hs.addSlideshow({
+	slideshowGroup: 2,
+	interval: 5000,
+	repeat: false,
+	useControls: true,
+	fixedControls: 'fit',
+	overlayOptions: {
+		opacity: .75,
+		position: 'bottom center',
+		hideOnMouseOut: true
+	}
+});
+</script>
+
+<link rel="stylesheet" type="text/css" href="[MODULEPATH]css/highslide/highslide.css" />
+
+<div class="highslide-gallery">
+<table>
+<tr>

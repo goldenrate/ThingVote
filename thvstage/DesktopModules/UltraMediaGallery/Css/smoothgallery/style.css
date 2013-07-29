@@ -1,0 +1,195 @@
+/* component holder */
+#componentWrapper{
+	position:relative;
+}
+
+/* playlist holder (hidden) */
+#componentWrapper .componentPlaylist{
+	display:none;
+}
+
+
+
+
+
+
+
+
+
+/* slideshow controls */
+#componentWrapper .slideshow_controls{
+	position:absolute;
+	width:100px;
+	height:30px;
+	top:10px;
+	left:-50px;
+	margin-left:50%;
+	/*background:red;*/
+	display:none;
+}
+
+#componentWrapper .controls_prev, .controls_toggle, .controls_next{
+	position:absolute;
+	width:30px;
+	height:30px;
+	top:0px;
+}
+
+#componentWrapper .controls_prev{
+	left:0px;
+}
+
+#componentWrapper .controls_toggle{
+	left:33px;
+}
+
+#componentWrapper .controls_next{
+	left:66px;
+}
+
+
+
+
+/* data_controls */
+#componentWrapper .data_controls{
+	position:absolute;
+	width:70px;
+	height:30px;
+	top:10px;
+	left:10px;
+}
+
+/* link */
+#componentWrapper .link_toggle{
+	position:relative;
+	width:30px;
+	height:30px;
+	top:0px;
+	left:0px;
+	float:left;
+	display:none;
+}
+
+/* description */
+#componentWrapper .info_toggle{
+	position:relative;
+	width:30px;
+	height:30px;
+	top:0px;
+	left:0px;
+	float:left;
+	margin-right:10px;
+	display:none;
+}
+
+#componentWrapper .info_holder{
+	position:absolute;
+	top:50px;
+	left:10px;
+	
+	color:#e5e5e5;
+	padding: 10px 20px 15px 20px;
+	
+	/* http://www.google.com/webfonts */
+	font-family: 'Terminal Dosis', sans-serif;
+	
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-o-border-radius: 20px;
+	
+	/* Fallback for web browsers that doesn't support RGBa */
+	background: rgb(0, 0, 0) transparent;
+	/* RGBa with 0.6 opacity */
+	background: rgba(0, 0, 0, 0.6);
+	/* For IE 5.5 - 7*/
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+	/* For IE 8*/
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+
+	display:none;
+}
+
+#componentWrapper .info_holder a{
+	color:#e5e5e5;
+	text-decoration:underline;
+}
+
+#componentWrapper .info_holder a:hover, a:active{
+	text-decoration:underline;
+}
+
+
+
+
+
+/* playlist toggle */
+#componentWrapper .playlist_toggle{
+	position:absolute;
+	width:30px;
+	height:30px;
+	display:none;
+}
+
+
+
+
+
+/* menu. You can change font color, font-family or font-size here. */
+#componentWrapper .menu_item{
+	position:absolute;
+	/*background:#9a6;*/
+	color:#fff;
+	/* http://www.google.com/webfonts */
+	font-family: 'Terminal Dosis', sans-serif;
+	font-size:20;
+}
+
+
+
+
+/* preloader */
+#componentWrapper .componentPreloader{
+	display:none;
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin:-25px 0px 0px -25px;
+	background:#000 url('images/loader.gif') no-repeat center center;
+	width:50px;
+	height:50px;
+	z-index:999;
+	opacity:0.7;
+}
+
+
+
+
+#publicFunctions{
+	position:absolute;
+	top:50px;
+	left:50px;
+	z-index:99999;
+	background:#ccc;
+	padding:20px;
+	display:none;
+}
+
+#publicFunctions li{
+	text-decoration:none;	
+	list-style: none;
+}
+
+#publicFunctions li a{
+	color:white;
+}
+
+#publicFunctions p{
+	color:white;
+}
+
+
+
+/* font calculations */
+#componentWrapper .fontMeasure{
+	visibility:hidden;
+}

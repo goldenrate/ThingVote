@@ -1,0 +1,38 @@
+﻿--Alter procedure
+ALTER PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_CartItemAdd
+	@PortalId int,
+	@UserId int,
+	@PhotoId int,
+	@DownloadId int,
+	@Tn nvarchar(200),
+	@Title nvarchar(150),
+	@Description nvarchar(1000),
+	@CreatedDate datetime
+AS
+
+IF EXISTS(SELECT * FROM {objectQualifier}BizModules_UPG_CartItem WHERE [PortalId] = @PortalId AND [UserId] = @UserId AND [PhotoId] = @PhotoId)
+	RETURN -1
+
+INSERT INTO {objectQualifier}BizModules_UPG_CartItem (
+	[PortalId],
+	[UserId],
+	[PhotoId],
+	[DownloadId],
+	[Tn],
+	[Title],
+	[Description],
+	[CreatedDate]
+) VALUES (
+	@PortalId,
+	@UserId,
+	@PhotoId,
+	@DownloadId,
+	@Tn,
+	@Title,
+	@Description,
+	@CreatedDate
+)
+
+select SCOPE_IDENTITY()
+GO
+

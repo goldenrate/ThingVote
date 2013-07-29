@@ -1,0 +1,72 @@
+﻿<article id="editsettings" class=" form-horizontal">
+
+    <section id="emailNotifications">
+        <h5>Email Notifications Settings</h5>
+        <div class="control-group">
+            <label class="control-label wide-label" for="VotesOnPolls">Votes on your polls:</label>
+            <div class="controls"
+                data-bind="toggleButtons: VotesOnPolls(),
+                    On: on, off: off, clickHandler: settingsHandler ">
+                <div id="VotesOnPolls" class="btn-group"
+                    data-toggle="buttons-radio">
+                    <button class="btn">ON</button>
+                    <button class="btn">OFF</button>
+                </div>
+                <i class="results-icon"></i>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label wide-label" for="VotesOnVotedPolls">Votes on polls you voted:</label>
+            <div class="controls"
+                data-bind="toggleButtons: VotesOnVotedPolls(), On: on, off: off, clickHandler: settingsHandler  ">
+                <div id="VotesOnVotedPolls" class="btn-group" data-toggle="buttons-radio">
+                    <button class="btn">ON</button>
+                    <button class="btn">OFF</button>
+                </div>
+                 <i class="results-icon"></i>
+            </div>
+            
+        </div>
+
+        <div class="control-group">
+            <label class="control-label wide-label" for="FriendsJoined">Friends joined:</label>
+            <div class="controls"
+                data-bind="toggleButtons: FriendsJoined(), On: on, off: off,
+                            clickHandler: settingsHandler  ">
+                <div id="FriendsJoined" class="btn-group" data-toggle="buttons-radio">
+                    <button class="btn">ON</button>
+                    <button class="btn">OFF</button>
+                </div>
+                 <i class="results-icon"></i>
+            </div>
+            
+        </div>
+    </section>
+    <section id="facebookSettings">
+        <h5>Facebook Settings</h5>
+        <div class="control-group">
+            <label class="control-label wide-label" for="FaceConnect">Facebook Connect:</label>
+            <div class="controls" data-bind="toggleButtons: FacebookConnect(), On: on, off: off, clickHandler: settingsHandler ">
+                <div id="FacebookConnect" class="btn-group" data-toggle="buttons-radio">
+                    <button class="btn">ON</button>
+                    <button class="btn">OFF</button>
+                </div>
+                 <i class="results-icon"></i>
+            </div>
+            
+        </div>
+        <div class="control-group">
+            <label class="control-label wide-label" for="FaceTimeline">Publish to Facebook timeline:</label>
+            <div class="controls" data-bind="toggleButtons: FacebookTimeline(), On: on, off: off, clickHandler: settingsHandler ">
+                <div id="FacebookTimeline" class="btn-group" data-toggle="buttons-radio">
+                    <button class="btn">ON</button>
+                    <button class="btn">OFF</button>
+                </div>
+                 <i class="results-icon"></i>
+            </div>
+            
+        </div>
+
+    </section>
+
+</article>

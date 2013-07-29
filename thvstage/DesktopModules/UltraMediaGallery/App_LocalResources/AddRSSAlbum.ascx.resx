@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>1.3</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+
+	<data name="AddRSSAlbum.Help">
+		<value>&lt;ol class="Normal"&gt;&lt;li&gt;You can subscribe to a Picasa or Flickr RSS feed.&lt;/li&gt;&lt;li&gt;Any other RSS feed with media RSS(MRSS) extension is also accepted.&lt;/li&gt;&lt;/ol&gt;</value>
+	</data>
+
+	<data name="ParentAlbum.Text">
+		<value>Parent</value>
+	</data>
+	<data name="ParentAlbum.Help">
+		<value>The parent album of this new created album</value>
+	</data>
+	<data name="NoParentAlbum.Text">
+		<value>No parent, place in gallery root</value>
+	</data>
+	<data name="Required.Text">
+		<value>required</value>
+	</data>
+	<data name="RssUrl.Text">
+		<value>RSS Feed</value>
+	</data>
+	<data name="RssUrl.Help">
+		<value>The URL of the RSS Feed to create album from</value>
+	</data>
+	<data name="RssUrl.Watermark">
+		<value>UMG's own RSS feed or a valid RSS feed with Media extension</value>
+	</data>
+
+
+	<data name="Owner.Text">
+		<value>Owner</value>
+	</data>
+	<data name="Owner.Help">
+		<value>Album owner always has full permissions on this album. You can enter the first 2 characters of a user name or email address, then choose an user from the list.</value>
+	</data>
+	<data name="SelectAnUser.Text">
+		<value>Change owner</value>
+	</data>
+	<data name="ViewRoles.Text">
+		<value>View Roles</value>
+	</data>
+	<data name="ViewRoles.Help">
+		<value>Users who can view this album</value>
+	</data>
+
+	<data name="DefaultAlbum.Text">
+		<value>Default Album</value>
+	</data>
+	<data name="DefaultAlbum.Help">
+		<value>Mark it as the default album in this gallery</value>
+	</data>
+	<data name="InvalidRssFeed.Text">
+		<value>Invalid Rss feed</value>
+	</data>
+</root>

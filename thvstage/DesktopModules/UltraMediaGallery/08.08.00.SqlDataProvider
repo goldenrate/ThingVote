@@ -1,0 +1,4 @@
+﻿Update {databaseOwner}{objectQualifier}BizModules_UPG_Presentation set DisplayCtl='WidescreenTour1', IsHtml=1 where Name='WidescreenTour1'
+GO
+
+

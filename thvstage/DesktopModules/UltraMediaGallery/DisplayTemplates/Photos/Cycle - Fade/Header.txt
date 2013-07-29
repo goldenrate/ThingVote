@@ -1,0 +1,21 @@
+[JQUERY]
+[THICKBOX]
+<script type="text/javascript" src="[MODULEPATH]Scripts/jquery.cycle.all.2.72.js"></script>
+
+<script type="text/javascript">
+//on page load call tb_init
+jQuery(document).ready(function(){   
+	tb_init('a.thickbox, area.thickbox, input.thickbox');//pass where to apply thickbox
+	jQuery('#s1').cycle({
+		fx: 'fade' // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+	});
+});
+</script>
+
+<style type="text/css">
+.pics { height: 232px; width: 232px; padding:0; margin:0; overflow: hidden; border: 1px solid #ccc; background-color: #eee }
+.pics img { margin: 15px; top:0; left:0 }
+
+</style>
+
+<div id="s1" class="pics">

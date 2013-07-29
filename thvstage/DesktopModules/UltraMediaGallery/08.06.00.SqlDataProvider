@@ -1,0 +1,6 @@
+﻿UPDATE {databaseOwner}{objectQualifier}BizModules_upg_presentation
+set Description='SmoothGallery is a clean and simple yet powerfull image gallery with multiple transitions included.', DefaultWidth=900, DefaultHeight=600, Featured=1
+where name ='SmoothGallery'
+
+GO
+

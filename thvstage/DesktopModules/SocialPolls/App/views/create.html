@@ -1,0 +1,71 @@
+﻿<div id="createPoll" 
+    class="modal hide fade large-modal"
+    tabindex="-1" role="dialog"
+    aria-labelledby="myModalLabel" aria-hidden="true">
+    <!--<div id="createPollModal" class="modal large-modal">-->
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <div class="pull-left span25">
+            <h3 id="myModalLabel">Add New Poll</h3>
+        </div >
+        <!-- -->
+        <div class="pull-right span6">
+            <ul class="breadcrumb">
+                <li data-bind="css: { active: CurrentStep() == 1 }">1. Select Poll Type<span class="divider">/</span></li>
+                <li data-bind="css: { active: CurrentStep() == 2 }">2. Add Poll Details<span class="divider">/</span></li>
+                <li data-bind="css: { active: CurrentStep() == 3 }" >3. Review & Post</li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="modal-body">
+        <article id="wizard" class="swMain">
+            <section id="header">
+                <div class="wizardPPWraper pull-left">
+                    <img class="wizardProfileImage" 
+                        data-bind="attr: { src: UserProfilePictureUrl() }" />
+                </div>
+                <blockquote>
+                    <h3 class="blueTheme">Great Job <span data-bind="text: DisplayName"></span></h3>
+                    <!-- bind the message to p -->
+                    <p>Now lets get down to business!</p>
+                </blockquote>
+
+                <div class="clear"></div>
+                <hr  data-bind="css: { span6: CurrentStep() == 3 }" />
+
+            </section>
+
+
+            <div id="step-1" data-bind="css: { hidden: CurrentStep() != 1 }">
+                <!-- ko compose: {view: 'create/create-1' } -->
+                <!-- /ko -->
+            </div>
+            <div id="step-2" data-bind="css: { hidden: CurrentStep() != 2 }">
+               
+            </div>
+            <div id="step-3" data-bind="css: { hidden: CurrentStep() != 3 }">
+                 <!-- ko compose: { view: 'create/create-3'}  -->
+                <!-- /ko -->
+            </div>
+        </article>
+    </div>
+    <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">
+            Close</button>
+        <button class="btn btn-primary "
+            data-bind="event: { click: GoPrevious },visible: IsInBetweenStep() ">
+            Previous</button>
+        <button id="btnNext" class="btn btn-primary createPoll"
+            data-bind="click: GoNext, visible: !IsLastStep()" >
+            Next</button>
+       
+        <button class="btn btn-primary"
+            data-bind="event: { click: SavePoll }, visible: IsLastStep()">
+            Finish</button>
+    </div>
+   <!-- <div data-bind="text: IsValid()"></div>
+    <div data-bind="text: IsDirty()"></div>-->
+</div>
+
+<!--  -->

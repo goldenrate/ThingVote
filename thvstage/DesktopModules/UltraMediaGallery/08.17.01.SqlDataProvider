@@ -1,0 +1,49 @@
+﻿IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'{databaseOwner}{objectQualifier}BizModules_UPG_PhotoListPlus') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_PhotoListPlus
+GO
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_PhotoListPlus
+	@ModuleId int,
+	@ExcludedAlbums varchar(500),
+	@Tags varchar(1000),
+	@SortBy varchar(50)
+AS
+
+DECLARE @SQLString NVARCHAR(2000)
+SET @SQLString = 'SELECT'
+
+SET @SQLString = @SQLString + ' * FROM {databaseOwner}{objectQualifier}BizModules_UPG_Photo where Approved=1 And AlbumId in ('
+if @ExcludedAlbums <> ''
+	SET @SQLString = @SQLString + ' Select AlbumId from {databaseOwner}{objectQualifier}BizModules_UPG_AlbumModule where ModuleId = ' +cast(@ModuleId as varchar(10)) + ' And AlbumId Not In (' + @ExcludedAlbums + ') )'
+else
+	SET @SQLString = @SQLString + ' Select AlbumId from {databaseOwner}{objectQualifier}BizModules_UPG_AlbumModule where ModuleId = ' +cast(@ModuleId as varchar(10)) + ')'
+
+if @Tags = ''
+	select @Tags = '0'	
+
+SET @SQLString = @SQLString + ' And (ItemId in (select PhotoId From {databaseOwner}{objectQualifier}BizModules_UPG_PhotoTag where TagId in (' + @Tags + '))'
+	
+if CHARINDEX('-1', @Tags) > 0
+	SET @SQLString = @SQLString + ' or ItemId Not in (select PhotoId From {databaseOwner}{objectQualifier}BizModules_UPG_PhotoTag)'
+
+SET @SQLString = @SQLString + ')'	
+
+
+if @SortBy = 'Recent'
+	SET @SQLString = @SQLString + ' order by CreatedDate desc '
+else if @SortBy = 'Contributor'
+	SET @SQLString = @SQLString + ' order by (select DisplayName from {databaseOwner}{objectQualifier}Users where UserID =  CreatedByUser) ASC, Title asc '
+else if @SortBy = 'TopRated'
+	SET @SQLString = @SQLString + ' order by TotalRatings desc,CreatedDate desc '
+else if @SortBy = 'Alphabetical'
+	SET @SQLString = @SQLString + ' order by Title asc '
+else
+	SET @SQLString = @SQLString + @SortBy
+
+print @SQLString
+EXECUTE sp_executesql @SQLString
+
+GO
+
+

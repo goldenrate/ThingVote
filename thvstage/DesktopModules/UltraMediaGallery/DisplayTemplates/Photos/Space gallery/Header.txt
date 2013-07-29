@@ -1,0 +1,13 @@
+<link rel="stylesheet" media="screen" type="text/css" href="[CURRENTFOLDER]spacegallery.css" />
+
+[JQUERY]
+<script type="text/javascript" src="[CURRENTFOLDER]eye.js"></script>
+<script type="text/javascript" src="[CURRENTFOLDER]utils.js"></script>
+<script type="text/javascript" src="[CURRENTFOLDER]spacegallery.js"></script>
+<script type="text/javascript">
+// execute your scripts when the DOM is ready. this is a good habit
+jQuery(function() {
+	jQuery('#myGallery').spacegallery({loadingClass: 'loading'});
+});
+</script>
+<div id="myGallery" class="spacegallery" style="height:300px;">

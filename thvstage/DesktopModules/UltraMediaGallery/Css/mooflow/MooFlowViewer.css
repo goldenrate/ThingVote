@@ -1,0 +1,19 @@
+.mf a.show {
+	position:absolute;
+	margin-left:-16px;
+	width:32px;
+	height:32px;
+	top:70%;
+	left:50%;
+	z-index:100;
+	cursor:pointer;
+}
+.mf a.show.image{
+	background:url(skin/open_image.png) no-repeat 50%;
+}
+.mf a.show.viewerload{
+	background:url(skin/loader.gif) no-repeat 50%;
+}
+.mf a.show.link{
+	background:url(skin/open_link.png) no-repeat 50%;
+}

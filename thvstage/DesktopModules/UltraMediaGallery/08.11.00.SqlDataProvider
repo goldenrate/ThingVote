@@ -1,0 +1,4 @@
+﻿Update {databaseOwner}{objectQualifier}BizModules_UPG_Presentation set Name='Accordion', Description='A horizontal accordion slider for images and videos.', DefaultWidth=960, DefaultHeight=320, Featured=1, IsHtml=1 where Name='Headline'
+GO
+
+

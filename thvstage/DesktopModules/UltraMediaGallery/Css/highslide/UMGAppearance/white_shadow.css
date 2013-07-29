@@ -1,0 +1,43 @@
+.UMGHighslideOuter
+{
+	padding:5px;
+}
+
+.UMGhighslide
+{
+	width:100%;
+	text-align:center;
+	position:relative;
+	border:1px solid #cccccc;
+	background-color:#ffffff;
+	overflow:hidden;
+
+
+	/* Shadow effects for all browsers */
+	-moz-box-shadow: 3px 3px 4px #999;
+	-webkit-box-shadow: 3px 3px 4px #999;
+	box-shadow: 3px 3px 4px #999;
+	/* For IE 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#999999')";
+	/* For IE 5.5 - 7 */
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#999999');
+
+}
+
+.UMGhighslide a img
+{
+	border:0px;
+	margin:3px;
+}
+
+.UMGhighslide a:hover img {
+
+	border:0px;
+	margin:3px;
+}
+
+.UMGhighslide .title
+{
+	display:none;
+}
+

@@ -1,0 +1,248 @@
+	#umg_container[MODULEID]
+	{
+		background-color:#[BGCOLOR];
+		color:#[TEXTCOLOR];
+		width: [GALLERYWIDTH]px; 
+		height: [GALLERYHEIGHT]px;
+		font-size:[TEXTSIZE]px;
+		position:relative;
+		overflow:hidden;
+	}
+
+	#umg_largelist[MODULEID]
+	{
+		z-index:10;
+		width:MATH[[GALLERYWIDTH]-154]px;
+		height:100%;
+		position:absolute;
+		overflow:hidden;
+	}
+
+	#umg_large[MODULEID]
+	{
+		width:100%;
+		height:100%;
+	}
+
+	#umg_large[MODULEID] .image
+	{
+		position:absolute;
+		float:left;
+	}
+
+	#umg_caption[MODULEID]
+	{
+		z-index:12;
+		position:absolute;
+		background-image:url('[CURRENTPATH]bg.png');
+		width:MATH[[GALLERYWIDTH]-200+26]px;
+		height:60px;
+		top:MATH[[GALLERYHEIGHT]-60]px;
+		overflow:hidden;
+	}
+
+	#umg_captiontitle[MODULEID]
+	{
+		font-size:150%;
+		color:#[CAPTIONTITLECOLOR];
+		margin-left:3px;
+	}
+
+	#umg_captiondescription[MODULEID]
+	{
+		margin-left:3px;
+	}
+
+	#umg_captionauthor[MODULEID]
+	{
+		display:none;
+	}
+
+	#umg_captiontag[MODULEID]
+	{
+		display:none;
+	}
+
+	#umg_captiontakendate[MODULEID]
+	{
+		display:none;
+	}
+
+	#umg_xofy[MODULEID]
+	{
+		display:none;
+	}
+
+	#umg_more[MODULEID]
+	{
+		z-index:13;
+		position:absolute;
+		left:MATH[[GALLERYWIDTH]-200+26-60]px;
+		top:MATH[[GALLERYHEIGHT]-55]px;
+		text-align:center;
+
+		width:50px;
+		height:18px;
+		background-image:url('[CURRENTPATH]more.png');
+		background-repeat:no-repeat;
+
+		line-height:18px;
+		text-decoration:underline;
+		color:#[TEXTCOLOR];
+	}
+
+	#umg_more[MODULEID]:hover
+	{
+		text-decoration:none;
+		color:#[CAPTIONTITLECOLOR];
+	}
+
+	#umg_buttons[MODULEID]
+	{
+		z-index:18;
+		position:absolute;
+		left:20px;
+		top:10px;
+		font-size:0px;
+	}
+
+	#umg_prev[MODULEID]
+	{
+		background-image:url('[CURRENTPATH]buttons2.png');
+		background-repeat:no-repeat;
+		display:block;
+		width:20px;
+		height:20px;
+		float:left;
+		cursor:pointer;
+	}
+
+	#umg_prev[MODULEID]:hover
+	{
+		background-position:0 -20px;     
+	}
+
+	#umg_next[MODULEID]
+	{
+		background-image:url('[CURRENTPATH]buttons2.png');
+		background-repeat:no-repeat;
+		background-position: -42px 0;
+		display:block;
+		width:20px;
+		height:20px;
+		float:left;
+		cursor:pointer;
+	}
+
+	#umg_next[MODULEID]:hover
+	{
+		background-position:-42px -20px;     
+	}
+
+	#umg_play[MODULEID]
+	{
+		background-image:url('[CURRENTPATH]buttons2.png');
+		background-repeat:no-repeat;
+		background-position: -21px 0;
+		display:block;
+		width:20px;
+		height:20px;
+		float:left;
+		cursor:pointer;
+	}
+
+	#umg_play[MODULEID].active
+	{
+		background-position:-21px -40px;     
+	}
+
+	#umg_play[MODULEID]:hover
+	{
+		background-position:-21px -20px;     
+	}
+
+	#umg_play[MODULEID].active:hover
+	{
+		background-position:-21px -60px;     
+	}
+
+	#umg_countdown[MODULEID]
+	{
+		z-index:15;
+		width:20px;
+		height:20px;
+		background-image:url('[CURRENTPATH]countdown.png');
+		text-align:center;
+		line-height:20px;
+
+		position:absolute;
+		left:MATH[[GALLERYWIDTH]-200-20]px;
+		top:10px;
+		cursor:pointer;
+	}
+
+	#umg_loading[MODULEID]
+	{
+		z-index:16;
+		width:32px;
+		height:32px;
+		position:absolute;
+		left:MATH[([GALLERYWIDTH]-120)/2-16]px;
+		top:MATH[([GALLERYHEIGHT]-80)/2-16]px;
+	}
+
+	#umg_loading[MODULEID].active
+	{
+		background-image:url('[CURRENTPATH]loading.gif');
+	}
+
+	
+	/* position and dimensions of the navigator */
+	#umg_navi[MODULEID] {
+		display:none;
+	}
+
+	/* items inside navigator */
+#umg_thumbslist[MODULEID]
+{
+		z-index:13;
+		position:absolute;
+		width:200px;
+		height:100%;
+		left:MATH[[GALLERYWIDTH]-200]px;
+}
+
+#umg_thumbs[MODULEID]
+{
+		position:absolute;
+		width:100%;
+		height:100%;
+}
+
+#umg_thumbslist[MODULEID] a
+{
+	float:left;
+	padding-left:40px;
+	padding-right:10px;
+	width:MATH[200-50]px !important;
+	width:100%;
+	height:50px;
+	line-height:25px;
+	background-image:url('[CURRENTPATH]h300.png');
+	background-position:0px -25px;     
+	color:#000;
+	font-size:120%;
+}
+
+#umg_thumbslist[MODULEID] a:hover
+{
+	background-image:url('[CURRENTPATH]h300.png');
+	background-position:0px -125px;     
+}
+
+#umg_thumbslist[MODULEID] a.active, #umg_thumbslist[MODULEID] a.active:visited, #umg_thumbslist[MODULEID] a.active:hover
+{
+	background-image:url('[CURRENTPATH]h300.png');
+	background-position:0px -225px;     
+	color:#fff;
+}

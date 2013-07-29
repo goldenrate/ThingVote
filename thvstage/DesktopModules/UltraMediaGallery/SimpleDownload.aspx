@@ -1,0 +1,1 @@
+<%@ Page Language="vb" AutoEventWireup="false" Codebehind="SimpleDownload.aspx.vb" Inherits="BizModules.UltraPhotoGallery.SimpleDownload" %>

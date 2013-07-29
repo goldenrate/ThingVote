@@ -1,0 +1,28 @@
+﻿ALTER PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_CommentListAndSort
+	@ModuleId int,
+	@AlbumId int,
+	@Max int,
+	@SortBy varchar(10)
+AS
+
+DECLARE @SQLString NVARCHAR(2000)
+SET @SQLString = 'SELECT'
+if @Max > 0
+	SET @SQLString = @SQLString + ' TOP ' + cast(@Max as varchar(10))
+
+SET @SQLString = @SQLString + ' C.* FROM {databaseOwner}{objectQualifier}BizModules_UPG_Comment C inner join {databaseOwner}{objectQualifier}BizModules_UPG_Photo P on C.PhotoId = P.ItemId where isnull(Comment,'''')<>'''' and '
+if @AlbumId > 0
+	SET @SQLString = @SQLString + ' P.AlbumId=' + cast(@AlbumId as varchar(10))
+else
+	SET @SQLString = @SQLString + ' P.AlbumId in (Select ItemId from {databaseOwner}{objectQualifier}UPG_vw_Album where ModuleId = ' +cast(@ModuleId as varchar(10)) + ')'
+
+SET @SQLString = @SQLString + ' order by '
+
+if @SortBy = 'random'
+	SET @SQLString = @SQLString + ' newid() '
+else
+	SET @SQLString = @SQLString + ' createddate desc '
+
+EXECUTE sp_executesql @SQLString
+GO
+

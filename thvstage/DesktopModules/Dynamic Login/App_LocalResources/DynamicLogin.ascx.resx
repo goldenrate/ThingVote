@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="plUsername.Text">
+		<value>User Name:</value>
+	</data>
+	<data name="plUsername.Help">
+		<value>Enter your User name here.  In most cases this will be your email address.</value>
+	</data>
+	<data name="plPassword.Text">
+		<value>Password:</value>
+	</data>
+	<data name="plPassword.Help">
+		<value>Enter your Password</value>
+	</data>
+	<data name="Remember.Text">
+		<value>Remember Login</value>
+	</data>
+	<data name="cmdRegister.Text">
+		<value>Register</value>
+	</data>
+	<data name="cmdLogin.Text">
+		<value>Login</value>
+	</data>
+	<data name="cmdSendPassword.Text">
+		<value>Password Reminder</value>
+	</data>
+	<data name="EnterCode.Text">
+		<value>Enter Your Verification Code</value>
+	</data>
+	<data name="InvalidCode.Text">
+		<value>Invalid Verification Code</value>
+	</data>
+	<data name="LoginFailed.Text">
+		<value>Login Failed, remember that Passwords are case sensitive</value>
+	</data>
+	<data name="UserLockedOut.Text">
+		<value>This account has been locked out after too many unsuccessful login attempts. Please wait 10 minutes before trying to login again. If you have forgotten your password, please try the Password Reminder option before contacting an Administrator.</value>
+	</data>
+	<data name="PasswordSent.Text">
+		<value>Password Has Been Sent To&lt;br&gt;Your Email Address.</value>
+	</data>
+	<data name="UsernameError.Text">
+		<value>Username Does Not Exist</value>
+	</data>
+	<data name="EnterUsername.Text">
+		<value>Please Enter Your Username</value>
+	</data>
+	<data name="ControlTitle_.Text">
+		<value>User Account</value>
+	</data>
+	<data name="ControlTitle_login.Text">
+		<value>User Account</value>
+	</data>
+	<data name="ControlTitle_signin.Text">
+		<value>User Account</value>
+	</data>
+<data name="litVerification.Text">
+		<value>Please enter the verification code that was emailed to you after registration.</value>
+	</data>
+	<data name="plVerification.Text">
+		<value>Verification Code:</value>
+	</data>
+	<data name="plVerification.Help">
+		<value>Enter the verification code. You should have received the verification code on the email address used when registering</value>
+	</data>
+	<data name="AddContent.Action">
+		<value>Manage Login Rules</value>
+	</data>
+	<data name="ControlPanel.Action">
+		<value>Control Panel</value>
+	</data>
+	<data name="AddRoleGroupContent.Action">
+		<value>Manage Role Group Rules</value>
+	</data>
+	<data name="ManageLoginTemplate.Action">
+		<value>Manage Login Template</value>
+	</data>
+	<data name="EmailSubject.Text">
+		<value>DataSprings Dynamic Login Notification</value>
+	</data>
+	<data name="AddRoleContent.Action">
+		<value>Manage Role Rules</value>
+	</data>
+
+<data name="ManageSettings.Action">
+		<value>Manage Settings</value>
+	</data>
+
+<data name="SingleSignOnSetup.Action">
+		<value>Manage Single Sign On</value>
+	</data>
+
+	<data name="cmdContinue.Text">
+		<value>Continue...</value>
+	</data>
+	<data name="ModuleMessage.Text">
+		<value>Please set the template in Manage Login Template section.</value>
+	</data>
+
+<data name="DisplayInitialMessage.Text">
+<value>Welcome to the Data Springs Dynamic Login module, you have just taken your first step in setting up your portals custom login. Please refer to the user guide at www.datasprings.com for full installation and implementation instructions. To get started, we suggest that you setup initial settings within the module and also define the login template.</value>
+</data>
+
+  <data name="SetupTemplate.Text">
+		<value>Setup Template</value>
+  </data>
+
+  <data name="SetupSettings.Text">
+		<value>Setup Initial Settings</value>
+  </data>
+
+  <data name="SetRoleRules.Text">
+		<value>Setup Role Redirection Rules (optional)</value>
+  </data>
+
+  <data name="SetLoginRules.Text">
+		<value>Setup User Specific Redirection Rules (optional)</value>
+  </data>
+
+ <data name="AdminNote.Text">
+		<value>Administrator Note: The login template is only displayed for unauthenticated users to sign in.</value>
+  </data>
+
+  <data name="AdvancedFeatures.Text">
+		<value>Advanced Features</value>
+  </data>
+  <data name="SetupIP.Action">
+		<value>Manage IP Restrictions</value>
+  </data>
+
+ <data name="UserGuide.Action">
+		<value>Dynamic Login User Guide</value>
+  </data>
+
+  <data name="IPBlocked.Text">
+		<value>Sorry, the administrator has blocked access to this portal from the current IP Address.</value>
+  </data>
+
+
+
+ <data name="ControlPanel.Text">
+		<value>Control Panel</value>
+  </data>
+
+ <data name="CPSettings.Text">
+		<value>Module Configuration</value>
+  </data>
+
+
+ <data name="CPManageTemplate.Text">
+		<value>Module Template</value>
+  </data>
+   
+ <data name="CPRoles.Text">
+		<value>Role Rules</value>
+  </data>
+          
+ <data name="CPRoleGroups.Text">
+		<value>Role Group Rules</value>
+  </data>
+
+ <data name="CPUserNotification.Text">
+		<value>User Notifications</value>
+  </data>
+       
+ <data name="CPIPRestrictions.Text">
+		<value>IP Restrictions / SQL Validation</value>
+  </data>
+   
+ <data name="CPSingleSignOn.Text">
+		<value>Single Sign On Setup</value>
+  </data>          
+
+<data name="ProductLicense.Action">
+<value>Dynamic Login License</value>
+  </data>
+
+ <data name="plResendVerification.Text">
+		<value>Resend Verification Code</value>
+  </data>    
+ <data name="lnkOAuthFacebook.Text">
+		<value>Connect via Facebook</value>
+  </data>    
+
+
+
+</root>

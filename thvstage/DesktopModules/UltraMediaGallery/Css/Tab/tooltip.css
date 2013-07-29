@@ -1,0 +1,18 @@
+/* simple css-based tooltip */
+.tooltip {
+	padding:25px 10px;
+	width:130px !important;
+	width:150px;
+	height:23px !important;
+	height:73px;
+	display:none;
+	color:#000;
+	text-align:center;
+	font-size:12px;
+	font-family:Arial;
+
+	background-image:url('white_arrow.png');
+	background-repeat:no-repeat;
+
+}
+

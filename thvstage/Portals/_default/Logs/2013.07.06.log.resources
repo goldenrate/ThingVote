@@ -1,0 +1,6 @@
+2013-07-06 12:00:16,929 [WIN-SQUVIVLQ4HM][Thread:6][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.ApplicationException: ReaderWriterLockStrategy.GetWriteLock timed out
+   at DotNetNuke.Collections.Internal.ReaderWriterLockStrategy.GetWriteLock(TimeSpan timeout)
+   at DotNetNuke.Services.Scheduling.Scheduler.CoreScheduler.RemoveFromScheduleQueue(ScheduleItem scheduleItem)
+2013-07-06 12:00:16,930 [WIN-SQUVIVLQ4HM][Thread:46][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.ApplicationException: ReaderWriterLockStrategy.GetWriteLock timed out
+   at DotNetNuke.Collections.Internal.ReaderWriterLockStrategy.GetWriteLock(TimeSpan timeout)
+   at DotNetNuke.Services.Scheduling.Scheduler.CoreScheduler.RemoveFromScheduleQueue(ScheduleItem scheduleItem)

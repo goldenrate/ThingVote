@@ -1,0 +1,71 @@
+﻿--New presentation
+if not exists(select * from {databaseOwner}{objectQualifier}BizModules_upg_presentation where name='SpotlightSlider')
+INSERT {databaseOwner}{objectQualifier}BizModules_upg_presentation(Name,Description,DisplayCtl,GallerySettingCtl,Type,DefaultWidth,DefaultHeight,AllowFullScreen,Category) VALUES('SpotlightSlider','An image slider which display multiples columns per page','SpotlightSlider','SpotlightSliderAppearance','BizModules.UltraPhotoGallery.Presentation.SpotlightSlider, BizModules.UltraPhotoGallery','900','225','0','Html')
+GO
+
+if not exists(select * from {databaseOwner}{objectQualifier}BizModules_upg_presentation where name='CloudCarousel')
+INSERT {databaseOwner}{objectQualifier}BizModules_upg_presentation(Name,Description,DisplayCtl,GallerySettingCtl,Type,DefaultWidth,DefaultHeight,AllowFullScreen,Category, Featured) VALUES('CarouselEvolution','Carousel Evolution allows you to easily create 9 kinds of powerfull carousel sliders.','CarouselEvolution','CarouselEvolutionAppearance','BizModules.UltraPhotoGallery.Presentation.CarouselEvolution, BizModules.UltraPhotoGallery',930,390,0,'Html', 1)
+else
+UPDATE {databaseOwner}{objectQualifier}BizModules_upg_presentation
+set Name='CarouselEvolution', Description='Carousel Evolution allows you to easily create 9 kinds of powerfull carousel sliders.', DisplayCtl='CarouselEvolution', GallerySettingCtl='CarouselEvolutionAppearance', Type='BizModules.UltraPhotoGallery.Presentation.CarouselEvolution, BizModules.UltraPhotoGallery', DefaultWidth=930, DefaultHeight=390, Featured=1
+where name='CloudCarousel'
+
+GO
+
+
+--"IsHtml" column in presentation table
+ALTER TABLE {databaseOwner}{objectQualifier}BizModules_UPG_Presentation
+ADD
+	IsHtml bit,
+	Obsolete bit
+GO
+
+Update {databaseOwner}{objectQualifier}BizModules_upg_presentation set IsHtml = 1 where Category='Html'
+GO
+
+Update {databaseOwner}{objectQualifier}BizModules_upg_presentation set Obsolete = 1 where name in ('Headline', '3DImageStack', '3DCarousel', 'SideNav', 'RightHeader', 'MooFlow', 'TiltViewer', 'BlacknWhite')
+GO
+
+Update {databaseOwner}{objectQualifier}BizModules_upg_presentation set Category = 'SmallGallery' where name in (
+'WidescreenTour1',
+'WidescreenTour2',
+'3DImageStack',
+'SideNav',
+'RandomPosition',
+'VirtualTour',
+'MooFlow',
+'TiltViewer',
+'3DWall',
+'RightHeader',
+'BlacknWhite',
+'MacStyle'
+)
+GO
+
+Update {databaseOwner}{objectQualifier}BizModules_upg_presentation set Category = 'LargeGallery' where name in (
+'UMG Classic',
+'UMGProfessional',
+'SmoothGallery',
+'WidescreenShowroom',
+'ShadowViewer',
+'Highslide',
+'MediaLibrary',
+'MultiMediaGallery',
+'PhotoStack',
+'TagGroupedGrid'
+)
+GO
+
+Update {databaseOwner}{objectQualifier}BizModules_upg_presentation set Category = 'SlidersAndRotators' where name in (
+'3DCarousel',
+'Headline',
+'Html Slideshow',
+'HtmlImageStack',
+'CarouselEvolution',
+'PieceRotator',
+'SimpleSlider',
+'TripleLayerSlider',
+'SpotlightSlider'
+)
+GO
+

@@ -1,0 +1,579 @@
+2013-07-07 09:54:26,452 [WIN-SQUVIVLQ4HM][Thread:29][ERROR] DotNetNuke.Services.Exceptions.Exceptions - DotNetNuke.Services.Exceptions.PageLoadException: Unhandled error loading page. ---> System.Web.HttpParseException: Could not load type 'ThingvoteSkin.PublicApp'. ---> System.Web.HttpParseException: Could not load type 'ThingvoteSkin.PublicApp'. ---> System.Web.HttpException: Could not load type 'ThingvoteSkin.PublicApp'.
+   at System.Web.UI.TemplateParser.GetType(String typeName, Boolean ignoreCase, Boolean throwOnError)
+   at System.Web.UI.TemplateParser.ProcessInheritsAttribute(String baseTypeName, String codeFileBaseTypeName, String src, Assembly assembly)
+   at System.Web.UI.TemplateParser.PostProcessMainDirectiveAttributes(IDictionary parseData)
+   --- End of inner exception stack trace ---
+   at System.Web.UI.TemplateParser.ProcessException(Exception ex)
+   at System.Web.UI.TemplateParser.ParseStringInternal(String text, Encoding fileEncoding)
+   at System.Web.UI.TemplateParser.ParseString(String text, VirtualPath virtualPath, Encoding fileEncoding)
+   --- End of inner exception stack trace ---
+   at System.Web.UI.TemplateParser.ParseString(String text, VirtualPath virtualPath, Encoding fileEncoding)
+   at System.Web.UI.TemplateParser.ParseFile(String physicalPath, VirtualPath virtualPath)
+   at System.Web.UI.TemplateParser.Parse()
+   at System.Web.Compilation.BaseTemplateBuildProvider.get_CodeCompilerType()
+   at System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   at System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.TemplateControl.LoadControl(VirtualPath virtualPath)
+   at DotNetNuke.UI.ControlUtilities.LoadControl[T](TemplateControl containerControl, String ControlSrc)
+   at DotNetNuke.UI.Skins.Skin.LoadSkin(PageBase page, String skinPath)
+   --- End of inner exception stack trace ---
+2013-07-07 09:54:28,018 [WIN-SQUVIVLQ4HM][Thread:6][ERROR] DotNetNuke.Services.Exceptions.Exceptions - DotNetNuke.Services.Exceptions.PageLoadException: Unhandled error loading page. ---> System.Web.HttpParseException: Could not load type 'ThingvoteSkin.PublicApp'. ---> System.Web.HttpParseException: Could not load type 'ThingvoteSkin.PublicApp'. ---> System.Web.HttpException: Could not load type 'ThingvoteSkin.PublicApp'.
+   at System.Web.UI.TemplateParser.GetType(String typeName, Boolean ignoreCase, Boolean throwOnError)
+   at System.Web.UI.TemplateParser.ProcessInheritsAttribute(String baseTypeName, String codeFileBaseTypeName, String src, Assembly assembly)
+   at System.Web.UI.TemplateParser.PostProcessMainDirectiveAttributes(IDictionary parseData)
+   --- End of inner exception stack trace ---
+   at System.Web.UI.TemplateParser.ProcessException(Exception ex)
+   at System.Web.UI.TemplateParser.ParseStringInternal(String text, Encoding fileEncoding)
+   at System.Web.UI.TemplateParser.ParseString(String text, VirtualPath virtualPath, Encoding fileEncoding)
+   --- End of inner exception stack trace ---
+   at System.Web.UI.TemplateParser.ParseString(String text, VirtualPath virtualPath, Encoding fileEncoding)
+   at System.Web.UI.TemplateParser.ParseFile(String physicalPath, VirtualPath virtualPath)
+   at System.Web.UI.TemplateParser.Parse()
+   at System.Web.Compilation.BaseTemplateBuildProvider.get_CodeCompilerType()
+   at System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   at System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.TemplateControl.LoadControl(VirtualPath virtualPath)
+   at DotNetNuke.UI.ControlUtilities.LoadControl[T](TemplateControl containerControl, String ControlSrc)
+   at DotNetNuke.UI.Skins.Skin.LoadSkin(PageBase page, String skinPath)
+   --- End of inner exception stack trace ---
+2013-07-07 09:55:09,366 [WIN-SQUVIVLQ4HM][Thread:15][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): The Controls collection cannot be modified because the control contains code blocks (i.e. <% ... %>).
+   at System.Web.UI.ControlCollection.Add(Control child)
+   at DotNetNuke.UI.Skins.Skin.ProcessModule(ModuleInfo module)
+   at DotNetNuke.UI.Skins.Skin.ProcessMasterModules()
+   at DotNetNuke.UI.Skins.Skin.OnInit(EventArgs e)
+   at ThingvoteSkin.PublicApp.OnInit(EventArgs e) in c:\Workspaces\Tipped\Websites\thvstage\Portals\0\Skins\ThingVote\PublicApp.ascx.cs:line 19
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at DotNetNuke.Framework.DefaultPage.OnInit(EventArgs e) in c:\Workspaces\Tipped\Websites\thvstage\Default.aspx.cs:line 741
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-07-07 09:55:09,449 [WIN-SQUVIVLQ4HM][Thread:15][ERROR] DotNetNuke.Services.Exceptions.Exceptions - DotNetNuke.Services.Exceptions.PageLoadException: The Controls collection cannot be modified because the control contains code blocks (i.e. <% ... %>). ---> System.Web.HttpException: The Controls collection cannot be modified because the control contains code blocks (i.e. <% ... %>).
+   at System.Web.UI.ControlCollection.Add(Control child)
+   at DotNetNuke.UI.Skins.Skin.ProcessModule(ModuleInfo module)
+   at DotNetNuke.UI.Skins.Skin.ProcessMasterModules()
+   at DotNetNuke.UI.Skins.Skin.OnInit(EventArgs e)
+   at ThingvoteSkin.PublicApp.OnInit(EventArgs e) in c:\Workspaces\Tipped\Websites\thvstage\Portals\0\Skins\ThingVote\PublicApp.ascx.cs:line 19
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at DotNetNuke.Framework.DefaultPage.OnInit(EventArgs e) in c:\Workspaces\Tipped\Websites\thvstage\Default.aspx.cs:line 741
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- End of inner exception stack trace ---
+2013-07-07 09:55:15,155 [WIN-SQUVIVLQ4HM][Thread:15][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): The Controls collection cannot be modified because the control contains code blocks (i.e. <% ... %>).
+   at System.Web.UI.ControlCollection.Add(Control child)
+   at DotNetNuke.UI.Skins.Skin.ProcessModule(ModuleInfo module)
+   at DotNetNuke.UI.Skins.Skin.ProcessMasterModules()
+   at DotNetNuke.UI.Skins.Skin.OnInit(EventArgs e)
+   at ThingvoteSkin.PublicApp.OnInit(EventArgs e) in c:\Workspaces\Tipped\Websites\thvstage\Portals\0\Skins\ThingVote\PublicApp.ascx.cs:line 19
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at DotNetNuke.Framework.DefaultPage.OnInit(EventArgs e) in c:\Workspaces\Tipped\Websites\thvstage\Default.aspx.cs:line 741
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-07-07 09:55:15,161 [WIN-SQUVIVLQ4HM][Thread:15][ERROR] DotNetNuke.Services.Exceptions.Exceptions - DotNetNuke.Services.Exceptions.PageLoadException: The Controls collection cannot be modified because the control contains code blocks (i.e. <% ... %>). ---> System.Web.HttpException: The Controls collection cannot be modified because the control contains code blocks (i.e. <% ... %>).
+   at System.Web.UI.ControlCollection.Add(Control child)
+   at DotNetNuke.UI.Skins.Skin.ProcessModule(ModuleInfo module)
+   at DotNetNuke.UI.Skins.Skin.ProcessMasterModules()
+   at DotNetNuke.UI.Skins.Skin.OnInit(EventArgs e)
+   at ThingvoteSkin.PublicApp.OnInit(EventArgs e) in c:\Workspaces\Tipped\Websites\thvstage\Portals\0\Skins\ThingVote\PublicApp.ascx.cs:line 19
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at DotNetNuke.Framework.DefaultPage.OnInit(EventArgs e) in c:\Workspaces\Tipped\Websites\thvstage\Default.aspx.cs:line 741
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- End of inner exception stack trace ---
+2013-07-07 09:55:17,686 [WIN-SQUVIVLQ4HM][Thread:15][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): The Controls collection cannot be modified because the control contains code blocks (i.e. <% ... %>).
+   at System.Web.UI.ControlCollection.Add(Control child)
+   at DotNetNuke.UI.Skins.Skin.ProcessModule(ModuleInfo module)
+   at DotNetNuke.UI.Skins.Skin.ProcessMasterModules()
+   at DotNetNuke.UI.Skins.Skin.OnInit(EventArgs e)
+   at ThingvoteSkin.PublicApp.OnInit(EventArgs e) in c:\Workspaces\Tipped\Websites\thvstage\Portals\0\Skins\ThingVote\PublicApp.ascx.cs:line 19
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at DotNetNuke.Framework.DefaultPage.OnInit(EventArgs e) in c:\Workspaces\Tipped\Websites\thvstage\Default.aspx.cs:line 741
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-07-07 09:55:17,691 [WIN-SQUVIVLQ4HM][Thread:15][ERROR] DotNetNuke.Services.Exceptions.Exceptions - DotNetNuke.Services.Exceptions.PageLoadException: The Controls collection cannot be modified because the control contains code blocks (i.e. <% ... %>). ---> System.Web.HttpException: The Controls collection cannot be modified because the control contains code blocks (i.e. <% ... %>).
+   at System.Web.UI.ControlCollection.Add(Control child)
+   at DotNetNuke.UI.Skins.Skin.ProcessModule(ModuleInfo module)
+   at DotNetNuke.UI.Skins.Skin.ProcessMasterModules()
+   at DotNetNuke.UI.Skins.Skin.OnInit(EventArgs e)
+   at ThingvoteSkin.PublicApp.OnInit(EventArgs e) in c:\Workspaces\Tipped\Websites\thvstage\Portals\0\Skins\ThingVote\PublicApp.ascx.cs:line 19
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at DotNetNuke.Framework.DefaultPage.OnInit(EventArgs e) in c:\Workspaces\Tipped\Websites\thvstage\Default.aspx.cs:line 741
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- End of inner exception stack trace ---
+2013-07-07 09:56:21,648 [WIN-SQUVIVLQ4HM][Thread:48][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): The Controls collection cannot be modified because the control contains code blocks (i.e. <% ... %>).
+   at System.Web.UI.ControlCollection.Add(Control child)
+   at DotNetNuke.UI.Skins.Skin.ProcessModule(ModuleInfo module)
+   at DotNetNuke.UI.Skins.Skin.ProcessMasterModules()
+   at DotNetNuke.UI.Skins.Skin.OnInit(EventArgs e)
+   at ThingvoteSkin.PublicApp.OnInit(EventArgs e) in c:\Workspaces\Tipped\Websites\thvstage\Portals\0\Skins\ThingVote\PublicApp.ascx.cs:line 19
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at DotNetNuke.Framework.DefaultPage.OnInit(EventArgs e) in c:\Workspaces\Tipped\Websites\thvstage\Default.aspx.cs:line 741
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-07-07 09:56:21,653 [WIN-SQUVIVLQ4HM][Thread:48][ERROR] DotNetNuke.Services.Exceptions.Exceptions - DotNetNuke.Services.Exceptions.PageLoadException: The Controls collection cannot be modified because the control contains code blocks (i.e. <% ... %>). ---> System.Web.HttpException: The Controls collection cannot be modified because the control contains code blocks (i.e. <% ... %>).
+   at System.Web.UI.ControlCollection.Add(Control child)
+   at DotNetNuke.UI.Skins.Skin.ProcessModule(ModuleInfo module)
+   at DotNetNuke.UI.Skins.Skin.ProcessMasterModules()
+   at DotNetNuke.UI.Skins.Skin.OnInit(EventArgs e)
+   at ThingvoteSkin.PublicApp.OnInit(EventArgs e) in c:\Workspaces\Tipped\Websites\thvstage\Portals\0\Skins\ThingVote\PublicApp.ascx.cs:line 19
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at DotNetNuke.Framework.DefaultPage.OnInit(EventArgs e) in c:\Workspaces\Tipped\Websites\thvstage\Default.aspx.cs:line 741
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- End of inner exception stack trace ---
+2013-07-07 10:03:11,863 [WIN-SQUVIVLQ4HM][Thread:6][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): The Controls collection cannot be modified because the control contains code blocks (i.e. <% ... %>).
+   at System.Web.UI.ControlCollection.Add(Control child)
+   at DotNetNuke.UI.Skins.Skin.ProcessModule(ModuleInfo module)
+   at DotNetNuke.UI.Skins.Skin.ProcessMasterModules()
+   at DotNetNuke.UI.Skins.Skin.OnInit(EventArgs e)
+   at ThingvoteSkin.PublicApp.OnInit(EventArgs e) in c:\Workspaces\Tipped\Websites\thvstage\Portals\0\Skins\ThingVote\PublicApp.ascx.cs:line 19
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at DotNetNuke.Framework.DefaultPage.OnInit(EventArgs e) in c:\Workspaces\Tipped\Websites\thvstage\Default.aspx.cs:line 741
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-07-07 10:03:11,868 [WIN-SQUVIVLQ4HM][Thread:6][ERROR] DotNetNuke.Services.Exceptions.Exceptions - DotNetNuke.Services.Exceptions.PageLoadException: The Controls collection cannot be modified because the control contains code blocks (i.e. <% ... %>). ---> System.Web.HttpException: The Controls collection cannot be modified because the control contains code blocks (i.e. <% ... %>).
+   at System.Web.UI.ControlCollection.Add(Control child)
+   at DotNetNuke.UI.Skins.Skin.ProcessModule(ModuleInfo module)
+   at DotNetNuke.UI.Skins.Skin.ProcessMasterModules()
+   at DotNetNuke.UI.Skins.Skin.OnInit(EventArgs e)
+   at ThingvoteSkin.PublicApp.OnInit(EventArgs e) in c:\Workspaces\Tipped\Websites\thvstage\Portals\0\Skins\ThingVote\PublicApp.ascx.cs:line 19
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at DotNetNuke.Framework.DefaultPage.OnInit(EventArgs e) in c:\Workspaces\Tipped\Websites\thvstage\Default.aspx.cs:line 741
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- End of inner exception stack trace ---
+2013-07-07 10:04:44,946 [WIN-SQUVIVLQ4HM][Thread:41][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): The Controls collection cannot be modified because the control contains code blocks (i.e. <% ... %>).
+   at System.Web.UI.ControlCollection.Add(Control child)
+   at DotNetNuke.UI.Skins.Skin.ProcessModule(ModuleInfo module)
+   at DotNetNuke.UI.Skins.Skin.ProcessMasterModules()
+   at DotNetNuke.UI.Skins.Skin.OnInit(EventArgs e)
+   at ThingvoteSkin.PublicApp.OnInit(EventArgs e) in c:\Workspaces\Tipped\Websites\thvstage\Portals\0\Skins\ThingVote\PublicApp.ascx.cs:line 19
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at DotNetNuke.Framework.DefaultPage.OnInit(EventArgs e) in c:\Workspaces\Tipped\Websites\thvstage\Default.aspx.cs:line 741
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-07-07 10:04:45,027 [WIN-SQUVIVLQ4HM][Thread:41][ERROR] DotNetNuke.Services.Exceptions.Exceptions - DotNetNuke.Services.Exceptions.PageLoadException: The Controls collection cannot be modified because the control contains code blocks (i.e. <% ... %>). ---> System.Web.HttpException: The Controls collection cannot be modified because the control contains code blocks (i.e. <% ... %>).
+   at System.Web.UI.ControlCollection.Add(Control child)
+   at DotNetNuke.UI.Skins.Skin.ProcessModule(ModuleInfo module)
+   at DotNetNuke.UI.Skins.Skin.ProcessMasterModules()
+   at DotNetNuke.UI.Skins.Skin.OnInit(EventArgs e)
+   at ThingvoteSkin.PublicApp.OnInit(EventArgs e) in c:\Workspaces\Tipped\Websites\thvstage\Portals\0\Skins\ThingVote\PublicApp.ascx.cs:line 19
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at DotNetNuke.Framework.DefaultPage.OnInit(EventArgs e) in c:\Workspaces\Tipped\Websites\thvstage\Default.aspx.cs:line 741
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- End of inner exception stack trace ---
+2013-07-07 10:08:32,514 [WIN-SQUVIVLQ4HM][Thread:41][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): The Controls collection cannot be modified because the control contains code blocks (i.e. <% ... %>).
+   at System.Web.UI.ControlCollection.Add(Control child)
+   at DotNetNuke.UI.Skins.Skin.ProcessModule(ModuleInfo module)
+   at DotNetNuke.UI.Skins.Skin.ProcessMasterModules()
+   at DotNetNuke.UI.Skins.Skin.OnInit(EventArgs e)
+   at ThingvoteSkin.PublicApp.OnInit(EventArgs e) in c:\Workspaces\Tipped\Websites\thvstage\Portals\0\Skins\ThingVote\PublicApp.ascx.cs:line 19
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at DotNetNuke.Framework.DefaultPage.OnInit(EventArgs e) in c:\Workspaces\Tipped\Websites\thvstage\Default.aspx.cs:line 741
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-07-07 10:08:32,600 [WIN-SQUVIVLQ4HM][Thread:41][ERROR] DotNetNuke.Services.Exceptions.Exceptions - DotNetNuke.Services.Exceptions.PageLoadException: The Controls collection cannot be modified because the control contains code blocks (i.e. <% ... %>). ---> System.Web.HttpException: The Controls collection cannot be modified because the control contains code blocks (i.e. <% ... %>).
+   at System.Web.UI.ControlCollection.Add(Control child)
+   at DotNetNuke.UI.Skins.Skin.ProcessModule(ModuleInfo module)
+   at DotNetNuke.UI.Skins.Skin.ProcessMasterModules()
+   at DotNetNuke.UI.Skins.Skin.OnInit(EventArgs e)
+   at ThingvoteSkin.PublicApp.OnInit(EventArgs e) in c:\Workspaces\Tipped\Websites\thvstage\Portals\0\Skins\ThingVote\PublicApp.ascx.cs:line 19
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at DotNetNuke.Framework.DefaultPage.OnInit(EventArgs e) in c:\Workspaces\Tipped\Websites\thvstage\Default.aspx.cs:line 741
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- End of inner exception stack trace ---
+2013-07-07 10:12:02,814 [WIN-SQUVIVLQ4HM][Thread:75][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): The Controls collection cannot be modified because the control contains code blocks (i.e. <% ... %>).
+   at System.Web.UI.ControlCollection.Add(Control child)
+   at DotNetNuke.UI.Skins.Skin.ProcessModule(ModuleInfo module)
+   at DotNetNuke.UI.Skins.Skin.ProcessMasterModules()
+   at DotNetNuke.UI.Skins.Skin.OnInit(EventArgs e)
+   at ThingvoteSkin.PublicApp.OnInit(EventArgs e) in c:\Workspaces\Tipped\Websites\thvstage\Portals\0\Skins\ThingVote\PublicApp.ascx.cs:line 19
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at DotNetNuke.Framework.DefaultPage.OnInit(EventArgs e) in c:\Workspaces\Tipped\Websites\thvstage\Default.aspx.cs:line 741
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-07-07 10:12:02,881 [WIN-SQUVIVLQ4HM][Thread:75][ERROR] DotNetNuke.Services.Exceptions.Exceptions - DotNetNuke.Services.Exceptions.PageLoadException: The Controls collection cannot be modified because the control contains code blocks (i.e. <% ... %>). ---> System.Web.HttpException: The Controls collection cannot be modified because the control contains code blocks (i.e. <% ... %>).
+   at System.Web.UI.ControlCollection.Add(Control child)
+   at DotNetNuke.UI.Skins.Skin.ProcessModule(ModuleInfo module)
+   at DotNetNuke.UI.Skins.Skin.ProcessMasterModules()
+   at DotNetNuke.UI.Skins.Skin.OnInit(EventArgs e)
+   at ThingvoteSkin.PublicApp.OnInit(EventArgs e) in c:\Workspaces\Tipped\Websites\thvstage\Portals\0\Skins\ThingVote\PublicApp.ascx.cs:line 19
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at DotNetNuke.Framework.DefaultPage.OnInit(EventArgs e) in c:\Workspaces\Tipped\Websites\thvstage\Default.aspx.cs:line 741
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- End of inner exception stack trace ---
+2013-07-07 10:12:38,023 [WIN-SQUVIVLQ4HM][Thread:54][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): The Controls collection cannot be modified because the control contains code blocks (i.e. <% ... %>).
+   at System.Web.UI.ControlCollection.Add(Control child)
+   at DotNetNuke.UI.Skins.Skin.ProcessModule(ModuleInfo module)
+   at DotNetNuke.UI.Skins.Skin.ProcessMasterModules()
+   at DotNetNuke.UI.Skins.Skin.OnInit(EventArgs e)
+   at ThingvoteSkin.PublicApp.OnInit(EventArgs e) in c:\Workspaces\Tipped\Websites\thvstage\Portals\0\Skins\ThingVote\PublicApp.ascx.cs:line 19
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at DotNetNuke.Framework.DefaultPage.OnInit(EventArgs e) in c:\Workspaces\Tipped\Websites\thvstage\Default.aspx.cs:line 741
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-07-07 10:12:38,028 [WIN-SQUVIVLQ4HM][Thread:54][ERROR] DotNetNuke.Services.Exceptions.Exceptions - DotNetNuke.Services.Exceptions.PageLoadException: The Controls collection cannot be modified because the control contains code blocks (i.e. <% ... %>). ---> System.Web.HttpException: The Controls collection cannot be modified because the control contains code blocks (i.e. <% ... %>).
+   at System.Web.UI.ControlCollection.Add(Control child)
+   at DotNetNuke.UI.Skins.Skin.ProcessModule(ModuleInfo module)
+   at DotNetNuke.UI.Skins.Skin.ProcessMasterModules()
+   at DotNetNuke.UI.Skins.Skin.OnInit(EventArgs e)
+   at ThingvoteSkin.PublicApp.OnInit(EventArgs e) in c:\Workspaces\Tipped\Websites\thvstage\Portals\0\Skins\ThingVote\PublicApp.ascx.cs:line 19
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at DotNetNuke.Framework.DefaultPage.OnInit(EventArgs e) in c:\Workspaces\Tipped\Websites\thvstage\Default.aspx.cs:line 741
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- End of inner exception stack trace ---
+2013-07-07 10:12:55,313 [WIN-SQUVIVLQ4HM][Thread:50][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): The Controls collection cannot be modified because the control contains code blocks (i.e. <% ... %>).
+   at System.Web.UI.ControlCollection.Add(Control child)
+   at DotNetNuke.UI.Skins.Skin.ProcessModule(ModuleInfo module)
+   at DotNetNuke.UI.Skins.Skin.ProcessMasterModules()
+   at DotNetNuke.UI.Skins.Skin.OnInit(EventArgs e)
+   at ThingvoteSkin.PublicApp.OnInit(EventArgs e) in c:\Workspaces\Tipped\Websites\thvstage\Portals\0\Skins\ThingVote\PublicApp.ascx.cs:line 19
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at DotNetNuke.Framework.DefaultPage.OnInit(EventArgs e) in c:\Workspaces\Tipped\Websites\thvstage\Default.aspx.cs:line 741
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-07-07 10:12:55,319 [WIN-SQUVIVLQ4HM][Thread:50][ERROR] DotNetNuke.Services.Exceptions.Exceptions - DotNetNuke.Services.Exceptions.PageLoadException: The Controls collection cannot be modified because the control contains code blocks (i.e. <% ... %>). ---> System.Web.HttpException: The Controls collection cannot be modified because the control contains code blocks (i.e. <% ... %>).
+   at System.Web.UI.ControlCollection.Add(Control child)
+   at DotNetNuke.UI.Skins.Skin.ProcessModule(ModuleInfo module)
+   at DotNetNuke.UI.Skins.Skin.ProcessMasterModules()
+   at DotNetNuke.UI.Skins.Skin.OnInit(EventArgs e)
+   at ThingvoteSkin.PublicApp.OnInit(EventArgs e) in c:\Workspaces\Tipped\Websites\thvstage\Portals\0\Skins\ThingVote\PublicApp.ascx.cs:line 19
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at DotNetNuke.Framework.DefaultPage.OnInit(EventArgs e) in c:\Workspaces\Tipped\Websites\thvstage\Default.aspx.cs:line 741
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- End of inner exception stack trace ---
+2013-07-07 10:38:39,191 [WIN-SQUVIVLQ4HM][Thread:25][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Modules.SocialPolls.View.OnInit(EventArgs e) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\View.ascx.cs:line 60
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at DotNetNuke.UI.Modules.ModuleHost.InjectModuleContent(Control content)
+   at System.Web.UI.Control.EnsureChildControls()
+   at DotNetNuke.UI.Containers.Container.get_ModuleControl()
+   at DotNetNuke.UI.Containers.Container.ProcessModule()
+   at DotNetNuke.UI.Skins.Pane.InjectModule(ModuleInfo module)
+2013-07-07 10:38:39,198 [WIN-SQUVIVLQ4HM][Thread:25][ERROR] DotNetNuke.Services.Exceptions.Exceptions - DotNetNuke.Services.Exceptions.ModuleLoadException: Unhandled Error Adding Module to ContentPane ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Modules.SocialPolls.View.OnInit(EventArgs e) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\View.ascx.cs:line 60
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at DotNetNuke.UI.Modules.ModuleHost.InjectModuleContent(Control content)
+   at System.Web.UI.Control.EnsureChildControls()
+   at DotNetNuke.UI.Containers.Container.get_ModuleControl()
+   at DotNetNuke.UI.Containers.Container.ProcessModule()
+   at DotNetNuke.UI.Skins.Pane.InjectModule(ModuleInfo module)
+   --- End of inner exception stack trace ---
+   at DotNetNuke.UI.Skins.Pane.InjectModule(ModuleInfo module)
+   at DotNetNuke.UI.Skins.Skin.InjectModule(Pane pane, ModuleInfo module)
+2013-07-07 10:38:39,217 [WIN-SQUVIVLQ4HM][Thread:25][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Modules.SocialPolls.View.OnInit(EventArgs e) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\View.ascx.cs:line 60
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at DotNetNuke.UI.Modules.ModuleHost.InjectModuleContent(Control content)
+   at System.Web.UI.Control.EnsureChildControls()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-07-07 10:38:39,222 [WIN-SQUVIVLQ4HM][Thread:25][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=56&error=An unexpected error has occurred&content=0
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Modules.SocialPolls.View.OnInit(EventArgs e) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\View.ascx.cs:line 60
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at DotNetNuke.UI.Modules.ModuleHost.InjectModuleContent(Control content)
+   at System.Web.UI.Control.EnsureChildControls()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-07-07 10:38:39,574 [WIN-SQUVIVLQ4HM][Thread:7][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Modules.SocialPolls.View.OnInit(EventArgs e) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\View.ascx.cs:line 60
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at DotNetNuke.UI.Modules.ModuleHost.InjectModuleContent(Control content)
+   at System.Web.UI.Control.EnsureChildControls()
+   at DotNetNuke.UI.Containers.Container.get_ModuleControl()
+   at DotNetNuke.UI.Containers.Container.ProcessModule()
+   at DotNetNuke.UI.Skins.Pane.InjectModule(ModuleInfo module)
+2013-07-07 10:38:39,580 [WIN-SQUVIVLQ4HM][Thread:7][ERROR] DotNetNuke.Services.Exceptions.Exceptions - DotNetNuke.Services.Exceptions.ModuleLoadException: Unhandled Error Adding Module to ContentPane ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Modules.SocialPolls.View.OnInit(EventArgs e) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\View.ascx.cs:line 60
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at DotNetNuke.UI.Modules.ModuleHost.InjectModuleContent(Control content)
+   at System.Web.UI.Control.EnsureChildControls()
+   at DotNetNuke.UI.Containers.Container.get_ModuleControl()
+   at DotNetNuke.UI.Containers.Container.ProcessModule()
+   at DotNetNuke.UI.Skins.Pane.InjectModule(ModuleInfo module)
+   --- End of inner exception stack trace ---
+   at DotNetNuke.UI.Skins.Pane.InjectModule(ModuleInfo module)
+   at DotNetNuke.UI.Skins.Skin.InjectModule(Pane pane, ModuleInfo module)
+2013-07-07 10:38:39,601 [WIN-SQUVIVLQ4HM][Thread:7][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Modules.SocialPolls.View.OnInit(EventArgs e) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\View.ascx.cs:line 60
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at DotNetNuke.UI.Modules.ModuleHost.InjectModuleContent(Control content)
+   at System.Web.UI.Control.EnsureChildControls()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-07-07 10:38:39,604 [WIN-SQUVIVLQ4HM][Thread:7][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=56&error=An unexpected error has occurred&content=0
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Modules.SocialPolls.View.OnInit(EventArgs e) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\View.ascx.cs:line 60
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at DotNetNuke.UI.Modules.ModuleHost.InjectModuleContent(Control content)
+   at System.Web.UI.Control.EnsureChildControls()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-07-07 10:38:47,169 [WIN-SQUVIVLQ4HM][Thread:19][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Modules.SocialPolls.View.OnInit(EventArgs e) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\View.ascx.cs:line 60
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at DotNetNuke.UI.Modules.ModuleHost.InjectModuleContent(Control content)
+   at System.Web.UI.Control.EnsureChildControls()
+   at DotNetNuke.UI.Containers.Container.get_ModuleControl()
+   at DotNetNuke.UI.Containers.Container.ProcessModule()
+   at DotNetNuke.UI.Skins.Pane.InjectModule(ModuleInfo module)
+2013-07-07 10:38:47,175 [WIN-SQUVIVLQ4HM][Thread:19][ERROR] DotNetNuke.Services.Exceptions.Exceptions - DotNetNuke.Services.Exceptions.ModuleLoadException: Unhandled Error Adding Module to ContentPane ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Modules.SocialPolls.View.OnInit(EventArgs e) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\View.ascx.cs:line 60
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at DotNetNuke.UI.Modules.ModuleHost.InjectModuleContent(Control content)
+   at System.Web.UI.Control.EnsureChildControls()
+   at DotNetNuke.UI.Containers.Container.get_ModuleControl()
+   at DotNetNuke.UI.Containers.Container.ProcessModule()
+   at DotNetNuke.UI.Skins.Pane.InjectModule(ModuleInfo module)
+   --- End of inner exception stack trace ---
+   at DotNetNuke.UI.Skins.Pane.InjectModule(ModuleInfo module)
+   at DotNetNuke.UI.Skins.Skin.InjectModule(Pane pane, ModuleInfo module)
+2013-07-07 10:38:47,184 [WIN-SQUVIVLQ4HM][Thread:19][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Modules.SocialPolls.View.OnInit(EventArgs e) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\View.ascx.cs:line 60
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at DotNetNuke.UI.Modules.ModuleHost.InjectModuleContent(Control content)
+   at System.Web.UI.Control.EnsureChildControls()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-07-07 10:38:47,186 [WIN-SQUVIVLQ4HM][Thread:19][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=56&error=An unexpected error has occurred&content=0
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Modules.SocialPolls.View.OnInit(EventArgs e) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\View.ascx.cs:line 60
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at DotNetNuke.UI.Modules.ModuleHost.InjectModuleContent(Control content)
+   at System.Web.UI.Control.EnsureChildControls()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-07-07 10:38:47,272 [WIN-SQUVIVLQ4HM][Thread:6][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Modules.SocialPolls.View.OnInit(EventArgs e) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\View.ascx.cs:line 60
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at DotNetNuke.UI.Modules.ModuleHost.InjectModuleContent(Control content)
+   at System.Web.UI.Control.EnsureChildControls()
+   at DotNetNuke.UI.Containers.Container.get_ModuleControl()
+   at DotNetNuke.UI.Containers.Container.ProcessModule()
+   at DotNetNuke.UI.Skins.Pane.InjectModule(ModuleInfo module)
+2013-07-07 10:38:47,278 [WIN-SQUVIVLQ4HM][Thread:6][ERROR] DotNetNuke.Services.Exceptions.Exceptions - DotNetNuke.Services.Exceptions.ModuleLoadException: Unhandled Error Adding Module to ContentPane ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Modules.SocialPolls.View.OnInit(EventArgs e) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\View.ascx.cs:line 60
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at DotNetNuke.UI.Modules.ModuleHost.InjectModuleContent(Control content)
+   at System.Web.UI.Control.EnsureChildControls()
+   at DotNetNuke.UI.Containers.Container.get_ModuleControl()
+   at DotNetNuke.UI.Containers.Container.ProcessModule()
+   at DotNetNuke.UI.Skins.Pane.InjectModule(ModuleInfo module)
+   --- End of inner exception stack trace ---
+   at DotNetNuke.UI.Skins.Pane.InjectModule(ModuleInfo module)
+   at DotNetNuke.UI.Skins.Skin.InjectModule(Pane pane, ModuleInfo module)
+2013-07-07 10:38:47,287 [WIN-SQUVIVLQ4HM][Thread:6][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Modules.SocialPolls.View.OnInit(EventArgs e) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\View.ascx.cs:line 60
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at DotNetNuke.UI.Modules.ModuleHost.InjectModuleContent(Control content)
+   at System.Web.UI.Control.EnsureChildControls()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-07-07 10:38:47,290 [WIN-SQUVIVLQ4HM][Thread:6][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=56&error=An unexpected error has occurred&content=0
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Modules.SocialPolls.View.OnInit(EventArgs e) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\View.ascx.cs:line 60
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at DotNetNuke.UI.Modules.ModuleHost.InjectModuleContent(Control content)
+   at System.Web.UI.Control.EnsureChildControls()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-07-07 10:45:39,771 [WIN-SQUVIVLQ4HM][Thread:6][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Modules.SocialPolls.View.OnInit(EventArgs e) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\View.ascx.cs:line 60
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at DotNetNuke.UI.Modules.ModuleHost.InjectModuleContent(Control content)
+   at System.Web.UI.Control.EnsureChildControls()
+   at DotNetNuke.UI.Containers.Container.get_ModuleControl()
+   at DotNetNuke.UI.Containers.Container.ProcessModule()
+   at DotNetNuke.UI.Skins.Pane.InjectModule(ModuleInfo module)
+2013-07-07 10:45:39,835 [WIN-SQUVIVLQ4HM][Thread:6][ERROR] DotNetNuke.Services.Exceptions.Exceptions - DotNetNuke.Services.Exceptions.ModuleLoadException: Unhandled Error Adding Module to ContentPane ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Modules.SocialPolls.View.OnInit(EventArgs e) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\View.ascx.cs:line 60
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at DotNetNuke.UI.Modules.ModuleHost.InjectModuleContent(Control content)
+   at System.Web.UI.Control.EnsureChildControls()
+   at DotNetNuke.UI.Containers.Container.get_ModuleControl()
+   at DotNetNuke.UI.Containers.Container.ProcessModule()
+   at DotNetNuke.UI.Skins.Pane.InjectModule(ModuleInfo module)
+   --- End of inner exception stack trace ---
+   at DotNetNuke.UI.Skins.Pane.InjectModule(ModuleInfo module)
+   at DotNetNuke.UI.Skins.Skin.InjectModule(Pane pane, ModuleInfo module)
+2013-07-07 10:45:40,083 [WIN-SQUVIVLQ4HM][Thread:6][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Modules.SocialPolls.View.OnInit(EventArgs e) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\View.ascx.cs:line 60
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at DotNetNuke.UI.Modules.ModuleHost.InjectModuleContent(Control content)
+   at System.Web.UI.Control.EnsureChildControls()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-07-07 10:45:40,088 [WIN-SQUVIVLQ4HM][Thread:6][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=56&error=An unexpected error has occurred&content=0
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Modules.SocialPolls.View.OnInit(EventArgs e) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\View.ascx.cs:line 60
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at DotNetNuke.UI.Modules.ModuleHost.InjectModuleContent(Control content)
+   at System.Web.UI.Control.EnsureChildControls()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-07-07 20:37:51,099 [WIN-SQUVIVLQ4HM][Thread:15][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Modules.SocialPolls.PollNotificationsController.AddVotedOnNotification(UserInfo initiatingUser, UserInfo targetUser) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Providers\Components\PollNotificationsController.cs:line 52
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.SaveVote(ResultDto data) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 547
+2013-07-07 21:08:13,061 [WIN-SQUVIVLQ4HM][Thread:37][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Modules.SocialPolls.PollNotificationsController.AddVotedOnNotification(UserInfo initiatingUser, UserInfo targetUser) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Providers\Components\PollNotificationsController.cs:line 52
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.SaveVote(ResultDto data) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 547

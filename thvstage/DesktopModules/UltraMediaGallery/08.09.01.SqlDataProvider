@@ -1,0 +1,37 @@
+﻿
+ALTER PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_PhotoListAndSort
+	@ModuleId int,
+	@AlbumId int,
+	@Max int,
+	@SortBy varchar(50),
+	@MediaType int
+AS
+
+DECLARE @SQLString NVARCHAR(2000)
+SET @SQLString = 'SELECT'
+if @Max > 0
+	SET @SQLString = @SQLString + ' TOP ' + cast(@Max as varchar(10))
+
+SET @SQLString = @SQLString + ' * FROM {databaseOwner}{objectQualifier}BizModules_UPG_Photo where Approved = 1 And '
+if @AlbumId > 0
+	SET @SQLString = @SQLString + ' AlbumId=' + cast(@AlbumId as varchar(10))
+else
+	SET @SQLString = @SQLString + ' AlbumId in (Select ItemId from {databaseOwner}{objectQualifier}UPG_vw_Album where ModuleId = ' +cast(@ModuleId as varchar(10)) + ')'
+
+if @MediaType <> 0
+	SET @SQLString = @SQLString + ' and MediaType & ' + cast(@MediaType as varchar(10)) +' = MediaType'
+
+if @SortBy = 'random'
+	SET @SQLString = @SQLString + ' order by newid() '
+else if @SortBy = 'highestrated'
+	SET @SQLString = @SQLString + ' order by averagerating desc '
+else if @SortBy = 'latest'
+	SET @SQLString = @SQLString + ' order by createddate desc '
+else
+	SET @SQLString = @SQLString + @SortBy
+
+EXECUTE sp_executesql @SQLString
+
+GO
+
+

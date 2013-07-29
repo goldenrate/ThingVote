@@ -1,0 +1,1005 @@
+.umgclassic *
+{
+	font-size:12px;
+    font-family: Helvetica, Helvetica Neue, Arial;
+	text-align:left;
+}
+
+.umgclassic
+{
+	position:relative;
+	overflow:hidden;
+	background-color:#e8e8e8;
+}
+
+.umgclassic .datahtml
+{
+	display:none;
+}
+
+.umgclassic.fullstate
+{
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%!important;
+	height: 100%!important;
+	max-width: 100%!important;
+	max-height: 100%!important;
+	z-index: 9999;
+	margin: 0;
+	padding: 0;
+}
+
+.umgclassic .loading
+{
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-left:-40px;
+	margin-top:-40px;
+	z-index:7;
+	background-image:url('loading.gif');
+	background-repeat:no-repeat;
+	background-position:center center;
+	width:80px;
+	height:80px;
+}
+
+.umgclassic .albumlist
+{
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:100%;
+	height:100%;
+	overflow:hidden;
+}
+
+.umgclassic .albumlist .albuminner
+{
+	z-index:1;
+}
+
+.umgclassic .pager
+{
+	z-index:2;
+	position:absolute;
+	bottom:10px;
+	left:50%;
+	margin-left:-80px;
+}
+
+.umgclassic .pager .prevpage
+{
+	width:30px;
+	height:20px;
+	background-image:url('previous.png');
+	cursor:pointer;
+	float:left;
+}
+
+.umgclassic .pager .prevpage.disabled
+{
+	background-image:url('previous2.png');
+}
+
+
+.umgclassic .pager .pageindex
+{
+	width:100px;
+	line-height:20px;
+	text-align:center;
+	float:left;
+	font-size:13px;
+}
+
+.umgclassic .pager .nextpage
+{
+	width:30px;
+	height:20px;
+	background-image:url('next.png');
+	cursor:pointer;
+	float:left;
+}
+
+.umgclassic .pager .nextpage.disabled
+{
+	background-image:url('next2.png');
+}
+
+.umgclassic .albumlist .albuminner
+{
+	width:100%;
+	position:absolute;
+}
+
+.umgclassic .albumlist .albumpath
+{
+	position:absolute;
+	left:10px;
+	top:10px;
+}
+
+.umgclassic .albumlist .albumpath a
+{
+	height:20px;
+	display:block;
+	float:left;
+	font-weight:bold;
+	color:#fff;
+	cursor:pointer;
+}
+
+.umgclassic .albumlist .albumpath .a
+{
+	height:20px;
+	display:block;
+	float:left;
+	color:#eee;
+}
+
+.umgclassic .albumlist .albumpath a .center
+{
+	text-decoration:underline;
+}
+
+.umgclassic .albumlist .albumpath .left
+{
+	width:4px;
+	height:100%;
+	display:block;
+	float:left;
+	background-image:url('pathleft.png');
+}
+
+.umgclassic .albumlist .albumpath .right
+{
+	width:4px;
+	height:100%;
+	display:block;
+	float:left;
+	background-image:url('pathright.png');
+}
+
+.umgclassic .albumlist .albumpath .center
+{
+	height:100%;
+	display:block;
+	float:left;
+	line-height:20px;
+	padding:0px 5px 0px 5px;
+	background-image:url('pathcenter.png');
+}
+
+
+.umgclassic .albumlist .separator
+{
+	background-image:url('separator.png');
+	background-repeat:no-repeat;
+	background-position:center center;
+	width:30px;
+	height:20px;
+	display:block;
+	float:left;
+}
+
+
+.umgclassic .album
+{
+	margin:0px;
+	cursor:pointer;
+	border-collapse:collapse;
+	position:absolute;
+}
+
+.umgclassic .album .tl
+{
+	width:6px;
+	height:6px;
+	background-image:url('albumbg1.png');
+}
+
+.umgclassic .album .t
+{
+	background-image:url('albumbg2.png');
+}
+
+.umgclassic .album .tr
+{
+	width:6px;
+	background-image:url('albumbg3.png');
+}
+
+.umgclassic .album .l
+{
+	background-image:url('albumbg4.png');
+}
+
+.umgclassic .album .r
+{
+	background-image:url('albumbg5.png');
+}
+
+.umgclassic .album .bl
+{
+	width:6px;
+	height:13px;
+	background-image:url('albumbg6.png');
+}
+
+.umgclassic .album .b
+{
+	background-image:url('albumbg7.png');
+}
+
+.umgclassic .album .br
+{
+	background-image:url('albumbg8.png');
+}
+
+.umgclassic .album .main
+{
+	overflow:hidden;
+	position:relative;
+	border:1px solid #666;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+}
+
+.umgclassic .album .main > img
+{
+	width:100%;
+	height:100%;
+}
+
+.umgclassic .album .main .new
+{
+	position:absolute;
+	top:0px;
+	left:0px;
+	background-image:url('new-flag.png');
+	width:38px;
+	height:36px;
+}
+
+.umgclassic .album td
+{
+	padding:0px;
+	text-align:center;
+}
+
+.umgclassic .album img
+{
+}
+
+.umgclassic .album .title
+{
+	font-size:13px;
+	font-weight:bold;
+	text-align:center;
+	line-height:20px;
+}
+
+.umgclassic .album .contents
+{
+	color:#888;
+	line-height:18px;
+}
+
+.umgclassic .album .float
+{
+	font-size:11px;
+	position:absolute;
+	right:0px;
+	bottom:0px;
+	background-image:url('semiblack50.png');
+	padding:2px;
+	color:#fff;
+	display:none;
+}
+
+.umgclassic .album .subalbumlogo
+{
+	overflow:hidden;
+	float:left;
+}
+
+.umgclassic .album .subalbumlogo img
+{
+	margin:3px;
+	border:1px solid #666;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+}
+
+.umgclassic .slideshow
+{
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0px;
+	left:0px;
+	display:none;
+	background-color:#111111;
+}
+
+.umgclassic .media
+{
+	position:absolute;
+	width:100%;
+	top:0px;
+	bottom:50px;
+}
+
+.umgclassic .controls
+{
+	z-index:5;
+	width:100%;
+	height:50px;
+	position:absolute;
+	bottom:0px;
+	background-image:url('semiblack50.png');
+}
+
+.umgclassic .controls .playpause
+{
+	background-image:url('play.png');
+	background-repeat:no-repeat;
+	background-position:center center;
+	width:55px;
+	height:30px;
+	position:absolute;
+	left:10px;
+	top:50%;
+	margin-top:-15px;
+	cursor:pointer;
+}
+
+.umgclassic .controls .playpause.pause
+{
+	background-image:url('pause.png');
+}
+
+
+.umgclassic .controls .prevgroup
+{
+	background-image:url('prevgroup.png');
+	background-repeat:no-repeat;
+	background-position:center center;
+	width:55px;
+	height:30px;
+	position:absolute;
+	left:75px;
+	top:50%;
+	margin-top:-15px;
+	cursor:pointer;
+}
+
+
+.umgclassic .controls .nextgroup
+{
+	background-image:url('nextgroup.png');
+	background-repeat:no-repeat;
+	background-position:center center;
+	width:55px;
+	height:30px;
+	position:absolute;
+	right:75px;
+	top:50%;
+	margin-top:-15px;
+	cursor:pointer;
+}
+
+
+.umgclassic .controls .fullscreen
+{
+	background-image:url('fullscreen.png');
+	background-repeat:no-repeat;
+	background-position:center center;
+	width:55px;
+	height:30px;
+	position:absolute;
+	right:10px;
+	top:50%;
+	margin-top:-15px;
+	cursor:pointer;
+}
+
+.umgclassic .controls .fullscreen.return
+{
+	background-image:url('normalscreen.png');
+}
+
+.umgclassic .controls .thumblist
+{
+	position:relative;
+	margin-left:140px;
+	margin-right:140px;
+	height:100%;
+	overflow:hidden;
+}
+
+.umgclassic .controls .thumblistinner
+{
+	position:absolute;
+	left:0px;
+	top:0px;
+	height:100%;
+
+	padding-top:5px;
+}
+
+.umgclassic .controls .mediathumb
+{
+	overflow:hidden;
+	float:left;
+	background-image:url('thumbbg.png');
+	margin-right:5px;
+	border:3px solid #999;
+	cursor:pointer;
+}
+
+.umgclassic .controls .mediathumb.current
+{
+	margin-top:-3px;
+	border:3px solid #fff;
+}
+
+.umgclassic .controls .mediathumb.beingplayed
+{
+	margin-top:-3px;
+	border:3px solid #fff;
+}
+
+.umgclassic .controls .placeholder
+{
+	overflow:hidden;
+	float:left;
+	background-image:url('thumbbg.png');
+	margin-right:5px;
+	padding:3px;
+}
+
+.umgclassic .bigthumb
+{
+	z-index:6;
+	background-image:url('triangle.png');
+	background-position:center bottom;
+	background-repeat:no-repeat;
+	position:absolute;
+	width:auto;
+}
+
+.umgclassic .bigthumbinner
+{
+	background-color:#fff;
+	margin-bottom:6px;
+	padding:3px;
+}
+
+.umgclassic .medialist
+{
+	z-index:4;
+	width:100%;
+	height:100%;
+	position:absolute;
+	overflow:hidden;
+	left:0px;
+	top:0px;
+}
+
+.umgclassic .medialarge
+{
+	position:absolute;
+	display:none;
+}
+
+.umgclassic .medialarge.bottom
+{
+	z-index:1;
+}
+
+.umgclassic .medialarge.top
+{
+	z-index:2;
+}
+
+
+.umgclassic .multimedia
+{
+}
+
+.umgclassic .multimedia.embedcode
+{
+	color:#fff;
+}
+
+.umgclassic .multimedia.embedcode *
+{
+	z-index:0;
+}
+
+
+.umgclassic .social
+{
+	z-index:7;
+	position:absolute;
+	left:-220px;
+	top:100px;
+	width:220px;
+	background-image:url('semiblack50.png');
+}
+
+.umgclassic .social.wide
+{
+	width:270px;
+	left:-270px;
+}
+
+.umgclassic .social .ratingscore
+{
+	position:absolute;
+	right:-30px;
+	width:30px;
+	height:30px;
+	background-image:url('semibtn1.png');
+	color:#fff;
+	font-size:15px;
+	line-height:30px;
+	text-align:center;
+	cursor:pointer;
+}
+
+.umgclassic .social .addthis
+{
+	width:24px;
+	height:24px;
+	margin:3px;
+	background-image:url('facebook20.png');
+	background-position:center center;
+	background-repeat:no-repeat;
+}
+
+.umgclassic .social .ratingstars
+{
+	text-align:center;
+}
+
+.umgclassic .social .ratingstars .stars
+{
+	margin-top:10px;
+}
+
+
+.umgclassic .social .ratingstars .solid
+{
+	display:inline-block;
+	width:24px;
+	height:24px;
+	background-image:url('star_solid.png');
+}
+
+.umgclassic .social .ratingstars .hollow
+{
+	display:inline-block;
+	width:24px;
+	height:24px;
+	background-image:url('star_hollow.png');
+}
+
+.umgclassic .social .ratingstars .semisolid
+{
+	display:inline-block;
+	width:24px;
+	height:24px;
+	background-image:url('star_solid2.png');
+}
+
+
+.umgclassic .social .ratingstars div
+{
+	text-align:center;
+	color:#fff;
+	margin:5px;
+}
+
+.umgclassic .social .yourrate
+{
+	text-align:center;
+	color:#fff;
+	font-size:18px;
+	margin-top:20px;
+}
+
+.umgclassic .social .rate
+{
+	text-align:center;
+}
+
+.umgclassic .social .rate .star
+{
+	display:inline-block;
+	width:24px;
+	height:24px;
+	background-image:url('star_hollow.png');
+	cursor:pointer;
+}
+
+.umgclassic .social .rate .star.hover
+{
+	background-image:url('star_solid.png');
+}
+
+.umgclassic .social .addthis_toolbox
+{
+	margin:20px auto 10px 3px;
+	width:255px;
+}
+
+.umgclassic .social.wide .addthis_toolbox
+{
+	width:315px;
+}
+
+
+.umgclassic .social .addthis_toolbox iframe
+{
+	padding-top:4px;
+}
+
+
+.umgclassic .tagform
+{
+	z-index:7;
+	position:absolute;
+	left:-120px;
+	bottom:60px;
+	width:120px;
+	background-image:url('semiblack50.png');
+	text-align:center;
+}
+
+.umgclassic .tagform .placeholder
+{
+	position:absolute;
+	right:-30px;
+	width:30px;
+	height:30px;
+	background-image:url('semibtn1.png');
+	color:#fff;
+	font-size:15px;
+	line-height:30px;
+	text-align:center;
+	cursor:pointer;
+}
+
+.umgclassic .tagform .icon
+{
+	width:24px;
+	height:24px;
+	background-image:url('tag20.png');
+	background-position:center center;
+	background-repeat:no-repeat;
+	margin:3px;
+}
+
+.umgclassic .tagform .currenttags
+{
+	font-size:12px;
+	font-weight:bold;
+	line-height:25px;
+	color:#eee;
+	text-align:center;
+}
+
+.umgclassic .tagform .tag
+{
+	width:100px;
+	height:30px;
+	color:#fff;
+	line-height:30px;
+	text-align:center;
+	cursor:pointer;
+	background-image:url('tagbg.png');
+	margin:10px auto 10px auto;
+}
+
+.umgclassic .newtag
+{
+	z-index:5;
+	position:absolute;
+	width:100px;
+	margin-left:-50px;
+	margin-top:-50px;
+}
+
+.umgclassic .newtag .frame
+{
+	width:100%;
+	height:100px;
+	background-image:url('tagcursor.png');
+}
+
+.umgclassic .newtag .text
+{
+	position:absolute;
+	top:100px;
+	left:-10px;
+	width:120px;
+	background-image:url('triangle2.png');
+	background-position:center top;
+	background-repeat:no-repeat;
+}
+
+.umgclassic .newtag input
+{
+	margin-top:5px;
+	border:3px solid #fff;
+	text-align:center;
+	color:#555;
+	width:94%;
+}
+
+.umgclassic .atag
+{
+	z-index:5;
+	position:absolute;
+	background-image:url('triangle2.png');
+	background-position:center top;
+	background-repeat:no-repeat;
+	max-width:200px;
+	min-width:60px;
+}
+
+.umgclassic .medialarge .atag
+{
+	display:none;
+}
+
+.umgclassic .slideshow.hover .atag
+{
+	display:block;
+}
+
+.umgclassic .atag.deleted, .umgclassic .slideshow.hover .atag.deleted
+{
+	display:none;
+}
+
+
+.umgclassic .atag .tagbody
+{
+	background-color:#fff;
+	margin-top:5px;
+	padding:3px;
+
+	height:16px;
+}
+
+.umgclassic .atag .text
+{
+	text-align:center;
+	margin:0px 5px 0px 5px;
+	float:left;
+}
+
+.umgclassic .atag .deletetag
+{
+	width:16px;
+	height:16px;
+	margin-left:2px;
+	background-image:url('cut.png');
+	float:left;
+	cursor:pointer;
+	display:none;
+}
+
+.umgclassic .tagging .atag .deletetag
+{
+	display:block;
+}
+
+
+.umgclassic .pager2
+{
+	z-index:8;
+	position:absolute;
+	top:10px;
+	left:50%;
+	margin-left:-80px;
+	height:20px;
+}
+
+.umgclassic .pager2 .pageindex
+{
+	background-image:url('indexbg.png');
+	background-position:center center;
+	background-repeat:no-repeat;
+	color:#fff;
+}
+
+.umgclassic .mediadesc
+{
+	z-index:7;
+	position:absolute;
+	width:240px;
+	background-image:url('semiblack50.png');
+	display:none;
+}
+
+.umgclassic .slideshow.hover .mediadesc
+{
+	display:block;
+}
+
+.umgclassic .mediadesc.topright
+{
+	right:10px;
+	top:10px;
+}
+
+.umgclassic .mediadesc.bottomright
+{
+	right:10px;
+	bottom:60px;
+}
+
+
+.umgclassic .mediadesc.closed
+{
+	background-image:none;
+}
+
+.umgclassic .mediadesc.closed .title, .umgclassic .mediadesc.closed .desc, .umgclassic .mediadesc.closed .link, .umgclassic .mediadesc.closed .res
+{
+	visibility:hidden;
+}
+
+.umgclassic .mediadesc.closed .close
+{
+	background-image:url('info.png');
+}
+
+
+
+.umgclassic .mediadesc > div
+{
+	position:relative;
+	margin:5px;
+}
+
+.umgclassic .mediadesc .close
+{
+	position:absolute;
+	top:0px;
+	right:0px;
+	width:16px;
+	height:16px;
+	background-image:url('close.png');
+	background-position:right center;
+	background-repeat:no-repeat;
+	cursor:pointer;
+}
+
+.umgclassic .mediadesc .title
+{
+	font-size:15px;
+	font-weight:bold;
+	line-height:25px;
+	margin-bottom:5px
+}
+
+.umgclassic .mediadesc .desc
+{
+    color:#fff;
+	font-size:11px;
+	margin-bottom:5px
+}
+
+.umgclassic .mediadesc .buttons a
+{
+	display:block;
+	height:23px;
+	text-decoration:underline;
+	text-transform:uppercase;
+	line-height:23px;
+	color:#fff;
+	text-align:center;
+	margin-bottom:5px;
+	float:left;
+}
+
+.umgclassic .mediadesc .link
+{
+	background-image:url('more.png');
+	width:49px;
+	margin-right:5px;
+}
+
+.umgclassic .mediadesc .res
+{
+	background-image:url('download.png');
+	width:97px;
+	cursor:pointer;
+}
+
+
+
+
+.umgclassic .closealbum
+{
+	z-index:7;
+	position:absolute;
+	left:-200px;
+	top:0px;
+	width:200px;
+	background-image:url('semiblack50.png');
+	text-align:center;
+}
+
+.umgclassic .closealbum img
+{
+	margin:3px;
+	border:1px solid #666;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+	display:none;
+}
+
+.umgclassic .closealbum .placeholder
+{
+	position:absolute;
+	right:-30px;
+	width:30px;
+	height:30px;
+	background-image:url('semibtn1.png');
+	color:#fff;
+	font-size:15px;
+	line-height:30px;
+	text-align:center;
+	cursor:pointer;
+}
+
+.umgclassic .closealbum .icon
+{
+	width:24px;
+	height:24px;
+	background-image:url('view-grid20.png');
+	background-position:center center;
+	background-repeat:no-repeat;
+	margin:3px;
+}
+
+.umgclassic .closealbum .title
+{
+	font-size:12px;
+	font-weight:bold;
+	line-height:25px;
+	color:#eee;
+	text-align:center;
+}
+
+.umgclassic .closealbum .albumtitle
+{
+	font-size:15px;
+	font-weight:bold;
+	text-align:center;
+	line-height:20px;
+}
+
+.umgclassic .closealbum .return
+{
+	width:100px;
+	height:30px;
+	color:#fff;
+	line-height:30px;
+	text-align:center;
+	cursor:pointer;
+	background-image:url('tagbg.png');
+	margin:10px auto 10px auto;
+}

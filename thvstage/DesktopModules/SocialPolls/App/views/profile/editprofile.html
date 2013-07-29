@@ -1,0 +1,69 @@
+﻿<article id="editprofile">
+    <section class="span">
+        <div class="picture-wrapper">
+            <img data-bind="attr:{ src: ProfilePictureUrl()} " />
+        </div>
+        <div id="imageUploadScope" 
+            data-bind="uploadHandler: doneUploadHandler,
+                    fileHandlerUrl: fileHandlerUrl ">
+            <button id="imageUploaderTrigger" style="margin-top:8px;" 
+                class=" btn rounded-gray-btn med-btn">UPLOAD IMAGE</button>
+            <input id="imageUploader"
+                data-text="UPLOAD IMAGE" style="display: none"                
+                class="poll-image-upload" type="file" />
+        </div>
+    </section>
+    
+    <section class="span form-horizontal">
+        <div class="control-group">
+            <label class="control-label" 
+                for="FirstName">First Name:</label>
+            <div class="controls">
+                <input type="text" id="FirstName"
+                    data-bind="value: FirstName" />
+                <span class="hide"><i class="icon-ok"></i></span>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="control-group">
+            <label class="control-label" for="LastName">Last Name:</label>
+            <div class="controls">
+                <input type="text" id="LastName"
+                    data-bind="value: LastName" />
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="City">Location:</label>
+            <div class="controls">
+                <input type="text" id="City"
+                    data-bind="value: City" />
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label" for="Biography">About:</label>
+            <div class="controls">
+                <textarea id="Biography" rows="5" data-bind="value: Biography"></textarea>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label" for="SearchPrivacy">Search Privacy:</label>
+            <div class="controls"
+                data-bind="toggleButtons: SearchPrivacy,
+                            On:on, off: off, clickHandler: searchPrivacyClick  ">
+                <div id="SearchPrivacy" class="btn-group" data-toggle="buttons-radio">
+                    <button class="btn">ON</button>
+                    <button class="btn">OFF</button>
+                </div>
+            </div>
+        </div>
+        <!-- 
+             data-bind="event: { mousedown: searchPrivacyClick }"  
+            data-bind="event: { mousedown: searchPrivacyClick }"
+            " 
+             -->
+    </section>
+
+
+</article>

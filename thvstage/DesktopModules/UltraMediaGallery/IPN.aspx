@@ -1,0 +1,1 @@
+<%@ Page Language="vb" AutoEventWireup="false" Codebehind="IPN.aspx.vb" Inherits="BizModules.UltraPhotoGallery.IPN" %>

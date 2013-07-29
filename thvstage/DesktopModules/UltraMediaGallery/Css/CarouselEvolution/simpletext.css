@@ -1,0 +1,24 @@
+/* ____________________________________________________________ */
+
+/* DESCRIPTION */
+/* ____________________________________________________________ */
+
+.carousel .description
+{
+	position :absolute ;
+	text-align:left;
+	background-image:url('images/semiwhite80.png');
+	left:0px;
+	bottom:20px;
+	margin-top:20px;
+	padding:5px;
+    font-family: Tahoma, Arial, Helvetica;
+	font-size:12px;
+	color:#333;
+}
+
+.carousel .description .title
+{
+	font-size:24px;
+	color:#000;
+}

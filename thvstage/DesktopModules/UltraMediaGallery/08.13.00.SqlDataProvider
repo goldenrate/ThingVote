@@ -1,0 +1,5 @@
+﻿--New presentation
+if not exists(select * from {databaseOwner}{objectQualifier}BizModules_upg_presentation where name='KenBurnSlider')
+INSERT {databaseOwner}{objectQualifier}BizModules_upg_presentation(Name,Description,DisplayCtl,GallerySettingCtl,Type,DefaultWidth,DefaultHeight,AllowFullScreen,Category, Featured) VALUES('KenBurnSlider','Ken Burn Slider is the premium way of using a slider in your website. A combination of Ken Burns Effect, state-of-the-art Slider, Text Animations and Responsive rebuilding defines this slider.','KenBurnSlider','KenBurnSliderAppearance','BizModules.UltraPhotoGallery.Presentation.KenBurnSlider, BizModules.UltraPhotoGallery','940','320','0','SlidersAndRotators', 1)
+GO
+

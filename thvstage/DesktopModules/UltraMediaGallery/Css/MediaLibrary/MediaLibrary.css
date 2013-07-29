@@ -1,0 +1,137 @@
+.Libleft
+{
+	float:left;
+	height:100%;
+	text-align:left;
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:13px;
+
+	overflow: auto; 
+	overflow-x: hidden;
+}
+
+.Libleft img
+{
+	border:0px;
+}
+
+.Libroot
+{
+	padding-top:3px;
+}
+
+.Libroot div
+{
+	margin-left:15px;
+	margin-top:3px;
+}
+
+.Libleft a, .Libleft a:visited
+{
+	text-decoration:none;
+	padding-left:2px;
+	padding-right:2px;
+	color:#000;
+}
+
+.Libleft a:hover
+{
+	text-decoration:none;
+}
+
+.Libsplitter
+{
+	display:none;
+	width:10px;
+	height:100%;
+	background-image:url('../../images/expand.png');
+}
+
+.Libright
+{
+	overflow: auto; 
+	overflow-x: hidden;
+	text-align:left;
+		
+	float:left;
+}
+
+ .Libcurrent a
+{
+	border:1px solid #ccc;
+	background-image:url('images/libcurrent.gif');
+}
+
+.Libloading
+{
+	width:32px;
+	height:32px;
+	position:absolute;
+	top:36%;
+	left:47%;
+	background-image:url('../../images/loading.gif');
+}
+
+.Libsection
+{
+	margin:5px;
+	text-align:left;
+	clear:both;
+}
+
+.Libsectionheader
+{
+	margin-top:10px;
+	margin-bottom:10px;
+	text-align:left;
+	color:#000000;
+	font-size:15px;	
+	
+	padding-left:15px;
+	background-image:url('images/sectionheader.gif');
+	background-repeat:no-repeat;
+	background-position:left;
+}
+
+.Libsubhead
+{
+	color:#666666;
+	font-size:11px;	
+	margin-left:10px;
+}
+
+.Libmedia
+{
+	position:relative;
+	display:inline-block;
+	text-align:center;
+	margin:5px;
+	padding:5px;
+	border:1px solid #cccccc;
+	background:#F8F8F8;
+}
+
+.Libmedia .Libmediatitle
+{
+	position:absolute;
+	left:5px;
+	right:5px;
+	bottom:5px;
+	line-height:16px;
+	background-image:url('images/semiwhite50.png');
+	color:#000;
+	font-size:12px;
+}
+
+.Libmedia a img
+{
+	border:0px;
+	margin:0px;
+}
+
+.Libmedia a:hover img
+{
+	border:0px;
+	margin:0px;
+}

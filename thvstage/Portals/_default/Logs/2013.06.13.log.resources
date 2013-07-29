@@ -1,0 +1,35 @@
+2013-06-13 11:30:51,777 [WIN-SQUVIVLQ4HM][Thread:14][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.NullReferenceException: Object reference not set to an instance of an object.
+   at System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   at DotNetNuke.Entities.Users.UserInfo.get_Social()
+   at DotNetNuke.Entities.Users.UserInfo.get_Roles()
+   at DotNetNuke.Entities.Users.UserInfo.IsInRole(String role)
+   at DotNetNuke.HttpModules.Membership.MembershipModule.AuthenticateRequest(HttpContextBase context, Boolean allowUnknownExtensinons)
+   at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2013-06-13 11:33:16,090 [WIN-SQUVIVLQ4HM][Thread:27][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.FormatException: Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+   at System.Text.StringBuilder.AppendFormat(IFormatProvider provider, String format, Object[] args)
+   at System.String.Format(IFormatProvider provider, String format, Object[] args)
+   at DotNetNuke.Modules.SocialPolls.PollNotificationsController.GetProfileLink(Int32 userId, String displayName) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Providers\Components\PollNotificationsController.cs:line 110
+   at DotNetNuke.Modules.SocialPolls.PollNotificationsController.AddVotedOnNotification(UserInfo initiatingUser, UserInfo targetUser) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Providers\Components\PollNotificationsController.cs:line 52
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.SaveVote(ResultDto data) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 521
+2013-06-13 11:33:32,779 [WIN-SQUVIVLQ4HM][Thread:13][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.FormatException: Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+   at System.Text.StringBuilder.AppendFormat(IFormatProvider provider, String format, Object[] args)
+   at System.String.Format(IFormatProvider provider, String format, Object[] args)
+   at DotNetNuke.Modules.SocialPolls.PollNotificationsController.GetProfileLink(Int32 userId, String displayName) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Providers\Components\PollNotificationsController.cs:line 110
+   at DotNetNuke.Modules.SocialPolls.PollNotificationsController.AddVotedOnNotification(UserInfo initiatingUser, UserInfo targetUser) in c:\Workspaces\Tipped\Websites\thvstage\DesktopModules\SocialPolls\Providers\Components\PollNotificationsController.cs:line 52
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.SaveVote(ResultDto data) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 521
+2013-06-13 14:23:39,594 [WIN-SQUVIVLQ4HM][Thread:25][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPublicPollsByCategories(String categories) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 319
+2013-06-13 14:23:39,594 [WIN-SQUVIVLQ4HM][Thread:27][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPublicPollsByCategories(String categories) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 319
+2013-06-13 14:25:11,430 [WIN-SQUVIVLQ4HM][Thread:16][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPublicPollsByCategories(String categories) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 319
+2013-06-13 14:30:58,375 [WIN-SQUVIVLQ4HM][Thread:56][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.GetPublicPollsByCategories(String categories) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 319
+2013-06-13 16:03:03,494 [WIN-SQUVIVLQ4HM][Thread:74][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.<PollsBasicSearch>b__19(PollDTO poll, String term) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 390
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.<>c__DisplayClass20.<PollsBasicSearch>b__1a(PollDTO p) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 391
+   at System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at ASPvia.SocialVotes.DataServices.Controller.PollController.PollsBasicSearch(String searchTerm) in c:\Workspaces\Tipped\Framework\SocialVotes.DataServices\Controller\PollController.cs:line 391

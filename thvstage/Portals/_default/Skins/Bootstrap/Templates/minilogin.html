@@ -1,0 +1,54 @@
+﻿<div class="form-inline">
+    <input type="text" class="input-small" placeholder="Email">
+    <input type="password" class="input-small" placeholder="Password">
+    <label class="checkbox">
+        <input type="checkbox">
+        Remember me
+    </label>
+    <button type="submit" class="btn">Sign in</button>
+</div>
+
+<table cellspacing="0" cellpadding="3" border="0" align="center" runat="server" summary="SignIn Design Table" id="tableLogin">
+    <tbody>
+        <tr>
+            <td align="center" colspan="2">[DNN_LABEL_USERNAME]</td>
+        </tr>
+        <tr>
+            <td align="center" colspan="2">[DNN_TEXT_USERNAME]</td>
+        </tr>
+        <tr>
+            <td align="center" colspan="2">[DNN_LABEL_PASSWORD]</td>
+        </tr>
+        <tr>
+            <td align="center" colspan="2">[DNN_TEXT_PASSWORD]</td>
+        </tr>
+        <tr visible="false" runat="server" id="rowVerification1">
+            <td align="center" colspan="2">[DNN_LABEL_VERIFICATION]</td>
+        </tr>
+        <tr visible="false" runat="server" id="rowVerification2">
+            <td align="center" colspan="2">[DNN_TEXT_VERIFICATION]</td>
+        </tr>
+        <tr>
+            <td align="center" colspan="2">[DNN_CHECKBOX_REMEBER_ME]</td>
+        </tr>
+        <tr>
+            <td align="right" runat="server" id="TDLogin" style="width: 50%;">[DNN_LOGIN_BUTTON]&nbsp;</td>
+            <td align="left" runat="server" id="TDRegister" 
+                style="width: 50%;">&nbsp;[DNN_REGISTER_BUTTON]</td>
+        </tr>
+        <tr>
+            <td align="center" colspan="2">[DNN_SEND_PASSWORD_BUTTON]</td>
+        </tr>
+        <tr>
+            <td align="center" colspan="2">[DNN_LOGIN_LABEL]</td>
+        </tr>
+    </tbody>
+</table>
+<table cellspacing="0" cellpadding="3" border="0" runat="server" id="tableMessage">
+    <tbody>
+        <tr>
+            <td valign="top">[DNN_MESSAGE_LABEL]</td>
+        </tr>
+    </tbody>
+</table>
+<br />

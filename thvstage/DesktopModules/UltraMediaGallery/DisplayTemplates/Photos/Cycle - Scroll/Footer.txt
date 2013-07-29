@@ -1,0 +1,4 @@
+</div>
+</td><td valign="top" style="padding-left:5px;">
+<div id="output">Status area</div>
+</td></tr></table>

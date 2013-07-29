@@ -1,0 +1,5 @@
+﻿
+update {databaseOwner}{objectQualifier}Bizmodules_upg_presentation set Type = 'BizModules.UltraPhotoGallery.Presentation.PhotoStack, BizModules.UltraPhotoGallery'  where Name = 'PhotoStack'
+GO
+
+

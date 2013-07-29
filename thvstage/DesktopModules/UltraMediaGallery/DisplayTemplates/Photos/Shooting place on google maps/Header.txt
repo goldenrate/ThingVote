@@ -1,0 +1,97 @@
+<div id="map_canvas[MODULEID]" style="width: 520px; height: 320px"></div>
+<script type="text/javascript">
+	//configuration
+	var default_latitude = 0;
+	var default_longitude = 0;
+	var default_zoom = 1;
+	var accuracy = .001 //about 111 meters;
+	var center_to_last_item = true;
+	//end of configuration, generally you don't need to change below codes
+</script>
+
+[GOOGLEMAPSAPI]
+[EVENT]
+[JQUERY]
+[THICKBOX]
+
+<script type="text/javascript">
+function initialize[MODULEID]() {
+  if (GBrowserIsCompatible()) {
+	var map[MODULEID] = new GMap2(document.getElementById("map_canvas[MODULEID]"));
+
+	var center = new GLatLng(default_latitude, default_longitude);
+	map[MODULEID].setCenter(center, default_zoom);
+
+	map[MODULEID].setUIToDefault();
+
+        var lastpoint;
+
+	for (var i=0;i<gpsphotos.length;i++)
+	{
+		var photo = gpsphotos[i];
+		if (!isNaN(photo.lat) && photo.lat*1 + photo.lng*1 != 0)
+		{
+			var point = new GLatLng(photo.lat, photo.lng);
+			var marker;
+			if (photo.daysago >= 0)
+			{
+				var daysago = photo.daysago;
+				if (daysago > 365) daysago = 365;
+				var size = (365-daysago) / 365;
+				size *= size;
+				var itemicon = new GIcon();
+				itemicon.shadow = "http://www.google.com/mapfiles/shadow50.png";
+				itemicon.image = "http://www.google.com/mapfiles/marker.png";
+				itemicon.iconSize = new GSize(getsize(20,size), getsize(34,size));//GSize(20, 34);
+				itemicon.shadowSize = new GSize(getsize(37,size), getsize(34,size));//GSize(37, 34);
+				itemicon.iconAnchor = new GPoint(itemicon.iconSize.width * .45, itemicon.iconSize.height);//GPoint(9, 34);
+				itemicon.infoWindowAnchor = new GPoint(8, 8);//GPoint(9, 2);
+				itemicon.infoShadowAnchor = new GPoint(18, 25);//GPoint(18, 25);
+				var marker = new GMarker(point, { icon:itemicon });
+				lastpoint = point;
+			}
+			else
+			{
+				marker = new GMarker(point);
+			}
+
+			marker.photoIndex = i;
+			map[MODULEID].addOverlay(marker);
+
+			GEvent.addListener(marker, "click", function() {
+				var currentphoto = gpsphotos[this.photoIndex];
+				var items = "[T]"+currentphoto.title+"[U]"+currentphoto.src;
+				for (var i=0;i<gpsphotos.length;i++)
+				{
+					var photo = gpsphotos[i];
+					if (photo.thumbnail != currentphoto.thumbnail && !isNaN(photo.lat) && photo.lat*1 + photo.lng*1 != 0)
+					{
+						if (Math.abs(photo.lat - currentphoto.lat) < accuracy && Math.abs(photo.lng - currentphoto.lng) < accuracy )
+						{
+							//ok, this photo is near the clicked photo
+							items += "[T]"+photo.title+"[U]"+photo.src;
+						}
+					}
+				}
+				var photoHtml = "<a href='javascript:void(0);' onclick='showBulkLightBox(\""+items+"\")'><img src='"+currentphoto.thumbnail+"' align='left' border='0' /></a><p class='SubHead'>" + currentphoto.title + "</p><p class='Normal'>" + currentphoto.takendate + "<br />"+currentphoto.author+"</p>";
+				this.openInfoWindowHtml(photoHtml);
+			});
+		}
+	}
+
+	if (lastpoint && center_to_last_item)
+	{
+		map[MODULEID].panTo(lastpoint);
+	}
+  }
+}
+
+function getsize(baseValue, ratio)
+{
+	return Math.round(baseValue / 2 + (baseValue / 2)*ratio);
+}
+
+addEvent(window,"load" , initialize[MODULEID]);
+addEvent(window,"unload" , GUnload);
+
+var gpsphotos=[

@@ -1,0 +1,7 @@
+<table>
+<tr><td>
+<img Src="[THUMBNAIL]" />
+</td><td>
+<div class="SubHead">[TITLE]</div>
+<div class="Normal">[AUTHOR] @ [SHORTDATE]</div>
+</td></tr></table>

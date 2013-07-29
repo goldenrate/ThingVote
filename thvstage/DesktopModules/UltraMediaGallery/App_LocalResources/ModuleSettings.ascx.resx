@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>1.3</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+
+	
+	<data name="Locked.Text">
+		<value>The gallery mode and presentation option are locked by your host</value>
+	</data>
+	<data name="Basic.Text">
+		<value>Gallery Appearance</value>
+	</data>
+	<data name="GeneralSettings.Text">
+		<value>General Options</value>
+	</data>
+	<data name="AdvancedOptions.Text">
+		<value>Advanced Options</value>
+	</data>
+	<data name="Community.Text">
+		<value>Community</value>
+	</data>
+	<data name="GalleryMode.Text">
+		<value>Gallery Mode</value>
+	</data>
+	<data name="GalleryMode.Help">
+		<value>Choose Normal mode if you are not sure, for further information please refer to the user guide</value>
+	</data>
+	<data name="PresentationCategory.Text">
+		<value>Presentation Category</value>
+	</data>
+	<data name="PresentationCategory.Help">
+		<value>UMG offers 30+ presentations, choose a category to narrow selection</value>
+	</data>
+	<data name="FeaturedPresentations.Text">
+		<value>Show featured only</value>
+	</data>
+	<data name="Presentation.Text">
+		<value>Presentation</value>
+	</data>
+	<data name="Presentation.Help">
+		<value>A presentation is a image/media viewer with its unique look and feel, if you do not know what to choose please visit our &lt;a href="http://www.bizmodules.net/tabid/207/Default.aspx" target="_blank"&gt;sample gallery&lt;/a&gt;</value>
+	</data>
+	<data name="SmallGallery.Text">
+		<value>Small Gallery</value>
+	</data>
+	<data name="LargeGallery.Text">
+		<value>Large Gallery</value>
+	</data>
+	<data name="SlidersAndRotators.Text">
+		<value>Sliders &amp; Rotators</value>
+	</data>
+	<data name="AlbumLogoSize.Text">
+		<value>Thumbnail Size</value>
+	</data>
+	<data name="AlbumLogoSize.Help">
+		<value>UMG creates thumbnails for each media and album, this option dictates the size of thumbnails</value>
+	</data>
+	<data name="SortingMethod.Text">
+		<value>Sorting Method</value>
+	</data>
+	<data name="SortingMethod.Help">
+		<value>In default, new added medias appear in top, you can use this option to setup a new sorting strategy, for example, you can choose Taken Date + Title @ Descending Order, so the latest photo(actual taken date) appear in top, when taken date information is not available, medias with title "Z****" appear before "Y****" and  "X****"</value>
+	</data>
+	<data name="Watermark.Text">
+		<value>Watermark</value>
+	</data>
+	<data name="Watermark.Help">
+		<value>A small logo can be attached to every image uploaded in this gallery, use this option to protect your copyright</value>
+	</data>
+	<data name="SellPhotos.Text">
+		<value>Sell Photos</value>
+	</data>
+	<data name="SellPhotos.Help">
+		<value>Sell raw files attached to medias, this task requires you to use UMG-Rate and UMG-ShoppingCart module on same page.</value>
+	</data>
+	<data name="DiskQuota.Text">
+		<value>Disk Quota</value>
+	</data>
+	<data name="RootFolder.Text">
+		<value>Root Folder</value>
+	</data>
+	<data name="RootFolder.Help">
+		<value>A unique folder assigned to this gallery to save all kind of files. When in Normal gallery mode, you can choose an existing folder on your server and enable auto synchronize option above, so UMG scans this folder every few minutes and adds new contents to this gallery, if there is a new folder, UMG creates an new album, if there is a new file, UMG addes it to corresponding album</value>
+	</data>
+
+	
+	<data name="20to2000.Text">
+		<value>20 ~ 2000</value>
+	</data>
+	<data name="Remove.Text">
+		<value>Remove</value>
+	</data>
+	<data name="Normal.Text">
+		<value>Normal</value>
+	</data>
+	<data name="PersonalGallery.Text">
+		<value>Personal Gallery</value>
+	</data>
+	<data name="ProfileIntegration.Text">
+		<value>Profile Integration</value>
+	</data>
+	<data name="IntegrationSettings.Text">
+		<value>Integration options</value>
+	</data>
+
+
+
+
+	<data name="WhoCanManage.Text">
+		<value>Choose users who can manage this gallery</value>
+	</data>
+	<data name="minute.Text">
+		<value>minute</value>
+	</data>
+	<data name="quarter.Text">
+		<value>quarter</value>
+	</data>
+	<data name="hour.Text">
+		<value>hour</value>
+	</data>
+	<data name="3hours.Text">
+		<value>3 hours</value>
+	</data>
+	<data name="12hours.Text">
+		<value>12 hours</value>
+	</data>
+	<data name="24hours.Text">
+		<value>24 hours</value>
+	</data>
+	<data name="2days.Text">
+		<value>2 days</value>
+	</data>
+	<data name="Unlimited.Text">
+		<value>Unlimited</value>
+	</data>
+	<data name="WhoCanCreateAlbums.Text">
+		<value>Who can create albums in this gallery</value>
+	</data>
+	<data name="TakenDate.Text">
+		<value>Taken date</value>
+	</data>
+	<data name="Disabled.Text">
+		<value>Disabled</value>
+	</data>
+	<data name="FileName.Text">
+		<value>File name</value>
+	</data>
+	<data name="Numeric.Text">
+		<value>Numeric parts in file name</value>
+	</data>
+	<data name="CreatedDate.Text">
+		<value>Created date</value>
+	</data>
+	<data name="Title.Text">
+		<value>Title</value>
+	</data>
+	<data name="Description.Text">
+		<value>Description</value>
+	</data>
+	<data name="Descendingorder.Text">
+		<value>Descending order</value>
+	</data>
+	<data name="Ascendingorder.Text">
+		<value>Ascending order</value>
+	</data>
+	<data name="ResortAll.Text">
+		<value>Resort All</value>
+	</data>
+	<data name="ResortAll.Help">
+		<value>Are you sure you wish to resort all albums? this operation may take a few seconds or minutes.</value>
+	</data>
+	<data name="XAlbumsResorted.Text">
+		<value>[X] albums resorted</value>
+	</data>
+	<data name="NoWatermark.Text">
+		<value>Not assigned</value>
+	</data>
+	<data name="ClickToUpload.Text">
+		<value>click to upload</value>
+	</data>
+	<data name="WillBeApplied.Text">
+		<value>will be applied to every new photos in this gallery, you can</value>
+	</data>
+	<data name="ItOr.Text">
+		<value>it, or</value>
+	</data>
+	<data name="UploadNewOne.Text">
+		<value>click here to upload a new one</value>
+	</data>
+	<data name="UpperLeft.Text">
+		<value>Upper left</value>
+	</data>
+	<data name="UpperRight.Text">
+		<value>Upper right</value>
+	</data>
+	<data name="Center.Text">
+		<value>Center</value>
+	</data>
+	<data name="LowerLeft.Text">
+		<value>Lower left</value>
+	</data>
+	<data name="LowerRight.Text">
+		<value>Lower right</value>
+	</data>
+	<data name="OfThePhoto.Text">
+		<value>of the photo</value>
+	</data>
+	<data name="Center.Text">
+		<value>Center</value>
+	</data>
+	<data name="GoogleMapsAPIKey.Text">
+		<value>Google Maps</value>
+	</data>
+	<data name="LeaveItBlank.Text">
+		<value>Leave it blank to turn off this feature</value>
+	</data>
+	<data name="GoogleMapsAPIKey.Help">
+		<value>UMG-Map module can be used together with this module to show the place where a photo was taken, to use this feature you must obtain and enter your API key</value>
+	</data>
+	<data name="UVG4NotInstalled.Text">
+		<value>You choosed to integrate with Ultra Video Gallery 4.x, but UVG 4 is either not installed or you failed the permission check, to purchase UVG 4 please visit www.bizmodules.net</value>
+	</data>
+
+
+
+
+	<data name="FlashPresentationOnly.Text">
+		<value>The embed code is only available for flash presentations</value>
+	</data>
+
+
+
+
+	<data name="FallbackChoice.Text">
+		<value>Fallback Choice</value>
+	</data>
+	<data name="FallbackChoice.Help">
+		<value>If you choosed a flash presentation above, UMG downgrade to use this html presentation when work on iPhone/iPad or other clients without flash plugin</value>
+	</data>
+	<data name="SupportedMedias.Text">
+		<value>Supported Medias</value>
+	</data>
+	<data name="SupportedMedias.Help">
+		<value>Choose one or many kinds of medias to be uploaded in this gallery</value>
+	</data>
+	<data name="Images.Text">
+		<value>Images (jpg, gif, png)</value>
+	</data>
+	<data name="Videos.Text">
+		<value>Videos (flv, mp4)</value>
+	</data>
+	<data name="Audios.Text">
+		<value>Audios (.mp3)</value>
+	</data>
+	<data name="Flashs.Text">
+		<value>Flash movies (.swf)</value>
+	</data>
+	<data name="NeedSuggestion.Text">
+		<value>Get suggestion</value>
+	</data>
+	<data name="SeeDifference.Text">
+		<value>Compare</value>
+	</data>
+	<data name="Or.Text">
+		<value>or</value>
+	</data>
+	<data name="SelectMediaTypes.Text">
+		<value>You need to select at least 1 type of media to be supported</value>
+	</data>
+	<data name="VideoNotSupported.Text">
+		<value>You choosed to support videos but [PRESENTATION] presentation do not support it</value>
+	</data>
+	<data name="AudioNotSupported.Text">
+		<value>You choosed to support audios but [PRESENTATION] presentation do not support it</value>
+	</data>
+	<data name="FlashNotSupported.Text">
+		<value>You choosed to support flash movies but [PRESENTATION] presentation do not support it</value>
+	</data>
+	<data name="FlashUpload.Text">
+		<value>Flash Upload</value>
+	</data>
+	<data name="HtmlUpload.Text">
+		<value>Html Upload</value>
+	</data>
+	<data name="Import.Text">
+		<value>Import</value>
+	</data>
+	<data name="FromUrl.Text">
+		<value>From URL</value>
+	</data>
+	<data name="FromHtml.Text">
+		<value>From HTML code</value>
+	</data>
+	<data name="Copy.Text">
+		<value>Copy from clipboard</value>
+	</data>
+	<data name="Html5Upload.Text">
+		<value>Html 5 Upload</value>
+	</data>
+
+
+
+	<data name="Basic.Text">
+		<value>Basic</value>
+	</data>
+	<data name="Integration.Text">
+		<value>Integration</value>
+	</data>
+	<data name="Advanced.Text">
+		<value>Advanced</value>
+	</data>
+
+	<data name="DefaultUpload.Text">
+		<value>Default Upload</value>
+	</data>
+	<data name="DefaultUpload.Help">
+		<value>UMG offers 7 different ways to upload medias, choose the default upload page</value>
+	</data>
+
+	
+	<data name="ViewPermission.Text">
+		<value>View Permission</value>
+	</data>
+	<data name="ViewPermission.Help">
+		<value>Allow view permission to be defined on albums</value>
+	</data>
+	<data name="Enabled.Text">
+		<value>Enabled</value>
+	</data>
+	<data name="EnableViewPermission.Help">
+		<value>Are you sure you wish to enable view permission in this gallery?\n\nA new "View Roles" option will be available when edit an album which dictates users who can see this album, you must properly configure it because "View Roles" defaults to empty which means nobody can see any albums</value>
+	</data>
+	<data name="ManageRights.Text">
+		<value>Manage Roles</value>
+	</data>
+	<data name="ManageRights.Help">
+		<value>Users who can manage all albums and medias in this gallery</value>
+	</data>
+	<data name="AutoSync.Text">
+		<value>Auto Sync</value>
+	</data>
+	<data name="AutoSync.Help">
+		<value>Turn on this option if you upload medias by FTP</value>
+	</data>
+	<data name="RunSync.Text">
+		<value>Synchronize it every</value>
+	</data>
+	<data name="UserIdInURL.Text">
+		<value>Encryption</value>
+	</data>
+	<data name="UserIdInURL.Help">
+		<value>Encrypt user ID in URL</value>
+	</data>
+	<data name="PGUsers.Text">
+		<value>Allowed Users</value>
+	</data>
+	<data name="PGUsers.Help">
+		<value>Users who can create personal galleries in this gallery</value>
+	</data>
+	<data name="DataSource.Text">
+		<value>Data source</value>
+	</data>
+	<data name="DataSource.Help">
+		<value>Retrieve data from this gallery</value>
+	</data>
+	<data name="UserKey.Text">
+		<value>User key</value>
+	</data>
+	<data name="UserKey.Help">
+		<value>The key in querystring which represent user ID</value>
+	</data>
+	<data name="MaxAlbums.Text">
+		<value>Max Albums</value>
+	</data>
+	<data name="MaxAlbums.Help">
+		<value>The max number of albums an user can create</value>
+	</data>
+	<data name="CommunityUsers.Text">
+		<value>Allowed Users</value>
+	</data>
+	<data name="CommunityUsers.Help">
+		<value>Users who can create galleries in this gallery</value>
+	</data>
+	<data name="AttachTo.Text">
+		<value>WM Position</value>
+	</data>
+	<data name="AttachTo.Help">
+		<value>Watermark position</value>
+	</data>
+	<data name="ShowCopyright.Text">
+		<value>Product name</value>
+	</data>
+	<data name="ShowCopyright.Help">
+		<value>Show product name at the bottom of this gallery </value>
+	</data>
+	<data name="ShowLicenseScreen.Text">
+		<value>About link</value>
+	</data>
+	<data name="ShowLicenseScreen.Help">
+		<value>Include "About" link in module top menu</value>
+	</data>
+	<data name="CropThumbnails.Text">
+		<value>Crop Thumbnails</value>
+	</data>
+	<data name="CropThumbnails.Help">
+		<value>Crop image thumbnails to have fixed resolution</value>
+	</data>
+	<data name="CropImages.Text">
+		<value>Crop Images</value>
+	</data>
+	<data name="CropImages.Help">
+		<value>When resize an image, crop it at first if its aspect ratio is different with album auto resize definition</value>
+	</data>
+	<data name="BulkUpload.Text">
+		<value>Bulk Upload</value>
+	</data>
+	<data name="BulkUpload.Help">
+		<value>This option affects Html 5 Upload only, in default it uploads all selected files at same time, uncheck this option to upload selected files one by one.</value>
+	</data>
+	<data name="RawFile.Text">
+		<value>Allow Raw File</value>
+	</data>
+	<data name="RawFile.Help">
+		<value>Allow users to attach a raw file to each media</value>
+	</data>
+	<data name="SaveAsRawFile.Text">
+		<value>Keep Original</value>
+	</data>
+	<data name="SaveAsRawFile.Help">
+		<value>When resize an image, attach the original file as raw file</value>
+	</data>
+	<data name="GallerySize.Text">
+		<value>Gallery size</value>
+	</data>
+	<data name="GallerySize.Help">
+		<value>The size of your gallery, the default value is determined by choose presentation</value>
+	</data>
+	<data name="PermissionSet.Text">
+		<value>User Permission</value>
+	</data>
+	<data name="PermissionSet.Help">
+		<value>UMG allows you to define various permissions on album level, check this if you would like to set permission by directly entering user name beside role selection. </value>
+	</data>
+	<data name="DiskQuota.Help">
+		<value>The maximum number of items an user can upload</value>
+	</data>
+	<data name="DiskQuotaWaiver.Text">
+		<value>Disk Quota Waiver</value>
+	</data>
+	<data name="DiskQuotaWaiver.Help">
+		<value>Selected users are not restrainted by disk quota</value>
+	</data>
+	<data name="NotSet.Text">
+		<value>not set</value>
+	</data>
+	<data name="PriceIs.Text">
+		<value>Item price</value>
+	</data>
+	<data name="PayBy.Text">
+		<value>Be paid by</value>
+	</data>
+	<data name="MyAccountIs.Text">
+		<value>account id</value>
+	</data>
+	<data name="Notify.Text">
+		<value>Notification email</value>
+	</data>
+	<data name="AmazonS3.Text">
+		<value>Amazon S3</value>
+	</data>
+	<data name="AmazonS3.Help">
+		<value>This feature allows you to transfer your medias to Amazon S3 server for fast, secure and reliable storage</value>
+	</data>
+	<data name="ConfigAmazonS3.Text">
+		<value>Configure Amazon S3</value>
+	</data>
+	<data name="MyGoogleMapsAPIKey.Text">
+		<value>My &lt;a href="http://code.google.com/apis/loader/signup.html" class="SubSubHead" target="_blank"&gt;API key&lt;/a&gt;</value>
+	</data>
+	<data name="DNNJournalIntegration.Text">
+		<value>Journal Integration</value>
+	</data>
+	<data name="DNNJournalIntegration.Help">
+		<value>When work on DNN 6.2+, post photo/comment add/delete event to DNN Journal.</value>
+	</data>
+	<data name="DNN62Required.Text">
+		<value>This feature only works on DNN 6.2+</value>
+	</data>
+	<data name="UVGIntegration.Text">
+		<value>UVG Integration</value>
+	</data>
+	<data name="UVGIntegration.Help">
+		<value>If you have Ultra Video Gallery 4.x installed on this website, you can accept video uploads in any format and use Ultra Video Gallery to encode them. The uploaded video will be added to both UVG and this UMG gallery.</value>
+	</data>
+	<data name="ActiveSocialAPIKey.Text">
+		<value>Active Social</value>
+	</data>
+	<data name="ActiveSocialAPIKey.Help">
+		<value>UMG is able to notify active social 1.8+ when there is a new media</value>
+	</data>
+	<data name="ActiveSocialIntegration.Text">
+		<value>My access key</value>
+	</data>
+	<data name="IntegrationMethod.Text">
+		<value>, Method:</value>
+	</data>
+	<data name="AddPhoto.Text">
+		<value>Add this photo to Active Social</value>
+	</data>
+	<data name="AddProfileItem.Text">
+		<value>Post a message to Active Journal</value>
+	</data>
+	<data name="RssFeed.Text">
+		<value>RSS Feed</value>
+	</data>
+	<data name="RssFeed.Help">
+		<value>A piece of Html code which can be used anywhere to show a RSS subscription link of this gallery</value>
+	</data>
+	<data name="ClickToGrab.Text">
+		<value>Click here to grab</value>
+	</data>
+	<data name="EmbedCode.Text">
+		<value>Embed Code</value>
+	</data>
+	<data name="EmbedCode.Help">
+		<value>A piece of html code which can be used to embed this gallery to other pages of this website</value>
+	</data>
+	<data name="PopupWindow.Text">
+		<value>Popup Window</value>
+	</data>
+	<data name="PopupWindow.Help">
+		<value>The URL to open this gallery in a popup window</value>
+	</data>
+
+	<data name="MobileDeviceUploader.Text">
+		<value>Mobile Uploader</value>
+	</data>
+	<data name="MobileDeviceUploader.Help">
+		<value>Upload photos to this gallery from mobile devices like iPhone</value>
+	</data>
+	<data name="SiteDomain.Text">
+		<value>Site domain:</value>
+	</data>
+	<data name="GalleryID.Text">
+		<value>, Gallery ID:</value>
+	</data>
+	<data name="MobileViewer.Text">
+		<value>Mobile Viewer</value>
+	</data>
+	<data name="MobileViewer.Help">
+		<value>Mobile Viewer is a special UMG presentation designed for smart photos and other mobile devices.</value>
+	</data>
+	<data name="UseMobileViewer.Text">
+		<value>Use mobile viewer for mobile devices</value>
+	</data>
+	<data name="CheckBackDoors.Text">
+		<value>Scan Back Doors</value>
+	</data>
+	<data name="CheckBackDoors.Help">
+		<value>Scan every uploaded image to ensure they are valid images without any back doors.</value>
+	</data>
+</root>

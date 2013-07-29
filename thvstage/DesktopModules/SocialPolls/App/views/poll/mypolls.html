@@ -1,0 +1,102 @@
+﻿<div class="polls poll-container my-polls">
+    <section id="pollsContainer"
+        data-bind="foreach: { data: MyPolls }"
+        class="unstyled nav centered">
+        <article class="pollItem outerShadow "
+            data-bind="css: { longPoll: IsSelectionPoll(), shortPoll: !IsSelectionPoll() }">
+
+            <div class="pollActions previewBlock">
+                <a href="#" class="viewIcon">
+                    <img data-bind=" attr: { src: pollIconUrl }" />
+                </a>
+                <a class="btn dropdown-toggle actionIcon"
+                    data-toggle="dropdown" href="#">
+                    <span class="caret"></span>
+                </a>
+            </div>
+            <div class="pollHeader  previewBlock">
+                <div class="blueTheme">
+                    <h4 data-bind="text: OwnerDisplayName"></h4>
+                </div>
+                <div style="font-size: 75%">
+                    <span data-bind="text: pollTypeName"></span>,
+                    created <span data-bind="text: CreatedOn"></span>
+                </div>
+                <div id="previewUserInfo" class=" blueTheme">
+                    <img data-bind="attr: { src: userPreviewProfilePicture }" />
+                    <!-- ko  text: Question -->
+                    <!-- /ko -->
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="pollImages previewBlock">
+                <div id="pollOptions">
+                    <ul id="optionsList" class="unstyled"
+                        data-bind="foreach: { data: PollOptions, afterRender: $parent.handleAfterOptionsRender }"
+                        data-toggle="buttons-radio">
+                        <li data-bind="attr: { id: $parent.PollId }">
+                            <div class="previewImageContainer">
+                                <img data-bind="attr: { src: getPrevThumbnailHdl(), id: OptionId() }" />
+                                
+                                <div class="clear"></div>
+                                <div class="poll-results" data-bind="visible: $parent.IsSelectionPoll()">
+                                    
+                                    <div class="result-row">
+                                        <span class="result-label pull-left">option 
+                                            <!-- ko  text: $parent.IsSelectionPoll() ? tag : '' -->
+                                            <!-- /ko -->
+                                        </span>
+                                        <span class="label pull-right"
+                                            data-bind="text: $parent.IsSelectionPoll() ? Proportion() + '%' : '' "></span>
+                                        <div class="clear"></div>
+                                    </div>
+
+                                    <p class="pull-right">view full results</p>
+
+                                </div>
+                                <div class="poll-results" data-bind="visible: $parent.IsBoolPoll()">
+                                    <div class="result-row">
+                                        <span class="result-label pull-left">friends said</span>
+                                        <span class="label pull-right" data-bind="text: $parent.results()"></span>
+                                         <div class="clear"></div>
+                                    </div>
+                                    <p class="pull-right">view full results</p>
+                                </div>
+                                <div class="poll-results" data-bind="visible: $parent.IsRatePoll()">
+                                    <div class="result-row">
+                                        <span class="result-label pull-left" style="width:70px;">results</span>
+                                        <span class="pull-right" data-bind="starRating: $parent.results(), numOfStars: 5, isDisplay: true"></span>
+                                         <div class="clear"></div>
+                                    </div>
+                                    <p class="pull-right">view full results</p>
+                                </div>
+                            </div>
+
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="poll-prev-bottom">               
+                <div id="pollVoters" class="">
+                    <ul data-bind="foreach: { data: Voters().Voters }, visible: Voters().Count > 0"
+                        class="unstyled horizontal">
+                        <li><a>
+                            <img data-bind="attr: { src: $parent.getProfileUrl($data, 32, 32) }" />
+                        </a>
+                        </li>
+                    </ul>
+                    <div class="pull-right">
+                        <div><span data-bind="text: Voters().Count"></span>Voters</div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </article>
+    </section>
+    <!---->
+</div>
+
+<div id="pollDetailModal"></div>

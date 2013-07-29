@@ -1,0 +1,2 @@
+Product Sell from [PORTALNAME]
+<p>Congratulations, there was a sale of [ITEMNAME]. <p> Customer Name: [CUSTOMERNAME] <br> E-mail: [CUSTOMEREMAIL] <br> Invoice No.: [INVOICEID] <p> Thank you.

@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ControlTitle_settings.Text" xml:space="preserve">
+    <value>Dynamic Login Settings</value>
+  </data>
+  <data name="plDefaultRedirectLink.Text" xml:space="preserve">
+    <value>Default Redirect Link</value>
+  </data>
+  <data name="plDefaultRedirectLink.Help" xml:space="preserve">
+    <value>Please specify default redirect link</value>
+  </data>
+  <data name="plLoginImage.Text" xml:space="preserve">
+    <value>Default Login Image Link</value>
+  </data>
+  <data name="plLoginImage.Help" xml:space="preserve">
+    <value>Please specify default login image link</value>
+  </data>
+  <data name="plRegisterImage.Text" xml:space="preserve">
+    <value>Default Register Image Link</value>
+  </data>
+  <data name="plRegisterImage.Help" xml:space="preserve">
+    <value>Please specify default register image link</value>
+  </data>
+  <data name="plPasswordReminderImage.Text" xml:space="preserve">
+    <value>Default Password Reminder Image Link</value>
+  </data>
+  <data name="plPasswordReminderImage.Help" xml:space="preserve">
+    <value>Please specify default password reminder image link</value>
+  </data>
+  <data name="plEnableImages.Text" xml:space="preserve">
+    <value>Input Button Type</value>
+  </data>
+  <data name="plEnableImages.Help" xml:space="preserve">
+    <value>Select the button type for this module instance, this can either be a link button, image button, or standard HTML Input buttons</value>
+  </data>
+  <data name="plEmailTemplate.Text" xml:space="preserve">
+    <value>Admin Notification Email Template</value>
+  </data>
+  <data name="plEmailTemplate.Help" xml:space="preserve">
+    <value>Email template for admin notification. Replacement tags include %Date% %UserName% %FirstName% %LastName%</value>
+  </data>
+  <data name="plOverrideRedirection.Text" xml:space="preserve">
+    <value>Override user and role redirection rules and always redirect to previous URL</value>
+  </data>
+  <data name="plOverrideRedirection.Help" xml:space="preserve">
+    <value>This setting will always redirect the user to the last page they were at if they did not come from the home page of the portal.</value>
+  </data>
+  <data name="plShowFirstLoginMessage.Text" xml:space="preserve">
+    <value>Enable first time login message?</value>
+  </data>
+  <data name="plShowFirstLoginMessage.Help" xml:space="preserve">
+    <value>This setting will enable a message to the user the very first time they sign onto the system. This message will only be displayed if a user has never signed on before.</value>
+  </data>
+  <data name="plFirstLoginMessage.Text" xml:space="preserve">
+    <value>First time login message?</value>
+  </data>
+  <data name="plFirstLoginMessage.Help" xml:space="preserve">
+    <value>Select the message the user will see the very first time they sign onto the system. This message will only be displayed if a user has never signed on before and you can use the tokens %Date%, %FirstName%, and %LastName% within the message body.</value>
+  </data>
+  <data name="plEmailLogin.Text" xml:space="preserve">
+    <value>Allow user to login with their email address</value>
+  </data>
+  <data name="plEmailLogin.Help" xml:space="preserve">
+    <value>This setting will allow the user to login using their email address that is setup for their user.</value>
+  </data>
+  <data name="plUserIDLogin.Text" xml:space="preserve">
+    <value>Allow user to login with their User ID (separate from UserName)</value>
+  </data>
+  <data name="plUserIDLogin.Help" xml:space="preserve">
+    <value>This setting will allow the user to login using their User ID. The UserID is a number assisgned to each user created within the DNN portal and is separate from their UserName.</value>
+  </data>
+  <data name="plNoFocus.Text" xml:space="preserve">
+    <value>Do not set focus to username field upon load?</value>
+  </data>
+  <data name="plNoFocus.Help" xml:space="preserve">
+    <value>If this setting is enabled the login form will not initially set the focus to the username textbox when the module loads.</value>
+  </data>
+  <data name="General.Text" xml:space="preserve">
+    <value>General Settings</value>
+  </data>
+  <data name="ButtonType.Text" xml:space="preserve">
+    <value>Button Type</value>
+  </data>
+  <data name="ForceProfile.Text" xml:space="preserve">
+    <value>Force Profile Change / Password Update Pages</value>
+  </data>
+  <data name="plSamePage.Text" xml:space="preserve">
+    <value>Keep user on same page as Dynamic Login module</value>
+  </data>
+  <data name="plSamePage.Help" xml:space="preserve">
+    <value>This setting will keep the user on the same page as the Dynamic Login module. This page is useful when you want to include the login module on pages throughout your site without having the user to be forced to click on the login link button.</value>
+  </data>
+  <data name="DNNStyleSheet.Text" xml:space="preserve">
+    <value>Login Template Stylesheet</value>
+  </data>
+  <data name="plInvalidProfile.Text" xml:space="preserve">
+    <value>Redirect page for invalid profile (required fields missing)</value>
+  </data>
+  <data name="plInvalidProfile.Help" xml:space="preserve">
+    <value>This setting will select which page the user will be redirected to if their profile is not valid. In order for this setting to be enabled you must also select to require a valid profile within the DNN Core System. You can complete this task under Admin, User Accounts, User Settings for the setting to require a valid profile for login. This page should redirect to a page such as Dynamic Registration that can allow the user to complete fields that are marked as required for their profile to be valid. Required fields for their profile are setup and defined under Admin, User Accounts, Manage Profile Properties. </value>
+  </data>
+  <data name="plForcePasswordChange.Text" xml:space="preserve">
+    <value>Redirect page for password change (if Admin has selected to force the user to change their password.)</value>
+  </data>
+  <data name="plForcePasswordChange.Help" xml:space="preserve">
+    <value>This setting will allow the user to login using their User ID. The UserID is a number assisgned to each user created within the DNN portal and is separate from their UserName.</value>
+  </data>
+  <data name="LinkButton.Text" xml:space="preserve">
+    <value>Link Buttons</value>
+  </data>
+  <data name="InputButton.Text" xml:space="preserve">
+    <value>HTML Input Buttons</value>
+  </data>
+  <data name="ImageButton.Text" xml:space="preserve">
+    <value>Image Buttons</value>
+  </data>
+  <data name="lnkSave.Text" xml:space="preserve">
+    <value>Save Settings</value>
+  </data>
+  <data name="Save.Text" xml:space="preserve">
+    <value>Save Settings</value>
+  </data>
+  <data name="plUsernameWatermark.Text" xml:space="preserve">
+    <value>Username Watermark</value>
+  </data>
+  <data name="plUsernameWatermark.Help" xml:space="preserve">
+    <value>Enter text that should appear within the username field when the user has not entered any values.</value>
+  </data>
+  <data name="plPasswordWatermark.Text" xml:space="preserve">
+    <value>Password Watermark</value>
+  </data>
+  <data name="plPasswordWatermark.Help" xml:space="preserve">
+    <value>Enter text that should appear within the password field when the user has not entered any values. Since the password field is encrypted these will usually be represented by *.</value>
+  </data>
+  <data name="plShowUsernamePWBackground.Text" xml:space="preserve">
+    <value>Show background image for textbox fields</value>
+  </data>
+  <data name="plShowUsernamePWBackground.Help" xml:space="preserve">
+    <value>Select this checkbox if you would like a background image to appear for fields such as username, password, and verification code. This setting will simply use an alternate CSS class when rendering these controls. </value>
+  </data>
+  <data name="litDESC.Text" xml:space="preserve">
+    <value>Manage the module configuration for Dynamic Login below. From within the settings you can define the default page to redirect the user, if you want to allow the user to sign in from their email address, optionally display link, input, or image buttons for the login template, and other settings such as pages the user should be redirected if their profile is not valid or you are forcing their password to be changed. For a full list of configuration options please visit www.datasprings.com</value>
+  </data>
+  <data name="litSQLExecution.Text" xml:space="preserve">
+    <value>Enter a SQL statement that will be executed at the time of login. Valid tokens can include $(UserID), $(PortalID), and $(IPAddress).</value>
+  </data>
+  <data name="SQLExecution.Text" xml:space="preserve">
+    <value>Execute SQL Query</value>
+  </data>
+  <data name="plSQLExecution.Text" xml:space="preserve">
+    <value>SQL Query</value>
+  </data>
+  <data name="plSQLExecution.Help" xml:space="preserve">
+    <value>Enter the SQL query that should be executed for each login.</value>
+  </data>
+  <data name="plHideQuickMenu.Text" xml:space="preserve">
+    <value>Hide Quick Menu (global setting)</value>
+  </data>
+  <data name="plHideQuickMenu.Help" xml:space="preserve">
+    <value>Select if you would like to hide the quick menu control panel for admin users on the user-facing page. This is a global setting that will hide the quick menu for all module instances within the entire web site.</value>
+  </data>
+  <data name="GetProgressText.Text" xml:space="preserve">
+    <value>Processing...</value>
+  </data>
+  <data name="FacebookIntegration.Text" xml:space="preserve">
+    <value>Facebook Connect Integration</value>
+  </data>
+  <data name="plFacebookAppID.Text" xml:space="preserve">
+    <value>Facebook APP ID</value>
+  </data>
+  <data name="plFacebookAppID.Help" xml:space="preserve">
+    <value>Please enter your Facebook APP ID. This APP ID can be retrieved from http://developers.facebook.com. Please review the documentation on www.datasprings.com for more information.</value>
+  </data>
+  <data name="plFacebookAppSecret.Text" xml:space="preserve">
+    <value>Facebook APP Secret</value>
+  </data>
+  <data name="plFacebookAppSecret.Help" xml:space="preserve">
+    <value>Please enter your Facebook APP Secret. This APP Secret can be retrieved from http://developers.facebook.com.</value>
+  </data>
+  <data name="plFacebookUserCreationType.Text" xml:space="preserve">
+    <value>User Creation Type</value>
+  </data>
+  <data name="plFacebookUserCreationType.Help" xml:space="preserve">
+    <value>Select how you would like Facebook authenticated users created. Users can either be created based on their Facebook UserID or they can be created with their email address as their username. </value>
+  </data>
+  <data name="createuser.Text" xml:space="preserve">
+    <value>None / Silent Post / Redirect to Thank You</value>
+  </data>
+  <data name="createuser0.Text" xml:space="preserve">
+    <value>Facebook UserID</value>
+  </data>
+  <data name="createuser1.Text" xml:space="preserve">
+    <value>Facebook EmailAddress</value>
+  </data>
+  <data name="plFacebookUserNamePrefix.Text" xml:space="preserve">
+    <value>Username Prefix</value>
+  </data>
+  <data name="plFacebookUserNamePrefix.Help" xml:space="preserve">
+    <value>Enter a prefix if you want the username to include a prefix for each user created via Facebook Connect or OAuth integration.</value>
+  </data>
+  <data name="plFacebookUserExistsWithEmail.Text" xml:space="preserve">
+    <value>Authenticate user account with matching email address.</value>
+  </data>
+  <data name="plFacebookUserExistsWithEmail.Help" xml:space="preserve">
+    <value>Select this option if you would like to authenticate/match a Facebook account with a DotNetNuke User Account based on their email address.</value>
+  </data>
+  <data name="plFacebookConnectionType.Text" xml:space="preserve">
+    <value>Facebook Connection Method.</value>
+  </data>
+  <data name="plFacebookConnectionType.Help" xml:space="preserve">
+    <value>Select which Facebook authentication method you would like to use. Current Facebook Connect allows for easier pop up integration however the users email is stored as a proxied Facebook email address and not the real email. The OAuth 2.0 offers better integration and allows access to the users full email address however this method currently doesn't support a friendly pop up integration.</value>
+  </data>
+  <data name="facebookconnect.Text" xml:space="preserve">
+    <value>Facebook Connect</value>
+  </data>
+  <data name="oauth.Text" xml:space="preserve">
+    <value>OAuth 2.0</value>
+  </data>
+  <data name="plFacebookOAuthPageType.Text" xml:space="preserve">
+    <value>OAuth 2.0 Page Type</value>
+  </data>
+  <data name="plFacebookOAuthPageType.Help" xml:space="preserve">
+    <value>Select the page type for the OAuth 2.0 authentication integration. This can include either a redirect page or a pop up page.</value>
+  </data>
+  <data name="Page.Text" xml:space="preserve">
+    <value>Page</value>
+  </data>
+  <data name="PopUp.Text" xml:space="preserve">
+    <value>PopUp Page</value>
+  </data>
+  <data name="plFacebookSilentPostURL.Text" xml:space="preserve">
+    <value>Silent Post (Dynamic Forms/ Registration URL).</value>
+  </data>
+  <data name="plFacebookSilentPostURL.Help" xml:space="preserve">
+    <value>Select the URL that you would like to post the Facebook account details to. This allows for the integration with Data Springs Dynamic Registration or Dynamic Forms module which can accept a silent post and process the registration and/or completion events there.</value>
+  </data>
+  <data name="plFacebookSilentPostContents.Text" xml:space="preserve">
+    <value>Silent Post Details</value>
+  </data>
+  <data name="plFacebookSilentPostContents.Help" xml:space="preserve">
+    <value>Select the URL that you would like to post the Facebook account details to. This allows for the integration with Data Springs Dynamic Registration module which can accept registration data via a silent post and process the registration there.</value>
+  </data>
+  <data name="plFacebookStoreAltField.Text" xml:space="preserve">
+    <value>Store UserID in Alternate Field</value>
+  </data>
+  <data name="plFacebookStoreAltField.Help" xml:space="preserve">
+    <value>Select a DotNetNuke profile field that you would like the Facebook UserID stored in. This can be useful if you are creating the username based on the email address but would still like to have access to the Facebook UserID field for the future.</value>
+  </data>
+  <data name="plFacebookUserStatus.Text" xml:space="preserve">
+    <value>Store User Creation Status in Alternate Field</value>
+  </data>
+  <data name="plFacebookUserStatus.Help" xml:space="preserve">
+    <value>Select a DotNetNuke profile field that you would like to store how the user was created (i.e Facebook Connect, or Facebook oAuth). This feature can help you identify users created via the Facebook Integration.</value>
+  </data>
+  <data name="plDefaultRememberMe.Text" xml:space="preserve">
+    <value>Default Remember Me feature to true.</value>
+  </data>
+  <data name="plDefaultRememberMe.Help" xml:space="preserve">
+    <value>Select if you would like to enable the 'Remember Me' checkbox to be defaulted to a value of true or initially checked when the user navigated to the login page.</value>
+  </data>
+  <data name="plFacebookAppKey.Text" xml:space="preserve">
+    <value>Facebook App Key.</value>
+  </data>
+  <data name="plFacebookAppKey.Help" xml:space="preserve">
+    <value>Please enter your Facebook APP Key. This APP Key can be retrieved from http://developers.facebook.com. Please review the documentation on www.datasprings.com for more information.</value>
+  </data>
+  <data name="plFacebookAltImage.Text" xml:space="preserve">
+    <value>Alternate Image</value>
+  </data>
+  <data name="plFacebookAltImage.Help" xml:space="preserve">
+    <value>Please enter the name of an alternate image for the facebook connection button. This image must be located in the /desktopmodules/dynamic login/images directory.</value>
+  </data>
+  <data name="plFacebookAdditionalParams.Text" xml:space="preserve">
+    <value>Extended Permissions</value>
+  </data>
+  <data name="plFacebookAdditionalParams.Help" xml:space="preserve">
+    <value>Initially the parameters requested are for basic information including the users email address. You can optionally request additional information by passing in additional parameters in a comma seperated list without spaces. The list of extended permissions is located at http://developers.facebook.com/docs/authentication/permissions/. Example: user_about_me,user_birthday,user_likes. This can be useful if you are using this same application ID within other modules that might showcase these extended permissions.</value>
+  </data>
+  <data name="FacebookIntegrationWallPosts.Text" xml:space="preserve">
+    <value>Facebook Wall Post</value>
+  </data>
+  <data name="FacebookIntegrationCheckIns.Text" xml:space="preserve">
+    <value>Facebook Check Ins</value>
+  </data>
+  <data name="FacebookIntegrationGeneral.Text" xml:space="preserve">
+    <value>Facebook General Settings</value>
+  </data>
+  <data name="plFacebookRedirectPage.Text" xml:space="preserve">
+    <value>Redirect / Thank you page.</value>
+  </data>
+  <data name="plFacebookRedirectPage.Help" xml:space="preserve">
+    <value>Enter the URL that the user will be taken too if you have 'None' setup as the user registration type. The user will only be taken to this page if none is selected and if the users credentials don't match a valid login. In this case you might consider using a featuer such as the Silent Post to post details to Dynamic Registration to create the user instead of creating the user through this integration.</value>
+  </data>
+  <data name="CreateUserOnly.Text" xml:space="preserve">
+    <value>Creating User Only</value>
+  </data>
+  <data name="UpdateUserOnly.Text" xml:space="preserve">
+    <value>Signing in User Only</value>
+  </data>
+  <data name="CreateAndUser.Text" xml:space="preserve">
+    <value>Creating User and Signing in User</value>
+  </data>
+  <data name="plFacebookPostWhen.Text" xml:space="preserve">
+    <value>Submit HTTP Post</value>
+  </data>
+  <data name="plFacebookPostWhen.Help" xml:space="preserve">
+    <value>Select if you would like to submit an HTTP Post when a user is being created, a user is being authenticated and signed in, or for both. An HTTP Post can be sent to any page/module but there are direct integration options with Dynamic Forms and Dynamic Registration.</value>
+  </data>
+  <data name="SelectDNNFields.Text" xml:space="preserve">
+    <value>- Select DotNetNuke Field -</value>
+  </data>
+  <data name="1SelectDNNFields.Text" xml:space="preserve">
+    <value>- Select DotNEtNuke Field -</value>
+  </data>
+  <data name="plFacebookWallTitle.Text" xml:space="preserve">
+    <value>Wall Post Title</value>
+  </data>
+  <data name="plFacebookWallTitle.Help" xml:space="preserve">
+    <value>Please enter the title for the wall post. This will be the title of the Facebook wall post when a user signs in throught the Facebook Integration.</value>
+  </data>
+  <data name="plFacebookWallMessage.Text" xml:space="preserve">
+    <value>Wall Post Message</value>
+  </data>
+  <data name="plFacebookWallMessage.Help" xml:space="preserve">
+    <value>Please enter the message for the wall post. This will be the message of the Facebook wall post when a user signs in throught the Facebook Integration.</value>
+  </data>
+  <data name="plFacebookWallLink.Text" xml:space="preserve">
+    <value>Wall Post Link</value>
+  </data>
+  <data name="plFacebookWallLink.Help" xml:space="preserve">
+    <value>Please enter the URL or Hyperlink for the wall post. This link should be the full path starting with http://. The link would normally be the web site that the user is signing in from.</value>
+  </data>
+  <data name="plFacebookWallImage.Text" xml:space="preserve">
+    <value>Wall Post Image</value>
+  </data>
+  <data name="plFacebookWallImage.Help" xml:space="preserve">
+    <value>Select if you would like to post a message to the users wall. This message will render to their Facebook wall each time they sign into your web site. </value>
+  </data>
+  <data name="plFacebookUpdateUsersWallPost.Text" xml:space="preserve">
+    <value>Post message to users wall?</value>
+  </data>
+ <data name="plFacebookUpdateUsersWallPost.Help" xml:space="preserve">
+    <value>Would you like to post to the users wall whenever they are signing into the web site?</value>
+  </data>
+
+  <data name="plFacebookWallPostDelay.Text" xml:space="preserve">
+    <value>Wall Post days delay check (0 for always)</value>
+  </data>
+  <data name="plFacebookWallPostDelay.Help" xml:space="preserve">
+    <value>Enter the number of days since the post was last posted the users wall. For example, if you enter 30 then the first time the user signs in their wall will be posted with the message. If they signed in every day after that then the message would not be posted on their wall until after 30 days had passed. If you enter 0 or blank then the message will be posted to the users wall for each and every time they sign in using Facebook Connect.</value>
+  </data>
+  <data name="linkedinconnect.Text" xml:space="preserve">
+    <value>Twitter Connect</value>
+  </data>
+  <data name="LinkedinIntegration.Text" xml:space="preserve">
+    <value>Linkedin Connect Integration</value>
+  </data>
+  <data name="LinkedinIntegrationCheckIns.Text" xml:space="preserve">
+    <value>Linkedin Check Ins</value>
+  </data>
+  <data name="LinkedinIntegrationGeneral.Text" xml:space="preserve">
+    <value>Linkedin General Settings</value>
+  </data>
+  <data name="plLinkedinApiKey.Text" xml:space="preserve">
+    <value>Linkedin API Key</value>
+  </data>
+  <data name="plTwitterConsumerKey.Text" xml:space="preserve">
+    <value>Twitter Consumer Key</value>
+  </data>
+  <data name="twitterconnect.Text" xml:space="preserve">
+    <value>Twitter Connect</value>
+  </data>
+  <data name="TwitterIntegration.Text" xml:space="preserve">
+    <value>Twitter Connect Integration</value>
+  </data>
+  <data name="TwitterIntegrationCheckIns.Text" xml:space="preserve">
+    <value>Twitter Check Ins</value>
+  </data>
+  <data name="TwitterIntegrationGeneral.Text" xml:space="preserve">
+    <value>Twitter General Settings</value>
+  </data>
+  <data name="plTwitterConsumerSecret.Text" xml:space="preserve">
+    <value>Twitter Consumer Secret</value>
+  </data>
+  <data name="plLinkedinSecretKey.Text" xml:space="preserve">
+    <value>Linkedin Secret Key</value>
+  </data>
+  <data name="plLinkedinUpdateUsersPost.Text" xml:space="preserve">
+    <value>Post Linked In Status message to user?</value>
+  </data>
+  <data name="plLinkedinUpdateUsersPost.Help" xml:space="preserve">
+    <value>Select if you would like to post a status update to the users Linked In profile.</value>
+  </data>
+
+  <data name="plLinkedinUserStatus.Text" xml:space="preserve">
+    <value>Post Message</value>
+  </data>
+  <data name="plTwitterUpdateUsersTweet.Text" xml:space="preserve">
+    <value>Post Tweet message to user?</value>
+  </data>
+ <data name="plTwitterUpdateUsersTweet.Text" xml:space="preserve">
+    <value>Select if you would like to post a tweet message to user</value>
+  </data>
+
+  <data name="plTwitterUsersTweet.Text" xml:space="preserve">
+    <value>Tweet Message</value>
+  </data>
+  <data name="Lcreateuser0" xml:space="preserve">
+    <value>Linkedin UserID</value>
+  </data>
+  <data name="Lcreateuser1" xml:space="preserve">
+    <value>Linkedin User Name</value>
+  </data>
+  <data name="plLinkedinApiKey.Help" xml:space="preserve">
+    <value>Please enter your Linkedin API Key. This API Key can be retrieved from http://developer.linkedin.com/. Please review the documentation on www.datasprings.com for more information.</value>
+  </data>
+  <data name="plLinkedinOAuthPageType.Help" xml:space="preserve">
+    <value>Select the page type for the OAuth 2.0 authentication integration. This can include either a redirect page or a pop up page.</value>
+  </data>
+  <data name="plLinkedinOAuthPageType.Text" xml:space="preserve">
+    <value>OAuth 2.0 Page Type</value>
+  </data>
+  <data name="plLinkedinSecretKey.Help" xml:space="preserve">
+    <value>Please enter your Linkedin Secret Key. ThisSecret Key can be retrieved from http://developer.linkedin.com/. Please review the documentation on www.datasprings.com for more information.</value>
+  </data>
+  <data name="plLinkedinStoreAltField.Help" xml:space="preserve">
+    <value>Select a DotNetNuke profile field that you would like the Linkedin UserID stored in. This can be useful if you are creating the username based on the email address but would still like to have access to the Linkedin UserID field for the future.</value>
+  </data>
+  <data name="plLinkedinStoreAltField.Text" xml:space="preserve">
+    <value>Store UserID in Alternate Field</value>
+  </data>
+  <data name="plLinkedinUserCreateStatus.Help" xml:space="preserve">
+    <value>Select a DotNetNuke profile field that you would like to store how the user was created (i.e Linkedin Connect, or Linkedin oAuth). This feature can help you identify users created via the Linkedin Integration.</value>
+  </data>
+  <data name="plLinkedinUserCreateStatus.Text" xml:space="preserve">
+    <value>Store User Creation Status in Alternate Field</value>
+  </data>
+  <data name="plLinkedinUserCreationType.Help" xml:space="preserve">
+    <value>Select how you would like Linkedin authenticated users created. Users can either be created based on their Linkedin UserID or they can be created with their user name as their username.</value>
+  </data>
+  <data name="plLinkedinUserCreationType.Text" xml:space="preserve">
+    <value>User Creation Type</value>
+  </data>
+  <data name="plLinkedinUserNamePrefix.Help" xml:space="preserve">
+    <value>Enter a prefix if you want the username to include a prefix for each user created via Linkedin Connect or OAuth integration.</value>
+  </data>
+  <data name="plLinkedinUserNamePrefix.Text" xml:space="preserve">
+    <value>Username Prefix</value>
+  </data>
+  <data name="plLinkedinUserStatus.Help" xml:space="preserve">
+    <value>Please enter the message for the user status post. This will be the message of the Linkedin user status post when a user signs in throught the Linkedin Integration.</value>
+  </data>
+  <data name="plTwitterConsumerKey.Help" xml:space="preserve">
+    <value>Please enter your TwitterConsumer Key. This Consumer Key can be retrieved from https://dev.twitter.com. Please review the documentation on www.datasprings.com for more information.</value>
+  </data>
+  <data name="plTwitterConsumerSecret.Help" xml:space="preserve">
+    <value>Please enter your TwitterConsumer Secret. This Consumer Secret can be retrieved from https://dev.twitter.com. Please review the documentation on www.datasprings.com for more information.</value>
+  </data>
+  <data name="plTwitterOAuthPageType.Help" xml:space="preserve">
+    <value>Select the page type for the OAuth 2.0 authentication integration. This can include either a redirect page or a pop up page.</value>
+  </data>
+  <data name="plTwitterOAuthPageType.Text" xml:space="preserve">
+    <value>OAuth 2.0 Page Type</value>
+  </data>
+  <data name="plTwitterStoreAltField.Help" xml:space="preserve">
+    <value>Select a DotNetNuke profile field that you would like the Twitter UserID stored in. This can be useful if you are creating the username based on the email address but would still like to have access to the Twitter UserID field for the future.</value>
+  </data>
+  <data name="plTwitterStoreAltField.Text" xml:space="preserve">
+    <value>Store UserID in Alternate Field</value>
+  </data>
+  <data name="plTwitterUserCreationType.Help" xml:space="preserve">
+    <value>Select how you would like Twitter authenticated users created. Users can either be created based on their Twitter UserID or they can be created with their screen name as their username.</value>
+  </data>
+  <data name="plTwitterUserCreationType.Text" xml:space="preserve">
+    <value>User Creation Type</value>
+  </data>
+  <data name="plTwitterUserNamePrefix.Help" xml:space="preserve">
+    <value>Enter a prefix if you want the username to include a prefix for each user created via Twitter Connect or OAuth integration.</value>
+  </data>
+  <data name="plTwitterUserNamePrefix.Text" xml:space="preserve">
+    <value>Username Prefix</value>
+  </data>
+  <data name="plTwitterUserStatus.Help" xml:space="preserve">
+    <value>Select a DotNetNuke profile field that you would like to store how the user was created (i.e Twitter Connect, or Twitter oAuth). This feature can help you identify users created via the Twitter Integration.</value>
+  </data>
+  <data name="plTwitterUserStatus.Text" xml:space="preserve">
+    <value>Store User Creation Status in Alternate Field</value>
+  </data>
+  <data name="plTwitterUsersTweet.Help" xml:space="preserve">
+    <value>Please enter the message for the tweet post. This will be the message of the Twitter tweet post when a user signs in throught the Twitter Integration.</value>
+  </data>
+  <data name="Tcreateuser0" xml:space="preserve">
+    <value>Twitter UserID</value>
+  </data>
+  <data name="Tcreateuser1" xml:space="preserve">
+    <value>Twitter Screen Name</value>
+  </data>
+</root>

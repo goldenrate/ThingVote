@@ -1,0 +1,10 @@
+﻿--New presentation
+if not exists(select * from {databaseOwner}{objectQualifier}BizModules_upg_presentation where name='BlacknWhite')
+INSERT {databaseOwner}{objectQualifier}BizModules_upg_presentation(Name,Description,DisplayCtl,GallerySettingCtl,Type,DefaultWidth,DefaultHeight,AllowFullScreen,Category) VALUES('BlacknWhite','This presentation support multiple albums with greyscaled image preview.','BlacknWhite','BlacknWhiteAppearance','BizModules.UltraPhotoGallery.Presentation.BlacknWhite, BizModules.UltraPhotoGallery','800','530','0','Html')
+GO
+
+
+UPDATE {databaseOwner}{objectQualifier}BizModules_upg_presentation SET AllowFullScreen=1, DefaultWidth='800', DefaultHeight='600' WHERE Name = 'RandomPosition'
+GO
+
+

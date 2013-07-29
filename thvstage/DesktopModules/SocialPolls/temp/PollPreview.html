@@ -1,0 +1,53 @@
+﻿<div data-bind="masonry: true">
+    <div class="pollActions previewBlock">
+        <a href="#" class="viewIcon">
+            <img data-bind=" attr: { src: pollIconUrl }" />
+        </a>
+        <a class="btn dropdown-toggle actionIcon"
+            data-toggle="dropdown" href="#">
+            <span class="caret"></span>
+        </a>
+    </div>
+    <div class="pollHeader  previewBlock">
+        <div class="blueTheme">
+            <h4 data-bind="text: OwnerDisplayName"></h4>
+        </div>
+        <div style="font-size: 75%">
+            <span data-bind="text: pollTypeName"></span>,
+                    created <span data-bind="text: CreatedOn"></span>
+        </div>
+        <div id="previewUserInfo" class=" blueTheme">
+            <img data-bind="attr: { src: userPreviewProfilePicture }" />
+            <!-- ko  text: Question -->
+            <!-- /ko -->
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="pollImages previewBlock">
+        <div id="pollOptions">
+            <ul id="optionsList" class="unstyled"
+                data-bind="foreach: { data: PollOptions }">
+                <li>
+                    <div class="previewImageContainer">
+                        <img data-bind="attr: { src: OptionThumbnailUrl(), id: OptionId() }" />
+                    </div>
+
+                    <div id="booleanOption" data-bind="visible: $parent.IsBoolPoll">
+                        <div class="voteAction btn-group">
+                            <button class="btn">Yes</button>
+                            <button class="btn">No</button>
+                        </div>
+
+                    </div>
+                    <div id="ratingOptions" data-bind="visible: $parent.IsRatePoll">
+                        <div class="ratingControl">
+                            <div id="internaRating" data-bind="starRating: 'Rate'">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</div>

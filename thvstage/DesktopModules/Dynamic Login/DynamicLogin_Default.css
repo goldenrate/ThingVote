@@ -1,0 +1,83 @@
+/* DATA SPRINGS Inc. - DYNAMIC LOGIN STYLE SHEET */
+
+.DynamicLogin_UserName {
+	width: 150px;
+
+}
+
+
+.DynamicLogin_Password{
+	width: 150px;
+}
+
+
+
+.DynamicLogin_UserNameWBackground {
+height:24px;
+margin-bottom:0px;
+overflow:hidden;
+padding:3px 2px 0 25px;
+width:137px;
+background:transparent url(/desktopmodules/Dynamic%20Login/images/DynamicLoginUsernameBackground.png) no-repeat scroll 0 0;
+
+}
+
+.DynamicLogin_UserNameWBackground:hover
+ {
+background:transparent url(/desktopmodules/Dynamic%20Login/images/DynamicLoginUsernameBackground.png) no-repeat scroll 0 -20px;
+
+}
+
+.DynamicLogin_PasswordWBackground:hover {
+background:transparent url(/desktopmodules/Dynamic%20Login/images/DynamicLoginPasswordBackground.png) no-repeat scroll 0 -20px;
+
+}
+
+
+.DynamicLogin_PasswordWBackground{
+height:24px;
+margin-bottom:10px;
+overflow:hidden;
+padding:3px 2px 0 25px;
+width:137px;
+background:transparent url(/desktopmodules/Dynamic%20Login/images/DynamicLoginPasswordBackground.png) no-repeat scroll 0 0;
+}
+
+
+
+.DynamicLogin_LoginLink{
+	
+}
+
+
+.DynamicLogin_CheckBox{
+}
+
+.DynamicLogin_RegisterLink{
+}
+
+.DynamicLogin_RegisterButton{
+}
+
+.DynamicLogin_PasswordLink{
+}
+
+.DynamicLogin_PasswordButton{
+}
+
+
+
+.DynamicLogin_ContinueLink{
+}
+
+
+
+.DynamicLogin_LoginButton{
+}
+
+
+
+
+
+
+

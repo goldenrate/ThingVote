@@ -1,0 +1,33 @@
+﻿
+<div class="modal hide fade" tabindex="-1" role="dialog" 
+    data-bind="event: { hidden: closeModal }, attr: { id: modalId }"
+    style="cursor:move"
+    aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"
+             aria-hidden="true">×</button>
+        <h3 id="myModalLabel" data-bind="text:modalHeader()"></h3>
+    </div>
+    
+    <div id="modalBody" 
+        class="modal-body" >
+        <!-- data-bind="compose: modalBody"  -->
+        the defualt body 
+    </div>
+
+    <div class="modal-footer" data-bind="visible:showFooter()">
+        <div id="modalAlerts" class="pull-left">
+            <div data-bind="css:alertClass(),visible:alertVis()">
+                <button class="close" data-bind="click:hideAlert">×</button>
+                <strong>Oh snap! </strong>
+                <!--ko text:alert()-->
+                <!-- /ko -->
+            </div>
+        </div>
+        <button class="btn" data-dismiss="modal" 
+            data-bind="visible: showClose()"
+            aria-hidden="true">Close</button>
+        <button id="btnSave" class="btn btn-primary" data-bind="visible: showSave()"}">
+            Save changes</button>
+    </div>
+</div>

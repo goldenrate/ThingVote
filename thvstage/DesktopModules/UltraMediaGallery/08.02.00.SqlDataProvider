@@ -1,0 +1,6 @@
+﻿UPDATE {databaseOwner}{objectQualifier}BizModules_upg_presentation
+set Name='SliderMaster', Description='SliderMaster is the most powerful choice for image sliders and banner rotators.', Type='BizModules.UltraPhotoGallery.Presentation.SliderMaster, BizModules.UltraPhotoGallery',  Featured=1
+where name in ('SimpleSlider', 'SliderMaster')
+
+GO
+

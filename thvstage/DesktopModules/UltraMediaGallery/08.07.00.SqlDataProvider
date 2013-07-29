@@ -1,0 +1,56 @@
+﻿ALTER PROCEDURE {databaseOwner}{objectQualifier}BizModules_UPG_TagEnsure
+	@PhotoId int,
+	@UserId int,
+	@BelongedTags nvarchar(500)
+AS
+	DECLARE @Offset int
+	DECLARE @NextPosition int
+	DECLARE @Tags nvarchar(500)
+	DECLARE @Tag nvarchar(200)
+	DECLARE @TagId int
+	DECLARE @ModuleId int
+
+	select @ModuleId = A.ModuleId from {databaseOwner}{objectQualifier}BizModules_UPG_Photo P inner join {databaseOwner}{objectQualifier}UPG_vw_Album A on P.AlbumId=A.ItemId where P.ItemId = @PhotoId
+	Set @Tags = ',' + @BelongedTags + ','
+	if CharIndex('\,',@Tags) > 0
+		select @Tags = replace(@Tags, '\,', 'SPACE')
+
+	begin transaction
+	Set NoCount ON
+	delete from {databaseOwner}{objectQualifier}BizModules_UPG_PhotoTag where PhotoId=@PhotoId
+
+	select @Offset = CharIndex(',',@Tags)
+	select @NextPosition = CharIndex(',',@Tags,@Offset + 1)
+
+	while @NextPosition > 0
+	begin
+		set @Tag= SUBSTRING(@Tags,@Offset + 1,@NextPosition - @Offset - 1)
+		if CharIndex('SPACE',@Tag) > 0
+			select @Tag = replace(@Tag, 'SPACE' , ',')
+		set @TagId = 0
+		set @Tag = ltrim(rtrim(@Tag))
+		select @TagId = ItemId from {databaseOwner}{objectQualifier}BizModules_UPG_Tag where ltrim(rtrim(Tag)) = @Tag
+		if isnull(@TagId, 0) =0 
+		begin
+			insert {databaseOwner}{objectQualifier}BizModules_UPG_Tag (ModuleId, Tag, CreatedByUser,CreatedDate) values (@ModuleId, @Tag, @UserId,getdate())
+			select @TagId =  SCOPE_IDENTITY()
+		end 
+		Insert into {databaseOwner}{objectQualifier}BizModules_UPG_PhotoTag (PhotoId,TagId) Values(@PhotoId,@TagId)
+		select @Offset = @NextPosition
+		select @NextPosition = CharIndex(',',@Tags,@Offset + 1)
+	end
+	delete {databaseOwner}{objectQualifier}BizModules_UPG_Tag where not exists(select * from {databaseOwner}{objectQualifier}BizModules_UPG_PhotoTag where {databaseOwner}{objectQualifier}BizModules_UPG_PhotoTag.TagId = {databaseOwner}{objectQualifier}BizModules_UPG_Tag.ItemId)
+	
+	Set NoCount OFF
+	if @@error=0
+	begin
+		commit transaction
+	end
+	else
+	begin
+		rollback transaction
+	end
+
+GO
+
+

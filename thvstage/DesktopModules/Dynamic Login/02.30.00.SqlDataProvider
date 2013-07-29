@@ -1,0 +1,174 @@
+/************************************************************/
+/*****              SQLDataProvider                     *****/
+/*****              DynamicLogin               *****/
+/*****                                                  *****/
+/***** Note: To manually execute this script you must   *****/
+/*****       perform a search and replace operation     *****/
+/*****       for {databaseOwner} and {objectQualifier}  *****/
+/*****                                                  *****/
+/************************************************************/
+
+if not exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}DataSprings_DynamicLogin_RestrictedIP]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+	CREATE TABLE {databaseOwner}[{objectQualifier}DataSprings_DynamicLogin_RestrictedIP] (
+		[DynamicLoginIPRestrictionID]  uniqueidentifier ROWGUIDCOL  NOT NULL CONSTRAINT [DF_DataSprings_DynamicLogin_DynamicLoginIPRestrictionID]         DEFAULT (newid()),
+            [IPAddress] [nvarchar] (200)  NULL DEFAULT (''),
+		[RestrictionDesc] [nvarchar] (800)  NULL DEFAULT (''),
+		[AllPortals] [int] NOT NULL  DEFAULT (0),
+		[ModuleID] [int] NOT NULL  DEFAULT (0),
+		[PortalID] [int] NOT NULL DEFAULT (0),
+		CONSTRAINT [PK_DataSprings_IPRestriction] PRIMARY KEY  CLUSTERED 
+		(
+			[DynamicLoginIPRestrictionID]
+		)  ON [PRIMARY] 
+	) ON [PRIMARY]
+	GO
+GO
+
+
+
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}{objectQualifier}DataSprings_DynamicLogin_GetRestrictedIPByID') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_GetRestrictedIPByID
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}{objectQualifier}DataSprings_DynamicLogin_GetRestrictedIPByIPAddress') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_GetRestrictedIPByIPAddress
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}{objectQualifier}DataSprings_DynamicLogin_GetRestrictedIPByModuleID') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_GetRestrictedIPByModuleID
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}{objectQualifier}DataSprings_DynamicLogin_AddRestrictedIP') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_AddRestrictedIP
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}{objectQualifier}DataSprings_DynamicLogin_UpdateRestrictedIP') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_UpdateRestrictedIP
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}{objectQualifier}DataSprings_DynamicLogin_DeleteRestrictedIP') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_DeleteRestrictedIP
+GO
+
+
+/* -------------------------------------------------------------------------------------
+/  DataSprings_DynamicLogin_AddUserToUserPortalsTable
+/  ------------------------------------------------------------------------------------- */
+SET QUOTED_IDENTIFIER ON 
+GO
+SET ANSI_NULLS OFF 
+GO
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_GetRestrictedIPByID
+	
+      @DynamicLoginIPRestrictionID uniqueidentifier
+
+	
+AS
+
+Select * from {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_RestrictedIP
+Where DynamicLoginIPRestrictionID =  @DynamicLoginIPRestrictionID
+
+GO
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_GetRestrictedIPByIPAddress
+	
+      @IPAddress nvarchar(200),
+     @ModuleID int
+
+	
+AS
+
+Select * from {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_RestrictedIP
+Where IPAddress =  @IPAddress
+AND (ModuleID = @ModuleID Or AllPortals = 1)
+
+GO
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_GetRestrictedIPByModuleID
+	
+      @ModuleID int
+
+	
+AS
+
+Select * from {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_RestrictedIP
+Where (ModuleID = @ModuleID Or AllPortals = 1)
+
+GO
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_AddRestrictedIP
+	
+	@IPAddress nvarchar(200),
+	@RestrictionDesc nvarchar(800),
+	@AllPortals int,
+	@ModuleID int,
+	@PortalID int
+
+
+	
+AS
+ INSERT INTO {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_RestrictedIP(
+	[IPAddress],
+	[RestrictionDesc],
+	[AllPortals],
+	[ModuleID],
+	[PortalID])
+      VALUES (
+	@IPAddress,
+	@RestrictionDesc,
+	@AllPortals,
+	@ModuleID,
+	@PortalID)
+
+GO
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_UpdateRestrictedIP
+	@DynamicLoginIPRestrictionID uniqueidentifier,
+	@IPAddress nvarchar(200),
+	@RestrictionDesc nvarchar(800),
+	@AllPortals int,
+	@ModuleID int,
+	@PortalID int
+
+
+	
+AS
+ Update {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_RestrictedIP
+Set [IPAddress] = @IPAddress,
+	[RestrictionDesc]=@RestrictionDesc,
+	[AllPortals]=@AllPortals,
+	[ModuleID]=@ModuleID,
+	[PortalID]=	@PortalID
+Where DynamicLoginIPRestrictionID = @DynamicLoginIPRestrictionID 
+
+GO
+
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_DeleteRestrictedIP
+	@DynamicLoginIPRestrictionID uniqueidentifier
+
+	
+AS
+ DELETE FROM {databaseOwner}{objectQualifier}DataSprings_DynamicLogin_RestrictedIP
+ Where DynamicLoginIPRestrictionID = @DynamicLoginIPRestrictionID 
+
+GO
+
+
+DELETE from {databaseOwner}[{objectQualifier}ModuleControls]
+Where ControlSrc = 'DesktopModules/Dynamic Login/DynamicLoginEdit.ascx'
+OR ControlSrc = 'DesktopModules/Dynamic Login/DynamicLoginRules.ascx'
+OR ControlSrc = 'DesktopModules/Dynamic Login/DynamicRoleEdit.ascx'
+OR ControlSrC = 'DesktopModules/Dynamic Login/DynamicRoleGroupEdit.ascx'
+OR ControlSrC = 'DesktopModules/Dynamic Login/ManageLoginTemplate.ascx'
+OR ControlSrC = 'DesktopModules/Dynamic Login/Settings.ascx'
+OR ControlSrC = 'DesktopModules/Dynamic Login/SingleSignOnSetup.ascx'
+OR ControlSrC = 'DesktopModules/Dynamic Login/DynamicRoleRules.ascx'
+OR ControlSrC = 'DesktopModules/Dynamic Login/DynamicRoleGroupRules.ascx'
+
+GO

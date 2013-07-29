@@ -1,0 +1,1 @@
+{'title':'[SAFETITLE]','lat':[LATITUDE], 'lng':[LONGITUDE], thumbnail:'[THUMBNAIL]','src':'[PHOTO]', 'takendate':'[TAKENDATE] [TAKENTIME]','author':'[AUTHOR]', 'daysago':[TAKENDAYSAGO]},

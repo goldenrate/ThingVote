@@ -1,0 +1,2 @@
+New photos waiting for approval on [PORTALNAME]
+<p>A user just uploaded [COUNT] new photos and need to be approved, click <a href="[APPROVALLINK]">here</a> to approve it.
